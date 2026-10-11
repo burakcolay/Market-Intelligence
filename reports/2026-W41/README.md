@@ -9,6 +9,11 @@ _Otomatik üretildi: 2026-10-09 kapanış verisiyle. Kaynak kod: [`analytics/`](
 - Uzun tahvil ↔ Nasdaq 100 ilişkisi bir yıl öncesine göre belirgin güçlendi. İki varlık artık daha çok birlikte hareket ediyor; birini diğerine karşı çeşitlendirme aracı olarak kullanmak eskisi kadar işe yaramaz.
 - Bilanço açıklamalarından sonraki iki günde hisseler, sıradan iki günlük dönemlere göre yaklaşık 2,8 kat fazla oynuyor (894 bilanço). İlk tepkinin yönü sonraki iki ayı açıklamıyor (p=0,96): büyük şirketlerde bilanço haberi hızla fiyatlanıyor, sürüklenme görülmüyor.
 - Yöneticilerin piyasadan alım yaptığı 13 olayda (13 şirket) hisse sonraki iki ayda piyasaya göre ortalama 18,1 puan fazla getiri sağladı ve fark istatistiksel olarak anlamlı. Ancak olaylar 2026-03 – 2026-08 arasındaki kısa bir döneme yığılmış; aynı piyasa ortamını paylaştıkları için bağımsız sayılmazlar, sonuç daha uzun bir dönemde doğrulanmadan sinyal sayılmamalı.
+- Nasdaq 100 hisselerinin yaklaşık yüzde 61 kadarı 200 günlük ortalamasının üstünde. Katılım orta düzeyde.
+- Son üç ayda endeks getirisinin yaklaşık yüzde 87 kadarı en büyük 10 şirketten geldi; eşit ağırlıklı sepet endeksten geride kaldı: yükseliş devlerin omzunda.
+- Kümeleme modeline göre piyasa 61 işlem günüdür 'Kararsız' rejiminde. Geçmişte bu rejimdeki günlerin ardından gelen 20 işlem gününde Nasdaq 100 ortalama yüzde 2,2 değişti ve dönemlerin yüzde 73 kadarında yükseldi. Bu bir tahmin değil, benzer dönemlerin geçmiş davranışı.
+- Bir sonraki işlem günü için beklenen Nasdaq 100 aralığı (en yüksek ile en düşük arası) yaklaşık %1,03, yani 318 puan civarı; geçmiş isabete göre 10 günün 8'inde 162 ile 438 puan arasında kalır. Model, görmediği son dönemde basit kurallardan (dünün aralığı, son ayın ortalaması) yaklaşık yüzde 12 daha isabetli.
+- Takvim etkileri 2000 yılından bu yana 20 ayrı iddiayla test edildi: düzeltmesiz bakılınca 2 tanesi anlamlı görünüyor, çoklu test düzeltmesinden sonra 0 tanesi kalıyor. Yaygın takvim efsanelerinin hiçbiri bu veride doğrulanmıyor; çoğu, şans eseri anlamlı görünen sonuçlardan ibaret.
 - Son iki haftada getirisi ya da hacmi kendi normalinin çok dışına çıkan varlıklar: CEG, DASH, MELI, PEP, SBUX, SNPS. Bu günlerin arkasında genellikle bilanço, haber ya da endeks değişikliği olur.
 
 ## Sektörler
@@ -68,6 +73,47 @@ Getirisi ya da hacmi, önceki 63 günün ortalamasından en az 3 standart sapma 
 | 2026-10-08 | PEP | 3,7 | 3,4 | 4,2 |
 | 2026-10-08 | SBUX | −0,4 | −0,2 | 5,0 |
 | 2026-10-09 | TMUS | −13,3 | −5,5 | 4,7 |
+
+## Piyasa genişliği ve yoğunlaşma
+![Genişlik](genislik.png)
+
+| Kod | Endekse katkı (puan) | Getiri % | Ağırlık % |
+|---|---|---|---|
+| MSFT | 2,64 | 37,1 | 7,1 |
+| NVDA | 1,54 | 12,8 | 12,0 |
+| SPCX | 0,78 | 16,8 | 4,6 |
+| AAPL | 0,70 | 6,2 | 11,4 |
+| PLTR | 0,47 | 60,8 | 0,8 |
+
+## Piyasa rejimi (kümeleme)
+![Rejimler](rejim.png)
+
+Bugün: **Kararsız** (61 işlem günüdür). Rejimler oynaklık, trend, 200 günlük ortalamaya uzaklık, VIX ve genişlikten k-ortalamalar ile çıkarıldı; tablo betimleyicidir.
+
+| Rejim | Gün payı % | Oynaklık % | 3 ay getiri % | Sonraki 20 gün ort. % | Yükselme oranı % |
+|---|---|---|---|---|---|
+| Güçlü yükseliş | 37 | 16 | 14,0 | 1,1 | 65 |
+| Kararsız | 40 | 19 | 3,8 | 2,2 | 73 |
+| Düzeltme | 15 | 24 | −1,6 | 1,5 | 55 |
+| Stres | 8 | 38 | −8,5 | 3,1 | 65 |
+
+## Ertesi gün aralık tahmini
+![Aralık](aralik.png)
+
+Beklenen aralık: **318 puan** (%1,03); 10 günün 8'inde 162–438 puan.
+
+| Yöntem | Ort. mutlak hata | R² |
+|---|---|---|
+| Model (logaritmik HAR + VIX) | 0,436 | 0,17 |
+| Yarın dün gibi | 0,514 | −0,28 |
+| Yarın son ayın ortalaması | 0,496 | −0,16 |
+
+Sınama: 2025-04-21 – 2026-10-08, ileriye doğru yürüyen pencere (aylık yeniden eğitim).
+
+## Takvim etkileri
+![Takvim](takvim.png)
+
+2000–2026, 6732 gün, 20 iddia. Düzeltmesiz anlamlı: 2, Benjamini–Hochberg sonrası: 0.
 
 ## Araştırma: Bilanço sonrası fiyat davranışı
 ![Bilanço sonrası](bilanco.png)
