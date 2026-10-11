@@ -1,6 +1,6 @@
 """Otomatik veri kontrolleri: her çalıştırmada verinin kendi içinde ve kaynaklar arasında tutarlı olup olmadığını sınar.
 
-Bir kontrolün başarısız olması analizi durdurmaz; sonuç sitede ve raporda görünür, böylece hangi rakama
+Bir kontrolün başarısız olması analizi durdurmaz (resmi rapor karşılaştırması hariç: o pytest ile analizden önce çalışır); sonuç sitede ve raporda görünür, böylece hangi rakama
 güvenilmemesi gerektiği bilinir.
 """
 from __future__ import annotations
