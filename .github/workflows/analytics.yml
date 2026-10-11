@@ -8,9 +8,9 @@ on:
   push:
     branches: [main]
     paths: ['analytics/mi/**', 'analytics/sql/**', 'analytics/notebooks/build.py', 'analytics/requirements.txt']
-  schedule:
-    - cron: '15 23 * * 1-5'   # hafta içi 02:15 TSİ (SEC/fiyat işinden sonra)
-    - cron: '30 7 * * 6'      # cumartesi 10:30 TSİ: haftalık rapor ve defterler
+  workflow_run:                # SEC/fiyat işi bitince, onun yazdığı en güncel veriyle çalış
+    workflows: ['ABD verisi']
+    types: [completed]
 permissions:
   contents: write
 concurrency: analytics
