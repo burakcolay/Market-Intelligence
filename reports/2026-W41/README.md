@@ -133,10 +133,10 @@ Olumlu ve olumsuz grup farkı: −0,07 puan (Welch t-testi p=0,961). Tepki ile s
 - Fiyat kaynakları uyuşuyor: geçti
 - Fiyatlar güncel: geçti
 - Günlük %50 üstü hareket yok: geçti
-- Finansallar güncel: 1 sorun (XEL)
+- Finansallar güncel: geçti
 - Gelir tablosu kendi içinde tutarlı: 1 sorun (MELI)
 - Bilanço denkliği: 1 sorun (MSTR)
 - Piyasa değeri ile hisse sayısı tutarlı: 2 sorun (CMCSA, MNST)
-- Para birimi: geçti
+- Para birimi: 3 sorun (ASML, CCEP, FER)
 - 107 varlıkta 200 günden uzun temiz fiyat geçmişi var.
 - Temizleme sırasında 1 tek günlük hatalı fiyat düzeltildi.
