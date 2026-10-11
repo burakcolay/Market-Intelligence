@@ -187,6 +187,116 @@ for f in sorted(db.SQL_DIR.glob('*.sql')):
 ],
 }
 
+NOTEBOOKS.update({
+"05_genislik_ve_yogunlasma.ipynb": [
+"""md:# 5. Piyasa genişliği ve yoğunlaşma
+
+**Soru:** Nasdaq 100'ün yükselişini hisselerin çoğu mu taşıyor, yoksa birkaç dev şirket mi?
+
+- **Genişlik:** hisselerin yüzde kaçı kendi 200 ve 50 günlük ortalamasının üstünde.
+- **Yoğunlaşma:** endeks getirisinin ne kadarı en büyük 10 şirketten geliyor; eşit ağırlıklı sepetle fark.
+- **Not:** Evren bugünkü Nasdaq 100; geçmişte çıkarılan zayıf hisseler yok (hayatta kalma yanlılığı).""",
+SETUP,
+"""from mi import breadth as br
+from mi.report import _mcap
+stocks = assets.index[assets.cls == 'hisse'].tolist()
+s = close[[c for c in stocks if c in close.columns]]
+p200, p50 = br.above_ma(s, 200), br.above_ma(s, 50)
+fig, ax = plt.subplots(2, 1, figsize=(8, 5), sharex=True)
+ax[0].plot(close['NDX'], color=charts.INK); ax[0].set_title('Nasdaq 100')
+ax[1].plot(p200, color=charts.ACC, label='200 g. üstü %'); ax[1].plot(p50, color='#D97706', lw=.8, label='50 g. üstü %'); ax[1].legend(frameon=False)
+ax[1].set_title('Genişlik'); plt.show()
+print(f'Bugün 200 g. üstü: %{p200.iloc[-1]:.0f}, 50 g. üstü: %{p50.iloc[-1]:.0f}')""",
+"""md:## Genişlik ile endeks getirisi arasındaki ilişki
+Genişlik değişimi, sonraki 20 günlük endeks getirisiyle ilişkili mi? (Örtüşen pencereler yüzünden her 20 günde bir örnek alınıyor.)""",
+"""fwd = (close['NDX'].shift(-20) / close['NDX'] - 1) * 100
+chg = p200 - p200.shift(20)
+d = pd.DataFrame({'genişlik_değişimi': chg, 'sonraki_20g': fwd}).dropna().iloc[::20]
+rho, p = stats.spearmanr(d['genişlik_değişimi'], d['sonraki_20g'])
+print(f'{len(d)} bağımsız gözlem, Spearman ρ = {rho:.2f}, p = {p:.3f}')
+d.plot.scatter('genişlik_değişimi', 'sonraki_20g', alpha=.6, color=charts.ACC, figsize=(6, 4)); plt.show()""",
+"""md:## Yoğunlaşma: endeks getirisini kimler taşıdı?""",
+"""mcap = pd.Series({c: _mcap(c) for c in s.columns}).dropna()
+for d_, lab in ((63, '3 ay'), (252, '1 yıl')):
+    c = br.contributions(s, mcap, d_)
+    top = c.reindex(mcap.sort_values(ascending=False).index[:10]).dropna()
+    print(f"{lab}: endeks ≈ %{c['contrib'].sum():.1f}, ilk 10 katkısı {top['contrib'].sum():.1f} puan, hisselerin %{(c['ret'] > 0).mean() * 100:.0f}'ı yükseldi")
+br.contributions(s, mcap, 63).head(10)""",
+"""md:**Yorum:** İlk 10 şirketin katkısı endeks getirisinin büyük kısmıysa ve hisselerin azı yükseldiyse yükseliş dar tabanlıdır. Dar tabanlı yükselişler, öncü şirketlerden birinde kötü bir haber geldiğinde daha sert düzeltme riski taşır.""",
+],
+"06_rejim_ve_aralik_tahmini.ipynb": [
+"""md:# 6. Piyasa rejimi ve ertesi gün aralık tahmini
+
+**1) Kümeleme:** Her işlem günü beş özellikle tarif edilir (1 aylık oynaklık, 3 aylık getiri, 200 günlük ortalamaya uzaklık, VIX, genişlik). Özellikler standartlaştırılır ve k-ortalamalar (k=4) ile gruplanır.
+
+**2) Aralık tahmini:** Ertesi günün en yüksek–en düşük farkı, logaritmik HAR modeliyle tahmin edilir. Sınama, ileriye doğru yürüyen pencereyle yapılır (geleceği görmeden).""",
+SETUP,
+"""from mi import breadth as br, regime as rg
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+stocks = assets.index[assets.cls == 'hisse'].tolist()
+p200 = br.above_ma(close[[c for c in stocks if c in close.columns]], 200)
+f = rg.features(close['NDX'], close.get('VIX'), p200)
+f.describe().T[['mean', 'std', 'min', 'max']]""",
+"""md:## Kaç küme? Dirsek yöntemi ve siluet skoru""",
+"""from sklearn.metrics import silhouette_score
+X = StandardScaler().fit_transform(f)
+ks = range(2, 8)
+inertia = [KMeans(k, n_init=10, random_state=0).fit(X).inertia_ for k in ks]
+sil = [silhouette_score(X, KMeans(k, n_init=10, random_state=0).fit_predict(X)) for k in ks]
+fig, ax = plt.subplots(1, 2, figsize=(9, 3))
+ax[0].plot(list(ks), inertia, marker='o', color=charts.ACC); ax[0].set_title('Dirsek (küme içi uzaklık)')
+ax[1].plot(list(ks), sil, marker='o', color='#D97706'); ax[1].set_title('Siluet skoru (yüksek iyi)'); plt.show()""",
+"""md:k=4 seçildi: dirseğin kırıldığı yer ve yorumlanabilir dört durum (güçlü yükseliş, kararsız, düzeltme, stres).""",
+"""R = rg.regimes(f, close['NDX'])
+print('Bugün:', R['current'], f"({R['streak']} gündür)")
+pd.DataFrame(R['table']).set_index('regime').round(2)""",
+"""md:## Rejimler arası geçiş olasılıkları (5 işlem günlük adımlarla)""",
+"""lab = pd.Series([x[1] for x in R['timeline']])
+pd.crosstab(lab.shift(), lab, normalize='index').round(2)""",
+"""md:## Ertesi gün aralık modeli""",
+"""hl = pd.read_sql("SELECT date, high, low FROM prices WHERE code='NDX'", con, parse_dates=['date']).set_index('date')
+M = rg.range_model(hl['high'], hl['low'], close['NDX'], close.get('VIX'))
+pd.DataFrame({'Model': M['model'], 'Dün gibi': M['naive_yesterday'], 'Son ay ortalaması': M['naive_month']}).T.round(3)""",
+"""print('Katsayılar:', {k: round(v, 3) for k, v in M['coef'].items()})
+print(f"İyileşme: %{M['improvement']:.0f}, %80 aralık isabeti: %{M['interval_hit']:.0f}")
+print(f"Yarın beklenen: {M['next']['points']:.0f} puan ({M['next']['points_lo']:.0f}–{M['next']['points_hi']:.0f})")
+r = pd.DataFrame(M['recent'], columns=['tarih', 'gerçek', 'tahmin']).set_index('tarih')
+r.plot(figsize=(8, 3), color=[charts.INK, charts.ACC]); plt.title('Son 60 gün'); plt.show()""",
+"""md:**Yorum:** Model yalnızca *ne kadar* hareket beklendiğini söyler, yönü söylemez. Oynaklık kümelendiği için (2. defter) dünün ve son haftanın aralığı yarını kısmen açıklar; R² düşük görünse de basit kuralları geçmesi anlamlıdır, çünkü günlük aralığın büyük kısmı habere bağlı ve öngörülemez.""",
+],
+"07_takvim_etkileri.ipynb": [
+"""md:# 7. Takvim etkileri: efsane mi, gerçek mi?
+
+Yaygın iddialar: "Pazartesi kötüdür", "ay başında para girer", "tatil öncesi yükselir", "opsiyon vadesi haftası oynaktır". Nasdaq 100'ün uzun geçmişiyle test ediyoruz.
+
+**Yöntem:** Her grup diğer tüm günlerle Welch t-testiyle karşılaştırılır. 20 test yapıldığı için p değerleri **Benjamini–Hochberg** ile düzeltilir. Ayrıca etki verinin iki yarısında aynı yönde mi diye bakılır (kararlılık).""",
+SETUP,
+"""from mi import calendar as cal
+from mi.config import LONG_DIR
+L = pd.read_csv(LONG_DIR / 'NDX.csv', parse_dates=['date']).set_index('date')['close']
+C = cal.analyze(L)
+print(f"{C['start']} – {C['end']}, {C['n_days']} gün; düzeltmesiz anlamlı {C['naive_significant']}, düzeltme sonrası {C['adj_significant']}")
+T = pd.DataFrame(C['tests']).set_index('name')
+T[['n', 'mean', 'rest', 'p', 'p_adj', 'diff_1', 'diff_2', 'verdict']].sort_values('p').round(4)""",
+"""md:## Neden düzeltme gerekiyor? Simülasyon
+Tamamen rastgele getirilerle aynı 20 testi 500 kez yapalım: düzeltme olmadan kaç "anlamlı" sonuç çıkıyor?""",
+"""rng = np.random.default_rng(0)
+idx = L.index[L.index >= '2000-01-01']
+F = cal.flags(idx[1:])
+naive, adj = [], []
+for _ in range(500):
+    r = pd.Series(rng.normal(0, .015, len(F)), index=F.index)
+    ps = [stats.ttest_ind(r[m], r[~m], equal_var=False).pvalue for m in
+          [F.weekday == i for i in range(5)] + [F.month == m for m in range(1, 13)] + [F.tom, F.opex, F.pre_holiday]]
+    naive.append(sum(p < .05 for p in ps)); adj.append(sum(cal.bh_adjust(np.array(ps)) < .05))
+print(f'Rastgele veride ortalama düzeltmesiz "anlamlı" sonuç: {np.mean(naive):.2f}, en az bir tane çıkma olasılığı %{np.mean(np.array(naive) > 0) * 100:.0f}')
+print(f'Düzeltmeden sonra: {np.mean(adj):.2f}, en az bir tane: %{np.mean(np.array(adj) > 0) * 100:.0f}')""",
+"""md:**Yorum:** Rastgele veride bile 20 testten yaklaşık biri "anlamlı" çıkar ve en az bir tane çıkma olasılığı yüksektir. Takvim etkisi iddialarının çoğu bu yanılgıdan doğar. Düzeltilmiş p değeri ve iki dönemde tutarlılık, gerçek bir etkiyi şanstan ayırmanın asgari şartıdır.""",
+],
+})
+
+
 if __name__ == "__main__":
     for name, cells in NOTEBOOKS.items():
         nbf.write(nb(cells), HERE / name)

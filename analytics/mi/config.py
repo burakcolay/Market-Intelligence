@@ -10,6 +10,7 @@ AN = ROOT / "analytics"
 PRICE_DIR = Path(os.environ.get("MI_PRICE_DIR", AN / "data" / "prices"))  # sembol başına CSV (git'te tutulur)
 DB_PATH = Path(os.environ.get("MI_DB", AN / "data" / "market.db"))    # her çalıştırmada yeniden kurulur (git'te tutulmaz)
 SQL_DIR = AN / "sql"
+LONG_DIR = Path(os.environ.get("MI_LONG_DIR", AN / "data" / "long"))     # takvim etkileri için uzun geçmiş (NDX)
 US_DIR = ROOT / "data" / "us"                         # SEC verisi (Node betiği üretir)
 SITE_OUT = Path(os.environ.get("MI_SITE_OUT", ROOT / "data" / "analytics"))  # sitenin okuduğu JSON
 REPORT_DIR = Path(os.environ.get("MI_REPORT_DIR", ROOT / "reports"))

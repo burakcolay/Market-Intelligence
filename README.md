@@ -29,6 +29,9 @@ Bu bölüm projenin veri analizi tarafını özetler: hangi soruları sorduğu, 
 2. Varlıklar arasındaki ilişkiler (Bitcoin–Nasdaq, altın–dolar, faiz–teknoloji) sabit mi, rejime göre mi değişiyor?
 3. Bilanço açıklamalarına piyasa nasıl tepki veriyor; ilk tepki sonraki haftalarda sürüyor mu?
 4. Yöneticiler kendi hisselerini aldıktan sonra hisse piyasadan iyi gidiyor mu?
+5. Endeksin yükselişini hisselerin çoğu mu taşıyor, birkaç dev şirket mi? (genişlik ve yoğunlaşma)
+6. Piyasa şu an hangi rejimde ve benzer dönemlerde ne oldu? Yarın ne kadar hareket beklenir? (kümeleme, tahmin modeli)
+7. "Pazartesi kötüdür", "ay başı iyidir" gibi takvim iddiaları istatistiksel olarak doğru mu?
 
 ### Veri hattı
 ```mermaid
@@ -56,7 +59,9 @@ flowchart LR
 | SQL | [`analytics/sql/`](analytics/sql): CTE, `ROW_NUMBER`, `RANK`, `PERCENT_RANK`, `LAG`, kayan ortalama, pivot · [`mi/db.py`](analytics/mi/db.py): şema |
 | Keşifsel analiz | [`01_veri_ve_kesif.ipynb`](analytics/notebooks/01_veri_ve_kesif.ipynb): dağılımlar, kalın kuyruk, aylık getiri ısı haritası, sektör risk/getiri |
 | İstatistiksel analiz | [`mi/stats.py`](analytics/mi/stats.py), [`02_risk_ve_iliskiler.ipynb`](analytics/notebooks/02_risk_ve_iliskiler.ipynb): oynaklık, beta, düşüş, kayan korelasyon, Fisher z testi, otokorelasyon |
-| Hipotez testi | [`mi/events.py`](analytics/mi/events.py), [`03_olay_calismalari.ipynb`](analytics/notebooks/03_olay_calismalari.ipynb): piyasa modeliyle olay çalışması, t-testi, Welch, Spearman |
+| Hipotez testi | [`mi/events.py`](analytics/mi/events.py), [`03_olay_calismalari.ipynb`](analytics/notebooks/03_olay_calismalari.ipynb): piyasa modeliyle olay çalışması, t-testi, Welch, Spearman · [`mi/calendar.py`](analytics/mi/calendar.py), [`07_takvim_etkileri.ipynb`](analytics/notebooks/07_takvim_etkileri.ipynb): çoklu test düzeltmesi (Benjamini–Hochberg), dönem kararlılığı, rastgele veriyle simülasyon |
+| Makine öğrenmesi | [`mi/regime.py`](analytics/mi/regime.py), [`06_rejim_ve_aralik_tahmini.ipynb`](analytics/notebooks/06_rejim_ve_aralik_tahmini.ipynb): k-ortalamalar kümeleme (dirsek, siluet), logaritmik HAR regresyonu, ileriye doğru yürüyen sınama, basit kurallarla karşılaştırma |
+| Piyasa yapısı | [`mi/breadth.py`](analytics/mi/breadth.py), [`05_genislik_ve_yogunlasma.ipynb`](analytics/notebooks/05_genislik_ve_yogunlasma.ipynb): genişlik, endekse katkı ayrıştırması, eşit ağırlık karşılaştırması |
 | Görselleştirme | [`mi/charts.py`](analytics/mi/charts.py), sitedeki [Analiz sayfası](analiz.html) |
 | Otomatik raporlama | [`analytics.yml`](.github/workflows/analytics.yml): her gün analiz, her cumartesi [haftalık rapor](reports) ve defterler |
 | Test | [`analytics/tests/`](analytics/tests): temizlik kuralları, beta, korelasyon, anormal getiri hesabı |

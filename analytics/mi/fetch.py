@@ -11,7 +11,7 @@ import time
 import pandas as pd
 import requests
 
-from .config import HISTORY_YEARS, PRICE_DIR, all_assets
+from .config import HISTORY_YEARS, LONG_DIR, PRICE_DIR, all_assets
 
 log = logging.getLogger(__name__)
 COLS = ["date", "open", "high", "low", "close", "volume"]
@@ -81,3 +81,25 @@ def fetch_all() -> dict[str, int]:
         counts[code] = len(df)
     log.info("Fiyat: %d/%d varlık indirildi", len(counts), len(syms))
     return counts
+
+
+def fetch_long(symbol: str = "^NDX", code: str = "NDX") -> int:
+    """Takvim etkileri için endeksin tüm geçmişi (Nasdaq 100: 1985'ten bu yana)."""
+    import yfinance as yf
+
+    LONG_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        df = yf.download(symbol, period="max", interval="1d", auto_adjust=True, progress=False)
+        if isinstance(df.columns, pd.MultiIndex):
+            df.columns = df.columns.get_level_values(0)
+        df = df.reset_index().rename(columns=str.lower)[COLS]
+    except Exception as e:
+        log.warning("Uzun geçmiş Yahoo hatası: %s; Stooq deneniyor", e)
+        r = requests.get("https://stooq.com/q/d/l/?s=^ndx&i=d", timeout=30)
+        df = pd.read_csv(io.StringIO(r.text)).rename(columns=str.lower).reindex(columns=COLS)
+    df["date"] = pd.to_datetime(df["date"]).dt.strftime("%Y-%m-%d")
+    df = df.dropna(subset=["close"]).round({"open": 2, "high": 2, "low": 2, "close": 2})
+    if len(df) > 1000:
+        df.to_csv(LONG_DIR / f"{code}.csv", index=False)
+    log.info("Uzun geçmiş %s: %d gün", code, len(df))
+    return len(df)

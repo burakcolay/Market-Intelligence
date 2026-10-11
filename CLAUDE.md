@@ -180,4 +180,5 @@ Yorum kuralları burada da geçerli: rakam sıralama yok, al/sat yok. `node scri
 
 Python ile yazılmış analiz hattı: `analytics/mi` (fetch → clean → SQLite → stats/events → report), `analytics/sql/*.sql`, `analytics/notebooks/` (defterler `build.py` ile koddan üretilir), `analytics/tests/` (pytest). GitHub Actions (`.github/workflows/analytics.yml`) her gün `data/analytics/summary.json`'u, her cumartesi `reports/<YYYY-Www>/` haftalık raporunu ve çalıştırılmış defterleri üretir. Rutin bu dosyalara **dokunmaz**. Kod değişikliğinden önce `cd analytics && python -m pytest -q tests`.
 
-**Sonraya bırakılan analizler (Burak onayladı, henüz yapılmadı):** 1) piyasa genişliği ve yoğunlaşma (200 günlük ortalamanın üstündeki hisse oranı, ilk 10 hissenin endekse katkısı), 2) piyasa rejimi sınıflandırması ve ertesi gün hareket aralığı tahmini (kümeleme + oynaklık modeli), 3) takvim etkileri (haftanın günü, ay başı/sonu, opsiyon vadesi, tatil öncesi; 20 yıllık veriyle anlamlılık testi). Makro veri günü ve gün içi NQ analizleri istenmedi.
+
+Analizler: korelasyon/risk, olay çalışmaları (bilanço, yönetici işlemleri), piyasa genişliği ve yoğunlaşma (`mi/breadth.py`), rejim kümelemesi ve ertesi gün aralık tahmini (`mi/regime.py`), takvim etkileri (`mi/calendar.py`, uzun geçmiş `analytics/data/long/NDX.csv`, haftalık güncellenir).

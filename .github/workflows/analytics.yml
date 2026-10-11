@@ -51,7 +51,7 @@ jobs:
         run: |
           git config user.name "Burak Colay"
           git config user.email "170448628+burakcolay@users.noreply.github.com"
-          git add data/analytics analytics/data/prices reports analytics/notebooks
+          git add data/analytics analytics/data/prices analytics/data/long reports analytics/notebooks
           git diff --cached --quiet && exit 0
           git commit -m "analiz: $(date -u +%F) ($MODE)"
           for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 5; done

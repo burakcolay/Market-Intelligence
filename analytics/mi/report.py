@@ -8,8 +8,8 @@ from datetime import date
 import numpy as np
 import pandas as pd
 
-from . import charts, db, events, stats as st
-from .config import BENCHMARK, MACRO, REPORT_DIR, SITE_OUT
+from . import breadth as br, calendar as cal, charts, db, events, regime as rg, stats as st
+from .config import BENCHMARK, LONG_DIR, MACRO, REPORT_DIR, SITE_OUT, universe
 
 CROSS = ["NDX", "SPX", "US10Y", "DXY", "GOLD", "OIL", "BTC", "TLT", "VIX"]
 PAIRS = [("BTC", "NDX", "Bitcoin ↔ Nasdaq 100"), ("GOLD", "DXY", "Altın ↔ Dolar"), ("US10Y", "NDX", "10Y faiz ↔ Nasdaq 100"), ("TLT", "NDX", "Uzun tahvil ↔ Nasdaq 100")]
@@ -76,9 +76,36 @@ def compute() -> dict:
         "earnings_study": events.earnings_study(r, E),
         "insider_study": events.insider_study(r, T),
     }
+    # Genişlik, rejim, aralık tahmini, takvim etkileri
+    ph = pd.read_sql("SELECT code, date, high, low FROM prices WHERE code IN ('NDX')", con)
     con.close()
+    stocks = assets.index[assets["cls"] == "hisse"].tolist()
+    mcap = pd.Series({u["code"]: m for u in universe() if (m := _mcap(u["code"])) is not None})
+    out["breadth"] = br.analyze(close, stocks, mcap)
+    p200 = br.above_ma(close[[c for c in stocks if c in close.columns]], 200)
+    f = rg.features(close["NDX"], close["VIX"] if "VIX" in close else None, p200)
+    out["regime_ml"] = rg.regimes(f, close["NDX"])
+    hl = ph.pivot(index="date", columns="code", values=["high", "low"])
+    hl.index = pd.to_datetime(hl.index)
+    out["range_model"] = rg.range_model(hl["high"]["NDX"], hl["low"]["NDX"], close["NDX"], close["VIX"] if "VIX" in close else None)
+    lp = LONG_DIR / "NDX.csv"
+    if lp.exists():
+        L = pd.read_csv(lp, parse_dates=["date"]).set_index("date")["close"]
+        out["calendar"] = cal.analyze(L)
     out["narrative"] = narrative(out)
     return _clean(out)
+
+
+_UNI = None
+
+
+def _mcap(code: str):
+    """universe.json'daki piyasa değeri (SEC/CNBC betiği yazar)."""
+    global _UNI
+    if _UNI is None:
+        from .config import US_DIR
+        _UNI = {r["t"]: r.get("mcap") for r in json.loads((US_DIR / "universe.json").read_text())["rows"]}
+    return _UNI.get(code)
 
 
 def narrative(R: dict) -> list[str]:
@@ -119,6 +146,30 @@ def narrative(R: dict) -> list[str]:
         s.append(f"Yöneticilerin piyasadan alım yaptığı {al['n']} olayda ({ins.get('companies')} şirket) hisse sonraki iki ayda piyasaya göre ortalama {tr(al['mean'])} puan "
                  f"{'fazla' if al['mean'] > 0 else 'az'} getiri sağladı" + (f" ve fark istatistiksel olarak anlamlı. Ancak olaylar {per[0][:7]} – {per[1][:7]} arasındaki kısa bir döneme yığılmış; aynı piyasa ortamını paylaştıkları için bağımsız sayılmazlar, sonuç daha uzun bir dönemde doğrulanmadan sinyal sayılmamalı."
                     if al["p"] < 0.05 else "; ancak örnek küçük ve fark istatistiksel olarak anlamlı değil, tek başına sinyal sayılmamalı."))
+    B = R.get("breadth")
+    if B:
+        n_, c3 = B["now"], B["concentration"].get("3a", {})
+        s.append(f"Nasdaq 100 hisselerinin yaklaşık yüzde {n_['p200']:.0f} kadarı 200 günlük ortalamasının üstünde"
+                 + (" ve bu oran son bir ayda düştü" if n_["p200"] < n_["p200_1m"] - 5 else " ve bu oran son bir ayda arttı" if n_["p200"] > n_["p200_1m"] + 5 else "")
+                 + ". " + ("Yükseliş geniş tabana yayılmış." if n_["p200"] >= 65 else "Yükselişi hisselerin azınlığı taşıyor; dar tabanlı yükselişler, öncü birkaç hisse sendelediğinde daha kırılgandır." if n_["p200"] < 50 else "Katılım orta düzeyde."))
+        if c3.get("top10_share") is not None and c3["index_ret"] > 1:
+            s.append(f"Son üç ayda endeks getirisinin yaklaşık yüzde {c3['top10_share']:.0f} kadarı en büyük 10 şirketten geldi; eşit ağırlıklı sepet endeksten "
+                     + ("geride kaldı: yükseliş devlerin omzunda." if c3["equal_weight_ret"] < c3["index_ret"] - 2 else "önde: küçük hisseler de katılıyor." if c3["equal_weight_ret"] > c3["index_ret"] + 2 else "benzer gitti."))
+    G = R.get("regime_ml")
+    if G:
+        row = next((x for x in G["table"] if x["regime"] == G["current"]), None)
+        s.append(f"Kümeleme modeline göre piyasa {G['streak']} işlem günüdür '{G['current']}' rejiminde."
+                 + (f" Geçmişte bu rejimdeki günlerin ardından gelen {G['horizon']} işlem gününde Nasdaq 100 ortalama yüzde {tr(row['fwd_mean'])} değişti ve dönemlerin yüzde {row['fwd_hit']:.0f} kadarında yükseldi. Bu bir tahmin değil, benzer dönemlerin geçmiş davranışı." if row else ""))
+    M = R.get("range_model")
+    if M:
+        better = M["improvement"] > 0
+        s.append(f"Bir sonraki işlem günü için beklenen Nasdaq 100 aralığı (en yüksek ile en düşük arası) yaklaşık %{tr(M['next']['pct'], 2)}, yani {M['next']['points']:.0f} puan civarı; geçmiş isabete göre 10 günün 8'inde {M['next']['points_lo']:.0f} ile {M['next']['points_hi']:.0f} puan arasında kalır. "
+                 + (f"Model, görmediği son dönemde basit kurallardan (dünün aralığı, son ayın ortalaması) yaklaşık yüzde {M['improvement']:.0f} daha isabetli." if better else "Model sınama döneminde basit kuralları geçemedi; bu tahmin kaba bir rehberdir."))
+    C = R.get("calendar")
+    if C:
+        good = [t["name"] for t in C["tests"] if t["verdict"] == "kararlı ve anlamlı"]
+        s.append(f"Takvim etkileri {C['start'][:4]} yılından bu yana {len(C['tests'])} ayrı iddiayla test edildi: düzeltmesiz bakılınca {C['naive_significant']} tanesi anlamlı görünüyor, çoklu test düzeltmesinden sonra {C['adj_significant']} tanesi kalıyor. "
+                 + (f"Hem anlamlı hem iki dönemde tutarlı olanlar: {', '.join(good)}." if good else "Düzeltmeden sonra kalan etkiler iki dönemde tutarlı değil." if C['adj_significant'] else "Yaygın takvim efsanelerinin hiçbiri bu veride doğrulanmıyor; çoğu, şans eseri anlamlı görünen sonuçlardan ibaret."))
     if R["anomalies"]:
         names = ", ".join(sorted({a["code"] for a in R["anomalies"]})[:6])
         s.append(f"Son iki haftada getirisi ya da hacmi kendi normalinin çok dışına çıkan varlıklar: {names}. Bu günlerin arkasında genellikle bilanço, haber ya da endeks değişikliği olur.")
@@ -147,6 +198,20 @@ def write_weekly(R: dict, quality: dict) -> str:
     es = R["earnings_study"]
     if es.get("avg_path"):
         charts.event_paths(es["path_days"], es["avg_path"], d / "bilanco.png")
+
+    B, G, M, C = R.get("breadth"), R.get("regime_ml"), R.get("range_model"), R.get("calendar")
+    if B:
+        cols = B["series_cols"]
+        ser = lambda k: pd.Series({pd.Timestamp(r[0]): r[cols.index(k)] for r in B["series"]})
+        charts.lines({"200 g. ortalama üstü %": ser("p200"), "50 g. ortalama üstü %": ser("p50")}, d / "genislik.png", "Piyasa genişliği: hisselerin yüzde kaçı ortalamasının üstünde", "%", zero=False)
+    RCOL = {"Güçlü yükseliş": charts.UP, "Kararsız": charts.MUTED, "Yükseliş": charts.UP, "Düzeltme": "#D97706", "Stres": charts.DOWN}
+    if G:
+        charts.regime_strip(G["timeline"], RCOL, d / "rejim.png")
+    if M:
+        charts.lines({"Gerçekleşen": pd.Series({pd.Timestamp(a): b for a, b, _ in M["recent"]}), "Model": pd.Series({pd.Timestamp(a): c for a, _, c in M["recent"]})},
+                     d / "aralik.png", "Nasdaq 100 günlük aralık: gerçekleşen ve tahmin (%)", "%", zero=False)
+    if C:
+        charts.calendar_bars(C["tests"], d / "takvim.png")
 
     def tbl(rows, cols, heads):
         h = "| " + " | ".join(heads) + " |\n|" + "|".join("---" for _ in heads) + "|\n"
@@ -188,6 +253,35 @@ _Otomatik üretildi: {R['updated']} kapanış verisiyle. Kaynak kod: [`analytics
 Getirisi ya da hacmi, önceki 63 günün ortalamasından en az 3 standart sapma uzak olanlar.
 
 {an}
+## Piyasa genişliği ve yoğunlaşma
+{'![Genişlik](genislik.png)' if B else ''}
+
+{(lambda c: tbl(c.get('leaders', []), [lambda r: r['code'], lambda r: tr(r['contrib'], 2), lambda r: tr(r['ret'], 1), lambda r: tr(r['weight'], 1)], ['Kod', 'Endekse katkı (puan)', 'Getiri %', 'Ağırlık %']))(B['concentration'].get('3a', {})) if B else ''}
+## Piyasa rejimi (kümeleme)
+{f'''![Rejimler](rejim.png)
+
+Bugün: **{G['current']}** ({G['streak']} işlem günüdür). Rejimler oynaklık, trend, 200 günlük ortalamaya uzaklık, VIX ve genişlikten k-ortalamalar ile çıkarıldı; tablo betimleyicidir.
+
+''' + tbl(G['table'], [lambda r: r['regime'], lambda r: tr(r['share'], 0), lambda r: tr(r['vol21'], 0), lambda r: tr(r['ret63'], 1), lambda r: tr(r['fwd_mean'], 1), lambda r: tr(r['fwd_hit'], 0)],
+          ['Rejim', 'Gün payı %', 'Oynaklık %', '3 ay getiri %', f"Sonraki {G['horizon']} gün ort. %", 'Yükselme oranı %']) if G else ''}
+## Ertesi gün aralık tahmini
+{f'''![Aralık](aralik.png)
+
+Beklenen aralık: **{M['next']['points']:.0f} puan** (%{tr(M['next']['pct'], 2)}); 10 günün 8'inde {M['next']['points_lo']:.0f}–{M['next']['points_hi']:.0f} puan.
+
+| Yöntem | Ort. mutlak hata | R² |
+|---|---|---|
+| Model (logaritmik HAR + VIX) | {tr(M['model']['mae'], 3)} | {tr(M['model']['r2'], 2)} |
+| Yarın dün gibi | {tr(M['naive_yesterday']['mae'], 3)} | {tr(M['naive_yesterday']['r2'], 2)} |
+| Yarın son ayın ortalaması | {tr(M['naive_month']['mae'], 3)} | {tr(M['naive_month']['r2'], 2)} |
+
+Sınama: {M['test_period'][0]} – {M['test_period'][1]}, ileriye doğru yürüyen pencere (aylık yeniden eğitim).
+''' if M else ''}
+## Takvim etkileri
+{f'''![Takvim](takvim.png)
+
+{C['start'][:4]}–{C['end'][:4]}, {C['n_days']} gün, {len(C['tests'])} iddia. Düzeltmesiz anlamlı: {C['naive_significant']}, Benjamini–Hochberg sonrası: {C['adj_significant']}.
+''' if C else ''}
 ## Araştırma: Bilanço sonrası fiyat davranışı
 {f'''![Bilanço sonrası](bilanco.png)
 

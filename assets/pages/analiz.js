@@ -53,6 +53,80 @@ async function main() {
   const trTot = Object.values(tr).reduce((s, v) => s + v, 0) || 1;
   const buckets = E.drift_by_bucket || {};
   const PATHC = { olumsuz: '#B42318', nötr: '#8A90A0', olumlu: '#0B7A47' };
+  const RC = { 'Güçlü yükseliş': '#0B7A47', 'Kararsız': '#8A90A0', 'Yükseliş': '#0B7A47', 'Düzeltme': '#D97706', 'Stres': '#B42318' };
+  const Bd = R.breadth, G = R.regime_ml, M = R.range_model, C = R.calendar;
+
+  const breadthSec = () => {
+    if (!Bd) return '';
+    const n_ = Bd.now, c3 = Bd.concentration['3a'] || {}, c1y = Bd.concentration['1y'] || {};
+    const col = (k) => Bd.series_cols.indexOf(k);
+    return `<section class="card"><span class="eyebrow accent">Piyasa genişliği ve yoğunlaşma</span>
+      <h2 style="font-size:20px">Yükselişi kaç hisse taşıyor?</h2>
+      <div class="grid" style="--min:170px">
+        <div class="kpi"><span class="l">200 g. ortalama üstü</span><span class="v">%${n(n_.p200, 0)}</span><span class="s ${n_.p200 >= n_.p200_1m ? 'up' : 'down'}">1 ay önce %${n(n_.p200_1m, 0)}</span></div>
+        <div class="kpi"><span class="l">50 g. ortalama üstü</span><span class="v">%${n(n_.p50, 0)}</span><span class="s flat">kısa vadeli katılım</span></div>
+        <div class="kpi"><span class="l">52 haftalık zirve / dip</span><span class="v">${n_.new_high} / ${n_.new_low}</span><span class="s flat">bugün yeni zirve ve dip yapan hisse</span></div>
+        <div class="kpi"><span class="l">İlk 10 şirketin payı (3 ay)</span><span class="v">${c3.top10_share == null ? '—' : '%' + n(c3.top10_share, 0)}</span><span class="s flat">endeks getirisinden</span></div>
+        <div class="kpi"><span class="l">Eşit ağırlık − endeks (1 yıl)</span><span class="v ${tone(c1y.equal_weight_ret - c1y.index_ret)}">${sgn(c1y.equal_weight_ret - c1y.index_ret)} puan</span><span class="s flat">eksi: devler sürüklüyor</span></div>
+      </div>
+      ${lineSVG([{ name: '200 g. ortalama üstü hisse %', color: '#1F4FD1', pts: Bd.series.map((r) => [r[0], r[col('p200')]]) }, { name: '50 g. ortalama üstü hisse %', color: '#D97706', pts: Bd.series.map((r) => [r[0], r[col('p50')]]) }], { zero: false, yfmt: (v) => '%' + n(v, 0) })}
+      ${lineSVG([{ name: 'Nasdaq 100 (piyasa değeri ağırlıklı)', color: '#16181D', pts: Bd.series.map((r) => [r[0], r[col('ndx')]]) }, { name: 'Eşit ağırlıklı sepet', color: '#7C3AED', pts: Bd.series.map((r) => [r[0], r[col('ew')]]) }], { zero: false, h: 200, yfmt: (v) => n(v, 0) })}
+      <div class="row2">
+        <div><b class="small">Son 3 ayda endekse en çok katkı</b><div class="tbl-wrap"><table class="tbl"><tbody>${map(c3.leaders || [], (x) => `<tr><td><a href="sirket.html?t=${esc(x.code)}"><b class="mono">${esc(x.code)}</b></a></td><td class="r num">${sgn(x.contrib, 2)} puan</td><td class="r num muted">ağırlık %${n(x.weight, 1)}</td></tr>`)}</tbody></table></div></div>
+        <div><b class="small">En çok aşağı çekenler</b><div class="tbl-wrap"><table class="tbl"><tbody>${map(c3.laggards || [], (x) => `<tr><td><a href="sirket.html?t=${esc(x.code)}"><b class="mono">${esc(x.code)}</b></a></td><td class="r num down">${sgn(x.contrib, 2)} puan</td><td class="r num muted">ağırlık %${n(x.weight, 1)}</td></tr>`)}</tbody></table></div></div>
+      </div>
+      <p class="small muted">Endeks yükselirken genişlik düşüyorsa yükseliş az sayıda dev şirkete dayanıyor demektir; bu şirketlerden biri sendelediğinde endeksi taşıyacak geniş bir taban yoktur. Not: evren bugünkü Nasdaq 100 olduğu için geçmiş genişlik olduğundan biraz yüksek görünür.</p></section>`;
+  };
+
+  const regimeSec = () => {
+    if (!G) return '';
+    const tl = G.timeline;
+    return `<section class="card"><span class="eyebrow accent">Makine öğrenmesi · kümeleme</span>
+      <h2 style="font-size:20px">Piyasa hangi rejimde?</h2>
+      <p class="muted small">Her gün beş özellikle tarif edildi: 1 aylık oynaklık, 3 aylık getiri, 200 günlük ortalamaya uzaklık, VIX ve genişlik. K-ortalamalar (k-means) bu günleri dört gruba ayırdı; gruplara merkezlerine bakılarak ad verildi.</p>
+      <div class="grid" style="--min:170px">
+        <div class="kpi"><span class="l">Bugünkü rejim</span><span class="v" style="color:${RC[G.current] || 'inherit'}">${esc(G.current)}</span><span class="s flat">${G.streak} işlem günüdür (${esc(G.since)}'den beri)</span></div>
+        <div class="kpi"><span class="l">Ertesi gün aynı rejimde kalma</span><span class="v">%${n(G.stay_prob, 0)}</span><span class="s flat">geçmiş geçişlere göre</span></div>
+      </div>
+      <div class="regime-strip">${map(tl, (x) => `<i style="background:${RC[x[1]] || '#ccc'}" title="${esc(x[0])}: ${esc(x[1])}"></i>`)}</div>
+      <div class="legend-row"><span>${esc(tl[0][0])}</span>${map(G.table, (r) => `<span><i style="background:${RC[r.regime]}"></i>${esc(r.regime)}</span>`)}<span>${esc(tl[tl.length - 1][0])}</span></div>
+      <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Rejim</th><th class="r">Günlerin payı</th><th class="r">Ort. süre</th><th class="r">Oynaklık</th><th class="r">3 ay getiri</th><th class="r">Genişlik</th><th class="r">Sonraki ${G.horizon} gün ort.</th><th class="r">Yükselme oranı</th><th class="r">En kötü %5</th></tr></thead><tbody>
+      ${map(G.table, (r) => `<tr class="${r.regime === G.current ? 'me' : ''}"><td><b style="color:${RC[r.regime]}">${esc(r.regime)}</b></td><td class="r num">%${n(r.share, 0)}</td><td class="r num">${n(r.avg_days, 0)} gün</td><td class="r num">%${n(r.vol21, 0)}</td><td class="r num">${sgn(r.ret63)}%</td><td class="r num">%${n(r.breadth, 0)}</td><td class="r num ${tone(r.fwd_mean)}">${sgn(r.fwd_mean)}%</td><td class="r num">%${n(r.fwd_hit, 0)}</td><td class="r num down">${sgn(r.fwd_worst)}%</td></tr>`)}
+      </tbody></table></div>
+      <p class="small muted">Bu tablo tahmin değil, geçmişteki benzer günlerin ardından ne olduğunu özetler. Kümeleme tüm geçmiş veriyle yapıldığı için betimleyicidir; ileriye dönük sinyal olarak kullanılmamalı.</p></section>`;
+  };
+
+  const rangeSec = () => {
+    if (!M) return '';
+    const x = M.next;
+    return `<section class="card"><span class="eyebrow accent">Tahmin modeli</span>
+      <h2 style="font-size:20px">Bir sonraki işlem günü Nasdaq 100 ne kadar oynar?</h2>
+      <div class="grid" style="--min:190px">
+        <div class="kpi big"><span class="l">Beklenen aralık (en yüksek − en düşük)</span><span class="v">${n(x.points, 0)} puan</span><span class="s flat">%${n(x.pct, 2)} · son 1 yıl ort. %${n(M.avg_range_1y, 2)}</span></div>
+        <div class="kpi"><span class="l">10 günün 8'inde bu aralıkta</span><span class="v">${n(x.points_lo, 0)} – ${n(x.points_hi, 0)}</span><span class="s flat">sınamada isabet %${n(M.interval_hit, 0)}</span></div>
+        <div class="kpi"><span class="l">Basit kurallara göre iyileşme</span><span class="v ${M.improvement > 0 ? 'up' : 'down'}">%${n(M.improvement, 0)}</span><span class="s flat">ortalama mutlak hata</span></div>
+      </div>
+      ${lineSVG([{ name: 'Gerçekleşen aralık %', color: '#16181D', pts: M.recent.map((r) => [r[0], r[1]]) }, { name: 'Modelin tahmini %', color: '#1F4FD1', pts: M.recent.map((r) => [r[0], r[2]]) }], { zero: false, h: 200, yfmt: (v) => '%' + n(v, 1) })}
+      <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Yöntem (${esc(M.test_period[0])} – ${esc(M.test_period[1])}, ${M.n_test} gün)</th><th class="r">Ort. mutlak hata</th><th class="r">R²</th></tr></thead><tbody>
+        <tr class="me"><td>Model (logaritmik HAR + VIX)</td><td class="r num">${n(M.model.mae, 3)}</td><td class="r num">${n(M.model.r2, 2)}</td></tr>
+        <tr><td>"Yarın dün gibi olur"</td><td class="r num">${n(M.naive_yesterday.mae, 3)}</td><td class="r num">${n(M.naive_yesterday.r2, 2)}</td></tr>
+        <tr><td>"Yarın son ayın ortalaması olur"</td><td class="r num">${n(M.naive_month.mae, 3)}</td><td class="r num">${n(M.naive_month.r2, 2)}</td></tr>
+      </tbody></table></div>
+      <p class="small muted">Model dünün, son haftanın ve son ayın aralığına ve VIX'e bakar. Sınama ileriye doğru yürüyerek yapıldı: model her ay yalnızca o güne kadarki veriyle yeniden eğitildi ve görmediği sonraki ayı tahmin etti. Yön tahmini yapmaz; yalnızca ne kadar hareket beklendiğini söyler.</p></section>`;
+  };
+
+  const calSec = () => {
+    if (!C) return '';
+    const T = C.tests.slice().sort((a, b) => a.p - b.p);
+    const vb = (v) => (v === 'kararlı ve anlamlı' ? 'b-good' : v === 'fark yok' ? 'b-flat' : 'b-mid');
+    return `<section class="card"><span class="eyebrow accent">Hipotez testi</span>
+      <h2 style="font-size:20px">Takvim etkileri gerçek mi?</h2>
+      <p class="muted small">${esc(C.start.slice(0, 4))}–${esc(C.end.slice(0, 4))}, ${n(C.n_days, 0)} işlem günü. ${C.tests.length} iddia test edildi: düzeltmesiz ${C.naive_significant} tanesi anlamlı görünüyor, çoklu test düzeltmesinden (Benjamini–Hochberg) sonra ${C.adj_significant} tanesi kalıyor. "Kararlı" = etki verinin iki yarısında (${esc(C.split.slice(0, 4))} öncesi ve sonrası) aynı yönde.</p>
+      <div class="tbl-wrap"><table class="tbl"><thead><tr><th>İddia</th><th class="r">Gün</th><th class="r">Ort. günlük getiri</th><th class="r">Diğer günler</th><th class="r">p</th><th class="r">Düzeltilmiş p</th><th class="r">1. yarı / 2. yarı fark</th><th>Sonuç</th></tr></thead><tbody>
+      ${map(T, (t) => `<tr><td>${esc(t.name.replace(/^gün:|^ay:/, ''))}</td><td class="r num">${n(t.n, 0)}</td><td class="r num ${tone(t.mean)}">${sgn(t.mean, 3)}%</td><td class="r num">${sgn(t.rest, 3)}%</td><td class="r num">${pv(t.p)}</td><td class="r num">${pv(t.p_adj)}</td><td class="r num">${sgn(t.diff_1, 3)} / ${sgn(t.diff_2, 3)}</td><td><span class="badge ${vb(t.verdict)}">${esc(t.verdict)}</span></td></tr>`)}
+      </tbody></table></div>
+      <p class="small muted">Çok sayıda test yapınca bazıları şans eseri anlamlı çıkar: 20 testte %5 düzeyinde ortalama 1 tane. Düzeltme bu yanılgıyı ayıklar. Gün içinde ve işlem maliyetleri hesaba katılmadan ölçülmüştür.</p></section>`;
+  };
 
   app.innerHTML = `<div class="wrap">
     <section class="card lead">
@@ -95,6 +169,11 @@ async function main() {
         ${map(ddNow, (x) => `<tr><td><a href="sirket.html?t=${esc(x.code)}"><b class="mono">${esc(x.code)}</b></a> <small class="muted">${esc(x.name || '')}</small></td><td class="r num down">${sgn(x.current_drawdown)}%</td><td class="r num">${sgn(x.max_drawdown)}% <small class="muted">${esc(x.trough_date)}</small></td></tr>`)}
         </tbody></table></div></section>
     </div>
+
+    ${breadthSec()}
+    ${regimeSec()}
+    ${rangeSec()}
+    ${calSec()}
 
     ${E.avg_path ? `<section class="card">
       <span class="eyebrow accent">Araştırma · olay çalışması</span>

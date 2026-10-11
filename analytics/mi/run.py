@@ -16,6 +16,9 @@ def main(argv: list[str]) -> int:
     mode = argv[0] if argv and not argv[0].startswith("-") else "daily"
     if "--no-fetch" not in argv:
         counts = fetch.fetch_all()
+        from .config import LONG_DIR
+        if mode == "weekly" or not (LONG_DIR / "NDX.csv").exists():
+            fetch.fetch_long()
         if len(counts) < 50:
             log.error("Çok az varlık indirildi (%d); eski veriyle devam ediliyor.", len(counts))
     built = db.build()

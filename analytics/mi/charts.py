@@ -89,3 +89,29 @@ def risk_scatter(df: pd.DataFrame, path: Path):
     ax.set_ylabel("Yıllık oynaklık (%)")
     ax.set_title("Risk haritası: endekse duyarlılık ve oynaklık")
     _save(fig, path)
+
+
+def regime_strip(timeline: list, colors: dict, path: Path):
+    fig, ax = plt.subplots(figsize=(7.4, 1.9))
+    ax.grid(False)
+    d = pd.to_datetime([t[0] for t in timeline])
+    for i in range(len(d) - 1):
+        ax.axvspan(d[i], d[i + 1], color=colors.get(timeline[i][1], "#ccc"), lw=0)
+    ax.set_yticks([])
+    from matplotlib.patches import Patch
+    ax.legend(handles=[Patch(color=c, label=k) for k, c in colors.items() if any(t[1] == k for t in timeline)],
+              ncol=5, frameon=False, fontsize=8, loc="upper center", bbox_to_anchor=(0.5, -0.45))
+    ax.set_title("Piyasa rejimleri (kümeleme)")
+    _save(fig, path)
+
+
+def calendar_bars(tests: list, path: Path):
+    t = [x for x in tests if x["name"].startswith("gün:")] + [x for x in tests if not x["name"].startswith(("gün:", "ay:"))]
+    names = [x["name"].replace("gün:", "") for x in t]
+    fig, ax = plt.subplots(figsize=(7.4, 3.2))
+    ax.bar(names, [x["diff"] for x in t], color=[UP if x["p_adj"] < 0.05 else LINE for x in t], edgecolor=MUTED)
+    ax.axhline(0, color=MUTED, lw=0.8)
+    ax.set_ylabel("Diğer günlere göre fark (%)")
+    plt.setp(ax.get_xticklabels(), rotation=30, ha="right")
+    ax.set_title("Takvim etkileri: gri = anlamlı değil, yeşil = düzeltmeden sonra anlamlı")
+    _save(fig, path)
