@@ -58,7 +58,7 @@ async function main() {
 
   const breadthSec = () => {
     if (!Bd) return '';
-    const n_ = Bd.now, c3 = Bd.concentration['3a'] || {}, c1y = Bd.concentration['1y'] || {};
+    const n_ = Bd.now, c3 = Bd.concentration['3a'] || {};
     const col = (k) => Bd.series_cols.indexOf(k);
     return `<section class="card"><span class="eyebrow accent">Piyasa genişliği ve yoğunlaşma</span>
       <h2 style="font-size:20px">Yükselişi kaç hisse taşıyor?</h2>
@@ -67,7 +67,7 @@ async function main() {
         <div class="kpi"><span class="l">50 g. ortalama üstü</span><span class="v">%${n(n_.p50, 0)}</span><span class="s flat">kısa vadeli katılım</span></div>
         <div class="kpi"><span class="l">52 haftalık zirve / dip</span><span class="v">${n_.new_high} / ${n_.new_low}</span><span class="s flat">bugün yeni zirve ve dip yapan hisse</span></div>
         <div class="kpi"><span class="l">İlk 10 şirketin payı (3 ay)</span><span class="v">${c3.top10_share == null ? '—' : '%' + n(c3.top10_share, 0)}</span><span class="s flat">endeks getirisinden</span></div>
-        <div class="kpi"><span class="l">Eşit ağırlık − endeks (1 yıl)</span><span class="v ${tone(c1y.equal_weight_ret - c1y.index_ret)}">${sgn(c1y.equal_weight_ret - c1y.index_ret)} puan</span><span class="s flat">eksi: devler sürüklüyor</span></div>
+        <div class="kpi"><span class="l">Eşit ağırlık − endeks (3 ay)</span><span class="v ${tone(c3.equal_weight_ret - c3.index_ret)}">${sgn(c3.equal_weight_ret - c3.index_ret)} puan</span><span class="s flat">eksi: devler sürüklüyor</span></div>
       </div>
       ${lineSVG([{ name: '200 g. ortalama üstü hisse %', color: '#1F4FD1', pts: Bd.series.map((r) => [r[0], r[col('p200')]]) }, { name: '50 g. ortalama üstü hisse %', color: '#D97706', pts: Bd.series.map((r) => [r[0], r[col('p50')]]) }], { zero: false, yfmt: (v) => '%' + n(v, 0) })}
       ${lineSVG([{ name: 'Nasdaq 100 (piyasa değeri ağırlıklı)', color: '#16181D', pts: Bd.series.map((r) => [r[0], r[col('ndx')]]) }, { name: 'Eşit ağırlıklı sepet', color: '#7C3AED', pts: Bd.series.map((r) => [r[0], r[col('ew')]]) }], { zero: false, h: 200, yfmt: (v) => n(v, 0) })}
@@ -75,7 +75,7 @@ async function main() {
         <div><b class="small">Son 3 ayda endekse en çok katkı</b><div class="tbl-wrap"><table class="tbl"><tbody>${map(c3.leaders || [], (x) => `<tr><td><a href="sirket.html?t=${esc(x.code)}"><b class="mono">${esc(x.code)}</b></a></td><td class="r num">${sgn(x.contrib, 2)} puan</td><td class="r num muted">ağırlık %${n(x.weight, 1)}</td></tr>`)}</tbody></table></div></div>
         <div><b class="small">En çok aşağı çekenler</b><div class="tbl-wrap"><table class="tbl"><tbody>${map(c3.laggards || [], (x) => `<tr><td><a href="sirket.html?t=${esc(x.code)}"><b class="mono">${esc(x.code)}</b></a></td><td class="r num down">${sgn(x.contrib, 2)} puan</td><td class="r num muted">ağırlık %${n(x.weight, 1)}</td></tr>`)}</tbody></table></div></div>
       </div>
-      <p class="small muted">Endeks yükselirken genişlik düşüyorsa yükseliş az sayıda dev şirkete dayanıyor demektir; bu şirketlerden biri sendelediğinde endeksi taşıyacak geniş bir taban yoktur. Not: evren bugünkü Nasdaq 100 olduğu için geçmiş genişlik olduğundan biraz yüksek görünür.</p></section>`;
+      <p class="small muted">Endeks yükselirken genişlik düşüyorsa yükseliş az sayıda dev şirkete dayanıyor demektir; bu şirketlerden biri sendelediğinde endeksi taşıyacak geniş bir taban yoktur. Not: evren bugünkü Nasdaq 100. Son yıllarda endekse giren hızlı yükselen şirketler (ör. Palantir, AppLovin) geçmişe dönük sepette tam ağırlıkla duruyor; bu yüzden eşit ağırlıklı sepetin uzun dönem performansı olduğundan iyi, geçmiş genişlik olduğundan yüksek görünür (hayatta kalma yanlılığı). Kısa dönem karşılaştırmalar (3 ay) bu etkiden daha az etkilenir.</p></section>`;
   };
 
   const regimeSec = () => {
