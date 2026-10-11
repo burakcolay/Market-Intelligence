@@ -8,7 +8,7 @@ from datetime import date
 import numpy as np
 import pandas as pd
 
-from . import breadth as br, calendar as cal, charts, db, events, regime as rg, stats as st
+from . import breadth as br, calendar as cal, charts, checks, db, events, regime as rg, stats as st
 from .config import BENCHMARK, LONG_DIR, MACRO, REPORT_DIR, SITE_OUT, universe
 
 CROSS = ["NDX", "SPX", "US10Y", "DXY", "GOLD", "OIL", "BTC", "TLT", "VIX"]
@@ -92,6 +92,7 @@ def compute() -> dict:
     if lp.exists():
         L = pd.read_csv(lp, parse_dates=["date"]).set_index("date")["close"]
         out["calendar"] = cal.analyze(L)
+    out["checks"] = checks.run(close, r)
     out["narrative"] = narrative(out)
     return _clean(out)
 
@@ -293,7 +294,8 @@ Sınama: {M['test_period'][0]} – {M['test_period'][1]}, ileriye doğru yürüy
 Olumlu ve olumsuz grup farkı: {tr(es['drift_spread']['diff'], 2)} puan (Welch t-testi p={tr(es['drift_spread']['p'], 3)}). Tepki ile sonraki getiri arasındaki sıra korelasyonu: {tr(es['spearman']['rho'], 3)} (p={tr(es['spearman']['p'], 3)}).
 ''' if es.get('avg_path') else '_Yeterli veri yok._'}
 ## Veri kalitesi
-- {ok} varlıkta 200 günden uzun temiz fiyat geçmişi var.
+- Otomatik kontroller: {R['checks']['passed']}/{R['checks']['total']} geçti.
+{''.join(f"- {c['title']}: {'geçti' if c['ok'] else str(len(c['failed'])) + ' sorun (' + ', '.join(x['code'] for x in c['failed'][:6]) + ')'}\n" for c in R['checks']['checks'])}- {ok} varlıkta 200 günden uzun temiz fiyat geçmişi var.
 - Temizleme sırasında {fixed} tek günlük hatalı fiyat düzeltildi.
 """
     (d / "README.md").write_text(md)

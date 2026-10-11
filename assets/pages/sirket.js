@@ -80,7 +80,7 @@ async function main() {
       <section class="card" style="padding:8px 12px"><div class="tbl-wrap"><table class="tbl fin"><thead><tr><th>${esc(title)}</th>${map(L, (r) => `<th class="r">${esc(lab(r))}</th>`)}</tr></thead><tbody>
       ${map(shown, ([k, l, f, b]) => (k === '_' ? `<tr class="group"><td colspan="${L.length + 1}">${l}</td></tr>` : `<tr class="${b ? 'strong' : ''}"><td>${l}</td>${map(L, (r) => `<td class="r num">${fmtS(r[k], f)}</td>`)}</tr>`))}
       </tbody></table></div></section>
-      <p class="source">Kaynak: SEC EDGAR (XBRL), şirketin kendi bildirimleri.${f.currency && f.currency !== 'USD' ? ` Rakamlar ${esc(f.currency)} cinsinden.` : ''} Bazı şirketler bazı kalemleri ayrı bildirmez; o satırlar boş kalır. Çeyreklik nakit akışı ve 4. çeyrek, yılbaşından bu yana toplamlardan çıkarılarak hesaplanır.</p>`;
+      <p class="source">Kaynak: SEC EDGAR (XBRL), şirketin kendi bildirimleri.${f.currency && f.currency !== 'USD' ? ` Rakamlar ${esc(f.currency)} cinsinden.` : ''}${f.currency_orig ? ` Şirket ${esc(f.currency_orig)} ile raporluyor; rakamlar bugünkü kurla (1 ${esc(f.currency_orig)} = $${n(f.fx, 3)}) dolara çevrildi, geçmiş yıllar da aynı kurla.` : ''} Bazı şirketler bazı kalemleri ayrı bildirmez; o satırlar boş kalır. Çeyreklik nakit akışı ve 4. çeyrek, yılbaşından bu yana toplamlardan çıkarılarak hesaplanır.</p>`;
   };
 
   const oran = () => {

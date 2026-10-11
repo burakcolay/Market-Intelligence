@@ -201,6 +201,10 @@ async function main() {
       ${map(R.anomalies.slice().sort((a, b) => b.date.localeCompare(a.date)), (a) => `<tr><td class="num">${esc(a.date)}</td><td><b class="mono">${esc(a.code)}</b> <small class="muted">${esc(a.name || '')}</small></td><td class="r num ${tone(a.ret)}">${sgn(a.ret, 2)}</td><td class="r num">${a.z_ret == null ? '—' : sgn(a.z_ret, 1)}</td><td class="r num">${a.z_vol == null ? '—' : sgn(a.z_vol, 1)}</td></tr>`)}
       </tbody></table></div></section>` : ''}
 
+    ${R.checks ? `<section class="card"><div class="head-row"><span class="eyebrow">Otomatik veri kontrolleri</span><span class="badge ${R.checks.passed === R.checks.total ? 'b-good' : 'b-mid'}">${R.checks.passed}/${R.checks.total} geçti</span></div>
+      <div class="checks">${map(R.checks.checks, (c) => `<div class="${c.ok ? 'ok' : 'no'}"><i>${c.ok ? '✓' : '!'}</i><div><b>${esc(c.title)}</b> <small class="muted">(${c.total} kayıt)</small><br><small class="muted">${esc(c.why)}</small>${c.ok ? '' : `<br><small>${c.failed.slice(0, 6).map((x) => `<b class="mono">${esc(x.code)}</b> ${esc(x.detail)}`).join(' · ')}${c.failed.length > 6 ? ` … +${c.failed.length - 6}` : ''}</small>`}</div></div>`)}</div>
+      <p class="small muted">Ayrıca her çalıştırmada 16 şirketin gelir ve net kârı, resmi yıllık raporlarındaki (10-K) rakamlarla otomatik karşılaştırılır; uyuşmazsa analiz yayınlanmaz.</p></section>` : ''}
+
     <section class="card"><span class="eyebrow">Yöntem ve kaynak kod</span>
       <div class="facts">
         <div><b>Veri hattı</b><span>Yahoo Finance (yedek Stooq) ve SEC EDGAR → Pandas ile temizlik → SQLite veritabanı → istatistik → JSON ve haftalık rapor. GitHub Actions ile her gün otomatik.</span></div>

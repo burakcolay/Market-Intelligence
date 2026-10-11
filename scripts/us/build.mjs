@@ -105,7 +105,7 @@ async function prices(tickers) {
 
 /* ---------------- 3. Finansallar (XBRL) ---------------- */
 const TAGS = {
-  revenue: ['RevenueFromContractWithCustomerExcludingAssessedTax', 'Revenues', 'SalesRevenueNet', 'RevenueFromContractWithCustomerIncludingAssessedTax', 'Revenue'],
+  revenue: ['RevenueFromContractWithCustomerExcludingAssessedTax', 'Revenues', 'SalesRevenueNet', 'RevenueFromContractWithCustomerIncludingAssessedTax', 'Revenue', 'RegulatedAndUnregulatedOperatingRevenue', 'ElectricUtilityRevenue'],
   cogs: ['CostOfRevenue', 'CostOfGoodsAndServicesSold', 'CostOfGoodsSold', 'CostOfServices', 'CostOfSales'],
   gross: ['GrossProfit'],
   rnd: ['ResearchAndDevelopmentExpense', 'ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost'],
@@ -199,6 +199,26 @@ function splitAdjust(rows) {
     for (let j = 0; j < i; j++) { const x = rows[j]; if (x.shDil != null) x.shDil *= f; if (x.eps != null) x.eps /= f; if (x.dps != null) x.dps /= f; }
   }
 }
+// Avro vb. ile raporlayan şirketler (ASML, Ferrovial...) sitede dolar gösterildiği için bugünkü kurla çevrilir.
+// Not: geçmiş yıllar da bugünkü kurla çevrilir; büyüme oranları yerel para birimindeki büyümeyi gösterir.
+async function fxRates() {
+  const out = {};
+  try {
+    const j = await get('https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=EUR%3D%7CGBP%3D%7CCNY%3D&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1');
+    for (const q of j?.FormattedQuoteResult?.FormattedQuote || []) {
+      const v = num(q.last); if (!v) continue;
+      if (q.symbol === 'EUR=') out.EUR = v; else if (q.symbol === 'GBP=') out.GBP = v; else if (q.symbol === 'CNY=') out.CNY = 1 / v;   // CNY= yuan/dolar
+    }
+  } catch (e) { L('Kur hatası:', e.message); }
+  L('Kurlar (1 birim = $):', JSON.stringify(out));
+  return out;
+}
+const NON_MONEY = new Set(['end', 'fy', 'shDil', 'revGrowth']);
+function toUSD(fin, rate) {
+  if (!rate) return fin;                                  // kur yoksa olduğu gibi bırak (sitede para birimi yazar)
+  const conv = (r) => Object.fromEntries(Object.entries(r).map(([k, v]) => [k, typeof v === 'number' && !NON_MONEY.has(k) ? v * rate : v]));
+  return { ...fin, currency: 'USD', currency_orig: fin.currency, fx: rate, annual: fin.annual.map(conv), quarterly: fin.quarterly.map(conv), ttm: conv(fin.ttm), bs: conv(fin.bs) };
+}
 async function financials(cik) {
   const cf = await get(`https://data.sec.gov/api/xbrl/companyfacts/CIK${pad(cik)}.json`);
   const F = cf.facts || {};
@@ -220,13 +240,15 @@ async function financials(cik) {
   splitAdjust(annual); splitAdjust(quarterly);
   const FLOW = Object.keys(TAGS).filter((k) => !['eps', 'dps', 'shDil'].includes(k)).concat(['eps', 'dps']);
   const last4 = quarterly.slice(-4);
-  const ttm = last4.length === 4 ? Object.fromEntries(FLOW.map((k) => [k, last4.every((q) => q[k] != null) ? last4.reduce((s, q) => s + q[k], 0) : null])) : { ...(annual.at(-1) || {}) };
+  // Çeyrekler yıllık rapordan eskiyse (yabancı şirketler çeyreklik XBRL vermez) son 12 ay = son yıllık
+  const qFresh = last4.length === 4 && (!annual.length || last4.at(-1).end >= annual.at(-1).end);
+  const ttm = qFresh ? Object.fromEntries(FLOW.map((k) => [k, last4.every((q) => q[k] != null) ? last4.reduce((s, q) => s + q[k], 0) : null])) : { ...(annual.at(-1) || {}) };
   if (ttm.eps == null && annual.at(-1)?.eps != null && last4.at(-1)?.end === annual.at(-1).end) ttm.eps = annual.at(-1).eps;
   const prev4 = quarterly.slice(-8, -4);
-  const revPrevTTM = prev4.length === 4 && prev4.every((q) => q.revenue != null) ? prev4.reduce((s, q) => s + q.revenue, 0) : annual.at(-2)?.revenue;
+  const revPrevTTM = qFresh && prev4.length === 4 && prev4.every((q) => q.revenue != null) ? prev4.reduce((s, q) => s + q.revenue, 0) : annual.at(-2)?.revenue;
   const bs = { end: inst.assets.at(-1)?.end }; for (const k of Object.keys(INSTANT)) bs[k] = inst[k].at(-1)?.val ?? null;
   return {
-    currency, annual, quarterly, ttm: { ...ttm, end: (last4.at(-1) || annual.at(-1))?.end, revGrowth: ttm.revenue && revPrevTTM ? (ttm.revenue / revPrevTTM - 1) * 100 : null },
+    currency, annual, quarterly, ttm: { ...ttm, end: (qFresh ? last4.at(-1) : annual.at(-1))?.end, revGrowth: ttm.revenue && revPrevTTM ? (ttm.revenue / revPrevTTM - 1) * 100 : null },
     bs, shares: sh2.at(-1)?.val ?? null,
   };
 }
@@ -344,6 +366,7 @@ async function main() {
   for (const x of list) { const s = map.get(x.t) || map.get(x.t.replace('.', '-')); if (!s) { L('SEC eşleşmesi yok:', x.t); continue; } if (seenCik.has(s.cik_str)) continue; seenCik.add(s.cik_str); uni.push({ t: x.t, cik: s.cik_str, name: prettyName(s.title), sector: x.sector }); }
   L(`Evren: ${uni.length} şirket`);
   const px = await prices(uni.map((u) => u.t));
+  const fx = await fxRates();
   const prevUni = await readJSON(`${OUT}/universe.json`, { rows: [] });
   const rows = [];
   for (const u of uni) {
@@ -356,6 +379,7 @@ async function main() {
       c.filings = filingsOf(sub, u.cik);
       c.insiders = await insiders(sub, u.cik, old.insiders);
       if (MODE === 'all' || !old.fin) { c.fin = await financials(u.cik); }
+      if (c.fin && c.fin.currency && c.fin.currency !== 'USD') c.fin = toUSD(c.fin, fx[c.fin.currency]);
     } catch (e) { L(`${u.t}:`, e.message); }
     const p = px[u.t] || old.px || null; c.px = p;
     const f = c.fin; const sh = f?.shares; const mcap = p?.mcap || (p?.price && sh ? p.price * sh : null);
