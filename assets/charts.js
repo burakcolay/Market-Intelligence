@@ -212,22 +212,24 @@ export function levelMap(lv) {
 
 // Basit dikey bar (ETF akışları gibi, pozitif/negatif)
 export function flowBars(list) {
-  const W = 340, H = 160, base = 116, top = 22;
-  const maxAbs = Math.max(...list.map((d) => Math.abs(d.v)), 0.0001);
-  const slot = (W - 40) / list.length;
-  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(list.map((d) => d.label + ' ' + d.text).join(', '))}">
-    <line x1="20" y1="${base}" x2="${W - 10}" y2="${base}" stroke="${AXIS}"/>
-    ${list.map((d, i) => {
-      const cx = 30 + slot * i + slot / 2, w = Math.min(60, slot * 0.6);
-      const h = Math.max(3, (Math.abs(d.v) / maxAbs) * (base - top));
-      const yTop = d.v >= 0 ? base - h : base;
-      const fill = d.v < 0 ? '#E89A8E' : i === list.length - 1 ? NAVY : '#9DB3EE';
-      const ty = d.v >= 0 ? yTop - 6 : base - 8;
-      return `<rect x="${(cx - w / 2).toFixed(1)}" y="${yTop.toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="3" fill="${fill}"/>
-        <text x="${cx.toFixed(1)}" y="${ty.toFixed(1)}" text-anchor="middle" style="font-size:12px;fill:${d.v < 0 ? '#B42318' : '#16181D'}">${esc(d.text)}</text>
-        <text x="${cx.toFixed(1)}" y="${H - 8}" text-anchor="middle" style="font-family:var(--sans);font-size:12px">${esc(d.label)}</text>`;
-    }).join('')}
-  </svg>`;
+  // HTML çizim: genişlik ne olursa olsun yazı boyu sabit kalır.
+  // Gün etiketli olmayan kalemler (ör. "Eylül" aylık toplamı) ayrı kutuda; günlük çubuklar kendi aralarında ölçeklenir.
+  const totals = list.filter((d) => !/\d/.test(d.label)), days = list.filter((d) => /\d/.test(d.label));
+  // yukarı ve aşağı alan, en büyük giriş ve çıkışa göre bölünür; toplam 180 px
+  const mp = Math.max(0, ...days.map((d) => d.v)), mn = Math.max(0, ...days.map((d) => -d.v));
+  const tot = mp + mn || 1, upH = (mp / tot) * 100, dnH = (mn / tot) * 100;
+  const col = (d, i) => {
+    const h = Math.max(2, (Math.abs(d.v) / tot) * 180);
+    const fill = d.v < 0 ? '#E89A8E' : i === days.length - 1 ? '#163A9C' : '#9DB3EE';
+    return `<div class="fb-col">
+      <div class="fb-up">${d.v >= 0 ? `<span class="fb-t">${esc(d.text)}</span><i style="height:${h}px;background:${fill}"></i>` : ''}</div>
+      <div class="fb-dn">${d.v < 0 ? `<i style="height:${h}px;background:${fill}"></i><span class="fb-t down">${esc(d.text)}</span>` : ''}</div>
+      <span class="fb-l">${esc(d.label)}</span></div>`;
+  };
+  return `<div class="fb" role="img" aria-label="${esc(list.map((d) => d.label + ' ' + d.text).join(', '))}">
+    ${totals.map((d) => `<div class="fb-total"><span class="xs muted">${esc(d.label)} toplamı</span><b class="mono ${d.v < 0 ? 'down' : 'up'}">${esc(d.text)}</b></div>`).join('')}
+    <div class="fb-days" style="--up:${upH};--dn:${dnH}">${days.map(col).join('')}</div>
+  </div>`;
 }
 
 // Yatay sapma çubukları (sektörler): HTML

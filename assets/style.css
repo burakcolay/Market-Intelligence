@@ -465,3 +465,17 @@ table.corr td { width: 44px; height: 30px; text-align: center; font-family: var(
 }
 .chip:disabled { opacity: .45; cursor: not-allowed; }
 .kpi.live-only.is-live > .s { display: none; }
+.fb { display: flex; gap: 16px; align-items: stretch; flex-wrap: wrap; }
+.fb-total { align-self: center; display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; min-width: 130px; }
+.fb-total b { font-size: 20px; font-weight: 500; }
+.fb-days { flex: 1 1 320px; display: flex; gap: 0; max-width: 760px; }
+.fb-col { flex: 1; display: flex; flex-direction: column; align-items: center; min-width: 0; }
+.fb-up, .fb-dn { width: 100%; display: flex; flex-direction: column; align-items: center; }
+.fb-up { height: calc(var(--up) * 1.8px); box-sizing: content-box; padding-top: 20px; justify-content: flex-end; border-bottom: 1px solid #C9CCD4; }
+.fb-up .fb-t { margin-top: -20px; }
+.fb-dn { height: calc(var(--dn) * 1.8px); box-sizing: content-box; padding-bottom: 20px; justify-content: flex-start; }
+.fb-dn .fb-t { margin-bottom: -20px; }
+.fb-up i, .fb-dn i { display: block; flex-shrink: 0; width: min(56px, 70%); border-radius: 3px; }
+.fb-up i { border-radius: 3px 3px 0 0; } .fb-dn i { border-radius: 0 0 3px 3px; }
+.fb-t { font-family: var(--mono); font-size: 12px; white-space: nowrap; padding: 2px 0; }
+.fb-l { font-size: 12px; color: var(--muted); margin-top: 4px; white-space: nowrap; }
