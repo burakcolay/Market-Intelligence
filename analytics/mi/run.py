@@ -5,7 +5,7 @@ import json
 import logging
 import sys
 
-from . import db, fetch, report
+from . import db, fetch, report, surprise
 from .config import SITE_OUT
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
@@ -27,6 +27,11 @@ def main(argv: list[str]) -> int:
     report.write_site(R)
     SITE_OUT.mkdir(parents=True, exist_ok=True)
     (SITE_OUT / "quality.json").write_text(json.dumps({"counts": built["counts"], "assets": built["quality"]}, ensure_ascii=False))
+    try:
+        sp = surprise.build()
+        log.info("Sürpriz endeksi: %d veri", len(sp["events"]))
+    except Exception as e:  # sürpriz endeksi diğer çıktıları durdurmasın
+        log.error("Sürpriz endeksi üretilemedi: %s", e)
     if mode == "weekly":
         wk = report.write_weekly(R, built["quality"])
         log.info("Haftalık rapor: %s", wk)

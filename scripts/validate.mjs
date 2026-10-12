@@ -183,6 +183,16 @@ if (D?.makro?.analysis) {
   const A = D.makro.analysis;
   if (!isStr(A.headline) || !Array.isArray(A.paragraphs) || A.paragraphs.length < 2) errors.push('makro.analysis headline ve en az 2 paragraf olmalı');
   each(A.effects, 'makro.analysis.effects', (e, p) => { if (!['up', 'down', 'flat'].includes(e.dir)) errors.push(`${p}.dir up|down|flat olmalı`); });
+  const R = D.makro.regime;
+  if (R != null) each(R.items, 'makro.regime.items', (x, p) => {
+    if (!isStr(x.country)) errors.push(`${p}.country boş`);
+    if (!['up', 'down'].includes(x.growth) || !['up', 'down'].includes(x.inflation)) errors.push(`${p}.growth/inflation up|down olmalı`);
+  });
+  each(D.makro.upcoming, 'makro.upcoming', (u, p) => {
+    if (!/^\d{1,2} (Oca|Şub|Mar|Nis|May|Haz|Tem|Ağu|Eyl|Eki|Kas|Ara)\b/.test(u.when || '')) errors.push(`${p}.when "13 Eki 15:30" biçiminde olmalı`);
+    if (u.scen != null && (!Array.isArray(u.scen) || u.scen.some((x) => !isStr(x.if) || !isStr(x.then)))) errors.push(`${p}.scen [{if, then}] olmalı`);
+  });
+  each(D.makro.countries?.ABD?.charts, 'makro.countries.ABD.charts', (c, p) => { if (c.next_cons != null && typeof c.next_cons !== 'number') errors.push(`${p}.next_cons sayı olmalı`); });
 } else if (D) errors.push('makro.analysis eksik');
 
 const weeks = read('data/weekly/index.json');

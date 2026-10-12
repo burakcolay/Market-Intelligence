@@ -58,7 +58,9 @@ export function lineChart(points, o = {}) {
 export function macroChart(c) {
   const W = 340, H = 150, X0 = 34, X1 = 334, YT = 10, YB = 128;
   const vals = c.values.filter((v) => v != null);
-  const n = c.values.length, slot = (X1 - X0) / n;
+  const hasCons = c.next_cons != null;           // sıradaki açıklamanın beklentisi: grafiğin sağında boş halka
+  if (hasCons) vals.push(c.next_cons);
+  const n = c.values.length, slot = (X1 - X0) / (n + (hasCons ? 1 : 0));
   let min, max;
   if (c.type === 'bar') { min = Math.min(0, ...vals); max = Math.max(0, ...vals); }
   else {
@@ -83,13 +85,26 @@ export function macroChart(c) {
       body += `<circle cx="${cx(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="${last ? 4.5 : 2.5}" fill="${last ? NAVY : BLUE}"/>`;
     }
   });
+  if (hasCons) {
+    const lastI = c.values.map((v, i) => (v == null ? -1 : i)).reduce((a, b) => Math.max(a, b), -1);
+    const xc = cx(n), yc = y(c.next_cons);
+    const lv = c.values[lastI];
+    if (c.type === 'bar') {
+      const w = slot * 0.62, top = Math.min(yc, y(0)), h = Math.max(1.5, Math.abs(yc - y(0)));
+      body += `<rect x="${(xc - w / 2).toFixed(1)}" y="${top.toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="2" fill="none" stroke="${NAVY}" stroke-dasharray="3 2"/>`;
+    } else if (lastI >= 0) {
+      body += `<line x1="${cx(lastI).toFixed(1)}" y1="${y(lv).toFixed(1)}" x2="${xc.toFixed(1)}" y2="${yc.toFixed(1)}" stroke="${BLUE}" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <circle cx="${xc.toFixed(1)}" cy="${yc.toFixed(1)}" r="4.5" fill="#fff" stroke="${BLUE}" stroke-width="2"/>`;
+    }
+    body += `<text x="${xc.toFixed(1)}" y="${(Math.min(yc, y(lv ?? c.next_cons)) - 9).toFixed(1)}" text-anchor="middle" style="font-size:9.5px;fill:${NAVY}">bekl.</text>`;
+  }
   if (pts.length) body = `<polyline fill="none" stroke="${BLUE}" stroke-width="2.5" points="${pts.join(' ')}"/>` + body;
   const base = c.type === 'bar' ? y(0) : YB;
   const target = c.target != null
     ? `<line x1="${X0 - 4}" y1="${y(c.target).toFixed(1)}" x2="${X1}" y2="${y(c.target).toFixed(1)}" stroke="#0B7A47" stroke-dasharray="4 3"/>
        <text x="${X1}" y="${(y(c.target) - 4).toFixed(1)}" text-anchor="end" style="fill:#0B7A47;font-size:10px">${esc(c.target_label || '')}</text>` : '';
   const xi = [0, Math.floor((n - 1) / 2), n - 1];
-  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.title)}, son ${n} ay. Son değer ${esc(c.last)}.">
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(c.title)}, son ${n} ay. Son değer ${esc(c.last)}.${hasCons ? ` Sıradaki açıklamada beklenti ${esc(c.next_cons)}.` : ''}">
     <line x1="${X0 - 4}" y1="${base.toFixed(1)}" x2="${X1}" y2="${base.toFixed(1)}" stroke="${AXIS}"/>
     <text x="${X0 - 6}" y="${YT + 4}" text-anchor="end" style="font-size:10px">${esc(fmt(max))}</text>
     <text x="${X0 - 6}" y="${(base + 3).toFixed(1)}" text-anchor="end" style="font-size:10px">${esc(c.type === 'bar' ? '0' : fmt(min))}</text>

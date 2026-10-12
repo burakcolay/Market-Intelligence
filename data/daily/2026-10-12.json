@@ -1730,7 +1730,8 @@
         "prev": "48,1",
         "verdict": "Beklentiden zayıf",
         "tone": "bad",
-        "meta": "ABD · Ekim (öncü) · 9 Eki"
+        "meta": "ABD · Ekim (öncü) · 9 Eki",
+        "note": "Güven düşerken bir yıllık enflasyon beklentisi yükseldi: yavaşlayan ekonomide fiyat beklentisinin yerleşmesi Fed için kötü bir karışım."
       },
       {
         "name": "Türkiye sanayi üretimi (yıllık)",
@@ -1739,7 +1740,8 @@
         "prev": "−%0,3",
         "verdict": "Çok zayıf",
         "tone": "bad",
-        "meta": "Türkiye · Ağustos · 9 Eki"
+        "meta": "Türkiye · Ağustos · 9 Eki",
+        "note": "Düşüş dört aya yayıldı; zayıf üretim 22 Ekim'de faiz indirimini kolaylaştırır, ama indirim sonrası kur baskısı riski var."
       },
       {
         "name": "ABD haftalık işsizlik başvuruları",
@@ -1748,7 +1750,8 @@
         "prev": "197K",
         "verdict": "Beklentiden iyi",
         "tone": "good",
-        "meta": "ABD · 2 Eki haftası · 8 Eki"
+        "meta": "ABD · 2 Eki haftası · 8 Eki",
+        "note": "Başvurular düşük: şirketler işe almıyor ama işten de çıkarmıyor. İşgücü piyasası çökmüyor, donuyor."
       },
       {
         "name": "Almanya sanayi üretimi (aylık)",
@@ -1757,7 +1760,8 @@
         "prev": "−%1,2",
         "verdict": "Beklentiden iyi",
         "tone": "good",
-        "meta": "Almanya · Ağustos · 7 Eki"
+        "meta": "Almanya · Ağustos · 7 Eki",
+        "note": "Siparişler bir gün önce çökmüşken üretim sıçradı; siparişler üretimden önce geldiği için bu toparlanma kalıcı sayılmaz."
       },
       {
         "name": "Almanya sanayi siparişleri (aylık)",
@@ -1766,7 +1770,8 @@
         "prev": "+%3,2",
         "verdict": "Çok zayıf",
         "tone": "bad",
-        "meta": "Almanya · Ağustos · 6 Eki"
+        "meta": "Almanya · Ağustos · 6 Eki",
+        "note": "Bu büyüklükte sapmalar çoğu zaman birkaç büyük siparişin (uçak, savunma) aylık dalgalanmasıdır; tek başına çöküş sinyali değil."
       },
       {
         "name": "Euro Bölgesi perakende satış (yıllık)",
@@ -1775,7 +1780,8 @@
         "prev": "%0,4",
         "verdict": "Hafif zayıf",
         "tone": "bad",
-        "meta": "Euro Bölgesi · Ağustos · 6 Eki"
+        "meta": "Euro Bölgesi · Ağustos · 6 Eki",
+        "note": "Tüketici zayıf; enflasyon da beklentiyi aşınca ECB büyüme ile fiyatlar arasında sıkıştı."
       },
       {
         "name": "ISM hizmet PMI",
@@ -1784,7 +1790,8 @@
         "prev": "55,4",
         "verdict": "Beklentiye yakın",
         "tone": "flat",
-        "meta": "ABD · Eylül · 5 Eki"
+        "meta": "ABD · Eylül · 5 Eki",
+        "note": "Ekonominin en büyük kısmı olan hizmetler hâlâ büyüme bölgesinde; yavaşlama sanayi ve istihdamda, hizmette henüz değil."
       },
       {
         "name": "Türkiye TÜFE (yıllık)",
@@ -1793,7 +1800,8 @@
         "prev": "%31,51",
         "verdict": "Beklentiden iyi",
         "tone": "good",
-        "meta": "Türkiye · Eylül · 5 Eki"
+        "meta": "Türkiye · Eylül · 5 Eki",
+        "note": "Beklentiden hızlı düşüş, 22 Ekim'de TCMB'nin indirime devam edeceği beklentisini destekledi."
       },
       {
         "name": "Euro Bölgesi TÜFE (yıllık)",
@@ -1802,7 +1810,8 @@
         "prev": "%3,2",
         "verdict": "Beklentiden yüksek",
         "tone": "bad",
-        "meta": "Euro Bölgesi · Eylül · 2 Eki"
+        "meta": "Euro Bölgesi · Eylül · 2 Eki",
+        "note": "Enerji kaynaklı sıçrama ECB'nin artırım seçeneğini masada tutuyor; zayıf büyümeyle birlikte stagflasyon kaygısı."
       },
       {
         "name": "Tarım dışı istihdam",
@@ -1811,7 +1820,8 @@
         "prev": "133K",
         "verdict": "Çok zayıf",
         "tone": "bad",
-        "meta": "ABD · Eylül · 2 Eki"
+        "meta": "ABD · Eylül · 2 Eki",
+        "note": "İşe alım neredeyse durdu; ama Fed için şu an belirleyici olan istihdam değil fiyatlar, bu yüzden faize etkisi sınırlı kaldı."
       }
     ],
     "surprises_note": "Son haftanın tablosu: ABD'de işe alım zayıf, tüketici güveni düşük ve tüketici enflasyon beklentisi yüksek; Euro Bölgesi'nde enflasyon hızlanırken perakende ve Almanya siparişleri zayıf; Türkiye'de enflasyon beklentiden hızlı düşerken sanayi daralıyor.",
@@ -1898,7 +1908,8 @@
             "tone": "flat",
             "note": "Mart-Mayıs arası enerji şokuyla %4,2'ye fırladı; sonra geriledi ama %3,4'te takıldı. Ekim 2025 verisi yayınlanmadı.",
             "prev": "%3,4",
-            "next": "14 Eki 15:30"
+            "next": "14 Eki 15:30",
+            "next_cons": 3.7
           },
           {
             "type": "line",
@@ -1940,7 +1951,8 @@
             "tone": "good",
             "note": "Yılın en düşük seviyesinde: manşetteki yükselişin büyük kısmı enerjiden geliyor, çekirdek fiyatlar sakin.",
             "prev": "%2,5",
-            "next": "14 Eki 15:30"
+            "next": "14 Eki 15:30",
+            "next_cons": 2.5
           },
           {
             "type": "line",
@@ -2062,7 +2074,8 @@
             "tone": "bad",
             "note": "Üretici fiyatları tüketici fiyatlarından hızlı artıyor; bu maliyet baskısı ileride TÜFE'ye yansıyabilir.",
             "prev": "%4,2",
-            "next": "15 Eki 15:30"
+            "next": "15 Eki 15:30",
+            "next_cons": 4.4
           }
         ],
         "rows": [
@@ -2575,7 +2588,17 @@
         "name": "Almanya HICP (yıllık)",
         "impact": "high",
         "cons": "%3,3",
-        "prev": "%3,3"
+        "prev": "%3,3",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "ECB'nin artırım ihtimali güçlenir; euro desteklenir, Avrupa tahvil faizleri yükselir."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Euro Bölgesi enflasyonu zirve yapıyor okuması güçlenir; ECB'ye bekleme alanı açılır."
+          }
+        ]
       },
       {
         "when": "13 Eki 10:00",
@@ -2591,7 +2614,17 @@
         "name": "TÜFE (yıllık)",
         "impact": "high",
         "cons": "%1,0",
-        "prev": "%0,8"
+        "prev": "%0,8",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Çin'de deflasyon korkusu azalır; iç talebin canlandığı sinyali emtialara olumlu."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "İç talep zayıf kalır, Pekin'den yeni teşvik beklentisi artar."
+          }
+        ]
       },
       {
         "when": "14 Eki 06:00",
@@ -2607,7 +2640,17 @@
         "name": "TÜFE (yıllık)",
         "impact": "high",
         "cons": "%3,7",
-        "prev": "%3,4"
+        "prev": "%3,4",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Enerji şoku fiyatlara beklenenden fazla geçiyor demek: faiz ve dolar yükselir, NQ'ya baskı."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Enerji etkisi sınırlı kalıyor; faiz geriler. Yine de asıl karar çekirdek veriden çıkar."
+          }
+        ]
       },
       {
         "when": "14 Eki 15:30",
@@ -2615,7 +2658,17 @@
         "name": "Çekirdek TÜFE (yıllık)",
         "impact": "high",
         "cons": "%2,5",
-        "prev": "%2,4"
+        "prev": "%2,4",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Haftanın en önemli riski: enerji dışına yayılma demek. Fed'in Ekim artırımı masaya gelir, 10 yıllık faiz zirveyi sınar, NQ'ya en sert baskı buradan gelir."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "'Enerji şoku geçici' okuması güçlenir; Aralık artırımı tek ve son olabilir, faiz düşer, NQ'ya destek."
+          }
+        ]
       },
       {
         "when": "15 Eki 15:30",
@@ -2623,7 +2676,17 @@
         "name": "Perakende satışlar (aylık)",
         "impact": "high",
         "cons": "%0,3",
-        "prev": "%1,2"
+        "prev": "%1,2",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Tüketici dayanıklı, resesyon korkusu azalır; ama Fed'in sıkı kalması için de gerekçe."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Zayıf istihdamın harcamaya geçtiğinin teyidi: faiz düşer, döngüsel hisseler zayıflar."
+          }
+        ]
       },
       {
         "when": "15 Eki 15:30",
@@ -2631,7 +2694,17 @@
         "name": "Çekirdek ÜFE (yıllık)",
         "impact": "high",
         "cons": "%4,4",
-        "prev": "%4,6"
+        "prev": "%4,6",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Üretici maliyetleri tüketiciye geçmeyi bekliyor: önümüzdeki aylarda TÜFE için yukarı risk, faiz yukarı."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Fiyat baskısının kaynağında gevşeme; TÜFE'nin de sakinleşeceği okumasını destekler."
+          }
+        ]
       },
       {
         "when": "16 Eki 12:00",
@@ -2647,7 +2720,17 @@
         "name": "GSYH (yıllık)",
         "impact": "high",
         "cons": "—",
-        "prev": "%4,3"
+        "prev": "%4,3",
+        "scen": [
+          {
+            "if": "Öncekinin üstünde",
+            "then": "Çin talebi dayanıklı: emtia ve gelişen piyasalara olumlu."
+          },
+          {
+            "if": "Öncekinin altında",
+            "then": "Küresel talep endişesi; petrol ve sanayi metalleri baskı görebilir, teşvik beklentisi artar."
+          }
+        ]
       },
       {
         "when": "21 Eki 09:00",
@@ -2655,7 +2738,17 @@
         "name": "TÜFE (yıllık)",
         "impact": "high",
         "cons": "—",
-        "prev": "%3,1"
+        "prev": "%3,1",
+        "scen": [
+          {
+            "if": "Öncekinin üstünde",
+            "then": "BoE'nin indirim alanı daralır, sterlin desteklenir."
+          },
+          {
+            "if": "Öncekinin altında",
+            "then": "BoE için gevşeme kapısı aralanır."
+          }
+        ]
       },
       {
         "when": "22 Eki 14:00",
@@ -2663,7 +2756,17 @@
         "name": "TCMB faiz kararı",
         "impact": "high",
         "cons": "−100 bp",
-        "prev": "%37,00"
+        "prev": "%37,00",
+        "scen": [
+          {
+            "if": "Daha büyük indirim",
+            "then": "Bankalar ve faize duyarlı sektörler desteklenir; ama TL'de baskı ve reel faiz tartışması başlar."
+          },
+          {
+            "if": "İndirim yok ya da daha küçük",
+            "then": "TL desteklenir, mevduat faizi yüksek kalır; banka hisselerinde hayal kırıklığı."
+          }
+        ]
       }
     ],
     "analysis": {
@@ -2684,12 +2787,14 @@
         {
           "asset": "Fed",
           "dir": "flat",
-          "why": "Ekim artırımı küçük ihtimal, Aralık güçlü fiyatlanıyor; çekirdek TÜFE yönü belirleyecek."
+          "why": "Ekim artırımı küçük ihtimal, Aralık güçlü fiyatlanıyor; çekirdek TÜFE yönü belirleyecek.",
+          "hinge": "Çarşamba çekirdek TÜFE: beklentinin üstü Ekim artırımını masaya getirir."
         },
         {
           "asset": "ABD 10Y faiz",
           "dir": "flat",
-          "why": "Zirve bölgesinin hemen altında; sıcak çekirdek veri zirveyi yeniden sınatır."
+          "why": "Zirve bölgesinin hemen altında; sıcak çekirdek veri zirveyi yeniden sınatır.",
+          "hinge": "Çekirdek TÜFE ve ÜFE: ikisi sıcak gelirse zirve yeniden sınanır."
         },
         {
           "asset": "Dolar",
@@ -2699,17 +2804,43 @@
         {
           "asset": "NQ / ABD hisseleri",
           "dir": "flat",
-          "why": "Cuma toparlandı ama faiz yüksek ve değerleme kusursuz büyümeye dayanıyor."
+          "why": "Cuma toparlandı ama faiz yüksek ve değerleme kusursuz büyümeye dayanıyor.",
+          "hinge": "10 yıllık faizin yönü: zirveyi aşarsa baskı, dönerse destek."
         },
         {
           "asset": "Altın",
           "dir": "flat",
-          "why": "Jeopolitik risk yukarı, dolar ve faiz aşağı çekiyor; 4.200 civarında dengede."
+          "why": "Jeopolitik risk yukarı, dolar ve faiz aşağı çekiyor; 4.200 civarında dengede.",
+          "hinge": "Dolarla jeopolitik riskten hangisi baskın çıkarsa yön ondan."
         },
         {
           "asset": "Türkiye",
           "dir": "flat",
-          "why": "Zayıf sanayi indirimi kolaylaştırıyor; petrol ve güçlü dolar kur riskini canlı tutuyor."
+          "why": "Zayıf sanayi indirimi kolaylaştırıyor; petrol ve güçlü dolar kur riskini canlı tutuyor.",
+          "hinge": "22 Ekim PPK kararı ve petrolün 100 doların üstünde kalıp kalmaması."
+        }
+      ]
+    },
+    "regime": {
+      "note": "Büyüme ve enflasyonun yönü son 3 ayın verilerine göre. Japonya ve Çin için yeterli veri yok.",
+      "items": [
+        {
+          "country": "ABD",
+          "growth": "down",
+          "inflation": "up",
+          "note": "İstihdam ve güven zayıflıyor; manşet enflasyon enerjiyle yükseliyor ama çekirdek sakin. Stagflasyonun kenarında, içinde değil."
+        },
+        {
+          "country": "Euro Bölgesi",
+          "growth": "down",
+          "inflation": "up",
+          "note": "Siparişler ve tüketim zayıf, enflasyon beklentiyi aşıyor: dört bölgenin en zoru."
+        },
+        {
+          "country": "Türkiye",
+          "growth": "down",
+          "inflation": "down",
+          "note": "Sanayi dört aydır küçülüyor, enflasyon beklentiden hızlı düşüyor: TCMB'ye indirim alanı açan tablo."
         }
       ]
     }

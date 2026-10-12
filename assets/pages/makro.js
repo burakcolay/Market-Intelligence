@@ -1,11 +1,32 @@
-import { shell, loadDay, fail, esc, map, paras } from '../app.js';
+import { shell, loadDay, loadJSON, fail, esc, map, paras } from '../app.js';
 import { macroChart } from '../charts.js';
 
 const BADGE = { good: 'b-good', bad: 'b-bad', flat: 'b-flat' };
 const TXT = { good: 't-good', bad: 't-bad', flat: 't-flat' };
 const IMPACT = { high: ['b-bad', 'Yüksek'], mid: ['b-mid', 'Orta'], low: ['b-flat', 'Düşük'] };
+const DIR = { up: ['▲', 'up', 'Yukarı'], down: ['▼', 'down', 'Aşağı'], flat: ['◆', 'flat', 'Dengede'] };
+const low = (s) => String(s || '').toLocaleLowerCase('tr');
 
-const DIR = { up: ['▲', 'up', 'Yukarı'], down: ['▼', 'down', 'Aşağı'], flat: ['◆', 'flat', 'Karışık'] };
+// Sürpriz kartları önem sırasına: piyasayı en çok oynatan veriler başta.
+const PRIORITY = [['tarım dışı', 1], ['çekirdek tüfe', 2], ['çekirdek pce', 2], ['tüfe', 3], ['hicp', 3], ['pce', 3], ['faiz kararı', 3], ['üfe', 4],
+  ['perakende', 5], ['gsyh', 5], ['ism', 6], ['pmi', 6], ['işsizlik', 7], ['başvuru', 7], ['sanayi', 8], ['sipariş', 8], ['güven', 9]];
+const COUNTRY_W = { ABD: 0, 'Euro Bölgesi': 1, Almanya: 1, Türkiye: 2 };
+function rank(s, i) {
+  const n = low(s.name);
+  const p = (PRIORITY.find(([k]) => n.includes(k)) || [0, 10])[1];
+  const c = COUNTRY_W[(s.meta || '').split('·')[0].trim()] ?? 3;
+  return p * 100 + c * 10 + i / 100;
+}
+
+function surpriseCards(list) {
+  const sorted = (list || []).map((s, i) => [rank(s, i), s]).sort((a, b) => a[0] - b[0]).map((x) => x[1]);
+  return `<div class="grid surp-grid">${map(sorted, (s) => `<div class="surp">
+    <div class="surp-h"><b>${esc(s.name)}</b><span class="badge ${BADGE[s.tone] || 'b-flat'}">${esc(s.verdict)}</span></div>
+    <div class="surp-n mono"><div><span>Gerçekleşen</span><strong>${esc(s.actual)}</strong></div><div><span>Beklenti</span>${esc(s.cons)}</div><div><span>Önceki</span>${esc(s.prev)}</div></div>
+    ${s.note ? `<p class="surp-note">${esc(s.note)}</p>` : ''}
+    <span class="xs muted">${esc(s.meta)}</span></div>`)}</div>`;
+}
+
 function analysisBlock(M) {
   const A = M.analysis;
   if (!A) return M.surprises_note ? `<p class="note"><strong>Veriler ne söylüyor:</strong> ${esc(M.surprises_note)}</p>` : '';
@@ -16,13 +37,122 @@ function analysisBlock(M) {
     ${chain}
     ${paras(A.paragraphs)}
     ${A.effects?.length ? `<div><span class="eyebrow">Piyasalara olası etkisi</span>
-      <div class="effects">${map(A.effects, (e) => { const [ic, cls, lb] = DIR[e.dir] || DIR.flat; return `<div class="effect"><b>${esc(e.asset)}</b><span class="${cls}" title="${lb}">${ic} ${lb}</span><small>${esc(e.why)}</small></div>`; })}</div></div>` : ''}
+      <div class="effects">${map(A.effects, (e) => { const [ic, cls, lb] = DIR[e.dir] || DIR.flat; return `<div class="effect"><b>${esc(e.asset)}</b><span class="${cls}" title="${lb}">${ic} ${lb}</span><small>${esc(e.why)}</small>${e.hinge ? `<small class="hinge"><b>Neye bağlı:</b> ${esc(e.hinge)}</small>` : ''}</div>`; })}</div></div>` : ''}
   </div>`;
+}
+
+// Büyüme × enflasyon dört bölge. Varlık notları genel tarihsel eğilimdir, tavsiye değildir.
+const QUAD = [
+  { g: 'up', i: 'down', name: 'İdeal ortam', sub: 'büyüme hızlanıyor, enflasyon düşüyor', assets: 'Tarihsel olarak hisseler, özellikle teknoloji en iyi bu bölgede gider; tahviller de destek görür.' },
+  { g: 'up', i: 'up', name: 'Aşırı ısınma', sub: 'büyüme hızlanıyor, enflasyon artıyor', assets: 'Emtia, enerji, bankalar ve döngüsel hisseler öne çıkar; faizler yükselir, uzun vadeli tahviller zayıflar.' },
+  { g: 'down', i: 'down', name: 'Yavaşlama', sub: 'büyüme yavaşlıyor, enflasyon düşüyor', assets: 'Merkez bankası indirim alanı bulur; tahviller ve savunmacı sektörler (sağlık, kamu hizmeti) öne çıkar.' },
+  { g: 'down', i: 'up', name: 'Stagflasyon', sub: 'büyüme yavaşlıyor, enflasyon artıyor', assets: 'En zor bölge: hisse ve tahvil birlikte zorlanır; altın, emtia ve nakit görece korunaklı kalır.' },
+];
+function regimeBlock(R) {
+  if (!R?.items?.length) return '';
+  const cell = (q) => {
+    const here = R.items.filter((x) => x.growth === q.g && x.inflation === q.i);
+    return `<div class="quad ${here.length ? 'on' : ''} q-${q.g}${q.i}">
+      <b>${esc(q.name)}</b><span class="xs muted">${esc(q.sub)}</span>
+      <div class="quad-c">${here.map((x) => `<span class="chip on">${esc(x.country)}</span>`).join('')}</div>
+      <small>${esc(q.assets)}</small></div>`;
+  };
+  return `<section class="card">
+    <div class="head-row"><span class="eyebrow">Makro rejim haritası</span><span class="small muted">Her ülke büyüme ve enflasyonun yönüne göre dört bölgeden birinde</span></div>
+    <div class="reg-x"><span>Enflasyon düşüyor</span><span>Enflasyon artıyor</span></div>
+    <div class="reg-grid">${QUAD.map(cell).join('')}</div>
+    <div class="reg-notes">${map(R.items, (x) => `<p><b>${esc(x.country)}:</b> ${esc(x.note)}</p>`)}</div>
+    <span class="xs muted">${esc(R.note || '')} Varlık notları genel tarihsel eğilimdir, al/sat tavsiyesi değildir.</span>
+  </section>`;
+}
+
+// Ekonomik sürpriz endeksi (analytics/mi/surprise.py üretir)
+const CAT = { activity: ['Büyüme verileri', '#1F4FD1'], inflation: ['Enflasyon verileri', '#C2410C'] };
+function spark(S, country) {
+  const W = 300, H = 120, X0 = 30, X1 = 296, YT = 10, YB = 104;
+  const n = S.dates.length;
+  const x = (i) => X0 + (n < 2 ? 0 : (i * (X1 - X0)) / (n - 1));
+  const y = (v) => YT + ((1 - v) / 2) * (YB - YT);
+  const lines = Object.entries(CAT).map(([k, [, col]]) => {
+    const pts = S.series[country][k].map((p, i) => (p.v == null ? null : `${x(i).toFixed(1)},${y(p.v).toFixed(1)}`)).filter(Boolean);
+    const last = [...S.series[country][k]].reverse().find((p) => p.v != null);
+    const li = S.series[country][k].lastIndexOf(last);
+    return pts.length ? `<polyline fill="none" stroke="${col}" stroke-width="2.2" points="${pts.join(' ')}"/><circle cx="${x(li).toFixed(1)}" cy="${y(last.v).toFixed(1)}" r="3.5" fill="${col}"/>` : '';
+  }).join('');
+  const d = (s) => { const [, m, g] = s.split('-'); return `${+g}.${+m}`; };
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(country)} sürpriz endeksi">
+    <line x1="${X0}" y1="${y(0)}" x2="${X1}" y2="${y(0)}" stroke="#C9CCD4"/>
+    <text x="${X0 - 4}" y="${y(1) + 4}" text-anchor="end" style="font-size:10px">+1</text>
+    <text x="${X0 - 4}" y="${y(0) + 3}" text-anchor="end" style="font-size:10px">0</text>
+    <text x="${X0 - 4}" y="${y(-1)}" text-anchor="end" style="font-size:10px">−1</text>
+    ${lines}
+    <text x="${X0}" y="${H - 2}" style="font-size:10px">${d(S.dates[0])}</text><text x="${X1}" y="${H - 2}" text-anchor="end" style="font-size:10px">${d(S.dates[n - 1])}</text>
+  </svg>`;
+}
+function readSurprise(p, k) {
+  if (!p || p.v == null) return `<span class="muted">veri yok</span>`;
+  const v = p.v.toFixed(2).replace('.', ',').replace('-', '−');
+  const word = k === 'activity'
+    ? (p.v >= 0.3 ? 'beklentiden güçlü' : p.v <= -0.3 ? 'beklentiden zayıf' : 'beklentiye yakın')
+    : (p.v >= 0.3 ? 'beklentiden sıcak' : p.v <= -0.3 ? 'beklentiden soğuk' : 'beklentiye yakın');
+  return `<span class="mono">${p.v > 0 ? '+' : ''}${v}</span> · ${word} <span class="muted">(${p.n} veri)</span>`;
+}
+function surpriseIndex(S) {
+  if (!S?.dates?.length) return '';
+  const countries = Object.keys(S.series).filter((c) => ['Tümü', 'ABD', 'Euro Bölgesi', 'Türkiye'].includes(c));
+  const ev = [...(S.events || [])].reverse().slice(0, 10);
+  return `<section class="card">
+    <div class="head-row"><span class="eyebrow">Ekonomik sürpriz endeksi</span>
+      <span class="small muted"><span style="color:${CAT.activity[1]}">━ ${CAT.activity[0]}</span> &nbsp; <span style="color:${CAT.inflation[1]}">━ ${CAT.inflation[0]}</span></span></div>
+    <p class="small" style="color:var(--ink-2);max-width:820px">Son ${S.window_days} günde açıklanan verilerin kaçı beklentiyi aştı, kaçı altında kaldı. +1: hepsi beklentiden güçlü (büyüme) ya da sıcak (enflasyon); −1: hepsi zayıf ya da soğuk. Büyüme verileri zayıf, enflasyon sıcak gelirse merkez bankası için en zor karışım budur. Endeks yalnızca yönü sayar, sapmanın büyüklüğünü değil.</p>
+    <div class="grid" style="--min:260px;gap:12px">${countries.map((c) => `<div class="chart-card">
+      <b>${esc(c)}</b>${spark(S, c)}
+      <div class="small">Büyüme: ${readSurprise(S.series[c].activity.at(-1), 'activity')}</div>
+      <div class="small">Enflasyon: ${readSurprise(S.series[c].inflation.at(-1), 'inflation')}</div></div>`).join('')}</div>
+    <details class="surp-ev"><summary class="small">Endekse giren son veriler</summary>
+      <table class="tbl"><tbody>${map(ev, (e) => `<tr><td class="num small">${esc(e.date.slice(5).split('-').reverse().join('.'))}</td><td>${esc(e.country)}</td><td>${esc(e.name)}</td>
+        <td class="r num">${esc(e.actual)}</td><td class="r num muted">${esc(e.cons)}</td><td>${e.score > 0 ? '<span class="up">▲</span>' : e.score < 0 ? '<span class="down">▼</span>' : '<span class="muted">◆</span>'} <span class="xs muted">${e.cat === 'inflation' ? 'enflasyon' : 'büyüme'}</span></td></tr>`)}</tbody></table>
+    </details>
+    <span class="xs muted">Panelin günlük dosyalarından otomatik hesaplanır (analytics/mi/surprise.py); geçmiş biriktikçe çizgi uzar.</span>
+  </section>`;
+}
+
+// Takvim: "13 Eki 09:00" → Date
+const MON = { Oca: 0, Şub: 1, Mar: 2, Nis: 3, May: 4, Haz: 5, Tem: 6, Ağu: 7, Eyl: 8, Eki: 9, Kas: 10, Ara: 11 };
+const MON_FULL = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+const DOW = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
+function upcomingTable(list, today) {
+  const [Y, Mo, D] = today.split('-').map(Number);
+  const t0 = Date.UTC(Y, Mo - 1, D);
+  const dayOf = (w) => { const m = /^(\d{1,2})\s+(\S+)/.exec(w || ''); if (!m || MON[m[2]] == null) return null; let t = Date.UTC(Y, MON[m[2]], +m[1]); if (t < t0 - 200 * 864e5) t = Date.UTC(Y + 1, MON[m[2]], +m[1]); return t; };
+  let last = null;
+  const rows = (list || []).map((u) => {
+    const t = dayOf(u.when);
+    let head = '';
+    if (t != null && t !== last) {
+      last = t;
+      const diff = Math.round((t - t0) / 864e5), dt = new Date(t);
+      const tag = diff === 0 ? '<span class="badge b-bad">Bugün</span>' : diff === 1 ? '<span class="badge b-mid">Yarın</span>' : '';
+      head = `<div class="up-day ${diff <= 1 ? 'soon' : ''}">${tag}<span>${DOW[dt.getUTCDay()]}, ${dt.getUTCDate()} ${MON_FULL[dt.getUTCMonth()]}</span></div>`;
+    }
+    const [cls, lbl] = IMPACT[u.impact] || IMPACT.low;
+    const time = (u.when || '').split(' ').slice(2).join(' ');
+    const scen = u.scen?.length ? `<div class="scen-g">${u.scen.map((x) => `<div><b>${esc(x.if)}:</b> ${esc(x.then)}</div>`).join('')}</div>` : '';
+    return `${head}<div class="up-row">
+      <span class="mono small">${esc(time || u.when)}</span><span class="small muted">${esc(u.country)}</span>
+      <span><span class="up-cty xs muted">${esc(u.country)} · </span><b style="font-weight:500">${esc(u.name)}</b> <span class="badge ${cls}">${lbl}</span></span>
+      <span class="mono small r" title="Beklenti">${esc(u.cons)}</span><span class="mono small r muted" title="Önceki">${esc(u.prev)}</span>
+      ${scen}</div>`;
+  }).join('');
+  return `<div class="up-list">
+    <div class="up-row up-headr"><span>Saat (TSİ)</span><span>Ülke</span><span>Veri</span><span class="r">Beklenti</span><span class="r">Önceki</span></div>
+    ${rows}</div>`;
 }
 
 async function main() {
   const ctx = await loadDay();
   const M = ctx.data.makro;
+  const S = await loadJSON('data/analytics/surprise.json').catch(() => null);
   const app = shell('makro', { ...ctx, updated: `Veriler ${ctx.data.updated}` });
   const names = Object.keys(M.countries);
   const fromHash = decodeURIComponent(location.hash.slice(1));
@@ -53,13 +183,18 @@ async function main() {
 
   app.innerHTML = `<main class="wrap">
     <section class="card">
-      <div class="head-row"><span class="eyebrow">Son 7 günün sürprizleri</span><span class="small muted">Gerçekleşen, beklentiye göre</span></div>
-      <div class="grid" style="--min:250px">${map(M.surprises, (s) => `<div class="kpi" style="gap:6px">
-        <div class="head-row" style="flex-wrap:nowrap"><b style="font-weight:500">${esc(s.name)}</b><span class="badge ${BADGE[s.tone] || 'b-flat'}">${esc(s.verdict)}</span></div>
-        <div class="mono small" style="display:flex;gap:14px;flex-wrap:wrap"><span>Gerç. <strong>${esc(s.actual)}</strong></span><span class="muted">Bekl. ${esc(s.cons)}</span><span class="muted">Önc. ${esc(s.prev)}</span></div>
-        <span class="xs muted">${esc(s.meta)}</span></div>`)}</div>
+      <div class="head-row"><span class="eyebrow">Önümüzdeki 2 hafta</span><span class="small muted">Önemli verilerde: beklentiden saparsa ne olur</span></div>
+      ${upcomingTable(M.upcoming, ctx.data.date)}
+    </section>
+
+    <section class="card">
+      <div class="head-row"><span class="eyebrow">Son 7 günün sürprizleri</span><span class="small muted">Önem sırasına göre · gerçekleşen, beklentiye göre</span></div>
+      ${surpriseCards(M.surprises)}
       ${analysisBlock(M)}
     </section>
+
+    ${regimeBlock(M.regime)}
+    ${surpriseIndex(S)}
 
     <section class="card">
       <div class="head-row"><span class="eyebrow">Ülke verileri</span>
@@ -67,17 +202,7 @@ async function main() {
       </div>
       <div id="country"></div>
     </section>
-
-    <section class="card">
-      <span class="eyebrow">Önümüzdeki 2 hafta</span>
-      <div class="tbl-wrap"><table class="tbl" style="min-width:620px">
-        <thead><tr><th>Tarih (TSİ)</th><th>Ülke</th><th>Veri</th><th>Önem</th><th class="r">Beklenti</th><th class="r">Önceki</th></tr></thead>
-        <tbody>${map(M.upcoming, (u) => { const [cls, lbl] = IMPACT[u.impact] || IMPACT.low; return `<tr>
-          <td class="num small" style="white-space:nowrap">${esc(u.when)}</td><td>${esc(u.country)}</td><td style="font-weight:500">${esc(u.name)}</td>
-          <td><span class="badge ${cls}">${lbl}</span></td><td class="r num">${esc(u.cons)}</td><td class="r num muted">${esc(u.prev)}</td></tr>`; })}</tbody>
-      </table></div>
-    </section>
-    <p class="source">Kaynak: Bigdata.com ekonomik takvimi (FXStreet), TCMB/TÜİK (Borsa MCP).</p>
+    <p class="source">Kaynak: Bigdata.com ekonomik takvimi (FXStreet), TCMB/TÜİK (Borsa MCP). Sürpriz endeksi panelin kendi verisinden hesaplanır.</p>
   </main>`;
 
   const box = document.getElementById('country');

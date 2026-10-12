@@ -119,6 +119,14 @@ Bu kural `summary`, `s1`-`s7` paragrafları, `turkiye.reading`, `kripto.reading`
 }
 ```
 
+**Makro sayfası ekleri**
+- `makro.surprises[].note`: veri ne anlama geliyor / piyasa nasıl karşıladı, tek cümle, rakamsız. Kartlar sitede önem sırasına dizilir (sıra rutinin işi değil).
+- `makro.upcoming[].scen`: önemi `high` olan her veriye 2 senaryo `[{if: "Beklentinin üstünde", then: "..."}, {if: "Beklentinin altında", then: "..."}]`. Beklenti yoksa "Öncekinin üstünde/altında"; faiz kararlarında "Daha büyük indirim" / "İndirim yok ya da daha küçük" gibi. `then`: faiz, dolar, NQ, ilgili sektör nasıl etkilenir, mekanizmasıyla. `when` biçimi `"13 Eki 15:30"` (site günlere bu biçimden ayırır).
+- `makro.analysis.effects[].hinge`: yön `flat` ise zorunlu sayılır: "neye bağlı" tek cümle (hangi veri/olay yönü belirler).
+- `makro.regime`: `{note, items[{country, growth: up|down, inflation: up|down, note}]}`. Son 3 ayın verisine göre büyüme ve enflasyonun yönü; ABD, Euro Bölgesi, Türkiye her gün; Japonya/Çin yeterli veri varsa. Değişmediyse dünkünü taşı; değiştiyse `s1.changes`'te belirt.
+- `makro.countries.ABD.charts[].next_cons`: sıradaki açıklamanın beklentisi (sayı), takvimde beklenti varsa. Grafikte boş halka olarak çizilir.
+- Ekonomik sürpriz endeksi (`data/analytics/surprise.json`) günlük dosyalardan `analytics/mi/surprise.py` ile otomatik hesaplanır; rutin dokunmaz. Doğru çalışması için `surprises[]`'ın `actual`, `cons` ve `meta` ("Ülke · Dönem · 9 Eki") alanları düzgün olmalı.
+
 **Şirket kartları (`data/companies.json`)** — NQ bölümündeki bilanço listesinde bir şirkete tıklayınca açılan kart. Günlük dosyada değil, ayrı dosyada durur; her gün yeniden yazılmaz (maliyet).
 - **Cumartesi:** 8 şirketin hepsi için `bigdata_company_tearsheet` (sections: `latest_earnings`, `revenue_segmentation`, `analyst_ratings`) ile `last`, `segments`, `analysts` alanlarını güncelle. `about` ve `nq_note` sadece şirketin işi değiştiyse değişir.
 - **Bilançoya 10 gün veya daha az kala:** o şirketin `next` alanını doldur: `eps_est`, `rev_est` (milyar $; `analyst_estimates`'te yoksa haber araması), `known` (bilançodan önce bilinen veriler, ör. teslimat rakamları; 2-4 madde), `watch` (bilançoda neye bakılacak; 3 madde), `sources`.
@@ -163,7 +171,7 @@ Bu kural `summary`, `s1`-`s7` paragrafları, `turkiye.reading`, `kripto.reading`
 | `kuresel` | `{groups[{name, unit: pct|bp, rows[{name, d1, w1, m1, ytd}]}], note}` · Risk termometresi canlıdır, rutin yazmaz. |
 | `turkiye` | `{kpis[], reading{headline, paragraphs[]}, bist{title, change_label, tone, highlight?{from, label}, points[{d, v}]}, sectors[{name, chg}], sectors_note, cpi{last, labels[], values[], note}, rates{policy, bonds[{tenor, v}], cards[], note}, macro[{name, period, actual, cons, prev, note, tone}], upcoming[{when, name}], lesson{title, paragraphs[], rule}, source}` |
 | `kripto` | `{kpis[{code,label,value,sub,tone}], fng{now, yesterday, week}, reading{}, dominance{total_label, btc, usdt, total2_label}, dom_cards[{code,text}], levels{range[lo,hi], zone[a,b], items[{name, price, label, kind: past|support|now|resistance|ref|target}], note}, etf[{label, v (milyar $), text}], etf_note, coins[{sym, name, price, d1, w1, m1, m3, ytd, y1}], coins_note, institutional[{v,title,note}], drivers[{tag, tone, title, note}], lesson{}}` |
-| `makro` | `{surprises[{name, actual, cons, prev, verdict, tone, meta}], analysis{headline, chain[], paragraphs[], effects[]}, countries{"ABD"|"Euro Bölgesi"|"Türkiye"|"Japonya"|"Çin": {charts[{type: bar|line, title, sub, unit, target?, target_label?, labels[], values[], last, trend, tone, note, prev, next}], rows[{group} | {name, period, actual, cons, prev, surprise, tone, next}], note}}, upcoming[{when, country, name, impact, cons, prev}]}` |
+| `makro` | `{surprises[{name, actual, cons, prev, verdict, tone, meta, note}], analysis{headline, chain[], paragraphs[], effects[{asset, dir, why, hinge?}]}, regime{note, items[]}, countries{"ABD"|"Euro Bölgesi"|"Türkiye"|"Japonya"|"Çin": {charts[{type: bar|line, title, sub, unit, target?, target_label?, labels[], values[], last, trend, tone, note, prev, next}], rows[{group} | {name, period, actual, cons, prev, surprise, tone, next}], note}}, upcoming[{when, country, name, impact, cons, prev, scen?[{if, then}]}]}` |
 | `sources` | kaynak notu |
 
 Tam örnek her zaman en son günün dosyasıdır.

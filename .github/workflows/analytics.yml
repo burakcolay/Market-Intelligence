@@ -7,7 +7,7 @@ on:
         default: 'weekly'
   push:
     branches: [main]
-    paths: ['analytics/mi/**', 'analytics/sql/**', 'analytics/notebooks/build.py', 'analytics/requirements.txt']
+    paths: ['data/daily/*.json', 'analytics/mi/**', 'analytics/sql/**', 'analytics/notebooks/build.py', 'analytics/requirements.txt']
   workflow_run:                # SEC/fiyat işi bitince, onun yazdığı en güncel veriyle çalış
     workflows: ['ABD verisi']
     types: [completed]
