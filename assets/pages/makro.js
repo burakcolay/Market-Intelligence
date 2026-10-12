@@ -125,28 +125,33 @@ function upcomingTable(list, today) {
   const [Y, Mo, D] = today.split('-').map(Number);
   const t0 = Date.UTC(Y, Mo - 1, D);
   const dayOf = (w) => { const m = /^(\d{1,2})\s+(\S+)/.exec(w || ''); if (!m || MON[m[2]] == null) return null; let t = Date.UTC(Y, MON[m[2]], +m[1]); if (t < t0 - 200 * 864e5) t = Date.UTC(Y + 1, MON[m[2]], +m[1]); return t; };
-  let last = null;
-  const rows = (list || []).map((u) => {
+  // güne göre grupla; her gün kendi kutusunda
+  const days = [];
+  for (const u of list || []) {
     const t = dayOf(u.when);
-    let head = '';
-    if (t != null && t !== last) {
-      last = t;
-      const diff = Math.round((t - t0) / 864e5), dt = new Date(t);
-      const tag = diff === 0 ? '<span class="badge b-bad">Bugün</span>' : diff === 1 ? '<span class="badge b-mid">Yarın</span>' : '';
-      head = `<div class="up-day ${diff <= 1 ? 'soon' : ''}">${tag}<span>${DOW[dt.getUTCDay()]}, ${dt.getUTCDate()} ${MON_FULL[dt.getUTCMonth()]}</span></div>`;
-    }
+    if (!days.length || days.at(-1).t !== t) days.push({ t, items: [] });
+    days.at(-1).items.push(u);
+  }
+  const ev = (u, open) => {
     const [cls, lbl] = IMPACT[u.impact] || IMPACT.low;
     const time = (u.when || '').split(' ').slice(2).join(' ');
-    const scen = u.scen?.length ? `<div class="scen-g">${u.scen.map((x) => `<div><b>${esc(x.if)}:</b> ${esc(x.then)}</div>`).join('')}</div>` : '';
-    return `${head}<div class="up-row">
-      <span class="mono small">${esc(time || u.when)}</span><span class="small muted">${esc(u.country)}</span>
-      <span><span class="up-cty xs muted">${esc(u.country)} · </span><b style="font-weight:500">${esc(u.name)}</b> <span class="badge ${cls}">${lbl}</span></span>
-      <span class="mono small r" title="Beklenti">${esc(u.cons)}</span><span class="mono small r muted" title="Önceki">${esc(u.prev)}</span>
-      ${scen}</div>`;
-  }).join('');
-  return `<div class="up-list">
-    <div class="up-row up-headr"><span>Saat (TSİ)</span><span>Ülke</span><span>Veri</span><span class="r">Beklenti</span><span class="r">Önceki</span></div>
-    ${rows}</div>`;
+    const scen = u.scen?.length ? `<details class="up-scen" ${open ? 'open' : ''}><summary>Beklentiden saparsa ne olur</summary>
+      <div class="scen-g">${u.scen.map((x, i) => `<div><span class="scen-if">${i ? '▼' : '▲'} ${esc(x.if)}</span>${esc(x.then)}</div>`).join('')}</div></details>` : '';
+    return `<div class="up-ev ${u.impact === 'high' ? 'hi' : ''}">
+      <div class="up-main">
+        <span class="up-time mono">${esc(time || u.when)}</span>
+        <div class="up-what"><b>${esc(u.name)}</b><span class="xs muted">${esc(u.country)}</span></div>
+        <span class="badge ${cls}">${lbl}</span>
+        <div class="up-nums mono"><span><small>Beklenti</small>${esc(u.cons)}</span><span class="muted"><small>Önceki</small>${esc(u.prev)}</span></div>
+      </div>${scen}</div>`;
+  };
+  return `<div class="up-list">${days.map((d) => {
+    const diff = d.t == null ? 99 : Math.round((d.t - t0) / 864e5), dt = new Date(d.t);
+    const tag = diff === 0 ? '<span class="badge b-bad">Bugün</span>' : diff === 1 ? '<span class="badge b-mid">Yarın</span>' : '';
+    const title = d.t == null ? 'Tarih belirsiz' : `${DOW[dt.getUTCDay()]}, ${dt.getUTCDate()} ${MON_FULL[dt.getUTCMonth()]}`;
+    return `<div class="up-daybox ${diff <= 1 ? 'soon' : ''}"><div class="up-day">${tag}<span>${title}</span><span class="xs muted">${d.items.length} veri</span></div>
+      ${d.items.map((u) => ev(u, diff <= 1)).join('')}</div>`;
+  }).join('')}</div>`;
 }
 
 async function main() {
