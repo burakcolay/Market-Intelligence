@@ -255,6 +255,27 @@
         "piyasa-genisligi",
         "risk"
       ]
+    },
+    "cekirdek-enflasyon": {
+      "name": "Çekirdek enflasyon",
+      "cat": "Makro veriler",
+      "learned": "2026-10-12",
+      "def": "Fiyat endeksinden gıda ve enerjinin çıkarılmasıyla hesaplanan enflasyon. Oynak kalemleri dışarıda bıraktığı için fiyat artışının kalıcı eğilimini gösterir; merkez bankaları faiz kararında manşetten çok buna bakar.",
+      "analogy": "Dalgalı denizde teknenin gerçek hızını ölçmek için dalgaları çıkarıp akıntıya bakmak gibi: dalga anlık, akıntı kalıcı.",
+      "chain": [
+        "Petrol fiyatı yükselir",
+        "Manşet enflasyon sıçrar",
+        "Çekirdek yatay kalırsa şok geçici sayılır",
+        "Merkez bankası beklemeyi seçer",
+        "Çekirdek de yükselirse faiz artırımı gündeme gelir"
+      ],
+      "quote": "Çarşamba günü ABD'de manşet enflasyonun enerjiyle yükselmesi, çekirdeğin ise yatay kalması bekleniyor.",
+      "rule": "Enflasyon haberinde önce hangisinin yükseldiğine bak: manşet enerjiyle sıçrar, ama faiz kararı çekirdek üzerinden verilir.",
+      "related": [
+        "pce",
+        "reel",
+        "sahin"
+      ]
     }
   }
 }
