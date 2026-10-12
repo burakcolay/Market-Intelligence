@@ -4,7 +4,7 @@
 
 **Piyasa verisi için uçtan uca veri analizi projesi: veri toplama, temizleme, SQL, istatistik, görselleştirme ve otomatik raporlama.**
 
-ABD · Avrupa ve Asya · Faiz ve Fed · Makro veriler · Kripto · Türkiye · ABD hisseleri
+ABD · Avrupa ve Asya · Faiz ve Fed · Makro & takvim · Kripto · Türkiye · ABD hisseleri
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB)
 ![Pandas](https://img.shields.io/badge/Pandas-veri%20işleme-150458)
@@ -114,7 +114,7 @@ Yazıların tek bir kuralı var: **rakamı tekrar etme, ne anlama geldiğini anl
 | **NQ için makro rüzgâr** | Makronun Nasdaq 100'e etkisi: destek / nötr / engel, oynaklık saatleri (TSİ), bilanço takvimi. Al-sat sinyali vermez |
 | **İki görüş** | Günün tartışma konusunda boğa ve ayı tarafı, kaynaklarıyla |
 | **Faiz ve Fed** | Getiri eğrisi (bugün ve 1 ay önce), Fed fiyatlaması, konuşmacılar |
-| **Makro veriler** | Son 7 günün sürprizleri ve "veriler birlikte ne söylüyor" yorumu; ABD, Euro Bölgesi, Türkiye, Japonya, Çin grafikleri |
+| **Makro & takvim** | Önümüzdeki 2 haftanın takvimi ve "beklentiden saparsa ne olur" senaryoları, sürprizler, "veriler birlikte ne söylüyor" yorumu, rejim haritası, sürpriz endeksi; ABD, Euro Bölgesi, Türkiye, Japonya, Çin grafikleri |
 | **Kripto** | Korku-açgözlülük, dominans, ETF akışları, seviye haritası |
 | **Türkiye** | BIST 100, sektörler, TÜFE, tahvil eğrisi, TCMB |
 | **Haftalık özet ve derin konu** | Cuma haftanın özeti, cumartesi haftanın en önemli olayının uzun anlatımı ve döngü analizi |

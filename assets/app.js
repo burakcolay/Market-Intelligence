@@ -8,7 +8,7 @@ export const PAGES = [
   { key: 'analiz', href: 'analiz.html', label: 'Analiz' },
   { key: 'kripto', href: 'kripto.html', label: 'Kripto' },
   { key: 'turkiye', href: 'turkiye.html', label: 'Türkiye' },
-  { key: 'makro', href: 'makro.html', label: 'Makro Veriler' },
+  { key: 'makro', href: 'makro.html', label: 'Makro & Takvim' },
   { key: 'haftalik', href: 'haftalik.html', label: 'Haftalık Özet' },
   { key: 'sozluk', href: 'sozluk.html', label: 'Sözlük' },
 ];
