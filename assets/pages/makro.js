@@ -1,4 +1,4 @@
-import { shell, loadDay, fail, esc, map } from '../app.js';
+import { shell, loadDay, fail, esc, map, paras } from '../app.js';
 import { macroChart } from '../charts.js';
 
 const BADGE = { good: 'b-good', bad: 'b-bad', flat: 'b-flat' };
@@ -14,7 +14,7 @@ function analysisBlock(M) {
     <span class="eyebrow accent">Veriler ne söylüyor</span>
     <h2>${esc(A.headline)}</h2>
     ${chain}
-    ${map(A.paragraphs, (p) => `<p>${esc(p)}</p>`)}
+    ${paras(A.paragraphs)}
     ${A.effects?.length ? `<div><span class="eyebrow">Piyasalara olası etkisi</span>
       <div class="effects">${map(A.effects, (e) => { const [ic, cls, lb] = DIR[e.dir] || DIR.flat; return `<div class="effect"><b>${esc(e.asset)}</b><span class="${cls}" title="${lb}">${ic} ${lb}</span><small>${esc(e.why)}</small></div>`; })}</div></div>` : ''}
   </div>`;
