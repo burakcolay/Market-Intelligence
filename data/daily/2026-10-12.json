@@ -74,6 +74,8 @@
   },
   "impact": [
     {
+      "market": "ABD",
+      "trigger": "Haber · 9 Ekim kapanışı",
       "title": "SpaceX frekans aldı: operatörler sert düştü, kule şirketleri yükseldi",
       "summary": "SpaceX'in düşük bant frekans portföyünü satın alması, Starlink'in ABD'de cep telefonu operatörü olabileceği ihtimalini fiyatlara taşıdı. Aynı haber üç grubu üç farklı yönde oynattı.",
       "groups": [
@@ -124,6 +126,76 @@
       "sources": [
         {
           "name": "Bigdata.com (9 Ekim kapanış hareketleri ve haber)"
+        }
+      ],
+      "chain": [
+        "SpaceX frekans aldı",
+        "Starlink cep operatörü olabilir",
+        "Operatörlerin frekans hendeği sorgulandı",
+        "Operatörler düştü, kuleler yükseldi"
+      ]
+    },
+    {
+      "market": "Türkiye",
+      "trigger": "Veri ve sektör hareketi · 9 Ekim kapanışı",
+      "title": "Sanayi üretimi dördüncü ay düştü: faiz indirimi beklentisi güçlendi, borsada yükseliş seçici kaldı",
+      "summary": "Ağustos sanayi üretimi yıllık geriledi ve düşüş dört aya yayıldı; Eylül enflasyonunun beklentiden hızlı düşmesiyle birlikte 22 Ekim PPK'da indirim beklentisini destekliyor. Aynı gün BIST'te sanayi ve teknoloji yükselirken holdingler sert, bankalar hafif geriledi.",
+      "chain": [
+        "Sanayi üretimi dört aydır düşüyor",
+        "Enflasyon da beklentiden hızlı düştü",
+        "PPK'da indirim beklentisi güçleniyor",
+        "Faize duyarlı sektörler öne çıkabilir"
+      ],
+      "groups": [
+        {
+          "name": "Bankalar",
+          "tickers": [
+            "XBANK"
+          ],
+          "move": "−%0,26",
+          "tone": "down",
+          "priced": "Henüz indirimi fiyatlamadı: endeks yatay-hafif düşüşte. Bankalar normalde faiz indiriminin ilk kazananıdır, çünkü mevduat maliyeti kredi faizinden hızlı düşer ve net faiz marjı açılır.",
+          "question": "İndirim gelirse ve TCMB devamını işaret ederse bankaların marj genişlemesi başlar mı? Bankalar beklentiyi neden henüz fiyatlamıyor: indirimin boyutu mu belirsiz, yoksa kredi kalitesi endişesi mi?",
+          "flow": "Faiz indirimi döngülerinde para genellikle önce bankalara, ardından borcu yüksek ve faize duyarlı sektörlere (GYO, inşaat, borçlu sanayi) kayar. Bu bir mekanizma, bu sefer olacağının garantisi değil.",
+          "counter": "Zayıflayan sanayi üretimi kredi talebini ve geri ödeme gücünü bozabilir; takipteki alacaklar artarsa indirimin marj faydası silinir."
+        },
+        {
+          "name": "Holdingler",
+          "tickers": [
+            "XHOLD"
+          ],
+          "move": "−%1,45",
+          "tone": "down",
+          "priced": "Günün en sert düşüşü. Satışın nedeni kaynaklarda netleşmedi; büyük sermayeli grupların zayıf kalması yükselişin geniş tabanlı olmadığını gösteriyor.",
+          "question": "Düşüş tek bir holdinge özgü bir haberden mi, yoksa genel bir risk azaltmadan mı geliyor? Belirsiz.",
+          "counter": "Holdingler bankacılık ve sanayi iştiraklerinin toplamı gibi fiyatlanır; indirim döngüsü bankaları taşırsa holding iskontosu daralabilir.",
+          "flow": "Sebep netleşmeden yön okuması yapılmamalı."
+        },
+        {
+          "name": "Sanayi ve teknoloji",
+          "tickers": [
+            "XUSIN",
+            "XUTEK"
+          ],
+          "move": "+%0,93 / +%0,63",
+          "tone": "up",
+          "priced": "Zayıf üretim verisine rağmen yükseldiler: piyasa kötü veriyi \"faiz indirimi yaklaşıyor\" diye okudu. Borçlu sanayi şirketleri için düşen faiz finansman yükünü hafifletir.",
+          "question": "Faiz indirimi zayıf talebi telafi etmeye yetecek mi? Kâr marjları faizden çok iç ve dış talebe bağlı.",
+          "counter": "Petrol 100 doların üstünde kalırsa enerji maliyeti sanayi marjlarını sıkıştırır ve TCMB'yi temkinli tutar; indirim gelse bile kısa sürebilir."
+        }
+      ],
+      "checks": [
+        "Salı günkü cari denge verisi: enerji faturası açığı büyütüyorsa TCMB temkinli kalır.",
+        "22 Ekim PPK kararı ve özellikle Aralık için verilen rehberlik.",
+        "Bankaların üçüncü çeyrek bilançolarında net faiz marjı ve takipteki alacak oranı.",
+        "Holding endeksindeki düşüşün hangi şirketlerden geldiği (KAP açıklamaları)."
+      ],
+      "sources": [
+        {
+          "name": "Borsa MCP (BIST sektör endeksleri, 9 Ekim kapanış)"
+        },
+        {
+          "name": "TÜİK sanayi üretimi, Ağustos"
         }
       ]
     }

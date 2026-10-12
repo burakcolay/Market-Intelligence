@@ -1,5 +1,6 @@
 import { shell, loadDay, loadJSON, fail, esc, map, kpi, paras, dateTR, toneClass, tvMini, liveKeyFor, startLive, num, signed } from '../app.js';
 import { sectorHeat } from '../charts.js';
+import { impactSection } from '../impact.js';
 
 const MOODS = {
   risk_off: { name: 'Risk kaçışı', color: '#B42318', idx: 0 },
@@ -116,26 +117,7 @@ async function main() {
     <nav class="toc" aria-label="Anlatım sırası">${TOC.filter(([id]) => id !== 'nq' || D.nq).map(([id, t]) => `<a href="#${id}"><b>${NUM[id]}</b> ${esc(t)}</a>`).join('')}</nav>
   </section>`;
 
-  // Haber etkisi: günün en çok fiyat hareketi yaratan haberleri, etkilenen gruplar ve her grup için asıl soru
-  const NQ100 = new Set(US_CODES);
-  const tk = (t) => (NQ100.has(t) ? `<a class="mono" href="sirket.html?t=${esc(t)}">${esc(t)}</a>` : `<span class="mono">${esc(t)}</span>`);
-  const impact = (D.impact || []).length ? `<section class="sec" id="etki">
-    <div class="sec-head"><span class="num" style="background:var(--ink)">!</span><h2>Haber etkisi</h2><span class="small muted">günün fiyatı en çok oynatan haberi, kimi nasıl etkiledi ve neye bakmalı</span></div>
-    ${map(D.impact, (e) => `<article class="card impact">
-      <h3>${esc(e.title)}</h3>
-      ${e.summary ? `<p>${withTerms(e.summary)}</p>` : ''}
-      <div class="impact-groups">${map(e.groups, (g) => `<div class="ig ${g.tone === 'up' ? 'up' : g.tone === 'down' ? 'down' : 'flat'}">
-        <div class="ig-h"><b>${esc(g.name)}</b><span class="mono ig-move">${esc(g.move || '')}</span></div>
-        <div class="ig-t">${map(g.tickers || [], (t) => tk(t)).replace(/<\/(a|span)><(a|span)/g, '</$1> · <$2')}</div>
-        ${g.priced ? `<p><span class="lbl">Piyasa ne fiyatladı</span>${withTerms(g.priced)}</p>` : ''}
-        ${g.question ? `<p><span class="lbl">Asıl soru</span>${withTerms(g.question)}</p>` : ''}
-        ${g.counter ? `<p><span class="lbl">Ters okuma</span>${withTerms(g.counter)}</p>` : ''}
-      </div>`)}</div>
-      ${e.checks?.length ? `<div class="impact-checks"><span class="eyebrow">Karar vermeden önce bakılacaklar</span><ol>${map(e.checks, (c) => `<li>${esc(c)}</li>`)}</ol></div>` : ''}
-      ${e.sources?.length ? `<span class="xs muted">Kaynak: ${e.sources.map((x) => (x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>` : esc(x.name))).join(' · ')}</span>` : ''}
-    </article>`)}
-    <span class="xs muted">Al/sat tavsiyesi değildir; haberin hangi soruyu doğurduğunu ve neye bakılacağını gösterir.</span>
-  </section>` : '';
+  const impact = impactSection(D.impact, { usCodes: US_CODES, terms: withTerms });
 
   const s1 = `<section class="sec" id="s1">${secHead(NUM.s1, 'Büyük resim')}
     <div class="row">

@@ -417,3 +417,4 @@ table.corr td { width: 44px; height: 30px; text-align: center; font-family: var(
 .ig p { font-size: 14px; line-height: 1.5; color: var(--ink-2); }
 .ig .lbl { display: block; font-size: 11.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-bottom: 1px; }
 .impact-checks ol { margin: 6px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.impact-top { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }

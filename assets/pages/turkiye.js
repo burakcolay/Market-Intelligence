@@ -1,5 +1,6 @@
 import { shell, loadDay, fail, esc, map, kpi, paras, lessonBox, num, startLive } from '../app.js';
 import { lineChart, hbars, bondCurve } from '../charts.js';
+import { impactSection } from '../impact.js';
 
 async function main() {
   const ctx = await loadDay();
@@ -18,6 +19,7 @@ async function main() {
       <h1 style="font-size:26px">${esc(T.reading.headline)}</h1>
       ${paras(T.reading.paragraphs)}
     </section>
+    ${impactSection((ctx.data.impact || []).filter((e) => e.market === 'Türkiye'), { title: 'Türkiye: olay ve sektör etkisi' })}
 
     <div class="row">
       <section class="card" style="flex:3 1 560px">

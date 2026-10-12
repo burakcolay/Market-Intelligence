@@ -1,5 +1,6 @@
 import { shell, loadDay, fail, esc, map, kpi, paras, lessonBox, num, signed, tvMini, startLive } from '../app.js';
 import { gauge, fngLabel, levelMap, flowBars } from '../charts.js';
+import { impactSection } from '../impact.js';
 
 const coinBg = (v) => v >= 20 ? '#7FCB9F' : v >= 5 ? '#B8E3C9' : v > 0.05 ? '#E6F5EC' : v <= -40 ? '#DB7A6C' : v <= -15 ? '#ECA89D' : v <= -3 ? '#F4CBC4' : v < -0.05 ? '#F8E1DD' : '#F0F0EC';
 const TAG = { bad: 'b-bad', good: 'b-good', flat: 'b-mid' };
@@ -50,6 +51,7 @@ async function main() {
       ${paras(K.reading.paragraphs)}
       <span class="xs muted">Bu yorum ${esc(ctx.data.updated)} fiyatlarıyla yazıldı; kartlar ve grafikler canlı.</span>
     </section>
+    ${impactSection((ctx.data.impact || []).filter((e) => e.market === 'Kripto'), { title: 'Kripto: olay ve etki' })}
 
     <section class="card">
       <span class="eyebrow">Piyasa değeri ve dominans</span>
