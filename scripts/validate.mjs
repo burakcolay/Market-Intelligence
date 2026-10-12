@@ -58,6 +58,20 @@ if (D) {
   each(D.s6?.today, 's6.today', (e, p) => { if (!/^\d{2}:\d{2}$/.test(e.time || '')) errors.push(`${p}.time SS:DD olmalı`); });
   for (const k of ['likely', 'alternative', 'signal']) need(D, `s7.${k}`, isStr, 'boş');
   need(D, 's8.title', isStr, 'boş');
+  // Haber etkisi (isteğe bağlı, en fazla 2)
+  if (D.impact != null) {
+    if (!Array.isArray(D.impact) || D.impact.length > 2) errors.push('impact: en fazla 2 haber içeren liste olmalı');
+    each(D.impact, 'impact', (e, p) => {
+      if (!isStr(e.title)) errors.push(`${p}.title boş`);
+      if (!Array.isArray(e.groups) || e.groups.length < 2) errors.push(`${p}.groups en az 2 grup olmalı`);
+      each(e.groups, `${p}.groups`, (g, q) => {
+        if (!isStr(g.name)) errors.push(`${q}.name boş`);
+        if (!['up', 'down', 'flat'].includes(g.tone)) errors.push(`${q}.tone up|down|flat olmalı`);
+        if (!isStr(g.question)) errors.push(`${q}.question boş`);
+        if (!isStr(g.counter)) errors.push(`${q}.counter (ters okuma) boş`);
+      });
+    });
+  }
   need(D, 's8.paragraphs', arr(1), 'boş');
   if (D.s8?.concept && G && !G.concepts[D.s8.concept]) errors.push(`s8.concept "${D.s8.concept}" sözlükte yok (data/sozluk.json'a ekle)`);
   need(D, 'news', arr(3), 'en az 3 haber');

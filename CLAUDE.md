@@ -94,6 +94,17 @@ Bu kural `summary`, `s1`-`s7` paragrafları, `turkiye.reading`, `kripto.reading`
 - `watch`: bugün izlenecek tek şey, tek cümle.
 - `earnings`: NQ'yu en çok oynatan şirketlerin sıradaki bilanço tarihleri `{ticker, name, date: "YYYY-MM-DD", time: "before"|"after"}` (açılış öncesi / kapanış sonrası). Liste: AAPL, MSFT, NVDA, AMZN, META, GOOGL, TSLA, AVGO. Bigdata.com `corporate_calendar` (earnings-call) ile çek; tarihi geçenleri bir sonraki çeyreğinkiyle güncelle. Entity ID'ler: AAPL D8442A, MSFT 228D42, NVDA E09E2B, AMZN 0157B1, META 12E454, GOOGL 4A6F00, TSLA DD3BB1, AVGO 09DE1F. Takvim saati ABD kapanışından (23:00 TSİ) sonraysa `after`.
 
+**Haber etkisi (`impact`)** — ana sayfada özetin hemen altında. Günün fiyatı en çok oynatan 1-2 haberini (önceki seansın kapanış hareketleri) "kim nasıl etkilendi ve neye bakmalı" diye açar. Burak'ın sohbette sorduğu "bu haberle bu sektörde ne var" sorusunun cevabı sormadan panelde hazır olsun diye var.
+- Seçim: Bigdata.com'da önceki seansın en büyük hisse/sektör hareketlerini ve arkasındaki haberi bul. **Aynı haber en az iki grubu belirgin oynatmış olmalı** (ör. operatörler düştü, kuleler yükseldi). Böyle bir haber yoksa `impact` alanını **koyma**; dolgu yazma.
+- `groups` (2-4 grup): `{name, tickers[], move, tone: up|down|flat, priced, question, counter}`.
+  - `move`: araçtan gelen gerçek hareket ("%8,5–13 düşüş"). Uydurma; bilinmiyorsa grubu koyma.
+  - `priced`: piyasa bu hareketle neyi fiyatladı (mekanizma).
+  - `question`: bu grup için asıl soru; cevabı belirsizse "belirsiz" de.
+  - `counter`: **ters okuma zorunlu**; aynı haberin bu grup için tersine yorumlanabileceği yön. Tek taraflı hikâye yazma.
+- `checks`: karar vermeden önce bakılacak 3-4 doğrulanabilir veri (frekans koşulu, borç/temettü karşılama, sözleşme süresi, sıradaki bilanço gibi).
+- `title`, `summary` (1-2 cümle), `sources[{name, url}]` (Bigdata sonuç adresi; yoksa sadece name).
+- Al/sat, hedef fiyat, "fırsat" dili yok. Yorum kuralı geçerli.
+
 **Veriler ne söylüyor (`makro.analysis`)** — makro sekmesinin ana yorumu, `surprises_note`'un yerine geçer. Son 7 günün verilerini tek tek saymaz; birlikte ne anlattıklarını yorumlar.
 ```
 "analysis": {
@@ -135,6 +146,7 @@ Bu kural `summary`, `s1`-`s7` paragrafları, `turkiye.reading`, `kripto.reading`
 | `date`, `updated` | `"2026-10-06"`, `"09:00"` |
 | `tickers[]` | `{name, value, chg, tone}` üst şerit, 10 gösterge |
 | `summary` | `{headline, lede, paragraphs[], read_min}` Claude'un günlük özeti |
+| `impact` | isteğe bağlı, en fazla 2: `[{title, summary, groups[{name, tickers[], move, tone: up|down|flat, priced, question, counter}], checks[], sources[{name, url}]}]` |
 | `s1` | `{mood: risk_off|temkinli|risk_on, mood_note, changes[{tag, tone: same|good|bad|new, text}], themes[3]{title,text}}` |
 | `s2` | `{chain[], paragraphs[], sectors[{name, chg}]}` ABD + S&P sektörleri |
 | `s3`, `s4`, `s5` | `{chain[], cards[{label, value, sub, tone}], paragraphs[]}` Avrupa-Asya / para-faiz-emtia / Türkiye |

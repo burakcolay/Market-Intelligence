@@ -72,6 +72,62 @@
     ],
     "read_min": 5
   },
+  "impact": [
+    {
+      "title": "SpaceX frekans aldı: operatörler sert düştü, kule şirketleri yükseldi",
+      "summary": "SpaceX'in düşük bant frekans portföyünü satın alması, Starlink'in ABD'de cep telefonu operatörü olabileceği ihtimalini fiyatlara taşıdı. Aynı haber üç grubu üç farklı yönde oynattı.",
+      "groups": [
+        {
+          "name": "Operatörler",
+          "tickers": [
+            "TMUS",
+            "T",
+            "VZ"
+          ],
+          "move": "%8,5–13 düşüş",
+          "tone": "down",
+          "priced": "Frekans sahipliği operatörlerin rekabet hendeğiydi; piyasa bu hendeğin aşılabileceğini ve gelecek nakit akışlarının daha az değerli olabileceğini fiyatladı.",
+          "question": "Starlink gerçekten ülke çapında rekabetçi bir cep hizmeti verebilir mi ve ne kadar sürede? Rakip bugün fiyatlandı ama gelir kaybına ne zaman döneceği belirsiz.",
+          "counter": "Operatörlerin güçlü nakit akışı ve sadık abone tabanı var; uydunun bina içi kapsama ve kapasite sınırları, rekabetin sanıldığından yavaş gelmesine yol açabilir."
+        },
+        {
+          "name": "Kule şirketleri",
+          "tickers": [
+            "AMT",
+            "CCI",
+            "SBAC"
+          ],
+          "move": "%7–16 yükseliş",
+          "tone": "up",
+          "priced": "Yeni bir ağın yer yer antene ve kule kirasına ihtiyaç duyacağı beklentisi.",
+          "question": "Starlink'in cep hizmeti yer kulelerine gerçekten ihtiyaç duyacak mı, yoksa doğrudan uydudan mı çalışacak?",
+          "counter": "Uydu bağlantısı yer kulesine olan ihtiyacı azaltabilir; aynı haber kuleler için ters yönde okunabilir. Kuleler ayrıca faize duyarlı, tahvil benzeri hisselerdir."
+        },
+        {
+          "name": "Haberin kaynağı",
+          "tickers": [
+            "SPCX"
+          ],
+          "move": "yaklaşık %1 yükseliş",
+          "tone": "flat",
+          "priced": "En küçük tepki haberin kaynağında geldi: frekansın değeri büyük ölçüde zaten bekleniyordu.",
+          "question": "Frekans yatırımı Starlink'in gelirine ne zaman ve ne ölçekte yansıyacak?",
+          "counter": "Yeni bir pazara girmenin maliyeti (cihaz uyumu, düzenleme, fiyat rekabeti) kârlılığı geciktirebilir."
+        }
+      ],
+      "checks": [
+        "SpaceX'in aldığı frekansın hangi bantta, kimden ve hangi koşulla alındığı; kapsamayı gerçekte ne kadar genişlettiği.",
+        "Operatörlerin borç yükü ve temettü karşılama oranı (nakit akışı temettüyü ne kadar rahat karşılıyor).",
+        "Kule şirketlerinin mevcut kira sözleşmelerinin süresi; uzun sözleşmeler etkiyi yıllara yayar.",
+        "Ekim sonu bilançolarında operatör yönetimlerinin bu rekabeti nasıl yorumlayacağı."
+      ],
+      "sources": [
+        {
+          "name": "Bigdata.com (9 Ekim kapanış hareketleri ve haber)"
+        }
+      ]
+    }
+  ],
   "s1": {
     "mood": "temkinli",
     "mood_note": "endeksler haftayı artıda kapattı ama faiz zirveye yakın, petrol 100 doların üstünde ve çarşamba enflasyonu bekleniyor",
