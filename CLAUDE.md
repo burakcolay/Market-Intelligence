@@ -45,6 +45,8 @@ Doğrudan `main`'e push et. Ayrı dala atıp merge commit ile birleştirme; merg
 ## Yazım kuralları
 
 - Nasdaq her yerde **Nasdaq 100** (^NDX, Burak'ın takip ettiği NQ vadelisinin endeksi) olarak yazılır; Nasdaq Bileşik (^IXIC) kullanma. Şeritteki adı `Nasdaq 100`.
+- Kripto sayfasında fiyat seviyesi dili yok: destek, direnç, hedef, "X bin testi", "savunma" yazma (`kripto.levels` kaldırıldı). Yönü ETF akışı, dolar, faiz, dominans ve sektör rotasyonuyla anlat. `drivers[].tag` için "Olumlu" / "Baskı" / "Belirsiz".
+- `kripto.kpis[].sub` canlı fiyat gelince gizlenir; kısa tut (ör. "1 ayda +%8,1"), haber ya da "son bilinen" notu yazma.
 - Kripto coin tablosu sadece BTC, ETH, BNB, SOL. XRP, ADA, DOGE, LINK, AVAX, LTC ekleme (Burak çıkardı).
 - Gösterge adlarını değiştirme (`S&P 500`, `Nasdaq 100`, `BIST 100`, `USD/TRY`, `Ons altın`, `Gram altın`, `Brent`, `BTC`, `TOTAL`, `BTC.D` vb.): site canlı fiyatı bu adlardan eşleştiriyor.
 - Fiyatlar rutinin çalıştığı andaki anlık değerdir; `updated` alanına o saati yaz.
@@ -172,7 +174,7 @@ Bu kural `summary`, `s1`-`s7` paragrafları, `turkiye.reading`, `kripto.reading`
 | `faizler` | `{kpis[], curve[{tenor, now, m1}], curve_note, nq_note, fed{rate, rate_note, next_meeting, pricing, paragraph}, speakers[{when, who}]}` |
 | `kuresel` | `{groups[{name, unit: pct|bp, rows[{name, d1, w1, m1, ytd}]}], note}` · Risk termometresi canlıdır, rutin yazmaz. |
 | `turkiye` | `{kpis[], reading{headline, paragraphs[]}, bist{title, change_label, tone, highlight?{from, label}, points[{d, v}]}, sectors[{name, chg}], sectors_note, cpi{last, labels[], values[], note}, rates{policy, bonds[{tenor, v}], cards[], note}, macro[{name, period, actual, cons, prev, note, tone}], upcoming[{when, name}], lesson{title, paragraphs[], rule}, source}` |
-| `kripto` | `{kpis[{code,label,value,sub,tone}], fng{now, yesterday, week}, reading{}, dominance{total_label, btc, usdt, total2_label}, dom_cards[{code,text}], levels{range[lo,hi], zone[a,b], items[{name, price, label, kind: past|support|now|resistance|ref|target}], note}, etf[{label, v (milyar $), text}], etf_note, sectors_note, coins[{sym, name, price, d1, w1, m1, m3, ytd, y1}], coins_note, institutional[{v,title,note}], drivers[{tag, tone, title, note}], lesson{}}` |
+| `kripto` | `{kpis[{code,label,value,sub,tone}], fng{now, yesterday, week}, reading{}, dominance{total_label, btc, usdt, total2_label}, dom_cards[{code,text}], etf[{label, v (milyar $), text}], etf_note, sectors_note, coins[{sym, name, price, d1, w1, m1, m3, ytd, y1}], coins_note, institutional[{v,title,note}], drivers[{tag, tone, title, note}], lesson{}}` |
 | `makro` | `{surprises[{name, actual, cons, prev, verdict, tone, meta, note}], analysis{headline, chain[], paragraphs[], effects[{asset, dir, why, hinge?}]}, regime{note, items[]}, countries{"ABD"|"Euro Bölgesi"|"Türkiye"|"Japonya"|"Çin": {charts[{type: bar|line, title, sub, unit, target?, target_label?, labels[], values[], last, trend, tone, note, prev, next}], rows[{group} | {name, period, actual, cons, prev, surprise, tone, next}], note}}, upcoming[{when, country, name, impact, cons, prev, scen?[{if, then}]}]}` |
 | `sources` | kaynak notu |
 

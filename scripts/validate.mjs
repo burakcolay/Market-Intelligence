@@ -131,11 +131,6 @@ if (D) {
   need(D, 'kripto.fng.now', (v) => isNum(v) && v >= 0 && v <= 100, '0-100 arası sayı');
   need(D, 'kripto.dominance.btc', isNum, 'sayı olmalı');
   need(D, 'kripto.dominance.usdt', isNum, 'sayı olmalı');
-  need(D, 'kripto.levels.range', (v) => Array.isArray(v) && v.length === 2 && v.every(isNum), '[alt, üst] olmalı');
-  each(K?.levels?.items, 'kripto.levels.items', (it, p) => {
-    if (!isNum(it.price)) errors.push(`${p}.price sayı olmalı`);
-    else if (K.levels.range && (it.price < K.levels.range[0] || it.price > K.levels.range[1])) errors.push(`${p}.price range dışında`);
-  });
   each(K?.etf, 'kripto.etf', (e, p) => { if (!isNum(e.v)) errors.push(`${p}.v sayı olmalı`); });
   each(K?.coins, 'kripto.coins', (c, p) => { for (const k of ['d1', 'w1', 'm1', 'm3', 'ytd', 'y1']) if (!numOrNull(c[k])) errors.push(`${p}.${k} sayı ya da null olmalı`); });
 

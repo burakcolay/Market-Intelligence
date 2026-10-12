@@ -464,3 +464,4 @@ table.corr td { width: 44px; height: 30px; text-align: center; font-family: var(
   .up-cty { display: inline; }
 }
 .chip:disabled { opacity: .45; cursor: not-allowed; }
+.kpi.live-only.is-live > .s { display: none; }

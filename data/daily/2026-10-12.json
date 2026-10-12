@@ -1490,7 +1490,7 @@
       "paragraphs": [
         "Perşembe'nin 80 bin sınaması geride kaldı; Bitcoin Cuma'daki hisse toparlanmasıyla birlikte hafta sonu 83 binin üzerine çıktı ve pazar akşamı 84 bine yaklaştı. Yani Bitcoin bu hafta da büyük teknoloji hisseleriyle aynı yönde hareket etti. Pazar günkü yaklaşık 166 milyon dolarlık tasfiyenin çoğu satış (kısa) pozisyonlarından geldi. Önemli: Perşembe günü alım pozisyonları silkelenmişti, şimdi sıra kısa pozisyonlara geldi; fiyat yükseldikçe bu pozisyonlar kapatmak için alım yapmak zorunda kalıyor ve hareketi hızlandırıyor.",
         "Kurumsal talep ise toparlanmayı henüz onaylamıyor. Spot ETF'lerden perşembe 244 milyon dolar daha çıktı ve iki günlük toplam çıkış haziran sonundan bu yana en ağırı oldu; ekim ayı toplamı eksi. Fiyat yükselirken akışın çıkışta kalması, hareketin gerçek alımdan çok kaldıraç ve pozisyon kapatmayla taşındığına işaret eder (bu bir okuma). Bir de vadeli işlem verisi var: Binance'te funding oranı negatif görünüyor, yani uzun pozisyon sahipleri ödeme alıyor, piyasa aşağı yönlü bahse ödeme yapıyor. Korku-hırs endeksi hırs bölgesinde ama sayısal değerini bu sabah güncelleyemedim.",
-        "Bundan sonra: yukarıda eylül zirvesi ve yıl açılışı civarındaki 86.500-87.570 bandı direnç, aşağıda 81 bin ve altında 80.400 testi var. Seçim hikâyesi de masada: ara seçim 3 Kasım'da ve bir analist seçim öncesi yükselip sonrasında düzeltme ya da önce düşüp sonra toparlanma olmak üzere iki senaryo görüyor. Kısa vadede belirleyici veri çarşamba TÜFE'si: sıcak gelirse faiz ve dolar yükselir, Bitcoin'in hırs bölgesindeki fiyatlaması sınanır; ETF girişi dönerse 81 bin savunması güçlenir."
+        "Seçim hikâyesi de masada: ara seçim 3 Kasım'da ve bir analist seçim öncesi yükselip sonrasında düzeltme ya da önce düşüp sonra toparlanma olmak üzere iki senaryo görüyor. Kısa vadede belirleyici veri çarşamba TÜFE'si: sıcak gelirse faiz ve dolar yükselir, Bitcoin'in hırs bölgesindeki fiyatlaması sınanır; ETF akışlarının yeniden girişe dönmesi ise talebin geri geldiğini gösterir."
       ]
     },
     "dominance": {
@@ -1517,67 +1517,6 @@
         "text": "Altcoin piyasası. BTC.D düşerken TOTAL2 yükselirse para altcoin'lere dönüyor demektir."
       }
     ],
-    "levels": {
-      "range": [
-        72000,
-        128000
-      ],
-      "zone": [
-        81000,
-        86500
-      ],
-      "items": [
-        {
-          "name": "Eylül dibi",
-          "price": 75000,
-          "label": "~75.000",
-          "kind": "past"
-        },
-        {
-          "name": "Destek testi",
-          "price": 80400,
-          "label": "80.400",
-          "kind": "support"
-        },
-        {
-          "name": "Destek",
-          "price": 81000,
-          "label": "81.000",
-          "kind": "support"
-        },
-        {
-          "name": "Şu an",
-          "price": 83506,
-          "label": "~83.500",
-          "kind": "now"
-        },
-        {
-          "name": "Direnç",
-          "price": 86500,
-          "label": "86.500",
-          "kind": "resistance"
-        },
-        {
-          "name": "Yıl açılışı",
-          "price": 87570,
-          "label": "87.570",
-          "kind": "ref"
-        },
-        {
-          "name": "Hedef",
-          "price": 100000,
-          "label": "100.000",
-          "kind": "target"
-        },
-        {
-          "name": "Zirve",
-          "price": 126080,
-          "label": "126.080",
-          "kind": "past"
-        }
-      ],
-      "note": "Fiyat Perşembe günü 80 bin dolarlık psikolojik seviyenin hemen üstünü test etti, hafta sonu 83-84 bin bandına döndü. Üstte 86.500 civarındaki satış duvarı ve 87.570 (yılın açılış fiyatı) direnç bölgesi; kalıcı kapanış yılı artıya çevirir. Bitcoin, 126 binlik zirvesinin hâlâ yaklaşık %34 altında."
-    },
     "etf": [
       {
         "label": "Eylül",
@@ -1689,13 +1628,13 @@
         "note": "Dolar endeksi dört haftadır yükseliyor; getirisiz varlığı tutmanın maliyeti yüksek."
       },
       {
-        "tag": "Destek",
+        "tag": "Olumlu",
         "tone": "good",
         "title": "Kısa pozisyon sıkışması",
         "note": "Pazar günkü tasfiyenin çoğu satış pozisyonlarındandı; funding negatif, yani yukarı hareket kısa pozisyonları kapatmaya zorlayabilir."
       },
       {
-        "tag": "Destek",
+        "tag": "Olumlu",
         "tone": "good",
         "title": "Hisselerle birlikte toparlanma",
         "note": "Cuma günkü teknoloji toparlanması Bitcoin'i 82-84 bin bandına taşıdı."

@@ -256,7 +256,11 @@ export function applyLive(L, root = document) {
       el.title = sinceText(key, v, snap);
     } else {
       const line = el.querySelector('.live-line');
-      if (line) {
+      if (line && el.classList.contains('live-only')) {
+        // sadece canlı: sabah notunu ve "rutinde…" satırını gösterme
+        const ct = chgText(v), val = v.bp ?? v.chg;
+        line.innerHTML = `<i class="dot"></i>canlı${ct ? ` · 24 saat <b class="${val > 0 ? 'up' : val < 0 ? 'down' : 'flat'}">${esc(ct)}</b>` : ''}`;
+      } else if (line) {
         const ct = chgText(v);
         line.innerHTML = `<i class="dot"></i>canlı${ct ? ' · bugün ' + esc(ct) : ''}<br><span>${esc(sinceText(key, v, snap))}</span>`;
       }

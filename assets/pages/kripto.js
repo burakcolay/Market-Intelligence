@@ -1,5 +1,5 @@
 import { shell, loadDay, loadJSON, heatBg, fail, esc, map, kpi, paras, lessonBox, num, signed, tvMini, startLive } from '../app.js';
-import { gauge, fngLabel, levelMap, flowBars } from '../charts.js';
+import { gauge, fngLabel, flowBars } from '../charts.js';
 import { impactSection } from '../impact.js';
 
 const coinBg = (v) => v >= 20 ? '#7FCB9F' : v >= 5 ? '#B8E3C9' : v > 0.05 ? '#E6F5EC' : v <= -40 ? '#DB7A6C' : v <= -15 ? '#ECA89D' : v <= -3 ? '#F4CBC4' : v < -0.05 ? '#F8E1DD' : '#F0F0EC';
@@ -68,7 +68,7 @@ async function main() {
   app.innerHTML = `<main class="wrap">
     <div class="live-stamp inline" data-live-stamp hidden></div>
     <div class="row" style="align-items:stretch">
-      <div class="grid" style="flex:3 1 600px;--min:190px;gap:12px">${map(K.kpis, (k) => kpi(k, 'big'))}</div>
+      <div class="grid" style="flex:3 1 600px;--min:190px;gap:12px;align-content:start">${map(K.kpis, (k) => kpi(k, 'big live-only'))}</div>
       <section class="card" id="fng" style="flex:1 1 280px;align-items:center;gap:4px">${fngBlock(K.fng)}</section>
     </div>
 
@@ -95,18 +95,11 @@ async function main() {
       </div>
     </section>
 
-    <div class="row">
-      <section class="card" style="flex:3 1 540px">
-        <span class="eyebrow">Bitcoin seviye haritası</span>
-        <div class="tbl-wrap"><div style="min-width:560px" id="levels">${levelMap(K.levels)}</div></div>
-        <p class="small" style="color:var(--ink-2)"><strong>Nasıl okunur:</strong> ${esc(K.levels.note)}</p>
-      </section>
-      <section class="card" style="flex:2 1 340px">
-        <span class="eyebrow">Spot Bitcoin ETF akışları</span>
-        ${flowBars(K.etf)}
-        <p class="small" style="color:var(--ink-2)">${esc(K.etf_note)}</p>
-      </section>
-    </div>
+    <section class="card">
+      <span class="eyebrow">Spot Bitcoin ETF akışları</span>
+      ${flowBars(K.etf)}
+      <p class="small" style="color:var(--ink-2)">${esc(K.etf_note)}</p>
+    </section>
 
     <section class="card">
       <div class="head-row"><span class="eyebrow">Büyük coinler · performans</span><span class="small muted">Fiyat ve 1 gün canlı (24 saat), diğerleri sabah verisi</span></div>
@@ -152,12 +145,6 @@ async function main() {
         total_label: num(g.total / 1e12, 2) + ' trilyon $',
         total2_label: '≈ ' + num(g.total2 / 1e12, 2) + ' trilyon $',
       }, true);
-    }
-    const btc = L.crypto?.btc?.price;
-    if (btc) {
-      const items = K.levels.items.map((it) => (it.kind === 'now' ? { ...it, price: btc, label: num(btc, 0) } : it));
-      const [lo, hi] = K.levels.range;
-      document.getElementById('levels').innerHTML = levelMap({ ...K.levels, range: [Math.min(lo, btc * 0.97), Math.max(hi, btc * 1.03)], items });
     }
     document.querySelectorAll('tr[data-sym]').forEach((tr) => {
       const c = L.crypto?.[tr.dataset.sym];
