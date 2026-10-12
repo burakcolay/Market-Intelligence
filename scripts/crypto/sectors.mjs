@@ -15,7 +15,6 @@ const SECTORS = [
   ['exchange-based-tokens', 'Borsa tokenları', 'BNB, OKB gibi borsa coinleri'],
   ['depin', 'DePIN', 'Merkeziyetsiz fiziksel altyapı'],
   ['gaming', 'Oyun', 'Oyun ve metaverse tokenları'],
-  ['liquid-staking-tokens', 'Likit staking', 'stETH gibi stake edilmiş varlıklar'],
   ['stablecoins', 'Stabilcoinler', 'Payın artması: para kenara çekiliyor'],
 ];
 
@@ -64,7 +63,10 @@ const items = SECTORS.filter(([id]) => byId.has(id)).map(([id, name, desc]) => {
     d1: c.market_cap_change_24h != null ? +c.market_cap_change_24h.toFixed(2) : null,
     w1: pct(c.market_cap, w?.[id]), m1: pct(c.market_cap, m?.[id]),
     share_w1: w?.[id] && w._total && total ? +(((c.market_cap / total) - (w[id] / w._total)) * 100).toFixed(2) : null,
-    top3: (c.top_3_coins_id || []).map((x) => sym[x] || x),
+    // sarılı/stake edilmiş kopyalar (wstETH gibi) aynı varlığı iki kez gösterir, atlanır
+    top3: (c.top_3_coins_id || []).filter((x) => !/wrapped|staked|bridged/.test(x)).map((x) => sym[x] || x),
+    // kategoriye yeni büyük bir token eklenince/çıkınca değişim fiyat hareketi değildir: işaretle
+    odd: c.market_cap_change_24h != null && Math.abs(c.market_cap_change_24h) > 25,
     vol: c.volume_24h,
   };
 });

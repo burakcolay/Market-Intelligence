@@ -7,11 +7,12 @@ const PER = { d1: '24 saat', w1: '7 gün', m1: '30 gün' };
 const SCALE = { d1: 1.5, w1: 4, m1: 8 };
 // Kripto sektör karoları (data/crypto/sectors.json, GitHub Actions + CoinGecko)
 function sectorTiles(S, per) {
-  const rows = [...S.items].sort((a, b) => (b[per] ?? -1e9) - (a[per] ?? -1e9));
+  const val = (x) => (x.odd && per === 'd1' ? null : x[per]);
+  const rows = [...S.items].sort((a, b) => (val(b) ?? -1e9) - (val(a) ?? -1e9));
   const fmtB = (v) => (v >= 1e12 ? `${num(v / 1e12, 2)} trilyon $` : `${num(v / 1e9, 0)} milyar $`);
-  return rows.map((x) => `<div class="sec-tile" style="cursor:default;background:${heatBg(x[per], SCALE[per])}" title="${esc(x.desc)}">
+  return rows.map((x) => `<div class="sec-tile" style="cursor:default;background:${heatBg(val(x), SCALE[per])}" title="${esc(x.desc)}${x.odd ? ' · Kategoriye büyük bir token eklendi/çıktı; değişim fiyat hareketi değil.' : ''}">
     <span class="sn">${esc(x.name)}</span>
-    <span class="sc mono">${x[per] == null ? '—' : esc(signed(x[per], 1, '%'))}</span>
+    <span class="sc mono">${x[per] == null ? '—' : esc(signed(x[per], 1, '%'))}${x.odd && per === 'd1' ? ' <span class="xs muted" style="font-family:var(--sans)">⚠ veri sapması</span>' : ''}</span>
     <span class="sm">${esc(x.top3.join(' · '))}</span>
     <span class="sm muted">${esc(fmtB(x.mcap))}${x.share != null ? ` · pay %${esc(num(x.share, 1))}` : ''}</span>
   </div>`).join('');
