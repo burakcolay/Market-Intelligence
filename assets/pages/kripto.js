@@ -1,8 +1,33 @@
-import { shell, loadDay, fail, esc, map, kpi, paras, lessonBox, num, signed, tvMini, startLive } from '../app.js';
+import { shell, loadDay, loadJSON, heatBg, fail, esc, map, kpi, paras, lessonBox, num, signed, tvMini, startLive } from '../app.js';
 import { gauge, fngLabel, levelMap, flowBars } from '../charts.js';
 import { impactSection } from '../impact.js';
 
 const coinBg = (v) => v >= 20 ? '#7FCB9F' : v >= 5 ? '#B8E3C9' : v > 0.05 ? '#E6F5EC' : v <= -40 ? '#DB7A6C' : v <= -15 ? '#ECA89D' : v <= -3 ? '#F4CBC4' : v < -0.05 ? '#F8E1DD' : '#F0F0EC';
+const PER = { d1: '24 saat', w1: '7 gün', m1: '30 gün' };
+const SCALE = { d1: 1.5, w1: 4, m1: 8 };
+// Kripto sektör karoları (data/crypto/sectors.json, GitHub Actions + CoinGecko)
+function sectorTiles(S, per) {
+  const rows = [...S.items].sort((a, b) => (b[per] ?? -1e9) - (a[per] ?? -1e9));
+  const fmtB = (v) => (v >= 1e12 ? `${num(v / 1e12, 2)} trilyon $` : `${num(v / 1e9, 0)} milyar $`);
+  return rows.map((x) => `<div class="sec-tile" style="cursor:default;background:${heatBg(x[per], SCALE[per])}" title="${esc(x.desc)}">
+    <span class="sn">${esc(x.name)}</span>
+    <span class="sc mono">${x[per] == null ? '—' : esc(signed(x[per], 1, '%'))}</span>
+    <span class="sm">${esc(x.top3.join(' · '))}</span>
+    <span class="sm muted">${esc(fmtB(x.mcap))}${x.share != null ? ` · pay %${esc(num(x.share, 1))}` : ''}</span>
+  </div>`).join('');
+}
+function sectorSection(S, note) {
+  if (!S?.items?.length) return '';
+  const hasW = S.items.some((x) => x.w1 != null), hasM = S.items.some((x) => x.m1 != null);
+  return `<section class="card" id="ksec">
+    <div class="head-row"><span class="eyebrow">Kripto sektörleri · para nereye akıyor</span>
+      <div class="chips">${Object.entries(PER).map(([k, l]) => `<button type="button" class="chip${k === 'd1' ? ' on' : ''}" data-per="${k}" ${(k === 'w1' && !hasW) || (k === 'm1' && !hasM) ? 'disabled title="Geçmiş birikiyor"' : ''}>${l}</button>`).join('')}</div></div>
+    <div class="sec-tiles" id="ksec-tiles">${sectorTiles(S, 'd1')}</div>
+    ${note ? `<p class="note"><strong>Rotasyon okuması:</strong> ${esc(note)}</p>` : ''}
+    <span class="xs muted">Sektörün toplam piyasa değerindeki değişim, en iyiden kötüye sıralı; karoda o sektörün en büyük 3 coini. Kategoriler örtüşür (bir coin birden fazla sektörde olabilir). Stabilcoin payının artması paranın riskten çekilip kenarda beklediğini gösterir. 7 ve 30 günlük değişim günlük kayıt biriktikçe dolar. Kaynak: CoinGecko kategorileri, güncelleme ${esc((S.updated || '').slice(0, 10))}.</span>
+  </section>`;
+}
+
 const TAG = { bad: 'b-bad', good: 'b-good', flat: 'b-mid' };
 
 function fngBlock(f, live) {
@@ -36,6 +61,7 @@ function domBlock(d, live) {
 async function main() {
   const ctx = await loadDay();
   const K = ctx.data.kripto;
+  const S = await loadJSON('data/crypto/sectors.json').catch(() => null);
   const app = shell('kripto', { ...ctx, updated: `Veriler ${ctx.data.updated}` });
 
   app.innerHTML = `<main class="wrap">
@@ -58,6 +84,8 @@ async function main() {
       <div id="dom" style="display:flex;flex-direction:column;gap:6px">${domBlock(K.dominance)}</div>
       <div class="grid" style="--min:230px;gap:12px">${map(K.dom_cards, (c) => `<div class="kpi soft" style="padding:14px"><span class="code">${esc(c.code)}</span><span class="small" style="color:var(--ink-2)">${esc(c.text)}</span></div>`)}</div>
     </section>
+
+    ${sectorSection(S, K.sectors_note)}
 
     <section class="card">
       <span class="eyebrow">Canlı grafikler · TradingView</span>
@@ -105,6 +133,12 @@ async function main() {
     <p class="source">Kaynak: Bigdata.com (sabah verisi ve haberler); canlı fiyatlar CoinGecko, Korku &amp; Açgözlülük alternative.me. CoinGecko'nun TOTAL'i daha fazla coin içerdiği için TradingView'deki TOTAL'den biraz farklı olabilir. Yatırım tavsiyesi değildir.</p>
   </main>`;
 
+  document.getElementById('ksec')?.addEventListener('click', (e) => {
+    const b = e.target.closest('.chip[data-per]');
+    if (!b || b.disabled) return;
+    document.querySelectorAll('#ksec .chip').forEach((c) => c.classList.toggle('on', c === b));
+    document.getElementById('ksec-tiles').innerHTML = sectorTiles(S, b.dataset.per);
+  });
   document.querySelectorAll('.tv[data-s]').forEach((el) => tvMini(el, el.dataset.s, { range: '3M', height: 200 }));
   if (ctx.isOld) return;
 

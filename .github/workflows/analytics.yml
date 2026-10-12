@@ -33,10 +33,12 @@ jobs:
       - name: Testler
         run: python -m pytest -q tests
       - name: Veri hattı ve analiz
+        env:
+          MSG: ${{ github.event.head_commit.message }}   # "veri:" ile başlayan sabah commit'i günlük modda çalışsın
         run: |
           MODE="${{ github.event.inputs.mode }}"
           if [ -z "$MODE" ]; then
-            if [ "${{ github.event_name }}" = "push" ] || [ "$(date -u +%u)" = "6" ]; then MODE=weekly; else MODE=daily; fi
+            if [ "$(date -u +%u)" = "6" ] || { [ "${{ github.event_name }}" = "push" ] && [ "${MSG#veri:}" = "$MSG" ]; }; then MODE=weekly; else MODE=daily; fi
           fi
           echo "MODE=$MODE" >> $GITHUB_ENV
           python -m mi.run "$MODE"

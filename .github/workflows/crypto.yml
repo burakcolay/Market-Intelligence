@@ -1,0 +1,31 @@
+name: Kripto sektörleri
+on:
+  schedule:
+    - cron: '20 3 * * *'      # her gün 06:20 TSİ (sabah rutininden önce)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/crypto/**', '.github/workflows/crypto.yml']
+permissions:
+  contents: write
+concurrency: crypto
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: CoinGecko kategorileri
+        run: node scripts/crypto/sectors.mjs
+      - name: Commit (Burak adına, Vercel için)
+        run: |
+          git config user.name "Burak Colay"
+          git config user.email "170448628+burakcolay@users.noreply.github.com"
+          git add data/crypto
+          git diff --cached --quiet && exit 0
+          git commit -m "kripto sektörleri: $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 5; done
+          exit 1
