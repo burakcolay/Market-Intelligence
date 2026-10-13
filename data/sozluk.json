@@ -276,6 +276,26 @@
         "reel",
         "sahin"
       ]
+    },
+    "devre-kesici": {
+      "name": "Devre kesici",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-10-13",
+      "def": "Endeks ya da hisse kısa sürede belirli bir oranda düştüğünde borsanın işlemi geçici olarak durdurması. Amaç panik satışın kendini besleyen bir zincire dönüşmesini önlemek ve yatırımcıya düşünme süresi vermektir.",
+      "analogy": "Elektrik sigortası gibi: yük aşırı artınca devre kapanır, sistem yanmaz; ama sigorta arızanın sebebini ortadan kaldırmaz.",
+      "chain": [
+        "Kötü haber gelir",
+        "Satış hızlanır",
+        "Endeks eşik oranda düşer",
+        "Borsa işlemi geçici durdurur",
+        "Yatırımcı yeniden değerlendirir, seans yeniden açılır"
+      ],
+      "quote": "Kore Borsası Çinli rakip haberiyle seans başında yüzde 7'den fazla düşünce işlemi Ağustos'tan beri ilk kez geçici durdurdu.",
+      "rule": "İşlem durduysa panik hızına bak, ama asıl soru durdurmayı tetikleyen haberin kalıcı olup olmadığı.",
+      "related": [
+        "risk",
+        "vix"
+      ]
     }
   }
 }
