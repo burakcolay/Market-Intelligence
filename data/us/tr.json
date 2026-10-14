@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -30,7 +30,17 @@
     "SHOP": "Küçük ve orta ölçekli işletmelere kendi internet mağazasını kurma, ödeme alma ve gönderim yönetimi platformu sunuyor. Gelir abonelik ücretleri ile satıcıların ödeme işlemlerinden alınan komisyondan geliyor.",
     "AMGN": "Biyoteknoloji ilaç şirketi: iltihaplı hastalıklar, kanser, kemik sağlığı ve kalp hastalıkları gibi alanlarda biyolojik ilaçlar üretiyor. Gelir birkaç büyük ilacın satışından geliyor; patent süreleri ve yeni ilaç sonuçları hisseyi belirliyor.",
     "LIN": "Dünyanın en büyük endüstriyel gaz şirketi: oksijen, azot, hidrojen gibi gazları sanayi, sağlık ve yarı iletken müşterilerine uzun vadeli sözleşmelerle satıyor. Sözleşmeler gelirin öngörülebilir kalmasını sağlıyor.",
-    "SNDK": "Bilgisayar ve veri merkezleri için NAND tabanlı kalıcı bellek (SSD) üreten bellek şirketi. Gelir bellek fiyatlarına çok duyarlı; yapay zekâ veri depolama talebi son dönemin ana itici gücü."
+    "SNDK": "Bilgisayar ve veri merkezleri için NAND tabanlı kalıcı bellek (SSD) üreten bellek şirketi. Gelir bellek fiyatlarına çok duyarlı; yapay zekâ veri depolama talebi son dönemin ana itici gücü.",
+    "ADI": "Analog Devices, gerçek dünyadaki sinyalleri (ses, sıcaklık, hareket, basınç) dijital veriye çeviren analog ve karma sinyal çipleri üretir. Gelirin büyük kısmı sanayi otomasyonu, otomotiv ve iletişim altyapısı müşterilerinden gelir; çipleri uzun yıllar kullanılan ürünlere gömüldüğü için müşteri ilişkileri kalıcıdır.",
+    "QCOM": "Qualcomm, akıllı telefonlar için işlemci ve modem çipleri (Snapdragon) tasarlar ve patent lisansları üzerinden ayrıca telif geliri alır. Telefon dışında otomobil, bilgisayar ve nesnelerin interneti pazarlarına açılmaya çalışıyor; gelirin ağırlığı hâlâ telefon çipleri ve lisanslardan gelir.",
+    "GILD": "Gilead Sciences, ağırlıklı olarak HIV tedavisi ve önleme ilaçlarıyla tanınan biyofarmasötik şirketidir. Gelirin büyük kısmı HIV ilaçlarından gelir; hepatit, kanser hücre tedavisi ve enfeksiyon ilaçları da portföyde yer alır.",
+    "PEP": "PepsiCo, içecek (Pepsi, Gatorade) ve atıştırmalık (Lay's, Doritos, Quaker) markalarıyla dünya çapında satış yapan bir gıda ve içecek şirketidir. Gelirin önemli kısmı atıştırmalıklardan ve Kuzey Amerika'dan gelir; markalar günlük tüketim ürünü olduğu için gelir istikrarlı kabul edilir.",
+    "STX": "Seagate Technology, veri merkezleri ve bilgisayarlar için sabit disk (HDD) üretir. Bulut ve yapay zekâ verisinin hızla büyümesi veri depolama talebini artırdığı için, gelirin asıl kaynağı büyük bulut şirketlerinin satın aldığı yüksek kapasiteli diskler.",
+    "TMUS": "T-Mobile US, ABD'de mobil hat ve ev interneti hizmeti veren bir telekom operatörüdür. Gelir aylık abonelik ücretlerinden gelir; abone sayısı ve abone başına gelir şirketin büyümesini belirler.",
+    "ISRG": "Intuitive Surgical, ameliyat doktorlarının kontrol ettiği da Vinci robotik cerrahi sistemlerini üretir. Gelirin büyük kısmı hastanelerin her ameliyatta kullandığı tek kullanımlık aletler ve servis sözleşmelerinden gelir; sistem satışı ise ilk yatırımı oluşturur.",
+    "WDC": "Western Digital, veri merkezleri ve kurumsal depolama için ağırlıklı olarak sabit disk (HDD) üretir. Bulut şirketlerinin veri depolama talebi gelirin ana kaynağıdır; flash bellek işini ayrı bir şirkete devretmiştir.",
+    "FTNT": "Fortinet, güvenlik duvarı (FortiGate) ve ağ güvenliği ürünleri satan bir siber güvenlik şirketidir. Gelir cihaz satışının yanında müşterilerin yenilediği güvenlik abonelikleri ve hizmetlerinden gelir; kendi geliştirdiği çipler ürünlerini rakiplerinden ayırır.",
+    "VRTX": "Vertex Pharmaceuticals, kistik fibrozis ilaçlarıyla pazarı yönlendiren bir biyoteknoloji şirketidir. Gelirin neredeyse tamamı bu hastalığın tedavisinden gelir; ağrı, böbrek hastalıkları ve diyabet için geliştirdiği yeni ilaçlar gelecek büyümeyi belirleyecek."
   },
   "notes": {
     "0000858877-26-000156": "Cisco yönetim kuruluna bağımsız yeni bir üye atadı: Cognite CEO'su Girish Rishi 9 Ekim itibarıyla kurulda. Rutin bir yönetim kurulu değişikliği, hisse için doğrudan finansal etkisi yok."
@@ -38,12 +48,27 @@
   "news": {
     "MU": [
       {
+        "date": "2026-10-13",
+        "title": "Micron %3,6 düşerek dördüncü gün üst üste geriledi; JPMorgan bellek arzının talebin altında kalacağını modelliyor",
+        "why": "Çinli CXMT haberi satışı tetikledi, ama Micron'un uzun vadeli müşteri sözleşmeleri ve bellek arz açığı tahmini temel talebin sürdüğünü gösteriyor."
+      },
+      {
         "date": "2026-10-12",
         "title": "Micron, Çinli CXMT'nin yeni bellek yapısı haberiyle %3,9 düştü",
         "why": "Çin'den gelecek bellek rekabeti fiyat gücüne dair şüphe doğuruyor; hisse bu yıl çok yükseldiği için satışa daha duyarlı."
       }
     ],
     "NVDA": [
+      {
+        "date": "2026-10-14",
+        "title": "Nvidia, İngiltere'de yapay zekâ ajanlarının güvenliği araştırmalarına beş yılda 250 milyon dolarlık hesaplama kapasitesi ayıracak",
+        "why": "Şirket ekosistemini ve kamu ilişkilerini güçlendiriyor; doğrudan gelir etkisi yok, ama hesaplama kapasitesine talebin sürdüğünü gösteriyor."
+      },
+      {
+        "date": "2026-10-14",
+        "title": "Danaher bilimsel araçlarına Nvidia yapay zekâsını entegre etmek için iş birliği duyurdu",
+        "why": "Yapay zekâ çipleri bilim ve ilaç keşfi gibi yeni sektörlere yayılıyor; finansal detay paylaşılmadı."
+      },
       {
         "date": "2026-10-12",
         "title": "Nvidia, yapay zekâ girişimi Reflection AI'ı satın almayı ya da yatırımını artırmayı görüşüyor (FT)",
@@ -66,9 +91,47 @@
     ],
     "GOOGL": [
       {
+        "date": "2026-10-14",
+        "title": "Google Gemini 4'ün yeni 'Argon' sürümünü kullanıma açtı",
+        "why": "Yapay zekâ model yarışında ürün hızı bulut ve arama gelirinin korunması için kritik; finansal etki henüz belirsiz."
+      },
+      {
         "date": "2026-10-12",
         "title": "Alphabet, Gemini 4'ün yeni bir sürümünü ('Carbon') şirket içinde test ediyor (Business Insider)",
         "why": "Yapay zekâ model yarışında ürün çıkış hızı bulut ve arama gelirinin korunması için kritik."
+      }
+    ],
+    "TSLA": [
+      {
+        "date": "2026-10-14",
+        "title": "Tesla'nın yeni Roadster tanıtımı 15 Ekim'e ertelendi",
+        "why": "Ürün gecikmeleri şirketin yeni ürün takvimine güveni sınıyor; yatırımcı için asıl önemli olan 21 Ekim'deki bilançoda robotaksi ve Optimus görünümü."
+      },
+      {
+        "date": "2026-10-13",
+        "title": "Tesla robotaksi ağı okul bölgelerinde hız aşımı iddiasıyla ABD yol güvenliği kurumu soruşturmasında",
+        "why": "Robotaksi büyüme hikâyesinin düzenleyici riskini artırıyor; Cybercab'in güvenlik standartlarına uyumu da sorgulanıyor."
+      }
+    ],
+    "MSFT": [
+      {
+        "date": "2026-10-13",
+        "title": "Microsoft neredeyse bir yıl sonra rekor kapanış yaptı",
+        "why": "Temmuz bilançosundaki hızlı bulut büyümesi hisseyi toparladı; ama yılbaşından bu yana Nasdaq 100'ün gerisinde."
+      }
+    ],
+    "AAPL": [
+      {
+        "date": "2026-10-13",
+        "title": "Apple kapanış rekorunu tazeledi",
+        "why": "Çip hisseleri satılırken büyük platform şirketlerinin rekor yapması, Nasdaq 100'deki zayıflığın çip zincirine özgü olduğunu gösteriyor."
+      }
+    ],
+    "ASML": [
+      {
+        "date": "2026-10-14",
+        "title": "ASML üçüncü çeyrek kârını beklentinin çok üstünde açıkladı ve 2026 satış rehberliğini yükseltti; 2027-2028 arzının talebi karşılamayacağını söyledi",
+        "why": "Müşteriler 2029-2030 için sipariş vermek istiyor; yapay zekâ yatırım harcamasının sürdüğünü gösteriyor, ama kapasite artışı bellek arzının ileride büyüyebileceği anlamına da geliyor."
       }
     ]
   }

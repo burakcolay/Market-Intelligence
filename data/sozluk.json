@@ -296,6 +296,26 @@
         "risk",
         "vix"
       ]
+    },
+    "fiyatlanmis-beklenti": {
+      "name": "Fiyatlanmış beklenti (priced in)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-10-14",
+      "def": "Bir haberin etkisinin, haber gelmeden önce yatırımcıların beklentisiyle fiyata zaten yansımış olması. Bu yüzden hisse haberin kendisine değil, haber ile beklenti arasındaki farka tepki verir.",
+      "analogy": "Doğum günü sürprizi gibi: herkes hediyeyi önceden biliyorsa açıldığında kimse şaşırmaz; sürpriz ancak hediye beklenenden farklı çıkınca olur.",
+      "chain": [
+        "Yatırımcı iyi sonuç bekler",
+        "Hisseyi önceden alır",
+        "Sonuç beklentiyle aynı gelir",
+        "Yeni bilgi yok, kâr alma başlar",
+        "Hisse iyi habere rağmen düşer"
+      ],
+      "quote": "Citi beklentinin üzerinde kâr açıkladı ama hissesi aynı gün yaklaşık yüzde 5,6 düştü.",
+      "rule": "Bir haberin iyi mi kötü mü olduğuna değil, beklentiden iyi mi kötü mü olduğuna bak; hisse zaten yükselmişse iyi haber bile yetmeyebilir.",
+      "related": [
+        "risk",
+        "cekirdek-enflasyon"
+      ]
     }
   }
 }
