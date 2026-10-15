@@ -316,6 +316,26 @@
         "risk",
         "cekirdek-enflasyon"
       ]
+    },
+    "cds": {
+      "name": "CDS (kredi temerrüt takası)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-10-15",
+      "def": "Bir şirketin ya da devletin borcunu ödeyememe riskine karşı satılan sigorta. Sigortayı alan yıllık prim öder; borçlu temerrüde düşerse satıcı kaybı karşılar. Prim ne kadar yüksekse piyasa batma ihtimalini o kadar büyük görüyor demektir.",
+      "analogy": "Borç için yapılan bir sigorta poliçesi gibi: ev ne kadar yangın riski taşıyorsa poliçe primi o kadar yüksek olur; prim yükseldiyse sigortacı yangın ihtimalini artırmış demektir.",
+      "chain": [
+        "Borçlu şirketin riski artar",
+        "Sigorta (CDS) primi yükselir",
+        "Kredi veren daha pahalı borç verir",
+        "Şirketin finansman maliyeti artar",
+        "Hisse ve yatırım planları baskı altında kalır"
+      ],
+      "quote": "Yapay zekâ bulut şirketi CoreWeave'in beş yıllık CDS primi 135 baz puan açıldı ve piyasanın ima ettiği beş yıllık temerrüt ihtimali yüzde 63'e çıktı (bir aktarıma göre); hisse aynı gün yüzde 15 düştü.",
+      "rule": "Hisse fiyatı büyümeyi, CDS primi borcun taşınabilirliğini fiyatlar; ikisi ters yöne gidiyorsa ikisinden de öğren, birine bakıp diğerini atlama.",
+      "related": [
+        "faiz",
+        "vadeprimi"
+      ]
     }
   }
 }
