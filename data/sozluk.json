@@ -336,6 +336,26 @@
         "faiz",
         "vadeprimi"
       ]
+    },
+    "fiili-dolasim": {
+      "name": "Fiili dolaşım (free float)",
+      "cat": "Türkiye",
+      "learned": "2026-10-19",
+      "def": "Bir şirketin hisselerinin, kurucu, devlet ve stratejik ortakların elindekiler çıkarıldıktan sonra borsada gerçekten alınıp satılabilen kısmı. Endeks sağlayıcıları bir hisseye ne kadar ağırlık vereceklerini bu orana bakarak hesaplar.",
+      "analogy": "Bir havuzda yüzme hakkı satılıyor ama kulübe üye olanlar suya girmiyorsa, havuzda fiilen yüzenler sayılandan azdır. Kalabalık sandığınız havuz aslında çok küçük, biraz hareket suyu çalkalar.",
+      "chain": [
+        "Hisselerin büyük kısmı ortakların elinde kalır",
+        "Gerçekten işlem gören pay küçülür",
+        "Az alıcıyla bile fiyat oynar",
+        "Endeks fonları fiili dolaşıma göre alır",
+        "Oran yanlış hesaplanırsa fiyat şişer ya da çöker"
+      ],
+      "quote": "MSCI, Türkiye'de fonların küçük şirketlerdeki paylarının fiili dolaşım hesabını bozabileceğini söyleyerek endeks değişikliklerini dondurdu; Endonezya'da benzer bir şeffaflık sorunu ülkenin statüsünü sorgulattı.",
+      "rule": "Bir hisse endekste sanıldığı kadar likit değilse fiyatını alıcıdan çok sahiplik yapısı belirler: yükselişe bakmadan önce fiili dolaşım oranına bak.",
+      "related": [
+        "piyasa-genisligi",
+        "risk"
+      ]
     }
   }
 }
