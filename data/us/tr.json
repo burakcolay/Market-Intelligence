@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-20",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -50,7 +50,17 @@
     "MAR": "Marriott, dünyanın en büyük otel zincirlerinden biridir ama otellerin çoğuna sahip olmaz; markasını ve işletme hizmetini lisanslar. Geliri otel sahiplerinden aldığı yönetim ve marka ücretlerinden ve sadakat programı kart gelirlerinden gelir.",
     "DDOG": "Datadog, şirketlerin yazılım ve bulut sistemlerini izleyen bulut tabanlı bir gözlemlenebilirlik platformu sunar. Geliri aboneliklerden gelir ve müşterinin kullandığı hizmet arttıkça büyür; yapay zekâ uygulamalarının izlenmesi yeni bir büyüme alanı.",
     "ADBE": "Adobe, Photoshop ve Illustrator gibi yaratıcı yazılımların, PDF'in ve pazarlama bulut çözümlerinin sahibidir. Geliri ağırlıklı olarak aylık ya da yıllık abonelikten gelir; asıl tartışma yapay zekâ üretken araçlarının bu aboneliği tehdit edip etmediği.",
-    "MELI": "MercadoLibre, Latin Amerika'nın en büyük e-ticaret ve dijital ödeme platformudur. Pazaryeri komisyonlarından, lojistik hizmetlerinden ve Mercado Pago üzerinden verdiği ödeme ve kredilerden gelir elde eder; en büyük pazarları Brezilya ve Arjantin."
+    "MELI": "MercadoLibre, Latin Amerika'nın en büyük e-ticaret ve dijital ödeme platformudur. Pazaryeri komisyonlarından, lojistik hizmetlerinden ve Mercado Pago üzerinden verdiği ödeme ve kredilerden gelir elde eder; en büyük pazarları Brezilya ve Arjantin.",
+    "MNST": "Enerji içeceği ve gazlı içecek markalarını satan şirket; ürünleri kendisi dolum yapmadan, ortak şişeleme firmalarına konsantre satarak büyüyor. Gelirin büyük kısmı enerji içeceği kategorisinden ve Coca-Cola dağıtım ağı üzerinden geliyor.",
+    "MRNA": "Haberci RNA teknolojisine dayalı aşı ve ilaçlar geliştiren biyoteknoloji şirketi. Gelir hâlâ büyük ölçüde solunum yolu aşılarına bağlı; yeni kanser ve nadir hastalık adaylarının başarısı değerlemenin asıl dayanağı.",
+    "APP": "Mobil uygulama ve oyun şirketlerine reklam alımı ve gelir yönetimi yazılımı sunan reklam teknolojisi şirketi. Gelirin çoğu yapay zekâ destekli reklam eşleştirme platformundan geliyor.",
+    "CDNS": "Çip tasarımcılarının kullandığı elektronik tasarım otomasyonu yazılımlarını satıyor. Yeni bir çip üretilmeden önce bu yazılımlarla tasarlanıp test edildiği için çip yatırımı arttıkça işi büyüyor.",
+    "CSX": "ABD'nin doğu yarısında yük taşıyan demiryolu şirketi; kömür, kimyasal, otomobil ve konteyner taşıyor. Gelirini ağır sanayi üretimi ve dış ticaret hacmi belirliyor.",
+    "SNPS": "Çip tasarım yazılımları ve çip içindeki hazır devre blokları satıyor; Cadence ile birlikte sektörün iki büyük oyuncusundan biri. Çip tasarımı karmaşıklaştıkça lisans gelirleri büyüyor.",
+    "INTU": "Küçük işletme ve bireylere muhasebe, vergi ve kişisel finans yazılımı satan şirket (TurboTax, QuickBooks, Credit Karma). Gelir vergi dönemi ve abonelik yenilemeleriyle mevsimsel dalgalanıyor.",
+    "CTAS": "İşletmelere üniforma kiralama, paspas, tuvalet malzemesi ve yangın güvenliği hizmeti veren şirket. Gelirin çoğu uzun vadeli, düzenli hizmet sözleşmelerinden geldiği için görece öngörülebilir.",
+    "DASH": "Restoran, market ve mağaza siparişlerinin kapıya teslimini yapan platform. Gelir sipariş komisyonlarından, teslimat ücretinden ve reklamdan geliyor.",
+    "MDLZ": "Çikolata, bisküvi ve atıştırmalık markalarının (Oreo, Cadbury, Toblerone) küresel üreticisi. Gelirin çoğu ABD dışından geldiği için kakao fiyatları ve döviz kuru kârlılığını belirliyor."
   },
   "notes": {
     "0000858877-26-000156": "Cisco yönetim kuruluna bağımsız yeni bir üye atadı: Cognite CEO'su Girish Rishi 9 Ekim itibarıyla kurulda. Rutin bir yönetim kurulu değişikliği, hisse için doğrudan finansal etkisi yok.",
@@ -59,6 +69,11 @@
   },
   "news": {
     "MU": [
+      {
+        "date": "2026-10-19",
+        "title": "Micron çip toparlanmasıyla yaklaşık %3 yükseldi",
+        "why": "Sekiz seanslık düşüşten sonra bellek hisselerinde dip alımı geldi; bellek talebindeki bozulma değil, pozisyon boşaltma tartışılıyor."
+      },
       {
         "date": "2026-10-15",
         "title": "Tayvan Cumhurbaşkanı Micron ve sendikayı olası grev öncesi 'samimi müzakereye' çağırdı",
@@ -103,6 +118,11 @@
       }
     ],
     "INTC": [
+      {
+        "date": "2026-10-19",
+        "title": "JPMorgan Intel'in notunu yükseltti, hisse yaklaşık %2 arttı",
+        "why": "Çip toparlanmasının yaşandığı günde banka yükseltmesi hisseyi sektörün üzerine taşıdı; ama nedeni bu haber değil, geniş çip dönüşü de olabilir."
+      },
       {
         "date": "2026-10-14",
         "title": "İsrail'deki Intel üretim tesisinde patlama: üç kişi ağır yaralandı, sebep henüz bilinmiyor",
@@ -169,6 +189,13 @@
         "date": "2026-10-14",
         "title": "ASML üçüncü çeyrek kârını beklentinin çok üstünde açıkladı ve 2026 satış rehberliğini yükseltti; 2027-2028 arzının talebi karşılamayacağını söyledi",
         "why": "Müşteriler 2029-2030 için sipariş vermek istiyor; yapay zekâ yatırım harcamasının sürdüğünü gösteriyor, ama kapasite artışı bellek arzının ileride büyüyebileceği anlamına da geliyor."
+      }
+    ],
+    "AMZN": [
+      {
+        "date": "2026-10-19",
+        "title": "Morgan Stanley Amazon'u 'en iyi tercih' ilan etti, hedef fiyatı 350 dolara yükseltti; hisse yaklaşık %5 arttı",
+        "why": "Banka bulut gelirinin 2027'de hızlı büyüyeceğini öngörüyor; yatırımcı yapay zekâ harcamasını gelire çeviren şirketleri ödüllendiriyor."
       }
     ]
   }

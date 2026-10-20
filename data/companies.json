@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-20",
  "companies": {
   "TSLA": {
    "name": "Tesla",
@@ -105,7 +105,7 @@
    },
    "next": {
     "period": "2026 3. çeyrek",
-    "date": "2026-10-28",
+    "date": "2026-10-21",
     "time": "after"
    },
    "analysts": {
@@ -271,7 +271,7 @@
    },
    "next": {
     "period": "Mali 2026 4. çeyrek",
-    "date": "2026-10-29",
+    "date": "2026-11-02",
     "time": "after"
    },
    "analysts": {
@@ -330,7 +330,15 @@
    "next": {
     "period": "2026 3. çeyrek",
     "date": "2026-10-29",
-    "time": "after"
+    "time": "after",
+    "eps_est": 1.96,
+    "rev_est": 202.21,
+    "sources": [
+     {
+      "name": "Benzinga (Amazon bilanço beklentisi, 19 Ekim)",
+      "url": "https://app.bigdata.com/documents/1335007A20A66D451B4F324D71EE016A?cnum=1&cnum=3"
+     }
+    ]
    },
    "analysts": {
     "buy": 85,

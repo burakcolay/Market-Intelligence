@@ -356,6 +356,27 @@
         "piyasa-genisligi",
         "risk"
       ]
+    },
+    "yeniden-finansman": {
+      "name": "Yeniden finansman riski (refinancing risk)",
+      "cat": "Faizler",
+      "learned": "2026-10-20",
+      "def": "Borçlu bir şirketin vadesi gelen borcunu kapatmak için yeni borç bulabilme riski. Yeni borç ancak borç verenler bugünkü faizle şirkete yeniden para vermeye razıysa bulunur; faiz yükselirse ya da güven azalırsa borç pahalılaşır veya hiç bulunamaz.",
+      "analogy": "Kredi kartı borcunu başka bir kartla kapatan biri, yeni kartın limiti ve faizi iyiyken rahattır. Limitler kısıldığında ya da faizler yükseldiğinde zincir bir anda kırılır; kimse iş yapamadığı için değil, yeni borç bulamadığı için batar.",
+      "chain": [
+        "Şirket borçla büyür",
+        "Borcun vadesi yaklaşır",
+        "Faiz yükselir ya da güven azalır",
+        "Yeni borç pahalılaşır veya bulunamaz",
+        "Hisse ve tahvil fiyatı çöker"
+      ],
+      "quote": "Çip hisseleri toparlanırken CoreWeave ve Oracle'ın tahvil faizleri ve iflas sigortası primleri yüksek kaldı: hisse yatırımcısı talebe, kredi yatırımcısı borcun yeniden bulunabilirliğine bakıyor.",
+      "rule": "Borçlu bir şirketin hissesine bakarken önce borcunu ne zaman ve hangi faizle yenileyeceğine bak: finansman kapısı kapandığında büyüme hikâyesi anlam taşımaz.",
+      "related": [
+        "cds",
+        "faiz",
+        "vadeprimi"
+      ]
     }
   }
 }
