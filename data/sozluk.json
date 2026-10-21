@@ -377,6 +377,27 @@
         "faiz",
         "vadeprimi"
       ]
+    },
+    "sektor-rotasyonu": {
+      "name": "Sektör rotasyonu (sector rotation)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-10-21",
+      "def": "Yatırımcıların parasını piyasadan çıkarmadan bir sektörden başka bir sektöre kaydırması. Endeks yatay ya da yükselirken içindeki sektörlerin yönü çok farklı olabilir; asıl bilgi paranın nereye gittiğidir.",
+      "analogy": "Bir alışveriş merkezinde müşteri sayısı aynı kalır ama herkes bir mağazadan diğerine geçer. Toplam kalabalığa bakan biri hiçbir şey olmadığını sanır; mağaza mağaza bakan kimin kazandığını görür.",
+      "chain": [
+        "Lider sektöre şüphe artar",
+        "Faiz ya da büyüme beklentisi değişir",
+        "Para başka sektöre kayar",
+        "Endeks yatay, içi ayrışır",
+        "Bilançolar liderliği yeniden belirler"
+      ],
+      "quote": "Nasdaq 100 yatay kalırken Dow sert yükseldi; sağlık ve küçük şirketler öne çıktı, teknoloji geride kaldı: para çıkmadı, el değiştirdi.",
+      "rule": "Endeks yatay ya da yükselirken içindeki sektörlere bak: paranın nereye gittiği, endeksin kendisinden daha çok bilgi verir; rotasyon bir kaçış değilse, lider sektör bilançoyla geri çağırılabilir.",
+      "related": [
+        "piyasa-genisligi",
+        "faiz",
+        "fiyatlanmis-beklenti"
+      ]
     }
   }
 }
