@@ -398,6 +398,27 @@
         "faiz",
         "fiyatlanmis-beklenti"
       ]
+    },
+    "oysuz-hisse": {
+      "name": "Oy hakkı olmayan hisse (non-voting stock)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-10-22",
+      "def": "Sahibine kâr payı ve değer artışı hakkı veren ama genel kurulda oy hakkı vermeyen hisse sınıfı. Kurucu kontrolü elinde tutarken şirket yeni hisse çıkararak para toplayabilir.",
+      "analogy": "Bir apartmanda herkes çatı yenilemesine para verir ama karar sadece yönetim kurulunda. Parayı koyanlar masrafı paylaşır, kararı veren kişi aynı kalır.",
+      "chain": [
+        "Şirket büyük yatırım yapıyor",
+        "Nakit akışı yetmiyor",
+        "Oy hakkı olmayan hisse çıkarılıyor",
+        "Kurucu kontrolü korunuyor",
+        "Mevcut hissedarın payı seyreliyor"
+      ],
+      "quote": "Meta, her hissedara bir yeni oy hakkı olmayan hisse dağıtacağını açıkladı; şirket bunu sermaye toplama, çalışan ödemesi ve satın almalar için esneklik olarak tanımladı.",
+      "rule": "Bir şirket oy hakkı olmayan yeni hisse sınıfı duyurduğunda bunu kontrolü koruyup finansman kapısı açma hamlesi olarak oku: asıl bilgi, nakit akışının yatırımı karşılayıp karşılamadığı ve seyrelmenin bedelini kimin ödeyeceğidir.",
+      "related": [
+        "yeniden-finansman",
+        "sektor-rotasyonu",
+        "fiyatlanmis-beklenti"
+      ]
     }
   }
 }

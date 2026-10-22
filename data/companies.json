@@ -1,56 +1,44 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-22",
  "companies": {
   "TSLA": {
    "name": "Tesla",
    "about": "Elektrikli otomobil üreticisi; enerji depolama ve güneş sistemleri de satıyor. Değerlemesinin büyük kısmı bugünkü araç satışından çok sürücüsüz taksi (Robotaxi), FSD yazılımı ve insansı robot Optimus gibi gelecek projelerine dayanıyor.",
    "nq_note": "Çok oynak bir hisse; bilanço gecesi sert hareket ederse NQ'yu da peşinden sürükler. Ayrıca 'yapay zekâ hikâyesine piyasa ne kadar para ödüyor' sorusunun turnusolü.",
    "segments": {
-    "period": "2026 2. çeyrek",
+    "period": "2026 3. çeyrek",
     "items": [
      {
       "name": "Otomotiv",
-      "share": 72.7
+      "share": 73.3
      },
      {
       "name": "Hizmet ve diğer",
-      "share": 16.2
+      "share": 16.4
      },
      {
       "name": "Enerji",
-      "share": 11.1
+      "share": 10.3
      }
     ]
    },
    "last": {
-    "period": "2026 2. çeyrek",
-    "date": "2026-07-22",
-    "eps": {
-     "act": 0.33,
-     "est": 0.5
-    },
-    "rev": {
-     "act": 28.24,
-     "est": 26.42
-    },
-    "note": "Gelir beklentiyi aştı ama hisse başı kâr %34 ıskaladı: satış var, kârlılık yok. Fiyat indirimleri ile yapay zekâ ve robot yatırımları marjı eziyor."
-   },
-   "next": {
     "period": "2026 3. çeyrek",
     "date": "2026-10-21",
-    "time": "after",
-    "eps_est": null,
-    "rev_est": null,
-    "known": [
-     "3. çeyrekte 486.532 araç teslim etti; piyasa ~462 bin bekliyordu, yani %5 üzerinde. Ama geçen yılın rekor çeyreğinin %2 altında.",
-     "Enerji depolama kurulumu 13,7 GWh ile beklentinin (15,9) %14 altında kaldı; bu üst üste üçüncü ıskalama.",
-     "Satış artışının bir kısmı fiyat indirimlerinden ve petrol fiyatı yükselince elektrikli araca dönen talepten geldi."
-    ],
-    "watch": [
-     "Otomotiv brüt marjı: fiyat indirimleri kârı ne kadar yedi?",
-     "Robotaxi, FSD ve Optimus için takvim ve harcama planı",
-     "Gelecek yıl için teslimat ve yatırım rehberliği"
-    ]
+    "eps": {
+     "act": 0.48,
+     "est": 0.45
+    },
+    "rev": {
+     "act": 28.05,
+     "est": 27.94
+    },
+    "note": "Gelir ve düzeltilmiş kâr beklentiyi hafif aştı ama GAAP net kâr %43 düştü; robot ve yapay zekâ yatırımı kârı eritti. Yıllık yatırım rehberliği 25 milyar $'dan 20 milyar $'a indi. Hisse mesai sonrası yaklaşık %3 düştü; SpaceX ile birleşme için özel komiteler kuruldu."
+   },
+   "next": {
+    "period": "2026 4. çeyrek",
+    "date": "2027-01-27",
+    "time": "after"
    },
    "analysts": {
     "buy": 35,
@@ -60,16 +48,12 @@
    },
    "sources": [
     {
-     "name": "Benzinga · teslimat",
-     "url": "https://app.bigdata.com/documents/44C9A18E14C5B9CD63362B75EFF48E3A?cnum=1"
+     "name": "Finwire · Tesla 3. çeyrek",
+     "url": "https://app.bigdata.com/documents/AF41EC79C0205D0F1AB24DF5B0151B68?cnum=2&cnum=1"
     },
     {
-     "name": "MT Newswires",
-     "url": "https://app.bigdata.com/documents/E6ACF42BC5D8B95B88ACB655E7A1D50C?cnum=1&cnum=3"
-    },
-    {
-     "name": "The Globe and Mail",
-     "url": "https://app.bigdata.com/documents/24A44958EEE312F978F1A182D1D46CB7?cnum=3"
+     "name": "Eastmoney · Tesla 3. çeyrek",
+     "url": "https://app.bigdata.com/documents/239B348EA792F40E4D21D4807DF85F99?cnum=2&cnum=1"
     }
    ]
   },
@@ -78,7 +62,7 @@
    "about": "Facebook, Instagram, WhatsApp ve Threads'in sahibi. Gelirinin neredeyse tamamı reklamdan geliyor; sanal gerçeklik birimi Reality Labs ise zarar ediyor. Yapay zekâya en çok yatırım yapan şirketlerden biri.",
    "nq_note": "Reklam geliri ekonominin sağlığını gösterir; yapay zekâ harcamasının boyutu ise tüm teknoloji sektörünün yatırım iştahı hakkında sinyal verir.",
    "segments": {
-    "period": "2026 2. çeyrek",
+    "period": "2026 3. çeyrek",
     "items": [
      {
       "name": "Uygulamalar (reklam)",
@@ -91,21 +75,21 @@
     ]
    },
    "last": {
-    "period": "2026 2. çeyrek",
-    "date": "2026-07-29",
-    "eps": {
-     "act": 6.18,
-     "est": 7.19
-    },
-    "rev": {
-     "act": 60.8,
-     "est": 60.22
-    },
-    "note": "Gelir beklentiyi hafif aştı ama hisse başı kâr %14 ıskaladı: yapay zekâ harcamaları kârı aşağı çekti."
-   },
-   "next": {
     "period": "2026 3. çeyrek",
     "date": "2026-10-21",
+    "eps": {
+     "act": 7.4,
+     "est": 5.74
+    },
+    "rev": {
+     "act": 64.6,
+     "est": 63.37
+    },
+    "note": "Gelir ve rehberlik beklentiyi aştı, harcama aralığı daraltıldı ve hisse mesai sonrası yaklaşık %2-3 yükseldi. EPS'te 9,9 milyar $'lık bir hukuki uzlaşma gideri var: gider hariç 7,40 $, giderle 3,83 $; kaynaklar tahmini farklı tabanlarda veriyor. Serbest nakit akışı eksiye düştü ve şirket oy hakkı olmayan yeni hisse sınıfı duyurdu."
+   },
+   "next": {
+    "period": "2026 4. çeyrek",
+    "date": "2027-01-27",
     "time": "after"
    },
    "analysts": {
@@ -113,7 +97,17 @@
     "hold": 11,
     "sell": 2,
     "target": 781.0
-   }
+   },
+   "sources": [
+    {
+     "name": "Quartr · Meta 3. çeyrek görüşmesi",
+     "url": "https://app.bigdata.com/documents/AD6027617962E3E6AD3ECFD93A00E8D8"
+    },
+    {
+     "name": "Benzinga · bilanço ve yeni hisse sınıfı",
+     "url": "https://app.bigdata.com/documents/31585013A57F11D4EA8A453CBDB8C1DB?cnum=3"
+    }
+   ]
   },
   "MSFT": {
    "name": "Microsoft",

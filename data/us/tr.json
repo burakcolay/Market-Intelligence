@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -60,12 +60,31 @@
     "INTU": "Küçük işletme ve bireylere muhasebe, vergi ve kişisel finans yazılımı satan şirket (TurboTax, QuickBooks, Credit Karma). Gelir vergi dönemi ve abonelik yenilemeleriyle mevsimsel dalgalanıyor.",
     "CTAS": "İşletmelere üniforma kiralama, paspas, tuvalet malzemesi ve yangın güvenliği hizmeti veren şirket. Gelirin çoğu uzun vadeli, düzenli hizmet sözleşmelerinden geldiği için görece öngörülebilir.",
     "DASH": "Restoran, market ve mağaza siparişlerinin kapıya teslimini yapan platform. Gelir sipariş komisyonlarından, teslimat ücretinden ve reklamdan geliyor.",
-    "MDLZ": "Çikolata, bisküvi ve atıştırmalık markalarının (Oreo, Cadbury, Toblerone) küresel üreticisi. Gelirin çoğu ABD dışından geldiği için kakao fiyatları ve döviz kuru kârlılığını belirliyor."
+    "MDLZ": "Çikolata, bisküvi ve atıştırmalık markalarının (Oreo, Cadbury, Toblerone) küresel üreticisi. Gelirin çoğu ABD dışından geldiği için kakao fiyatları ve döviz kuru kârlılığını belirliyor.",
+    "REGN": "Regeneron, göz hastalıkları, alerji ve kanser alanında ilaç geliştiren biyoteknoloji şirketi. Gelirinin büyük bölümü göz ilacı Eylea ve ortak geliştirdiği alerjik hastalık ilacı Dupixent'ten gelir.",
+    "CMCSA": "Comcast, ABD'nin en büyük kablo internet ve yayın şirketlerinden biri; NBCUniversal, Peacock ve Sky ile medya ve tema parkları da işletiyor. Gelirin ana kaynağı geniş bant ve televizyon abonelikleri, reklam ve içerik.",
+    "LITE": "Lumentum, veri merkezleri ve telekom ağlarında kullanılan optik ve fotonik bileşenler üretiyor. Gelirin büyük kısmı yapay zekâ kümelerini birbirine bağlayan lazerlerden ve optik modüllerden geliyor.",
+    "ROST": "Ross Stores, ABD'de Ross Dress for Less ve dd's DISCOUNTS markalarıyla indirimli giyim ve ev ürünleri satan mağaza zinciri. Markaların fazla stoğunu düşük fiyata alıp ucuza satarak kazanır.",
+    "ORLY": "O'Reilly Automotive, ABD'de otomobil yedek parça ve bakım malzemesi satan mağaza zinciri; hem bireysel müşteriye hem tamirci ve atölyelere satış yapıyor. Gelir, araçlar yaşlandıkça artan yedek parça talebinden gelir.",
+    "AEP": "American Electric Power, ABD'nin birçok eyaletinde elektrik üreten, ileten ve dağıtan düzenlenmiş bir kamu hizmeti şirketi. Gelir düzenleyicinin onayladığı tarifelerden gelir; veri merkezlerinin elektrik talebi büyümenin ana kaynağı.",
+    "HON": "Honeywell, havacılık, bina otomasyonu, endüstriyel otomasyon ve ileri malzemeler alanlarında teknoloji ve ekipman üreten sanayi grubu. Gelirin büyük kısmı havacılık ile bina ve sanayi sistemlerinden gelir.",
+    "MSTR": "Strategy (eski adıyla MicroStrategy), kurumsal yazılım şirketi olarak başladı ama bilançosunun merkezine Bitcoin'i koydu. Hissesi büyük ölçüde şirketin elindeki Bitcoin'in değerine ve bu alımı finanse eden borç ve hisse ihracına bağlı.",
+    "MPWR": "Monolithic Power Systems, veri merkezi sunucuları, otomobiller ve tüketici elektroniği için güç yönetimi yarı iletkenleri tasarlıyor. Gelirin ana kaynağı yapay zekâ sunucularının güç talebi ve otomotiv.",
+    "NXPI": "NXP Semiconductors, otomotiv, sanayi ve nesnelerin interneti için yarı iletken üreten Hollanda merkezli şirket. Gelirin en büyük kısmı otomobillerdeki işlemci ve güvenlik çiplerinden gelir."
   },
   "notes": {
     "0000858877-26-000156": "Cisco yönetim kuruluna bağımsız yeni bir üye atadı: Cognite CEO'su Girish Rishi 9 Ekim itibarıyla kurulda. Rutin bir yönetim kurulu değişikliği, hisse için doğrudan finansal etkisi yok.",
     "0000815556-26-000046": "Fastenal üçüncü çeyrek sonuçlarını açıkladı: satışlar yüzde 15,5 arttı, faaliyet marjı genişledi ve yönetim büyümenin yeni büyük müşteri kazanımları ve veri merkezi talebinden geldiğini söyledi. Sanayi talebinin iyileştiğine işaret eden güçlü bir bilanço.",
-    "0000277948-26-000034": "CSX'in operasyon sorumlusu (COO) Mike Cory emekli oluyor; iki üst düzey operasyon yöneticisi artık doğrudan CEO Steve Angel'a bağlı çalışacak. Şirket operasyon önceliklerinin değişmediğini söylüyor; ani bir COO ayrılığı yine de yatırımcı için süreklilik sorusu doğurur."
+    "0000277948-26-000034": "CSX'in operasyon sorumlusu (COO) Mike Cory emekli oluyor; iki üst düzey operasyon yöneticisi artık doğrudan CEO Steve Angel'a bağlı çalışacak. Şirket operasyon önceliklerinin değişmediğini söylüyor; ani bir COO ayrılığı yine de yatırımcı için süreklilik sorusu doğurur.",
+    "0001628280-26-066482": "SpaceX kamuya açık şirket olarak ilk bilançosunu açıkladı: gelir beklentiyi aştı ve yapay zekâ ile bağlantı bölümleri öne çıktı. Sonuç yapay zekâ altyapısı hisselerini topluca yukarı çekti.",
+    "0001628280-26-066700": "Meta üçüncü çeyrek geliri ve rehberliği beklentinin üstünde açıkladı; ayrıca 52 eyalet başsavcısıyla yapılan uzlaşma nedeniyle yaklaşık 10 milyar dolarlık gider yazdı ve oy hakkı olmayan yeni bir hisse sınıfı duyurdu. Harcamanın gelire dönüştüğü görülüyor ama yeni hisse sınıfı ileride sermaye toplama niyetine işaret ediyor.",
+    "0001628280-26-066738": "Tesla'nın düzeltilmiş kârı ve geliri beklentiyi hafif aştı ama net kâr robot ve yapay zekâ harcamasıyla geriledi; yıllık yatırım harcaması rehberliği aşağı çekildi ve hisse mesai sonrası düştü.",
+    "0000707549-26-000052": "Lam Research yeni çeyrek için yaklaşık 8,6 milyar dolar gelir rehberliği verdi ve işletme marjının tarihinde ilk kez yüzde 40'ı aştığını açıkladı. Yönetim yarı iletken yatırım döngüsünün erken aşamada olduğunu, müşteri görünürlüğünün 2028'e uzandığını söylüyor.",
+    "0001065280-26-000290": "Netflix üçüncü çeyrek sonuçlarını açıkladı: gelir büyümesi üç yılın en yavaşına indi ve gelecek çeyrek rehberliği yatırımcıyı ikna etmedi, hisse düştü.",
+    "0000097476-26-000165": "Texas Instruments üçüncü çeyrekte tüm son pazarlarda büyüme bildirdi; veri merkezi gelirinin yıllık yaklaşık ikiye katlandığı güçlü bir döngüsel toparlanma var. Mevsimsel olarak genelde düşen dördüncü çeyrek için yatay rehberlik vermesi de olumlu bir işaret.",
+    "0001035267-26-000067": "Intuitive Surgical üçüncü çeyrekte gelirini yaklaşık beşte bir artırdı ve da Vinci ameliyat sayısı yüzde 14 büyüdü; ABD dışı sistem satışları güçlü, Çin'de ortam zor. Robotik cerrahiye talebin sürdüğünü gösteren sağlam bir bilanço.",
+    "0000875320-26-000278": "Vertex yönetim kuruluna yeni bir bağımsız üye aldı; üye 20 Ekim'de göreve başladı. Rutin bir kurul değişikliği, hisse için doğrudan finansal etkisi yok.",
+    "0000277948-26-000039": "CSX üçüncü çeyrekte hisse başı kârını yaklaşık yüzde 30 artırdı, hacim yüzde 5 büyüdü ve işletme marjı belirgin biçimde iyileşti. Verimlilik kazanımları kârlılığı taşıyor."
   },
   "news": {
     "MU": [
@@ -143,6 +162,11 @@
     ],
     "GOOGL": [
       {
+        "date": "2026-10-21",
+        "title": "Alphabet'e iki ABD senatöründen çocuklar üzerinde yapay zekâ ürünlerinin etkisini soran mektup geldi",
+        "why": "Düzenleme riskini artırıyor; hisse gün içinde geriledi."
+      },
+      {
         "date": "2026-10-14",
         "title": "Google Gemini 4'ün yeni 'Argon' sürümünü kullanıma açtı",
         "why": "Yapay zekâ model yarışında ürün hızı bulut ve arama gelirinin korunması için kritik; finansal etki henüz belirsiz."
@@ -154,6 +178,16 @@
       }
     ],
     "TSLA": [
+      {
+        "date": "2026-10-21",
+        "title": "Tesla üçüncü çeyrek düzeltilmiş kârını beklentinin üstünde açıkladı ama net kâr geriledi, yatırım rehberliği düşürüldü",
+        "why": "Robot ve yapay zekâ yatırımı kârı eritiyor; hisse mesai sonrası düştü."
+      },
+      {
+        "date": "2026-10-21",
+        "title": "SpaceX ve Tesla birleşmeyi değerlendirmek için özel komiteler kurdu",
+        "why": "Musk önünde engeller olduğunu söyledi; birleşme haberi her iki hisseyi de oynak tutuyor."
+      },
       {
         "date": "2026-10-14",
         "title": "Tesla'nın yeni Roadster tanıtımı 15 Ekim'e ertelendi",
@@ -196,6 +230,25 @@
         "date": "2026-10-19",
         "title": "Morgan Stanley Amazon'u 'en iyi tercih' ilan etti, hedef fiyatı 350 dolara yükseltti; hisse yaklaşık %5 arttı",
         "why": "Banka bulut gelirinin 2027'de hızlı büyüyeceğini öngörüyor; yatırımcı yapay zekâ harcamasını gelire çeviren şirketleri ödüllendiriyor."
+      }
+    ],
+    "META": [
+      {
+        "date": "2026-10-21",
+        "title": "Meta üçüncü çeyrek gelirini ve rehberliğini beklentinin üstünde açıkladı, harcama aralığını daralttı",
+        "why": "Harcamanın gelire dönüştüğü argümanını güçlendirdi; hisse mesai sonrası yükseldi."
+      },
+      {
+        "date": "2026-10-21",
+        "title": "Meta oy hakkı olmayan yeni bir hisse sınıfı yaratacağını duyurdu",
+        "why": "Kurucu kontrolü korunurken ileride sermaye toplama esnekliği veriyor; finansman ihtiyacına işaret ediyor."
+      }
+    ],
+    "SPCX": [
+      {
+        "date": "2026-10-21",
+        "title": "SpaceX kamuya açık şirket olarak ilk bilançosunda geliri beklentinin üstünde açıkladı",
+        "why": "Yapay zekâ ve bağlantı bölümleri öne çıktı; yapay zekâ altyapısı hisselerini topluca yukarı çekti."
       }
     ]
   }
