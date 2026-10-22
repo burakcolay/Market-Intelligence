@@ -58,6 +58,14 @@ if (D) {
   each(D.s6?.today, 's6.today', (e, p) => { if (!/^\d{2}:\d{2}$/.test(e.time || '')) errors.push(`${p}.time SS:DD olmalı`); });
   for (const k of ['likely', 'alternative', 'signal']) need(D, `s7.${k}`, isStr, 'boş');
   need(D, 's8.title', isStr, 'boş');
+  // Sunum ipuçları (isteğe bağlı): { <slaytId>: { hook, cues[], analogy?, pitfall?, takeaway? } }
+  if (D.sunum != null) {
+    const IDS = ['kapak', 'rakamlar', 'dun', 'abd', 'avrupa', 'para', 'etki', 'nq', 'takvim', 'turkiye', 'kripto', 'okuma', 'gorusler', 'ders', 'kapanis'];
+    for (const [k, v] of Object.entries(D.sunum)) {
+      if (!IDS.includes(k)) errors.push(`sunum.${k}: bilinmeyen slayt (${IDS.join(', ')})`);
+      if (v.cues != null && (!Array.isArray(v.cues) || v.cues.length > 4 || v.cues.some((c) => !isStr(c) || c.split(/\s+/).length > 9))) errors.push(`sunum.${k}.cues en fazla 4 kısa ipucu (≤9 kelime) olmalı`);
+    }
+  }
   // Haber etkisi (isteğe bağlı): her piyasadan en fazla 2, toplam en fazla 6
   if (D.impact != null) {
     const MK = ['ABD', 'Avrupa-Asya', 'Emtia ve döviz', 'Türkiye', 'Kripto'];

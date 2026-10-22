@@ -6,7 +6,7 @@ Sayfalar `data/` altındaki JSON dosyalarını okuyup kendini çizer. **Günlük
 ## Dosya düzeni
 
 ```
-index.html, faizler.html, kuresel.html, hisseler.html, sirket.html, bilancolar.html, kripto.html, turkiye.html, makro.html, haftalik.html, sozluk.html
+index.html, sunum.html, faizler.html, kuresel.html, hisseler.html, sirket.html, bilancolar.html, kripto.html, turkiye.html, makro.html, haftalik.html, sozluk.html
 assets/app.js        ortak: veri yükleme, menü, biçimlendirme
 assets/charts.js     SVG grafikler
 assets/pages/*.js    her sayfanın çizimi
@@ -131,6 +131,12 @@ Bu kural `summary`, `s1`-`s7` paragrafları, `turkiye.reading`, `kripto.reading`
 
 **Kripto sektörleri (`kripto.sectors_note`)** — sektör verisi (`data/crypto/sectors.json`: Layer 1, Layer 2, DeFi, yapay zekâ, meme, RWA, borsa tokenları, DePIN, oyun, likit staking, stabilcoinler; 24s/7g/30g değişim, pay, en büyük 3 coin) her gün 06:20 TSİ'de GitHub Actions + CoinGecko ile gelir; rutin bu dosyaya **dokunmaz**, sadece okur. Rutin `kripto.sectors_note`'a 2-3 cümlelik rotasyon okuması yazar: para hangi sektöre akıyor, BTC dominansı ve ETH/BTC ile birlikte döngünün hangi aşaması (önce BTC → ETH → büyük L1'ler → yapay zekâ/DeFi → meme ve küçükler), stabilcoin payı artıyor mu (riskten kaçış). Sektörlerden ikisi zıt yönde belirgin ayrıştıysa `impact`'e `market: "Kripto"` kartı da yazılabilir. Coin tablosu yine sadece BTC, ETH, BNB, SOL.
 
+**Sunum ipuçları (`sunum`)** — `sunum.html` günlük dosyadan ~10 dakikalık bir sunum üretir (slaytlar mevcut alanlardan otomatik çizilir; rutin slayt yazmaz). Burak bunu metin okumadan, kendi cümleleriyle anlatmak için kullanıyor. Rutinin tek işi her slayt için sunucu ipucu yazmak:
+```
+"sunum": { "<slayt>": { "hook": "izleyiciye açılış sorusu", "cues": ["≤6 kelime", "≤6 kelime", "≤6 kelime"], "analogy": "tek satır benzetme (isteğe bağlı)", "pitfall": "bunu yanlış anlatma uyarısı (isteğe bağlı)", "takeaway": "akılda kalacak tek cümle" } }
+```
+Slaytlar: `kapak, rakamlar, dun, abd, avrupa, para, etki, nq, takvim, turkiye, kripto, okuma, gorusler, ders, kapanis`. `cues` 3 madde (en fazla 4), her biri en fazla ~6 kelime, cümle değil anahtar ifade; sıra anlatım sırasıdır (ne oldu → neden → ne izlenecek). Rakam koyma (rakam slaytta zaten var). `hook` soru biçiminde. `pitfall`, o günün yanlış anlaşılmaya açık noktası (ör. "sebebi kesin değil, olası sebepler diye anlat"). Yeni bilgi ekleme: ipuçları o günün paragraflarından çıkar. Örnek: `data/daily/2026-10-22.json`.
+
 **Şirket kartları (`data/companies.json`)** — NQ bölümündeki bilanço listesinde bir şirkete tıklayınca açılan kart. Günlük dosyada değil, ayrı dosyada durur; her gün yeniden yazılmaz (maliyet).
 - **Cumartesi:** 8 şirketin hepsi için `bigdata_company_tearsheet` (sections: `latest_earnings`, `revenue_segmentation`, `analyst_ratings`) ile `last`, `segments`, `analysts` alanlarını güncelle. `about` ve `nq_note` sadece şirketin işi değiştiyse değişir.
 - **Bilançoya 10 gün veya daha az kala:** o şirketin `next` alanını doldur: `eps_est`, `rev_est` (milyar $; `analyst_estimates`'te yoksa haber araması), `known` (bilançodan önce bilinen veriler, ör. teslimat rakamları; 2-4 madde), `watch` (bilançoda neye bakılacak; 3 madde), `sources`.
@@ -176,6 +182,7 @@ Bu kural `summary`, `s1`-`s7` paragrafları, `turkiye.reading`, `kripto.reading`
 | `turkiye` | `{kpis[], reading{headline, paragraphs[]}, bist{title, change_label, tone, highlight?{from, label}, points[{d, v}]}, sectors[{name, chg}], sectors_note, cpi{last, labels[], values[], note}, rates{policy, bonds[{tenor, v}], cards[], note}, macro[{name, period, actual, cons, prev, note, tone}], upcoming[{when, name}], lesson{title, paragraphs[], rule}, source}` |
 | `kripto` | `{kpis[{code,label,value,sub,tone}], fng{now, yesterday, week}, reading{}, dominance{total_label, btc, usdt, total2_label}, dom_cards[{code,text}], etf[{label, v (milyar $), text}], etf_note, sectors_note, coins[{sym, name, price, d1, w1, m1, m3, ytd, y1}], coins_note, institutional[{v,title,note}], drivers[{tag, tone, title, note}], lesson{}}` |
 | `makro` | `{surprises[{name, actual, cons, prev, verdict, tone, meta, note}], analysis{headline, chain[], paragraphs[], effects[{asset, dir, why, hinge?}]}, regime{note, items[]}, countries{"ABD"|"Euro Bölgesi"|"Türkiye"|"Japonya"|"Çin": {charts[{type: bar|line, title, sub, unit, target?, target_label?, labels[], values[], last, trend, tone, note, prev, next}], rows[{group} | {name, period, actual, cons, prev, surprise, tone, next}], note}}, upcoming[{when, country, name, impact, cons, prev, scen?[{if, then}]}]}` |
+| `sunum` | `{<slayt>: {hook, cues[], analogy?, pitfall?, takeaway}}` sunum modunun sunucu ipuçları |
 | `sources` | kaynak notu |
 
 Tam örnek her zaman en son günün dosyasıdır.

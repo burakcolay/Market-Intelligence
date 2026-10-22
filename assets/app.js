@@ -11,6 +11,7 @@ export const PAGES = [
   { key: 'makro', href: 'makro.html', label: 'Makro & Takvim' },
   { key: 'haftalik', href: 'haftalik.html', label: 'Haftalık Özet' },
   { key: 'sozluk', href: 'sozluk.html', label: 'Sözlük' },
+  { key: 'sunum', href: 'sunum.html', label: 'Sunum ▶' },
 ];
 
 const MONTHS = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
