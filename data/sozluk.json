@@ -419,6 +419,27 @@
         "sektor-rotasyonu",
         "fiyatlanmis-beklenti"
       ]
+    },
+    "serbest-nakit-akisi": {
+      "name": "Serbest nakit akışı (free cash flow)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-10-23",
+      "def": "Şirketin faaliyetlerinden elde ettiği nakitten yatırım harcamalarının (veri merkezi, fabrika, çip alımı) çıkarılmasıyla kalan para. Kâr muhasebe kaydıdır; serbest nakit akışı ise hissedara dağıtılabilecek ya da borç ödemeye gidecek gerçek nakittir.",
+      "analogy": "Maaşın yükseldi ama kira, taksit ve yatırım harcaman daha hızlı arttı; hesabında ay sonunda para kalmıyor. Maaş kâr, ay sonunda kalan para serbest nakit akışıdır.",
+      "chain": [
+        "Şirket büyük yatırım yapıyor",
+        "Harcama nakitten hızlı artıyor",
+        "Serbest nakit akışı eksiye düşüyor",
+        "Açık borç ya da yeni hisseyle kapatılıyor",
+        "Finansman maliyeti hisse fiyatına giriyor"
+      ],
+      "quote": "Meta bu çeyrekte şirket tarihinde ilk kez negatif serbest nakit akışı açıkladı ve yıllık harcama rehberliğinin alt sınırını yükseltti; hisse bu açıklamayla yaklaşık yüzde 7 düştü.",
+      "rule": "Bir şirketin kârına değil serbest nakit akışına bak: kâr yatırım harcamasını göstermez. Nakit akışı eksiye düştüğünde asıl soru büyüme değil, açığı kimin hangi maliyetle kapattığıdır.",
+      "related": [
+        "oysuz-hisse",
+        "yeniden-finansman",
+        "vadeprimi"
+      ]
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -70,15 +70,25 @@
     "HON": "Honeywell, havacılık, bina otomasyonu, endüstriyel otomasyon ve ileri malzemeler alanlarında teknoloji ve ekipman üreten sanayi grubu. Gelirin büyük kısmı havacılık ile bina ve sanayi sistemlerinden gelir.",
     "MSTR": "Strategy (eski adıyla MicroStrategy), kurumsal yazılım şirketi olarak başladı ama bilançosunun merkezine Bitcoin'i koydu. Hissesi büyük ölçüde şirketin elindeki Bitcoin'in değerine ve bu alımı finanse eden borç ve hisse ihracına bağlı.",
     "MPWR": "Monolithic Power Systems, veri merkezi sunucuları, otomobiller ve tüketici elektroniği için güç yönetimi yarı iletkenleri tasarlıyor. Gelirin ana kaynağı yapay zekâ sunucularının güç talebi ve otomotiv.",
-    "NXPI": "NXP Semiconductors, otomotiv, sanayi ve nesnelerin interneti için yarı iletken üreten Hollanda merkezli şirket. Gelirin en büyük kısmı otomobillerdeki işlemci ve güvenlik çiplerinden gelir."
+    "NXPI": "NXP Semiconductors, otomotiv, sanayi ve nesnelerin interneti için yarı iletken üreten Hollanda merkezli şirket. Gelirin en büyük kısmı otomobillerdeki işlemci ve güvenlik çiplerinden gelir.",
+    "FAST": "Sanayi ve inşaat sektörüne cıvata, vida, bağlantı elemanı ve iş güvenliği malzemesi satan dağıtıcı. Gelirini binlerce mağaza ve müşterinin deposuna kurduğu otomatik dağıtım noktalarından elde ediyor; ürün çeşitliliği ve hızlı teslimat rekabet gücü.",
+    "PCAR": "Ağır ve orta tonajlı kamyon üreten otomotiv şirketi (Kenworth, Peterbilt, DAF markaları). Geliri yeni kamyon satışlarından, yedek parça ve finansman hizmetlerinden geliyor; nakliye talebi ve filo yenileme döngüsüne duyarlı.",
+    "FANG": "ABD'nin Permiyen havzasında petrol ve doğalgaz çıkaran bağımsız enerji şirketi. Geliri üretilen ham petrol ve gazın satışından geliyor, bu yüzden petrol fiyatındaki hareket kârını doğrudan etkiliyor.",
+    "TRI": "Hukuk, vergi, muhasebe ve haber alanlarında profesyonellere bilgi ve yazılım hizmeti sunan şirket (Reuters haber ajansının sahibi). Geliri abonelik ve lisans sözleşmelerinden geliyor, bu yüzden öngörülebilir.",
+    "ADSK": "Mimarlık, mühendislik, inşaat ve medya sektörüne tasarım ve modelleme yazılımı satan şirket (AutoCAD, Revit). Geliri abonelik modeliyle yazılım lisanslarından geliyor.",
+    "BKR": "Petrol ve doğalgaz sahalarına ekipman, sondaj hizmeti ve LNG teknolojisi sunan enerji hizmetleri şirketi. Geliri enerji şirketlerinin yatırım harcamasına bağlı, bu yüzden petrol fiyatı ve sondaj döngüsüyle birlikte hareket ediyor.",
+    "HONA": "Honeywell'in havacılık ve uzay bölümü; uçak motoru bileşenleri, aviyonik sistemler, yardımcı güç üniteleri ve havacılık yedek parçası üretiyor. Geliri havayolu ve savunma müşterilerinin yeni uçak ve bakım harcamasından geliyor.",
+    "WDAY": "Büyük şirketlere bulut tabanlı insan kaynakları, maaş bordrosu ve finans yönetimi yazılımı satıyor. Geliri çok yıllı abonelik sözleşmelerinden geliyor; yapay zekâ özellikleri yeni büyüme alanı.",
+    "CCEP": "Coca-Cola markalı içecekleri Avrupa ve Asya-Pasifik'te şişeleyip dağıtan şirket. Geliri içecek satışından geliyor; markanın sahibi değil, lisansla üretim ve dağıtım yapan bir şişeleyici.",
+    "XEL": "ABD'nin orta ve batı eyaletlerinde milyonlarca müşteriye elektrik ve doğalgaz sağlayan regüle kamu hizmeti şirketi. Geliri düzenleyici kurumun onayladığı tarifelerden geliyor, bu yüzden istikrarlı ve faize duyarlı bir kâr yapısı var."
   },
   "notes": {
     "0000858877-26-000156": "Cisco yönetim kuruluna bağımsız yeni bir üye atadı: Cognite CEO'su Girish Rishi 9 Ekim itibarıyla kurulda. Rutin bir yönetim kurulu değişikliği, hisse için doğrudan finansal etkisi yok.",
     "0000815556-26-000046": "Fastenal üçüncü çeyrek sonuçlarını açıkladı: satışlar yüzde 15,5 arttı, faaliyet marjı genişledi ve yönetim büyümenin yeni büyük müşteri kazanımları ve veri merkezi talebinden geldiğini söyledi. Sanayi talebinin iyileştiğine işaret eden güçlü bir bilanço.",
     "0000277948-26-000034": "CSX'in operasyon sorumlusu (COO) Mike Cory emekli oluyor; iki üst düzey operasyon yöneticisi artık doğrudan CEO Steve Angel'a bağlı çalışacak. Şirket operasyon önceliklerinin değişmediğini söylüyor; ani bir COO ayrılığı yine de yatırımcı için süreklilik sorusu doğurur.",
     "0001628280-26-066482": "SpaceX kamuya açık şirket olarak ilk bilançosunu açıkladı: gelir beklentiyi aştı ve yapay zekâ ile bağlantı bölümleri öne çıktı. Sonuç yapay zekâ altyapısı hisselerini topluca yukarı çekti.",
-    "0001628280-26-066700": "Meta üçüncü çeyrek geliri ve rehberliği beklentinin üstünde açıkladı; ayrıca 52 eyalet başsavcısıyla yapılan uzlaşma nedeniyle yaklaşık 10 milyar dolarlık gider yazdı ve oy hakkı olmayan yeni bir hisse sınıfı duyurdu. Harcamanın gelire dönüştüğü görülüyor ama yeni hisse sınıfı ileride sermaye toplama niyetine işaret ediyor.",
-    "0001628280-26-066738": "Tesla'nın düzeltilmiş kârı ve geliri beklentiyi hafif aştı ama net kâr robot ve yapay zekâ harcamasıyla geriledi; yıllık yatırım harcaması rehberliği aşağı çekildi ve hisse mesai sonrası düştü.",
+    "0001628280-26-066700": "Meta'nın bilanço duyurusu, dava karşılığı ve yeni oy hakkı olmayan hisse sınıfı bildirimi; harcama rehberliği yükseldi ve ilk kez negatif serbest nakit akışı açıklandı, bu yüzden hisse bilanço sonrası satıldı.",
+    "0001628280-26-066738": "Tesla'nın bilanço duyurusu: düzeltilmiş kâr beklentinin üstünde, gelir altında kaldı ve şirket yıllık yatırım planını düşürdü; piyasa kârlılık yerine gelir zayıflığına odaklandı.",
     "0000707549-26-000052": "Lam Research yeni çeyrek için yaklaşık 8,6 milyar dolar gelir rehberliği verdi ve işletme marjının tarihinde ilk kez yüzde 40'ı aştığını açıkladı. Yönetim yarı iletken yatırım döngüsünün erken aşamada olduğunu, müşteri görünürlüğünün 2028'e uzandığını söylüyor.",
     "0001065280-26-000290": "Netflix üçüncü çeyrek sonuçlarını açıkladı: gelir büyümesi üç yılın en yavaşına indi ve gelecek çeyrek rehberliği yatırımcıyı ikna etmedi, hisse düştü.",
     "0000097476-26-000165": "Texas Instruments üçüncü çeyrekte tüm son pazarlarda büyüme bildirdi; veri merkezi gelirinin yıllık yaklaşık ikiye katlandığı güçlü bir döngüsel toparlanma var. Mevsimsel olarak genelde düşen dördüncü çeyrek için yatay rehberlik vermesi de olumlu bir işaret.",
@@ -88,6 +98,11 @@
   },
   "news": {
     "MU": [
+      {
+        "date": "2026-10-22",
+        "title": "Micron yaklaşık yüzde 6 düştü",
+        "why": "Bellek ve çip şirketleri büyük teknolojinin harcama finansmanı kaygısından en çok etkilenen grup."
+      },
       {
         "date": "2026-10-19",
         "title": "Micron çip toparlanmasıyla yaklaşık %3 yükseldi",
@@ -116,6 +131,11 @@
     ],
     "NVDA": [
       {
+        "date": "2026-10-22",
+        "title": "Nvidia yüzde 4,4 düştü; yarı iletken endeksi yaklaşık yüzde 6,7 geriledi",
+        "why": "Hisse S&P 500'ü en çok aşağı çeken hisseydi; harcama finansmanı kaygısı çip siparişlerine yansıyor."
+      },
+      {
         "date": "2026-10-15",
         "title": "Nvidia İsveç'te Ericsson, AstraZeneca, Saab ve SEB'in kurduğu yapay zekâ süper bilgisayarına ve ülkenin yapay zekâ fabrikasına ortak oldu",
         "why": "Avrupa'da kamu ve kurumsal yapay zekâ altyapısının büyüdüğünü gösteriyor; finansal detay paylaşılmadı ama hesaplama kapasitesine talebin sürdüğünü işaret eder."
@@ -138,6 +158,11 @@
     ],
     "INTC": [
       {
+        "date": "2026-10-22",
+        "title": "Intel yaklaşık yüzde 8 düştü",
+        "why": "Çip satışının parçası; haberde şirkete özgü bir neden bulamadım."
+      },
+      {
         "date": "2026-10-19",
         "title": "JPMorgan Intel'in notunu yükseltti, hisse yaklaşık %2 arttı",
         "why": "Çip toparlanmasının yaşandığı günde banka yükseltmesi hisseyi sektörün üzerine taşıdı; ama nedeni bu haber değil, geniş çip dönüşü de olabilir."
@@ -155,12 +180,22 @@
     ],
     "AVGO": [
       {
+        "date": "2026-10-22",
+        "title": "Broadcom yüzde 4,3 düştü",
+        "why": "Yapay zekâ çipi ve ağ ekipmanı gelirine bağlı; çip satışının parçası."
+      },
+      {
         "date": "2026-10-12",
         "title": "Broadcom da yapay zekâ genişlemesinin sermaye kısıtına takılabileceğini söyledi, hisse %1,9 düştü",
         "why": "Yapay zekâ çip talebi büyük bulut yatırımlarına bağlı; finansman sorusu talebin hızını belirler."
       }
     ],
     "GOOGL": [
+      {
+        "date": "2026-10-22",
+        "title": "Alphabet yüzde 3 düştü",
+        "why": "Teknoloji satışının parçası; gelecek hafta bilançoda bulut ve yapay zekâ harcaması izlenecek."
+      },
       {
         "date": "2026-10-21",
         "title": "Alphabet'e iki ABD senatöründen çocuklar üzerinde yapay zekâ ürünlerinin etkisini soran mektup geldi",
@@ -178,6 +213,11 @@
       }
     ],
     "TSLA": [
+      {
+        "date": "2026-10-22",
+        "title": "Tesla yüzde 3,1 düştü: düzeltilmiş kâr beklentinin üstünde, gelir altında, yatırım planı düşürüldü",
+        "why": "Piyasa kârdan çok gelir zayıflığına ve robot-yapay zekâ yatırımının geri dönüşüne odaklandı."
+      },
       {
         "date": "2026-10-21",
         "title": "Tesla üçüncü çeyrek düzeltilmiş kârını beklentinin üstünde açıkladı ama net kâr geriledi, yatırım rehberliği düşürüldü",
@@ -201,12 +241,22 @@
     ],
     "MSFT": [
       {
+        "date": "2026-10-22",
+        "title": "Microsoft yüzde 2,2 düştü",
+        "why": "Yapay zekâ satışının parçası; 28 Ekim bilançosunda harcama ve nakit akışı rehberliği izlenecek."
+      },
+      {
         "date": "2026-10-13",
         "title": "Microsoft neredeyse bir yıl sonra rekor kapanış yaptı",
         "why": "Temmuz bilançosundaki hızlı bulut büyümesi hisseyi toparladı; ama yılbaşından bu yana Nasdaq 100'ün gerisinde."
       }
     ],
     "AAPL": [
+      {
+        "date": "2026-10-22",
+        "title": "Apple yüzde 1,2 yükseldi; Magnificent 7 içinde yükselen tek şirket",
+        "why": "Yapay zekâ altyapı harcamasından uzak duran model, satış gününde göreli sığınak oldu."
+      },
       {
         "date": "2026-10-15",
         "title": "OpenAI, eski bir çalışanının henüz çıkmamış bir cihaza ait gizli dosyaları indirip Apple'a aktardığını öne süren bir dava dosyası sundu",
@@ -220,6 +270,11 @@
     ],
     "ASML": [
       {
+        "date": "2026-10-22",
+        "title": "ASML yaklaşık yüzde 6,9 düştü",
+        "why": "Çip ekipman talebi büyük teknolojinin harcamasına bağlı; finansman kaygısı doğrudan sipariş riski olarak okundu."
+      },
+      {
         "date": "2026-10-14",
         "title": "ASML üçüncü çeyrek kârını beklentinin çok üstünde açıkladı ve 2026 satış rehberliğini yükseltti; 2027-2028 arzının talebi karşılamayacağını söyledi",
         "why": "Müşteriler 2029-2030 için sipariş vermek istiyor; yapay zekâ yatırım harcamasının sürdüğünü gösteriyor, ama kapasite artışı bellek arzının ileride büyüyebileceği anlamına da geliyor."
@@ -227,12 +282,22 @@
     ],
     "AMZN": [
       {
+        "date": "2026-10-22",
+        "title": "Amazon yüzde 4,6 düştü",
+        "why": "Yapay zekâ altyapı harcamasının finansmanı kaygısı büyük bulut şirketlerine yayıldı; gelecek haftaki bilanço öncesi baskı."
+      },
+      {
         "date": "2026-10-19",
         "title": "Morgan Stanley Amazon'u 'en iyi tercih' ilan etti, hedef fiyatı 350 dolara yükseltti; hisse yaklaşık %5 arttı",
         "why": "Banka bulut gelirinin 2027'de hızlı büyüyeceğini öngörüyor; yatırımcı yapay zekâ harcamasını gelire çeviren şirketleri ödüllendiriyor."
       }
     ],
     "META": [
+      {
+        "date": "2026-10-22",
+        "title": "Meta yüzde 7 düştü: geliri beklentinin üstünde ama kârı altında, ilk kez negatif serbest nakit akışı",
+        "why": "Dünkü mesai sonrası yükseliş geri verildi; harcamanın finansmanı sorusu öne çıktı."
+      },
       {
         "date": "2026-10-21",
         "title": "Meta üçüncü çeyrek gelirini ve rehberliğini beklentinin üstünde açıkladı, harcama aralığını daralttı",
@@ -246,9 +311,21 @@
     ],
     "SPCX": [
       {
+        "date": "2026-10-22",
+        "title": "SpaceX yaklaşık yüzde 9 düştü",
+        "why": "Önceki günkü yapay zekâ ve bağlantı geliri sevinci geri verildi; satış sektör genelindeydi."
+      },
+      {
         "date": "2026-10-21",
         "title": "SpaceX kamuya açık şirket olarak ilk bilançosunda geliri beklentinin üstünde açıkladı",
         "why": "Yapay zekâ ve bağlantı bölümleri öne çıktı; yapay zekâ altyapısı hisselerini topluca yukarı çekti."
+      }
+    ],
+    "AMD": [
+      {
+        "date": "2026-10-22",
+        "title": "AMD yaklaşık yüzde 8 düştü",
+        "why": "Çip satışının en sert kayıplarından biri; şirkete özgü neden bulamadım."
       }
     ]
   }
