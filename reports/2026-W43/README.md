@@ -7,8 +7,8 @@ _Otomatik üretildi: 2026-10-23 kapanış verisiyle. Kaynak kod: [`analytics/`](
 - Son bir ayda en güçlü sektör Gıda ve içecek, en zayıfı Yarı iletken. Para savunmacı tarafa kayıyor.
 - Uzun tahvil ↔ Nasdaq 100 ilişkisi bir yıl öncesine göre belirgin güçlendi. İki varlık artık daha çok birlikte hareket ediyor; birini diğerine karşı çeşitlendirme aracı olarak kullanmak eskisi kadar işe yaramaz.
 - Bilanço açıklamalarından sonraki iki günde hisseler, sıradan iki günlük dönemlere göre yaklaşık 2,8 kat fazla oynuyor (889 bilanço). İlk tepkinin yönü sonraki iki ayı açıklamıyor (p=0,94): büyük şirketlerde bilanço haberi hızla fiyatlanıyor, sürüklenme görülmüyor.
-- Yöneticilerin piyasadan alım yaptığı 15 olayda (15 şirket) hisse sonraki iki ayda piyasaya göre ortalama 12,0 puan fazla getiri sağladı ve fark istatistiksel olarak anlamlı. Ancak olaylar 2026-04 – 2026-08 arasındaki kısa bir döneme yığılmış; aynı piyasa ortamını paylaştıkları için bağımsız sayılmazlar, sonuç daha uzun bir dönemde doğrulanmadan sinyal sayılmamalı.
-- Nasdaq 100 hisselerinin yaklaşık yüzde 57 kadarı 200 günlük ortalamasının üstünde. Katılım orta düzeyde.
+- Yöneticilerin piyasadan alım yaptığı 15 olayda (15 şirket) hisse sonraki iki ayda piyasaya göre ortalama 11,9 puan fazla getiri sağladı ve fark istatistiksel olarak anlamlı. Ancak olaylar 2026-04 – 2026-08 arasındaki kısa bir döneme yığılmış; aynı piyasa ortamını paylaştıkları için bağımsız sayılmazlar, sonuç daha uzun bir dönemde doğrulanmadan sinyal sayılmamalı.
+- Nasdaq 100 hisselerinin yaklaşık yüzde 56 kadarı 200 günlük ortalamasının üstünde. Katılım orta düzeyde.
 - Son üç ayda endeks getirisinin yaklaşık yüzde 96 kadarı en büyük 10 şirketten geldi; eşit ağırlıklı sepet endeksten benzer gitti.
 - Kümeleme modeline göre piyasa 72 işlem günüdür 'Kararsız' rejiminde. Geçmişte bu rejimdeki günlerin ardından gelen 20 işlem gününde Nasdaq 100 ortalama yüzde 2,1 değişti ve dönemlerin yüzde 72 kadarında yükseldi. Bu bir tahmin değil, benzer dönemlerin geçmiş davranışı.
 - Bir sonraki işlem günü için beklenen Nasdaq 100 aralığı (en yüksek ile en düşük arası) yaklaşık %1,49, yani 430 puan civarı; geçmiş isabete göre 10 günün 8'inde 219 ile 603 puan arasında kalır. Model, görmediği son dönemde basit kurallardan (dünün aralığı, son ayın ortalaması) yaklaşık yüzde 8 daha isabetli.
@@ -20,33 +20,33 @@ _Otomatik üretildi: 2026-10-23 kapanış verisiyle. Kaynak kod: [`analytics/`](
 
 | Sektör | 1 hafta % | 1 ay % | 3 ay % | Öncü | Geride kalan |
 |---|---|---|---|---|---|
-| Gıda ve içecek | 2,9 | 11,2 | 6,2 | KDP | MDLZ |
-| Seyahat ve eğlence | 0,7 | 10,4 | 3,3 | ABNB | BKNG |
-| Ulaştırma | 3,6 | 9,3 | −8,1 | CSX | ODFL |
-| Enerji ve kamu hizmeti | −0,0 | 7,6 | −2,2 | XEL | CEG |
-| Sanayi | 5,3 | 6,0 | −0,3 | TRI | FER |
-| Perakende | 1,8 | 5,6 | 2,4 | COST | AMZN |
-| Tüketici hizmetleri | −0,1 | 4,3 | 1,9 | PYPL | DASH |
-| Sağlık | 0,5 | 3,4 | 37,1 | ISRG | DXCM |
-| Otomotiv | 2,2 | −0,9 | 1,7 | TSLA | PCAR |
-| Teknoloji | 1,7 | −3,9 | 8,3 | INTU | CRWV |
-| İletişim | −2,2 | −4,2 | −3,2 | CMCSA | META |
-| Havacılık ve uzay | 0,0 | −6,7 | −7,4 | HON | RKLB |
-| Yarı iletken | −4,2 | −14,5 | −7,8 | NXPI | INTC |
+| Gıda ve içecek | 0,6 | 8,7 | 3,8 | KDP | MDLZ |
+| Seyahat ve eğlence | −1,6 | 7,9 | 1,0 | ABNB | BKNG |
+| Enerji ve kamu hizmeti | 0,1 | 7,8 | −2,0 | XEL | CEG |
+| Sanayi | 6,1 | 6,7 | 0,4 | TRI | FER |
+| Ulaştırma | 0,8 | 6,3 | −10,5 | CSX | ODFL |
+| Perakende | 0,5 | 4,2 | 1,1 | COST | ROST |
+| Sağlık | −0,4 | 2,5 | 35,9 | ISRG | DXCM |
+| Tüketici hizmetleri | −2,3 | 2,0 | −0,4 | PYPL | DASH |
+| Otomotiv | 0,7 | −2,4 | 0,4 | TSLA | PCAR |
+| Teknoloji | 2,2 | −3,4 | 9,0 | INTU | CRWV |
+| Havacılık ve uzay | 1,6 | −5,4 | −5,9 | HON | RKLB |
+| İletişim | −4,5 | −6,5 | −5,4 | CMCSA | META |
+| Yarı iletken | −3,9 | −14,3 | −7,4 | TXN | INTC |
 
 ## Haftanın en çok yükselen ve düşen hisseleri
 | Kod | Şirket | 1 hafta % | 1 ay % |
 |---|---|---|---|
-| ROP | Roper Technologies | 14,0 | 20,1 |
-| TRI | Thomson Reuters | 13,1 | 22,9 |
-| ADBE | Adobe | 10,3 | 13,2 |
+| ROP | Roper Technologies | 14,5 | 20,7 |
+| CRWD | CrowdStrike Holdings | 13,3 | −0,8 |
+| TRI | Thomson Reuters | 13,0 | 22,8 |
+| PANW | Palo Alto Networks | 11,3 | −2,4 |
 | WDAY | Workday | 10,1 | 9,9 |
-| INTU | Intuit | 9,1 | 28,7 |
 | LRCX | Lam Research | −12,8 | −25,1 |
-| KLAC | KLA | −10,8 | −21,0 |
-| ALAB | Astera Labs | −9,8 | −28,5 |
-| CRWV | CoreWeave | −9,4 | −38,3 |
-| DXCM | Dexcom | −9,0 | −10,5 |
+| KLAC | KLA | −12,1 | −22,2 |
+| CRWV | CoreWeave | −11,7 | −39,8 |
+| ALAB | Astera Labs | −10,0 | −28,7 |
+| DXCM | Dexcom | −9,4 | −10,9 |
 
 ## Varlıklar arası ilişki
 ![Korelasyon](korelasyon.png)
@@ -81,11 +81,11 @@ Getirisi ya da hacmi, önceki 63 günün ortalamasından en az 3 standart sapma 
 
 | Kod | Endekse katkı (puan) | Getiri % | Ağırlık % |
 |---|---|---|---|
-| MSFT | 2,56 | 34,2 | 7,5 |
-| SPCX | 1,11 | 27,5 | 4,0 |
-| NVDA | 0,98 | 8,1 | 12,1 |
-| TSLA | 0,66 | 21,1 | 3,1 |
-| AMZN | 0,52 | 8,2 | 6,4 |
+| MSFT | 2,60 | 35,0 | 7,4 |
+| SPCX | 1,19 | 29,9 | 4,0 |
+| NVDA | 0,91 | 7,5 | 12,2 |
+| TSLA | 0,64 | 20,4 | 3,1 |
+| AMZN | 0,46 | 7,2 | 6,4 |
 
 ## Piyasa rejimi (kümeleme)
 ![Rejimler](rejim.png)
@@ -124,15 +124,15 @@ Sınama: 2025-05-05 – 2026-10-22, ileriye doğru yürüyen pencere (aylık yen
 
 | İlk tepki grubu | Olay | Sonraki 2 ay ort. anormal getiri % | t | p |
 |---|---|---|---|---|
-| olumsuz | 297 | 0,20 | 0,18 | 0,854 |
-| nötr | 296 | −1,66 | −2,42 | 0,016 |
+| olumsuz | 297 | 0,21 | 0,19 | 0,849 |
+| nötr | 296 | −1,67 | −2,42 | 0,016 |
 | olumlu | 296 | 0,10 | 0,10 | 0,917 |
 
-Olumlu ve olumsuz grup farkı: −0,10 puan (Welch t-testi p=0,942). Tepki ile sonraki getiri arasındaki sıra korelasyonu: 0,015 (p=0,645).
+Olumlu ve olumsuz grup farkı: −0,11 puan (Welch t-testi p=0,938). Tepki ile sonraki getiri arasındaki sıra korelasyonu: 0,015 (p=0,655).
 
 ## Veri kalitesi
-- Otomatik kontroller: 3/8 geçti.
-- Fiyat kaynakları uyuşuyor: 47 sorun (SPCX, MU, AMD, INTC, CSCO, PANW)
+- Otomatik kontroller: 4/8 geçti.
+- Fiyat kaynakları uyuşuyor: geçti
 - Fiyatlar güncel: geçti
 - Günlük %50 üstü hareket yok: geçti
 - Finansallar güncel: geçti
