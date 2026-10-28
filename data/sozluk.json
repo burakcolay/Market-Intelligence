@@ -440,6 +440,26 @@
         "yeniden-finansman",
         "vadeprimi"
       ]
+    },
+    "karsi-oy": {
+      "name": "Karşı oy (dissent)",
+      "cat": "Merkez bankaları",
+      "learned": "2026-10-28",
+      "def": "Faiz komitesinin bir üyesinin çoğunluğun kararına açıkça karşı oy kullanmasıdır. Karar aynı kalsa bile oylamanın dağılımı, komite içinde yönün ve temponun nereye eğildiğini gösterir.",
+      "analogy": "Sınıf başkanlığı oylamasında çoğunluk bugün yürüyüş yok der ama iki öğrenci hemen çıkalım diye oy kullanır: karar bekleme, eğilim ise sabırsızlık.",
+      "chain": [
+        "Komite oy kullanır",
+        "Çoğunluk faizi sabit tutar",
+        "İki üye artırım ister",
+        "Piyasa yönü yukarı okur",
+        "Uzun faiz yükselir"
+      ],
+      "quote": "Fed faizi 10-2 oyla sabit tuttu: Cook ve Hammack çeyrek puanlık artırım istedi; bir ay önceki artırım oybirliğiyle alınmıştı.",
+      "rule": "Karar sabit kalsa da oylamanın dağılımına bak: karşı oylar yönün ve temponun ilk işaretidir, bir sonraki kararın garantisi değil.",
+      "related": [
+        "sahin",
+        "faiz"
+      ]
     }
   }
 }
