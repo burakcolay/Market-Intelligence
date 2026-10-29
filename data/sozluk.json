@@ -460,6 +460,27 @@
         "sahin",
         "faiz"
       ]
+    },
+    "kar-kalitesi": {
+      "name": "Kâr kalitesi",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-10-29",
+      "def": "Bir şirketin açıkladığı kârın ne kadarının asıl işten geldiğini, tekrarlanabilir olduğunu ve nakde dönüştüğünü ölçen kavramdır. Defter üzerindeki bir kerelik kalemler manşet kârı şişirebilir ya da düşürebilir; kalite, bu kalemleri ayıklayınca geriye kalan kâra ve serbest nakit akışına bakılarak anlaşılır.",
+      "analogy": "Evin değeri kâğıt üzerinde düştü ama kira cebe giriyor: zarar defterde, nakit cüzdanda. Kâr kalitesi, hangisinin gerçek geliri anlattığını sormaktır.",
+      "chain": [
+        "Şirket kâr açıklar",
+        "Manşet rakam beklentiden sapar",
+        "Farkın nedeni ayrıştırılır",
+        "Defter kalemi mi, asıl iş mi",
+        "Piyasa nakit akışına bakar"
+      ],
+      "quote": "Alphabet'in hisse başına kârı beklentinin çok altında kaldı; farkın büyük kısmı SpaceX yatırımındaki yaklaşık 8,6 milyar dolarlık defter zararından geliyordu, ama asıl endişe arama geliri ve eksiye dönen serbest nakit akışıydı.",
+      "rule": "Kâr beklentiyi kaçırdığında ya da aştığında önce farkın asıl işten mi yoksa bir kerelik defter kaleminden mi geldiğine bak; serbest nakit akışıyla çapraz kontrol et.",
+      "related": [
+        "serbest-nakit-akisi",
+        "fiyatlanmis-beklenti",
+        "cekirdek-enflasyon"
+      ]
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-29",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -192,6 +192,11 @@
     ],
     "GOOGL": [
       {
+        "date": "2026-10-29",
+        "title": "Alphabet bilançosu: bulut ikiye katlandı ama arama geliri beklentinin altında, serbest nakit akışı eksi; hisse mesai sonrası yaklaşık %10 düştü",
+        "why": "Kâr kaçışının büyük kısmı SpaceX yatırımındaki defter zararı, ama asıl endişe harcamanın nakitle karşılanmaması."
+      },
+      {
         "date": "2026-10-22",
         "title": "Alphabet yüzde 3 düştü",
         "why": "Teknoloji satışının parçası; gelecek hafta bilançoda bulut ve yapay zekâ harcaması izlenecek."
@@ -240,6 +245,11 @@
       }
     ],
     "MSFT": [
+      {
+        "date": "2026-10-29",
+        "title": "Microsoft bilançosu: Azure beklentiyi aştı, serbest nakit akışı pozitif; hisse mesai sonrası yaklaşık %3 yükseldi",
+        "why": "Yapay zekâ harcamasını kendi nakdiyle karşılayan şirket ödüllendirildi."
+      },
       {
         "date": "2026-10-22",
         "title": "Microsoft yüzde 2,2 düştü",
