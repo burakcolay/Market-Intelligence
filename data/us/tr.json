@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -94,7 +94,11 @@
     "0000097476-26-000165": "Texas Instruments üçüncü çeyrekte tüm son pazarlarda büyüme bildirdi; veri merkezi gelirinin yıllık yaklaşık ikiye katlandığı güçlü bir döngüsel toparlanma var. Mevsimsel olarak genelde düşen dördüncü çeyrek için yatay rehberlik vermesi de olumlu bir işaret.",
     "0001035267-26-000067": "Intuitive Surgical üçüncü çeyrekte gelirini yaklaşık beşte bir artırdı ve da Vinci ameliyat sayısı yüzde 14 büyüdü; ABD dışı sistem satışları güçlü, Çin'de ortam zor. Robotik cerrahiye talebin sürdüğünü gösteren sağlam bir bilanço.",
     "0000875320-26-000278": "Vertex yönetim kuruluna yeni bir bağımsız üye aldı; üye 20 Ekim'de göreve başladı. Rutin bir kurul değişikliği, hisse için doğrudan finansal etkisi yok.",
-    "0000277948-26-000039": "CSX üçüncü çeyrekte hisse başı kârını yaklaşık yüzde 30 artırdı, hacim yüzde 5 büyüdü ve işletme marjı belirgin biçimde iyileşti. Verimlilik kazanımları kârlılığı taşıyor."
+    "0000277948-26-000039": "CSX üçüncü çeyrekte hisse başı kârını yaklaşık yüzde 30 artırdı, hacim yüzde 5 büyüdü ve işletme marjı belirgin biçimde iyileşti. Verimlilik kazanımları kârlılığı taşıyor.",
+    "0001018724-26-000038": "Amazon üçüncü çeyrek sonuçlarını açıkladı: bulut (AWS) geliri yüzde 39 büyüdü, yaklaşık beş yılın en hızlısı; ama harcama beklentiyi aştı, 12 aylık serbest nakit akışı eksiye döndü ve gelir ile kâr beklentinin hafif altında kaldı. Hisse mesai sonrası düştü.",
+    "0000050863-26-000188": "Intel üçüncü çeyrek sonuçlarını açıkladı: gelir ve kâr beklentiyi aştı, ama dördüncü çeyrek gelir öngörüsü beklentinin belirgin altında kaldı; yönetim PC talebinin en az gelecek yılın ilk yarısına kadar yavaş kalacağını söyledi. Hisse mesai sonrası sert düştü.",
+    "0001652044-26-000080": "Alphabet üçüncü çeyrek sonuçlarını açıkladı: gelir beklentinin hafif altında, bulut geliri iki katından fazla arttı ama serbest nakit akışı eksiye döndü. Hisse ertesi gün tarihinin en sert günlük düşüşünü yaşadı.",
+    "0001193125-26-436122": "Microsoft mali yılın ilk çeyreğinde gelir ve kârı beklentinin üzerinde açıkladı: Azure yüzde 48 büyüdü, harcama beklentinin altında kaldı ve serbest nakit akışı düşmesine rağmen pozitif. Harcamayı nakitle karşılayan şirketin olumlu karşılandığı bir bilanço."
   },
   "news": {
     "MU": [
@@ -158,6 +162,11 @@
     ],
     "INTC": [
       {
+        "date": "2026-10-29",
+        "title": "Intel üçüncü çeyreği aştı ama dördüncü çeyrek gelir öngörüsü beklentinin çok altında; hisse mesai sonrası yaklaşık %23 düştü",
+        "why": "Rehberlik geçmiş çeyreğin önüne geçti: PC talebi yavaş, sunucu işlemcisi talebi ise üretim ve malzeme kısıtları yüzünden karşılanamıyor."
+      },
+      {
         "date": "2026-10-22",
         "title": "Intel yaklaşık yüzde 8 düştü",
         "why": "Çip satışının parçası; haberde şirkete özgü bir neden bulamadım."
@@ -191,6 +200,11 @@
       }
     ],
     "GOOGL": [
+      {
+        "date": "2026-10-29",
+        "title": "Alphabet %12,6 düşerek tarihinin en sert günlük kaybını yaşadı; yaklaşık 500 milyar $ piyasa değeri silindi",
+        "why": "Serbest nakit akışı eksiye döndü, arama geliri büyümesi yavaşladı; Goldman Sachs ve JPMorgan hedef fiyatlarını indirdi."
+      },
       {
         "date": "2026-10-29",
         "title": "Alphabet bilançosu: bulut ikiye katlandı ama arama geliri beklentinin altında, serbest nakit akışı eksi; hisse mesai sonrası yaklaşık %10 düştü",
@@ -247,6 +261,11 @@
     "MSFT": [
       {
         "date": "2026-10-29",
+        "title": "Microsoft, Alphabet ve Amazon'dan ayrıştı: harcaması beklentinin altında, serbest nakit akışı pozitif",
+        "why": "Piyasa harcamayı nakitle karşılayan şirketi ödüllendiriyor; Microsoft bu ayrışmanın olumlu tarafında."
+      },
+      {
+        "date": "2026-10-29",
         "title": "Microsoft bilançosu: Azure beklentiyi aştı, serbest nakit akışı pozitif; hisse mesai sonrası yaklaşık %3 yükseldi",
         "why": "Yapay zekâ harcamasını kendi nakdiyle karşılayan şirket ödüllendirildi."
       },
@@ -291,6 +310,11 @@
       }
     ],
     "AMZN": [
+      {
+        "date": "2026-10-29",
+        "title": "Amazon bilançosu: bulut yüzde 39 büyüdü ama 12 aylık serbest nakit akışı −42,4 milyar $; hisse mesai sonrası yaklaşık %7 düştü",
+        "why": "Bulut talebi güçlü, ama harcamanın beklentinin yaklaşık 20 milyar $ üzerinde kalması ve eksi nakit akışı piyasayı rahatsız etti."
+      },
       {
         "date": "2026-10-22",
         "title": "Amazon yüzde 4,6 düştü",

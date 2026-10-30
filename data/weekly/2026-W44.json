@@ -1,0 +1,119 @@
+{
+  "id": "2026-W44",
+  "range": "Hafta 44 · 26 – 30 Ekim 2026",
+  "headline": "Yapay zekâ ticareti haftada iki yüz değiştirdi: Anthropic başvurusuyla çipler uçtu, Alphabet, Amazon ve Intel'in nakit ve rehberlik sınavıyla çöktü; 10 yıllık faiz Ekim'de Aralık 2023'ten beri en sert aylık düşüşünü yaşadı",
+  "lede": "Hafta çip hisselerinin Anthropic'in halka arz başvurusuyla toparlanmasıyla başladı; Fed çarşamba faizi sabit tuttu ve iki üye artırım istedi. Perşembe Alphabet tarihinin en sert günlüğünü yaşadı, gece Amazon ve Intel de aynı soruda takıldı; Cuma sabahı Kore yüzde 5, Japonya yüzde 2,5 düştü ve Binance'te tarihin en büyük kripto hack'i yaşandı. Perşembe kapanışına göre S&P 500 haftayı yükselişte, Nasdaq 100 de artıda tamamlıyor; ama Nasdaq'ın haftalık kazancı tek günde büyük ölçüde silindi. Tahvil faizi hisse satışı ve sığınak talebiyle düştü, petrol yeniden yükselişte.",
+  "source": "Haftalık değişimler FMP'nin 5 günlük verisi (30 Ekim sabahı itibarıyla, Asya Cuma seansı dahil); BIST 100 Borsa MCP, 23-28 Ekim kapanışı (29 Ekim tatil); Brent Borsa MCP serisi.",
+  "kpis": [
+    {
+      "name": "S&P 500",
+      "chg": 1.27
+    },
+    {
+      "name": "Nasdaq 100",
+      "chg": 1.54
+    },
+    {
+      "name": "Nikkei 225",
+      "chg": 0.6
+    },
+    {
+      "name": "Euro Stoxx 50",
+      "chg": 1.78
+    },
+    {
+      "name": "BIST 100",
+      "chg": 0.44
+    },
+    {
+      "name": "Brent",
+      "chg": -0.5
+    },
+    {
+      "name": "Altın",
+      "chg": -0.14
+    },
+    {
+      "name": "Bitcoin",
+      "chg": -2.59
+    }
+  ],
+  "days": [
+    {
+      "day": "Pzt",
+      "date": "26 Eki",
+      "title": "Anthropic başvurusu çipleri uçurdu, Brezilya çöktü",
+      "text": "Anthropic'in halka arz başvurusu yarı iletken endeksini yaklaşık yüzde 3 yükseltti; S&P 500 ve Nasdaq güçlü kapattı ama eşit ağırlıklı endeks düştü, yani kazanç dar tabanlıydı. Brezilya'da sürpriz seçim sonucu varlıkları sert sattı. Petrol altı ayın zirvesinden geri çekildi."
+    },
+    {
+      "day": "Sal",
+      "date": "27 Eki",
+      "title": "Broadcom finansmanı ve SK hynix rekoru Kore'yi uçurdu",
+      "text": "Broadcom'un Anthropic için bankalardan sağladığı finansman çipleri destekledi; SK hynix rekor kâr açıkladı ve KOSPI yüzde 6'nın üzerinde yükseldi. Dayanıklı mal siparişleri beklentinin çok üstünde geldi. Nasdaq iki günde yaklaşık yüzde 2 kazandı."
+    },
+    {
+      "day": "Çar",
+      "date": "28 Eki",
+      "title": "Fed sabit tuttu, ikisi artırım istedi",
+      "text": "Fed faizi sabit bıraktı ama oylama 10-2 oldu; karar sonrası faiz yükseldi, Warsh'ın basın toplantısında geri döndü. Microsoft nakit akışını koruyarak, Alphabet eksiye çevirerek bilanço açıkladı. BIST yarım günde yatay kapandı; teknoloji sıçradı, bankalar düştü."
+    },
+    {
+      "day": "Per",
+      "date": "29 Eki",
+      "title": "Alphabet tarihin en sert günlüğünü yaşadı",
+      "text": "Alphabet yaklaşık yüzde 12,6 düşerek yarım trilyon dolara yakın değer kaybetti; Nasdaq 100 yüzde 1,4 geriledi, S&P 500 sağlık, gayrimenkul ve kamu hizmetleri sayesinde yatay kaldı. Çekirdek PCE beklentide, büyüme güçlü geldi; ECB sabit. Gece Amazon (nakit akışı) ve Intel (rehberlik) mesai sonrası sert düştü. BIST bayram nedeniyle kapalıydı."
+    }
+  ],
+  "winners": [
+    {
+      "name": "Güney Kore (EWY ETF)",
+      "v": "+6,99%"
+    },
+    {
+      "name": "Doğalgaz",
+      "v": "+9,73%"
+    },
+    {
+      "name": "ABD sanayi sektörü",
+      "v": "+3,35%"
+    }
+  ],
+  "losers": [
+    {
+      "name": "Brezilya (EWZ ETF)",
+      "v": "−22,19%"
+    },
+    {
+      "name": "Platin",
+      "v": "−6,64%"
+    },
+    {
+      "name": "Gümüş",
+      "v": "−4,85%"
+    }
+  ],
+  "learned": [
+    "karsi-oy",
+    "kar-kalitesi",
+    "rehberlik",
+    "acilis-boslugu",
+    "karsi-taraf-riski"
+  ],
+  "next": [
+    {
+      "when": "2 Kas 18:00",
+      "title": "ABD ISM imalat PMI ve Apple bilançosu",
+      "why": "ISM'de ödenen fiyatlar yüksekti; Apple, harcamayı nakitle karşılayan büyük şirketin ödüllendirilip ödüllendirilmediği testi."
+    },
+    {
+      "when": "3 Kas",
+      "title": "ABD ara seçimleri ve Türkiye TÜFE",
+      "why": "ABD-İsrail'in İran planı seçim sonrasına bağlanmış görünüyor; petrol ve faiz için siyasi risk. Türkiye'de enflasyon indirim patikasını sınayacak."
+    },
+    {
+      "when": "5-6 Kas",
+      "title": "BoE faiz kararı ve ABD tarım dışı istihdam",
+      "why": "BoE'de oy dağılımı, ABD'de istihdamın Fed'in artırım kanadına ne söylediği; ikisi aynı hafta faiz dilini belirleyecek."
+    }
+  ]
+}

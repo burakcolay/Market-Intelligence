@@ -1,0 +1,3679 @@
+{
+  "date": "2026-10-30",
+  "updated": "07:05",
+  "tickers": [
+    {
+      "name": "S&P 500",
+      "value": "7.720,39",
+      "chg": "▼ %0,30",
+      "tone": "down"
+    },
+    {
+      "name": "Nasdaq 100",
+      "value": "29.402,51",
+      "chg": "▼ %1,38",
+      "tone": "down"
+    },
+    {
+      "name": "Dow Jones",
+      "value": "52.342,56",
+      "chg": "▼ %0,25",
+      "tone": "flat"
+    },
+    {
+      "name": "BIST 100",
+      "value": "11.165",
+      "chg": "▲ %0,13",
+      "tone": "flat"
+    },
+    {
+      "name": "VIX",
+      "value": "17,20",
+      "chg": "▲ %1,71",
+      "tone": "up"
+    },
+    {
+      "name": "ABD 10Y",
+      "value": "%4,91",
+      "chg": "▼ 7 bp",
+      "tone": "down"
+    },
+    {
+      "name": "USD/TRY",
+      "value": "49,96",
+      "chg": "▲ %0,2",
+      "tone": "up"
+    },
+    {
+      "name": "Ons altın",
+      "value": "4.002",
+      "chg": "▼ %0,73",
+      "tone": "down"
+    },
+    {
+      "name": "Brent",
+      "value": "115,74",
+      "chg": "▲ %0,75",
+      "tone": "up"
+    },
+    {
+      "name": "Bitcoin",
+      "value": "77.982",
+      "chg": "▼ %2,1",
+      "tone": "down"
+    }
+  ],
+  "summary": {
+    "headline": "Yapay zekâ harcamasına şüphe Alphabet'ten Amazon ve Intel'e sıçradı, Kore sert düştü; Binance hack'i kriptoyu vurdu, faiz ise güvenli liman talebiyle geriledi",
+    "lede": "Dün 'Alphabet düşüşü yayılır mı' diye sormuştuk; cevap evet oldu ve genişledi: Alphabet tarihinin en sert günlük düşüşünü yaşadı, gece Amazon ve Intel de bilançoyla cezalandırıldı. Bugünün sorusu, bu satışın yapay zekâ temasının tamamına mı yoksa yalnızca nakit akışı zayıf şirketlere mi ait olduğu; BIST ise bayram tatilinden sonra tam bu rüzgârın ortasında açılıyor.",
+    "paragraphs": [
+      "Dünkü soruya cevap net: düşüş yayıldı. Alphabet borsaya açıldığından beri en sert günlük kaybını yaşadı ve yaklaşık yarım trilyon dolarlık piyasa değeri silindi; bellek, optik bağlantı ve bulut altyapısı hisseleri onunla birlikte satıldı, Nasdaq 100 diğer endekslerden belirgin biçimde geride kaldı. Ama tablonun öteki yüzü de önemli: para ABD hisselerinden kaçmadı, savunmacı sektörlere (sağlık, gayrimenkul, kamu hizmetleri) ve küçük şirketlere kaydı. S&P 500'ün neredeyse yatay kalması bu yüzden; endeksin altında bir [[sektor-rotasyonu|sektör rotasyonu]] işliyor. Meta ve Apple'ın yükselmesi de satışın 'bütün büyük teknoloji' olmadığını gösteriyor.",
+      "Gece sınavın üçüncü ve dördüncü örneği geldi ve ikisi farklı biçimde başarısız oldu. Amazon'da bulut büyümesi yaklaşık beş yılın en hızlısına çıktı ve şirket rekor faaliyet marjı yaptı, ama harcama beklentinin çok üzerinde kaldı, gelir ve kâr beklentinin hafif altında geldi ve son on iki ayın [[serbest-nakit-akisi|serbest nakit akışı]] 42 milyar dolar eksiye düştü; hisse mesai sonrası sert geriledi. Intel'de sorun harcama değil [[rehberlik|rehberlik]]: üçüncü çeyrek beklentiyi aştı ama dördüncü çeyrek geliri beklentinin belirgin altında öngörüldü; yönetim PC talebinin en az gelecek yılın ilk yarısına kadar yavaş kalacağını, sunucu işlemcisi talebini ise üretim kısıtları yüzünden karşılayamadığını söyledi. Hisse mesai sonrası yüzde 20'nin üzerinde düştü. İki örneğin ortak dersi, piyasanın geçmiş çeyreğe değil gelecek çeyreğin nakit ve gelir görünümüne baktığı.",
+      "Faiz tarafı ilk bakışta çelişkili: bilançolar kötü, çekirdek PCE tam beklentide ve büyüme beklentinin üzerinde geldi, ama tahvil faizleri yine de düştü. Mekanizma şu: veri sürpriz yapmadığı için Fed'in artırım kanadına yeni yakıt gelmedi; hisse satışı ise yatırımcıyı güvenli limana, yani devlet tahvillerine itti. Tahvil fiyatı yükselince getiri düşer; 10 yıllık faiz Asya'da yüzde 4,91'e indi ve Ekim, Aralık 2023'ten beri en sert aylık düşüşle kapanıyor. Bu rahatlama iyi nedenle değil kötü nedenle geliyor: faiz, enflasyon korkusu azaldığı için değil risk iştahı bozulduğu için düşüyor. Bu yüzden Fed'in Aralık artırımı fiyatlaması bir günde silinmiyor, sadece uzun uçtaki [[vadeprimi|vade primi]] daralıyor.",
+      "Asya'da satış dünkü Samsung hikâyesinden çok daha büyük: KOSPI bu sabah yüzde 5'e yakın düşüyor ve Ekim'i yüzde 17'den fazla kayıpla kapatacak; Nikkei çip ekipmanı ve SoftBank öncülüğünde geriledi. Mekanizma açık: Kore'nin ihracat ve kâr hikâyesi, ABD'li bulut şirketlerinin harcama programına bağlı. Alphabet ve Amazon 'harcamayı kimin nakdiyle yapacağız' sorusuyla karşılaştığı an, çip siparişi alan Kore ve Tayvan'ın beklentisi düşüyor. Japonya Merkez Bankası faizi sabit tuttu ama temel enflasyonun hedefe ulaştığını söyleyerek Aralık artırımının kapısını açık bıraktı ve elindeki borsa fonlarını satma hızını artıracağını duyurdu; yen biraz güçlendi. Avrupa dün bu satışın dışında kaldı ve yükseldi.",
+      "Petrolde dünkü 'diplomasi rahatlaması' okumamız yarım gün sürdü. Vance'in mektubuna İran henüz yanıt vermedi; üstüne Husilerin Suudi Arabistan'daki rafinerilere saldırısı ve Hürmüz'de tankerlerin mayına çarptığı haberi geldi, Brent yeniden yükseldi ve Ekim'i üst üste dördüncü aylık artışla kapatıyor. Yani petrol 'yön değiştirmedi', sadece duraksadı; bu, faizdeki rahatlamanın neden kırılgan olduğunu da gösteriyor. Kriptoda ayrı bir şok var: Binance borsasında tarihin en büyük hack'i yaşandı, etkilenen kullanıcı fonu yaklaşık 6 milyar dolar ve bunun yarısına yakını dondurulmuş durumda. Bitcoin yüzde 4-5 civarında düştü; ayrıntısı kripto sayfasında.",
+      "Türkiye'de borsa dün Cumhuriyet Bayramı nedeniyle kapalıydı; son kapanış 28 Ekim. BIST bu sabah 10:00'da iki günlük küresel haberi tek seansta fiyatlayacak; teknoloji endeksi 28 Ekim'deki ayrışmada yükselen tarafı temsil ettiği için açılışta en çok o sınanır. Bugünkü tek bakılacak şey: ABD açılışında Amazon, Intel ve Alphabet düşüşünün Nasdaq 100'e mi yoksa yalnızca bu üç hisseye mi yazıldığı."
+    ],
+    "read_min": 7
+  },
+  "impact": [
+    {
+      "market": "ABD",
+      "trigger": "Haber · Amazon ve Intel bilançoları, 29 Ekim mesai sonrası",
+      "title": "Amazon ve Intel de yapay zekâ sınavında takıldı: biri nakit akışıyla, öbürü rehberlikle düştü",
+      "summary": "Amazon'un bulutu yaklaşık beş yılın en hızlı büyümesini yaptı ama harcama beklentiyi aştı ve serbest nakit akışı eksiye geldi; Intel bilançoyu aştı ama dördüncü çeyrek gelirini beklentinin çok altında öngördü. İkisi de mesai sonrası sert düştü.",
+      "chain": [
+        "Alphabet satışı sürdü",
+        "Amazon harcaması beklentiyi aştı",
+        "Nakit akışı eksiye geçti",
+        "Intel rehberliği kırdı",
+        "Çip ve bulut hisseleri satıldı"
+      ],
+      "groups": [
+        {
+          "name": "Amazon",
+          "tickers": [
+            "AMZN"
+          ],
+          "move": "Kapanış −%4,25 · mesai sonrası ≈−%7",
+          "tone": "down",
+          "priced": "Bulutun hızlanması zaten beklenen bir şeydi; fiyatlanmayan, üç aylık harcamanın beklentiden yaklaşık 20 milyar dolar fazla olması ve nakit akışının eksiye gitmesiydi.",
+          "question": "Bulut büyümesinin gelecek iki yıl %40'ın üzerinde kalacağı rehberliği bu harcamayı haklı çıkarır mı? Belirsiz.",
+          "flow": "Harcamayı kendi nakdiyle karşılayan büyük şirketlere ve harcamanın karşısındaki satıcılara ilgi kayabilir; ama Alphabet sonrası satıcıların da satıldığı görüldü, yani bu akış kesin değil.",
+          "counter": "AWS'in birikmiş sipariş tutarı çok büyük ve üç haneli büyüyor; düşüş talebin değil finansmanın tepkisi olabilir ve kısmen geri alınabilir."
+        },
+        {
+          "name": "Intel",
+          "tickers": [
+            "INTC"
+          ],
+          "move": "Kapanış −%3,6 · mesai sonrası ≈−%23",
+          "tone": "down",
+          "priced": "Üçüncü çeyrek aşıldı ama dördüncü çeyrek gelir beklentisi 17 milyar dolar civarından 15-16 milyar dolara indi; piyasa PC zayıflığının uzun süreceğini ve sunucu işlemcisi talebinin üretim kısıtı yüzünden gelire dönüşemediğini fiyatladı.",
+          "question": "Sunucu işlemcisi talebi gerçekten 'olağanüstü' ise kısıt aşıldığında gelir geri gelir mi, yoksa pazar bu sürede AMD ve Nvidia'ya mı kayar? Belirsiz.",
+          "counter": "Yönetim sorunu talep değil arz olarak tanımlıyor ve veri merkezi gelirinin 15 yılın en güçlü büyümesini yaptığını söylüyor; kısıt giderse rehberlik yukarı revize edilebilir."
+        },
+        {
+          "name": "Çip ve bulut altyapısı",
+          "tickers": [
+            "MRVL",
+            "SNDK",
+            "MU",
+            "CRWV"
+          ],
+          "move": "Marvell −%13,24 (kendi satın alma görüşmesi) · SanDisk ve Micron ≈−%5 · CoreWeave ≈−%5",
+          "tone": "down",
+          "priced": "Yarı iletken endeksi yaklaşık %1,4 düştü; piyasa bulut devlerinin harcamasında kısıntı riskini çip ve altyapı satıcılarının gelirine yansıttı. Marvell'in düşüşü ise Lumentum'u satın alma görüşmeleri ve finansman riskinden geldi.",
+          "question": "Bulut devleri harcama rehberliğini kısarsa çip siparişi ilk etkilenen olur mu? Belirsiz.",
+          "counter": "Harcama rehberlikleri Alphabet ve Amazon'da korundu (yılda yaklaşık 200 ve 220 milyar dolar); kısıntı henüz yok, satış beklenti kaynaklı olabilir."
+        }
+      ],
+      "checks": [
+        "ABD açılışında Amazon ve Intel'in mesai sonrası kaybının ne kadarının korunduğu.",
+        "Alphabet ve Amazon'un 2027 harcama rehberliğini analistlerin nasıl güncellediği.",
+        "Pazartesi Apple bilançosunda, harcamayı nakitle karşılayan büyük şirketin ödüllendirilip ödüllendirilmediği.",
+        "Intel'in sunucu işlemcisi kısıtlarının (fabrika kapanışı, malzeme) giderilme takvimi."
+      ],
+      "sources": [
+        {
+          "name": "MT Newswires (Amazon üçüncü çeyrek sonuçları)",
+          "url": "https://app.bigdata.com/documents/DF509BE49ACB85F07A6027E4C28F48FA?cnum=2&cnum=3"
+        },
+        {
+          "name": "Benzinga (Amazon hisse tepkisi)",
+          "url": "https://app.bigdata.com/documents/3DFC2186779A8290808D367A7780A41F?cnum=1"
+        },
+        {
+          "name": "Alliance News (Intel rehberliği)",
+          "url": "https://app.bigdata.com/documents/40D3693E068ED93769116DF1B12F709F?cnum=2"
+        },
+        {
+          "name": "Nasdaq (Marvell, Lumentum görüşmesi)",
+          "url": "https://app.bigdata.com/documents/0FD663E667D8D20EFBB3C7AE2513B9C6?cnum=1"
+        }
+      ]
+    },
+    {
+      "market": "ABD",
+      "trigger": "Sektör hareketi · ABD, 29 Ekim seansı",
+      "title": "Teknoloji ve iletişim satılırken sağlık, gayrimenkul ve kamu hizmetleri yükseldi: para nereye kaydı?",
+      "summary": "Alphabet düşüşü Nasdaq 100'ü aşağı çekerken S&P 500 neredeyse yatay kaldı; sağlık, gayrimenkul, kamu hizmetleri ve temel tüketim sert yükseldi, küçük şirketler de ayrıştı. Aynı gün tahvil faizi düştü.",
+      "chain": [
+        "Alphabet satışı yayıldı",
+        "Faiz güvenli limanla düştü",
+        "Savunmacı sektörler yükseldi",
+        "Küçük şirketler öne geçti",
+        "S&P 500 yatay kaldı"
+      ],
+      "groups": [
+        {
+          "name": "Savunmacı ve faize duyarlı sektörler",
+          "tickers": [
+            "XLV",
+            "XLRE",
+            "XLP",
+            "XLU"
+          ],
+          "move": "Sağlık +%2,40 · gayrimenkul +%2,21 · temel tüketim +%1,54 · kamu hizm. +%1,53",
+          "tone": "up",
+          "priced": "Düşen faiz gayrimenkul ve kamu hizmetlerinin değerlemesini yukarı çekti; sağlık ve temel tüketim büyüme korkusuna karşı sığınak olarak alındı.",
+          "question": "Bu kalıcı bir rotasyon mu, yoksa teknoloji satışının geçici sığınağı mı? Belirsiz.",
+          "flow": "Teknolojideki nakit akışı kaygısı sürerse para bilançosu sağlam ve temettü ödeyen şirketlere kayabilir; Ekim ayında temettü odaklı fonların öne çıktığı zaten bildirilmişti.",
+          "counter": "Bu sektörlerin yükselişi faiz düşüşüne bağlı; sıcak bir enflasyon verisi ya da petrol sıçraması faizi yeniden yükseltirse ilk geri veren onlar olur."
+        },
+        {
+          "name": "Teknoloji ve iletişim",
+          "tickers": [
+            "XLK",
+            "XLC"
+          ],
+          "move": "Teknoloji −%1,18 · iletişim −%1,87",
+          "tone": "down",
+          "priced": "Alphabet'in düşüşü iletişim hizmetleri sektörünü, çip ve bulut satışı teknolojiyi aşağı çekti.",
+          "question": "Satış sektörün geneline mi, yoksa harcamasını nakitle karşılayamayanlara mı ait? Meta ve Apple'ın yükselmesi ikinci ihtimali destekliyor; belirsiz.",
+          "counter": "Teknoloji üç ayda hâlâ artıda; bu bir fiyatlama düzeltmesi olabilir ve kısa sürede geri alınabilir."
+        },
+        {
+          "name": "Küçük şirketler",
+          "tickers": [
+            "IWM"
+          ],
+          "move": "Russell 2000 +%1,01",
+          "tone": "up",
+          "priced": "Büyük teknolojiden çıkan para ve düşen faiz, borçlanma maliyeti yüksek küçük şirketlere nefes aldırdı.",
+          "question": "Küçük şirketler faiz düşüşü kalıcıysa mı kazanır, yoksa bu bir günlük rotasyon mu? Belirsiz.",
+          "counter": "Küçük şirketler üç ayda hâlâ geride; bir günlük hareket trend sayılmaz."
+        }
+      ],
+      "checks": [
+        "Cuma seansında sağlık ve gayrimenkulün yükselişini koruyup korumadığı.",
+        "10 yıllık faizin Asya'daki düşüşünü ABD açılışında sürdürüp sürdürmediği.",
+        "6 Kasım istihdam ve 10 Kasım TÜFE ile faiz düşüşünün gerekçesinin (korku mu enflasyon mu) değişip değişmediği."
+      ],
+      "sources": [
+        {
+          "name": "21st Century Business (29 Ekim kapanış özeti)",
+          "url": "https://app.bigdata.com/documents/0CD3F351734F0795F0A238A64C0F275D?cnum=2"
+        },
+        {
+          "name": "Eastmoney (Nasdaq 100 ve sektör özeti)",
+          "url": "https://app.bigdata.com/documents/86D6640A450C97A3BD1E98A2D5DEC34D?cnum=1"
+        },
+        {
+          "name": "Straits Times / Reuters (tahvil ve hisse özeti)",
+          "url": "https://app.bigdata.com/documents/16EC53C12061DE89AC9FABE470AFAE35?cnum=2"
+        }
+      ]
+    },
+    {
+      "market": "Avrupa-Asya",
+      "trigger": "Sektör hareketi · Asya, 30 Ekim sabahı",
+      "title": "KOSPI bir günde yaklaşık %5 düştü: Alphabet'in harcama kaygısı Kore'nin bellek üreticilerine çip siparişi üzerinden ulaştı",
+      "summary": "KOSPI Ekim'de %17'den fazla düşüşe gidiyor; Samsung ve SK hynix rekor kârlarından günler sonra satıldı. Nikkei çip ekipmanı ve SoftBank öncülüğünde geriledi, BoJ faizi sabit tuttu; Avrupa ise yükseldi.",
+      "chain": [
+        "Alphabet harcama kaygısı",
+        "Çip siparişi beklentisi düştü",
+        "Kore bellek hisseleri satıldı",
+        "Japon ekipman ve SoftBank geriledi",
+        "Avrupa ayrışarak yükseldi"
+      ],
+      "groups": [
+        {
+          "name": "Kore çip ve bellek",
+          "tickers": [
+            "Samsung",
+            "SK hynix"
+          ],
+          "move": "KOSPI ≈−%4,8 · Ekim'de ≈−%17",
+          "tone": "down",
+          "priced": "Kore'nin gelir ve kâr hikâyesi ABD bulut şirketlerinin harcama programına bağlı; bu program sorgulanınca rekor kârlar bile fiyatı tutmadı.",
+          "question": "Rekor kâr açıklayan şirketlerdeki satış temel hikâyenin bozulması mı, yoksa fiyatlanmış beklentinin çözülmesi mi? Belirsiz.",
+          "flow": "Çip siparişi şüphesi sürerse Asya'da para nakit akışı güçlü ihracatçılara, devlet tahvillerine ve yene kayabilir; geçmişte yapay zekâ tereddütlerinde yen güçlenmişti.",
+          "counter": "SK hynix 2027-2028 üretim kapasitesinin yarısından fazlasını uzun vadeli anlaşmalarla satmış durumda; talebin ani kopması beklenmez, satış kâr realizasyonu olabilir."
+        },
+        {
+          "name": "Japon çip ekipmanı ve SoftBank",
+          "tickers": [
+            "Advantest",
+            "Tokyo Electron",
+            "SoftBank"
+          ],
+          "move": "Advantest −%5,43 · Tokyo Electron −%3,93 · SoftBank −%4,66 · Nikkei ≈−%2,5",
+          "tone": "down",
+          "priced": "Yapay zekâ yatırım döngüsünün tedarikçileri ve finansörü olarak harcamadaki yavaşlama riskini fiyatladılar.",
+          "question": "BoJ'un borsa fonu satışını hızlandırma planı Nikkei üzerinde ayrıca baskı mı yapıyor? Etkisi doğrulanamadı; belirsiz.",
+          "counter": "Dün Advantest yükselmişti; iki günlük gidiş-dönüş, bu hisselerin haberden çok pozisyonlanmayla hareket ettiğini gösteriyor."
+        },
+        {
+          "name": "Avrupa hisseleri",
+          "tickers": [
+            "STOXX 600",
+            "DAX"
+          ],
+          "move": "STOXX 600 +%0,77 · DAX +%1,31 (29 Ekim kapanışı)",
+          "tone": "up",
+          "priced": "Avrupa şirket gelirlerinde yapay zekâ harcaması ABD ve Asya kadar ağırlık taşımıyor; ECB'nin sabit kararı da destek oldu. Bu bir çıkarım.",
+          "question": "Avrupa'nın direnci kalıcı mı, yoksa ABD ve Asya'daki satışa geç mi tepki verecek? Belirsiz.",
+          "counter": "Euro Bölgesi büyüme verisi zayıf ve enflasyon yüksek; direnç bugünkü büyüme verisiyle kırılabilir."
+        }
+      ],
+      "checks": [
+        "KOSPI kapanışında sabahki düşüşün korunup korunmadığı ve yabancı satışı.",
+        "Ueda basın toplantısında Aralık artırımı sinyali (09:30).",
+        "31 Ekim Çin imalat PMI'ı."
+      ],
+      "sources": [
+        {
+          "name": "Yahoo Finance (KOSPI, Nikkei, Alphabet yansıması)",
+          "url": "https://app.bigdata.com/documents/366E33E71B40B866A505F5D7AB56149B?cnum=1"
+        },
+        {
+          "name": "BQ Prime (Asya piyasaları, BoJ öncesi)",
+          "url": "https://app.bigdata.com/documents/6F5B3F7011BC0242EC630F5B5FB48E73?cnum=1&cnum=2"
+        },
+        {
+          "name": "Reuters aktarımı (hisseler düştü, tahviller yükseldi)",
+          "url": "https://app.bigdata.com/documents/6573A153FBC389FB49AC20CDCE444F7F?cnum=2"
+        },
+        {
+          "name": "MSN / Reuters (BoJ kararı ve analist yorumları)",
+          "url": "https://app.bigdata.com/documents/2B1FC33B9E32AE6A18BF06C25ED7772F?cnum=2&cnum=3"
+        }
+      ]
+    },
+    {
+      "market": "Emtia ve döviz",
+      "trigger": "Haber · Husi saldırıları ve Hürmüz, 29-30 Ekim",
+      "title": "Petrolde diplomasi umudu bir günde söndü: Brent Ekim'i üst üste dördüncü aylık artışla kapatıyor, faiz ise ayrı yöne gidiyor",
+      "summary": "Vance'in İran'a mektubuna henüz yanıt gelmedi; Husiler Suudi rafinerilerine saldırdı ve Hürmüz'de tankerlerin mayına çarptığı bildirildi. Brent 115 doların üzerine çıktı.",
+      "chain": [
+        "İran mektuba yanıt vermedi",
+        "Husi saldırıları arzı tehdit etti",
+        "Hürmüz'de mayın haberi",
+        "Brent yeniden yükseldi",
+        "Enflasyon riski canlı kaldı"
+      ],
+      "groups": [
+        {
+          "name": "Enerji hisseleri",
+          "tickers": [
+            "XLE"
+          ],
+          "move": "Dün +%0,38 · 1 ayda +%11,72 (XLE)",
+          "tone": "up",
+          "priced": "Enerji hisseleri son bir ayda petrolün yükselişini fiyatladı; yeniden yükselen petrol bu fiyatlamayı destekliyor.",
+          "question": "Petrol diplomasi çıkarsa düşerse enerji hisselerindeki ay yükselişi geri verilir mi? Belirsiz.",
+          "counter": "ANZ diplomatik bir çıkışta Brent'in 90-95 dolara inebileceğini söylüyor; bu olursa enerji hisseleri de geri verir."
+        },
+        {
+          "name": "Petrol ithalatçısı gelişen piyasalar",
+          "tickers": [
+            "TUR"
+          ],
+          "move": "Dün −%0,06 · 1 ayda −%9,02 (TUR ETF)",
+          "tone": "down",
+          "priced": "Türkiye petrol ithalatçısı; yüksek petrol cari açığı ve enflasyonu besliyor, bu yüzden son bir ayda baskı altında.",
+          "question": "Petrol yüksek kalırsa Ekim enflasyonu (3 Kasım) ve TL üzerindeki baskı artar mı? Belirsiz.",
+          "counter": "Türkiye'de enflasyon beklentiden hızlı düşüyor; petrolün etkisi gecikmeli yansıyabilir ve bu ay veriye girmeyebilir."
+        },
+        {
+          "name": "Tahvil ve altın",
+          "tickers": [
+            "TLT",
+            "GC"
+          ],
+          "move": "Uzun vadeli ABD tahvil ETF'i +%0,62 · altın vadeli −%0,73",
+          "tone": "flat",
+          "priced": "Petrol yükselirken tahvilin güçlenmesi, piyasanın şu an enflasyondan çok büyüme ve risk iştahı kaygısını fiyatladığını gösteriyor; altın ise faiz düşüşüne rağmen yükselmedi.",
+          "question": "Petrol yüksek kalırken tahvil rallisi ne kadar sürer? Belirsiz.",
+          "counter": "Petrol enflasyon beklentisini yeniden yükseltirse tahvil rallisi tersine döner; altının tepkisizliği de başka bir pozisyonlanma baskısına işaret edebilir."
+        }
+      ],
+      "checks": [
+        "İran'ın Vance mektubuna yanıtı.",
+        "Ras Tanura ve Abqaiq tesislerindeki hasarın boyutu.",
+        "3 Kasım ara seçimleri ve ABD'nin Hürmüz'deki operasyon planı."
+      ],
+      "sources": [
+        {
+          "name": "US News / Reuters (petrol, Husi saldırıları)",
+          "url": "https://app.bigdata.com/documents/079724173D179D78D894CF802357A69D?cnum=2&cnum=1"
+        },
+        {
+          "name": "FXStreet (euro, İran ve Hürmüz gelişmeleri)",
+          "url": "https://app.bigdata.com/documents/21309C678A380F080E42942DB93AA14B?cnum=2"
+        },
+        {
+          "name": "InfoQuanta (ANZ Brent tahmini)",
+          "url": "https://app.bigdata.com/documents/B8037CB948E014A3FAE4F45B86AB76F3?cnum=1"
+        }
+      ]
+    },
+    {
+      "market": "Kripto",
+      "trigger": "Haber · Binance hack'i, 29-30 Ekim",
+      "title": "Tarihin en büyük kripto hack'i: Binance'te yaklaşık 6 milyar dolar etkilendi, stabilcoin ihraççıları fonların yarısına yakınını dondurdu",
+      "summary": "Binance, bir mühendisin bilgisayarının ele geçirilmesiyle yetkisiz çekim yapıldığını, para yatırma ve çekmeyi durdurduğunu ve kullanıcı kayıplarını karşılayacağını açıkladı. Bitcoin ve büyük coin'ler geriledi.",
+      "chain": [
+        "Binance'te hack yaşandı",
+        "Tether ve Circle fonları dondurdu",
+        "Yatırma ve çekme durdu",
+        "BNB ve büyük coin'ler düştü",
+        "Merkeziyetsiz borsalara ilgi arttı"
+      ],
+      "groups": [
+        {
+          "name": "Binance ve BNB",
+          "tickers": [
+            "BNB"
+          ],
+          "move": "BNB ≈−%7,7 (gece, CNBC)",
+          "tone": "down",
+          "priced": "BNB'nin değeri Binance borsasına duyulan güvene bağlı; yatırma ve çekmenin durması ve kayıp tutarı netleşmemişken karşı taraf riski fiyatlandı.",
+          "question": "Binance kayıpları kendi kaynaklarıyla karşılayabilecek mi? Şirket mevcut fonlarını ve 1 milyar dolarlık Bitcoin yedeğini kullanacağını söylüyor; ayrıntı doğrulanmadı.",
+          "counter": "Fonların büyük bölümü dondurulmuş durumda ve şirket zararı karşılayacağını söylüyor; güven kaybı sınırlı kalırsa düşüş geri alınabilir."
+        },
+        {
+          "name": "Stabilcoin ihraççıları",
+          "tickers": [
+            "USDT",
+            "USDC",
+            "CRCL"
+          ],
+          "move": "Circle ≈−%5 (mesai sonrası) · Tether yaklaşık 1,5 mlr $, Circle yaklaşık 0,8 mlr $ dondurdu",
+          "tone": "flat",
+          "priced": "Fon dondurma yetkisi hırsızlığı sınırladı, ama stabilcoinlerin merkezi kontrol altında olduğunu da gösterdi; piyasa bunu hem güvence hem merkeziyet riski olarak fiyatladı.",
+          "question": "Dondurulan fonlar kullanıcılara ne zaman ve hangi yasal süreçle dönecek? Belirsiz; uzmanlar aylar ya da yıllar sürebileceğini söylüyor.",
+          "counter": "Stabilcoin ihraççılarının hızlı müdahalesi sektörün hack'e verdiği en güçlü cevaptı; bu güveni artırıp Circle gibi şirketlere uzun vadede olumlu yansıyabilir."
+        },
+        {
+          "name": "Merkeziyetsiz borsa token'ları",
+          "tickers": [
+            "HYPE"
+          ],
+          "move": "HYPE ≈+%9,7",
+          "tone": "up",
+          "priced": "Merkezi borsadaki karşı taraf riskinden kaçış, kullanıcıların fonları kendi cüzdanında tuttuğu merkeziyetsiz türev borsalarına ilgiyi artırdı.",
+          "question": "Bu bir kalıcı göç mü, yoksa günlük bir tepki mi? Belirsiz.",
+          "flow": "Merkezi borsalara güven toparlanana kadar işlem hacmi merkeziyetsiz platformlara kayabilir; geçmişteki borsa çöküşlerinde (FTX) benzer bir geçiş yaşandı.",
+          "counter": "Tek günlük hareket; merkeziyetsiz platformlar da kendi akıllı sözleşme riskleri taşıyor."
+        }
+      ],
+      "checks": [
+        "Binance'in para yatırma ve çekme hizmetlerini yeniden açma tarihi ve kayıp tutarının resmî teyidi.",
+        "30 Ekim'de vadesi dolan yaklaşık 11 milyar dolarlık Bitcoin opsiyonlarının oynaklığı.",
+        "Spot Bitcoin ETF akışlarının hack sonrası yönü."
+      ],
+      "sources": [
+        {
+          "name": "The Washington Post (Binance hack'i)",
+          "url": "https://app.bigdata.com/documents/0A3697D3C74A5FB56B6BC4F807755DD3?cnum=3&cnum=1"
+        },
+        {
+          "name": "CNBC (Bitcoin, BNB ve HYPE hareketi)",
+          "url": "https://app.bigdata.com/documents/D4535EE33205487C5264601C6D36001D?cnum=2&cnum=3&cnum=1"
+        },
+        {
+          "name": "Alliance News (dondurulan fonlar)",
+          "url": "https://app.bigdata.com/documents/DABD34E8414EE4A21E1022A0250E9930?cnum=3"
+        }
+      ]
+    }
+  ],
+  "s1": {
+    "mood": "risk_off",
+    "mood_note": "Yapay zekâ harcamasına şüphe üç büyük bilançoya yayıldı, Kore ve Japonya sert düştü, kriptoda tarihin en büyük hack'i var; ama S&P 500'ün yatay kalması, savunmacı sektörlerin yükselmesi ve faizin düşmesi satışın şimdilik teknolojiyle sınırlı olduğunu gösteriyor",
+    "changes": [
+      {
+        "tag": "DEĞİŞTİ",
+        "tone": "bad",
+        "text": "Dünkü 'Alphabet düşüşü yayılır mı' sorusu cevaplandı: yayıldı. Alphabet tarihinin en sert günlüğünü yaşadı, bellek ve optik hisseleri düştü, Nasdaq 100 %1,4 geriledi"
+      },
+      {
+        "tag": "YENİ",
+        "tone": "bad",
+        "text": "Amazon bulutta beş yılın en hızlı büyümesini açıkladı ama harcama beklentiyi aştı, 12 aylık serbest nakit akışı −42 mlr $; hisse mesai sonrası sert düştü"
+      },
+      {
+        "tag": "YENİ",
+        "tone": "bad",
+        "text": "Intel üçüncü çeyreği aştı ama dördüncü çeyrek rehberliği beklentinin çok altında; hisse mesai sonrası %20'nin üzerinde düştü"
+      },
+      {
+        "tag": "DEĞİŞTİ",
+        "tone": "bad",
+        "text": "Dünkü 'petrol diplomasi haberiyle geriledi' okuması çürüdü: İran mektuba yanıt vermedi, Husi saldırıları ve Hürmüz'deki mayın haberi Brent'i yeniden yukarı çevirdi"
+      },
+      {
+        "tag": "DEĞİŞTİ",
+        "tone": "good",
+        "text": "Faiz, beklentiye uyan çekirdek PCE'ye rağmen düştü: 10 yıllık Asya'da %4,91; ama sebep enflasyon rahatlaması değil, hisse satışından tahvile kaçış"
+      },
+      {
+        "tag": "YENİ",
+        "tone": "bad",
+        "text": "KOSPI yaklaşık %5, Nikkei yaklaşık %2,5 düştü; BoJ faizi sabit tuttu, borsa fonu satışını hızlandıracağını açıkladı"
+      },
+      {
+        "tag": "YENİ",
+        "tone": "bad",
+        "text": "Binance'te tarihin en büyük kripto hack'i: yaklaşık 6 mlr $ etkilendi, Bitcoin %4-5 civarında düştü"
+      },
+      {
+        "tag": "DEVAM",
+        "tone": "same",
+        "text": "BIST bayram nedeniyle kapalıydı; 28 Ekim'deki teknoloji-banka ayrışması bugün ilk kez küresel satışla sınanacak"
+      }
+    ],
+    "themes": [
+      {
+        "title": "Satış harcamaya değil, harcamanın finansmanına yayılıyor",
+        "text": "Alphabet'te başlayan nakit akışı kaygısı Amazon'a ve çip zincirine ulaştı. Bulut talebi güçlü; piyasanın sorduğu, o talebi karşılamak için gereken harcamanın kimin bilançosuna yazıldığı."
+      },
+      {
+        "title": "İyi bilanço yetmiyor, rehberlik belirliyor",
+        "text": "Intel beklentiyi aştı ve yüzde 20'nin üzerinde düştü; çünkü yatırımcı geçen çeyreği değil, şirketin gelecek çeyrek için ne dediğini fiyatlıyor. Dün Samsung'da gördüğümüz mekanizmanın ikinci örneği."
+      },
+      {
+        "title": "Faiz düşüyor ama kötü nedenle",
+        "text": "Tahvil faizi risk iştahı azaldığı için geriliyor, enflasyon rahatladığı için değil; petrol ise tersine yükseliyor. Bu ikisi birlikte sürerse rahatlama kırılgan kalır."
+      }
+    ]
+  },
+  "s2": {
+    "chain": [
+      "Alphabet harcama kaygısı yayıldı",
+      "Çip ve bulut hisseleri düştü",
+      "Faiz güvenli limanla geriledi",
+      "Savunmacı sektörler yükseldi",
+      "Amazon ve Intel gece sınandı"
+    ],
+    "paragraphs": [
+      "Dünkü seans ayrışmanın ders kitabı gibiydi: Nasdaq 100 sert düşerken S&P 500 ve Dow neredeyse yerinde kaldı, çünkü kaybı karşılayan sağlık, gayrimenkul, temel tüketim ve kamu hizmetleri oldu. Bu, faizle ilgili bir hikâye: faiz düşünce uzun vadeli sabit gelirli sektörlerin değeri artar, aynı anda büyüme korkusu savunmacı sektörlere ilgi çeker. [[sektor-rotasyonu|Sektör rotasyonu]] tam burada işliyor: para ABD'den çıkmıyor, teknolojiden çıkıp başka sektörlere gidiyor. Küçük şirket endeksinin de yükselmesi, satışın 'ABD hisseleri' satışı değil, 'yapay zekâ harcaması' satışı olduğunu gösteriyor.",
+      "Teknolojinin içinde de ayrım var. Meta ve Apple yükselirken Alphabet, bellek ve optik bağlantı şirketleri düştü; Marvell ise kendi satın alma görüşmesi haberiyle çok sert geriledi, yani her düşüşün sebebi aynı değil. Çekirdek PCE tam beklentide, büyüme tahmini beklentinin üzerinde geldi; veri tarafında bozucu bir şey yok. Bu yüzden bugünkü soru veri değil bilanço: Amazon ve Intel'in mesai sonrası kaybı Nasdaq 100'e ne kadar yazılacak. Vadelilerdeki zayıflık açılışta daralırsa satış bilanço haberinden çok pozisyonlanmaydı demektir; genişlerse tema bozuluyor demektir. Hangisi olacağı belirsiz."
+    ],
+    "sectors": [
+      {
+        "name": "Temel tüketim",
+        "chg": 1.54
+      },
+      {
+        "name": "Kamu hizm.",
+        "chg": 1.53
+      },
+      {
+        "name": "Sağlık",
+        "chg": 2.4
+      },
+      {
+        "name": "Finans",
+        "chg": 1.44
+      },
+      {
+        "name": "Gayrimenkul",
+        "chg": 2.21
+      },
+      {
+        "name": "Hammadde",
+        "chg": 1.29
+      },
+      {
+        "name": "Tük. döngüsel",
+        "chg": 0.75
+      },
+      {
+        "name": "Enerji",
+        "chg": 0.38
+      },
+      {
+        "name": "Sanayi",
+        "chg": 0.97
+      },
+      {
+        "name": "İletişim",
+        "chg": -1.87
+      },
+      {
+        "name": "Teknoloji",
+        "chg": -1.18
+      }
+    ]
+  },
+  "s3": {
+    "cards": [
+      {
+        "label": "STOXX 600",
+        "value": "+0,77%",
+        "sub": "5 günde +%2,1 · 29 Eki kapanışı",
+        "tone": "up"
+      },
+      {
+        "label": "DAX",
+        "value": "+1,31%",
+        "sub": "5 günde +%3,4 · 29 Eki kapanışı",
+        "tone": "up"
+      },
+      {
+        "label": "CAC 40 (Fransa)",
+        "value": "+1,05%",
+        "sub": "5 günde +%2,4 · 29 Eki",
+        "tone": "up"
+      },
+      {
+        "label": "Nikkei 225",
+        "value": "−2,46%",
+        "sub": "BoJ sabit · Cuma seansı",
+        "tone": "down"
+      },
+      {
+        "label": "KOSPI",
+        "value": "−4,79%",
+        "sub": "Ekim'de ≈−%17 · Cuma seansı",
+        "tone": "down"
+      },
+      {
+        "label": "Hang Seng",
+        "value": "+1,52%",
+        "sub": "1 ayda −%5,3 · Cuma seansı",
+        "tone": "up"
+      }
+    ],
+    "chain": [
+      "Alphabet harcama kaygısı yayıldı",
+      "Çip siparişi beklentisi düştü",
+      "KOSPI sert geriledi",
+      "BoJ sabit, yen güçlendi",
+      "Avrupa ayrışarak yükseldi"
+    ],
+    "paragraphs": [
+      "Asya'da dünkü 'rekor kâra rağmen düşüş' hikâyesi bu sabah büyüdü: KOSPI yaklaşık yüzde 5 düşüyor ve Ekim'i yüzde 17'den fazla kayıpla kapatacak. Dünkü okumamız 'Samsung'un düşüşü fiyatlanmış beklentiydi, temel hikâye bozulmadı' idi; bu sabahki satış o okumayı zorluyor, çünkü artık tek şirketin beklentisi değil, Kore'nin ana müşterisi olan ABD bulutlarının harcama programı sorgulanıyor. Çip siparişi alan ülkeler (Kore, Tayvan), siparişi veren şirketlerin nakit sıkıntısına en duyarlı olanlar. Tayvan da geriledi; Çin'de yapay zekâ hisseleri aylardır düşüyor ve CSI300 on yılın en sert aylık düşüşüne gidiyor.",
+      "Japonya Merkez Bankası faizi sabit tuttu ve bu bekleniyordu. Asıl mesaj metindeydi: temel enflasyonun hedefe ulaştığını kabul etti, enflasyon tahminini yükseltti ve kurulda bir üye artırım istedi; yani 'sıkı bir bekleme'. Piyasa Aralık artırımını büyük ölçüde fiyatlıyor ve Ueda'nın basın toplantısının bunu pekiştirip pekiştirmeyeceği 09:30'da belli olacak. Banka ayrıca elindeki borsa fonlarını satma hızını yaklaşık üç katına çıkaracağını duyurdu; Nikkei vadelileri buna zayıfladı. Yen, ABD faizi düştüğü ve faiz farkı daraldığı için biraz güçlendi.",
+      "Avrupa dün bu satışın dışında kaldı ve yükseldi: ECB faizi sabit tuttu (mevduat faizi %2,50) ve euro 1,12'nin üzerine toparlandı. Avrupa şirketlerinin gelirinde yapay zekâ harcaması ABD ve Asya kadar büyük bir ağırlık taşımıyor; bu ayrışmanın nedeni bu olabilir, ama kesin bir kaynak bulamadım. Bugün iki veri var: 13:00'te Euro Bölgesi ve Almanya üçüncü çeyrek büyümesi (beklenti çok zayıf), 16:00'da Almanya enflasyonu. Hafta sonu Çin PMI'ı, Asya'daki yapay zekâ satışının gerçek ekonomiye yansıyıp yansımadığını gösterecek."
+    ]
+  },
+  "s4": {
+    "cards": [
+      {
+        "label": "ABD 10Y",
+        "value": "%4,91",
+        "sub": "Asya · dünkü kapanış %4,98 · −7 bp",
+        "tone": "down"
+      },
+      {
+        "label": "USD/JPY",
+        "value": "157,34",
+        "sub": "BoJ sonrası ≈157,1 · yen güçlendi",
+        "tone": "flat"
+      },
+      {
+        "label": "EUR/USD",
+        "value": "1,12",
+        "sub": "1 ayda −%1,2",
+        "tone": "flat"
+      },
+      {
+        "label": "Brent",
+        "value": "115,74 $",
+        "sub": "WTI ≈102,7 $ · Ekim'de ≈+%14",
+        "tone": "up"
+      },
+      {
+        "label": "Ons altın",
+        "value": "4.002 $",
+        "sub": "vadeli · 1 ayda −%4,4",
+        "tone": "down"
+      },
+      {
+        "label": "Bitcoin",
+        "value": "77.982 $",
+        "sub": "Binance hack'i · 1 ayda −%6,7",
+        "tone": "down"
+      }
+    ],
+    "chain": [
+      "Hisse satışı tahvile para çevirdi",
+      "10 yıllık faiz geriledi",
+      "Petrol yeniden yükseldi",
+      "Altın ve gümüş de düştü",
+      "Bitcoin hack'le geriledi"
+    ],
+    "paragraphs": [
+      "Dünkü okumamız 'faiz ve petrol aynı yöne gidiyor, ikisi de rahatlıyor' idi; yarısı çürüdü. Faiz düşmeye devam etti ama petrol tersine döndü. Faizin sebebi artık Warsh'ın tonu değil hisse satışı: yatırımcı hisseden çıkıp devlet tahvillerine geçiyor, tahvil fiyatı yükselince getiri düşüyor. Çekirdek PCE tam beklentide, büyüme tahmini güçlü geldi; yani veri faizi yukarı itmedi. 10 yıllık faiz böylece yüzde 5'in altında rahatça kaldı. Ama bu bir 'iyi haber' değil: faiz, risk iştahı bozulduğu için düşüyor.",
+      "Petrol, Vance'in İran'a mektubunun yanıtsız kalması ve Husi saldırılarıyla yeniden yükseldi. Suudi Arabistan'ın büyük rafinerilerinden biri dahil birkaç tesis hedef alındı; Hürmüz'de güvenli olmayan güzergâhtan geçmeye çalışan tankerlerin mayına çarptığı bildirildi. ANZ yıl sonu Brent tahminini yükseltti ve iki senaryoyu birlikte tutuyor: diplomasi çıkarsa düşüş, çıkmazsa daha yüksek seviye. Bu, dünkü 'sınırlı nefes alma' yorumumuzu doğruluyor: petrolden risk primi silinmedi.",
+      "Altın, faiz düştüğü hâlde yükselmedi, hatta geriledi; gümüş daha sert düştü. Olası bir açıklama, hisse satışında nakde ihtiyaç duyan yatırımcıların her şeyi birlikte satması; ama kesin bir neden bulamadım. Dolar ise zayıfladı: euro ve yen güçlendi, çünkü ABD faizi düşerken diğer merkez bankaları (BoJ, ECB) sıkı tonunu korudu ve faiz farkı daraldı. Bugün bu tabloyu bozacak şey Ueda'nın basın toplantısı ve ABD açılışında vadelilerin davranışı."
+    ]
+  },
+  "s5": {
+    "cards": [
+      {
+        "label": "BIST 100",
+        "value": "11.165",
+        "sub": "+%0,13 · 28 Eki kapanışı (29 Eki tatil)",
+        "tone": "flat"
+      },
+      {
+        "label": "BIST 30",
+        "value": "13.961",
+        "sub": "+%0,19 · 28 Eki kapanışı",
+        "tone": "flat"
+      },
+      {
+        "label": "TUR ETF ($)",
+        "value": "−%0,06",
+        "sub": "1 ayda −%9,0 · 29 Eki ABD kapanışı",
+        "tone": "flat"
+      },
+      {
+        "label": "USD/TRY",
+        "value": "49,96",
+        "sub": "yılbaşından +%16,1 · 29 Eki",
+        "tone": "down"
+      },
+      {
+        "label": "TÜFE (Eylül)",
+        "value": "%29,73",
+        "sub": "beklenti %30,30 · sonraki veri 3 Kas",
+        "tone": "up"
+      },
+      {
+        "label": "Politika faizi",
+        "value": "%36",
+        "sub": "22 Eki: −100 bp · sonraki karar 10 Ara",
+        "tone": "flat"
+      }
+    ],
+    "chain": [
+      "BIST bayramda kapalıydı",
+      "Asya'da çip satışı derinleşti",
+      "Nasdaq vadelileri geriledi",
+      "ABD faizi geriledi",
+      "Açılışta iki rüzgâr çarpışacak"
+    ],
+    "paragraphs": [
+      "BIST 100 dün Cumhuriyet Bayramı nedeniyle kapalıydı; kartlardaki değerler 28 Ekim kapanışı. Yani endeks iki gün boyunca hiçbir yeni haberi fiyatlamadı ve bu sabah 10:00'da hepsi birden fiyatlanacak: Alphabet'in tarihî düşüşü, Amazon ve Intel'in mesai sonrası kaybı, KOSPI'deki sert satış. Buna [[acilis-boslugu|açılış boşluğu]] denir: piyasa kapalıyken biriken haberin açılışta tek hamlede fiyata yansımasıdır. İyi tarafı, ABD'de TUR ETF'inin dün işlem görmesi ve neredeyse yatay kalması; yani yabancı bakışı Türkiye'ye karşı panik göstermedi.",
+      "Teknoloji endeksi 28 Ekim'deki ayrışmada yükselen tarafı temsil ediyordu ve küresel çip temasına bağlı hareket ediyor; bu yüzden açılışta en çok o sınanacak. Bankalar için tablo karışık: ABD faizinin düşmesi gelişen piyasa bankaları için olumlu, ama petrolün yeniden yükselmesi Türkiye'nin cari dengesi ve enflasyonu için olumsuz. Bunlar çıkarım; açılıştan sonra doğrulanacak.",
+      "Tahvil faizlerini Borsa MCP'den bu sabah da alamadım (çağrı boş döndü), bu yüzden bankalardaki hareketi faiz verisiyle ölçemiyorum. Yerel gündemde bugün 10:00'da işsizlik ve dış ticaret dengesi (Eylül), 3 Kasım'da Ekim enflasyonu var. Bu hikâyeyi bozacak ya da güçlendirecek tek şey BIST'in açılış tepkisi: teknoloji endeksi dünkü sıçramayı geri verirse küresel temaya bağımlılığı doğrulanır."
+    ]
+  },
+  "s6": {
+    "paragraph": "Gün Asya'daki satışla başlıyor ve üç ağırlıkta geçiyor: 09:30'da Ueda'nın basın toplantısı, 10:00'da BIST'in tatil sonrası açılışı, 16:30'da ABD açılışı. 13:00'te Euro Bölgesi ve Almanya büyümesi, 15:30'da ABD istihdam maliyet endeksi, 16:00'da Almanya enflasyonu geliyor. ABD açılışında Amazon, Intel ve Alphabet düşüşünün Nasdaq 100'e yayılıp yayılmadığı görülecek; Exxon, Chevron ve AbbVie bilançoları da açılış öncesinde. Akşam Fed'den Daly ve Musalem konuşuyor. Pazartesi Apple bilançosu ve ISM imalat var.",
+    "today": [
+      {
+        "time": "09:30",
+        "title": "BoJ Başkanı Ueda basın toplantısı",
+        "detail": "Faiz %1,25'te sabit (8-1 oy); Aralık artırımı sinyali verip vermediği yen ve Nikkei için belirleyici",
+        "impact": "mid"
+      },
+      {
+        "time": "10:00",
+        "title": "BIST açılışı",
+        "detail": "Seans · bayram tatili sonrası ilk işlem günü: iki günlük küresel satışın tek seansta fiyatlanması (açılış boşluğu)",
+        "impact": "session"
+      },
+      {
+        "time": "10:00",
+        "title": "Türkiye işsizlik ve dış ticaret dengesi (Eylül)",
+        "detail": "Önceki işsizlik %7,8; dış ticaret açığı Ağustos'ta daralmıştı",
+        "impact": "low"
+      },
+      {
+        "time": "13:00",
+        "title": "Euro Bölgesi ve Almanya GSYH (3. çeyrek, ön)",
+        "detail": "Euro Bölgesi beklenti +%0,2 (önceki +%0,6), Almanya +%0,1; zayıf gelirse ECB'nin sıkı kalma gerekçesi zayıflar",
+        "impact": "high"
+      },
+      {
+        "time": "15:30",
+        "title": "ABD istihdam maliyet endeksi (3. çeyrek)",
+        "detail": "Beklenti +%0,8 (önceki +%0,9); ücret baskısı Fed'in enflasyon tartışmasının parçası",
+        "impact": "mid"
+      },
+      {
+        "time": "16:00",
+        "title": "Almanya TÜFE / HICP (Ekim)",
+        "detail": "HICP yıllık beklenti %3,1 (önceki %3,3); enerji kaynaklı enflasyonun yönü",
+        "impact": "high"
+      },
+      {
+        "time": "16:30",
+        "title": "ABD açılışı",
+        "detail": "Seans · Amazon (≈−%7) ve Intel (≈−%23) mesai sonrası kaybının, Alphabet düşüşünün Nasdaq 100'e yansıması; Exxon, Chevron, AbbVie bilançoları",
+        "impact": "session"
+      },
+      {
+        "time": "16:45",
+        "title": "ABD Chicago PMI (Ekim)",
+        "detail": "Beklenti 56,1 (önceki 58,8); imalatın sıcaklığı faiz tartışmasını besliyor",
+        "impact": "low"
+      },
+      {
+        "time": "18:00",
+        "title": "BIST kapanışı",
+        "detail": "Seans · teknoloji ve banka endeksi ayrışmasının sürüp sürmediği",
+        "impact": "session"
+      },
+      {
+        "time": "19:00",
+        "title": "Fed'den Daly (19:00) ve Musalem (19:30)",
+        "detail": "Karar sonrası artırım zamanlaması tartışması; faiz düşüşünün kalıcılığı için ton",
+        "impact": "mid"
+      }
+    ],
+    "week": [
+      {
+        "when": "Cmt 31 Eki · 04:30",
+        "title": "Çin resmî imalat PMI (Ekim)",
+        "expect": "Beklenti 50,0 (önceki 50,1); Asya'daki yapay zekâ satışı gerçek üretime yansıyor mu"
+      },
+      {
+        "when": "Pzt 2 Kas · 18:00",
+        "title": "ABD ISM imalat PMI ve Apple bilançosu",
+        "expect": "ISM önceki 54,5, ödenen fiyatlar çok yüksekti; Apple mesai sonrası, harcamayı nakitle karşılayan büyük şirket testi"
+      },
+      {
+        "when": "Sal 3 Kas",
+        "title": "ABD ara seçimleri ve Türkiye TÜFE (Ekim, 10:00)",
+        "expect": "Seçim petrol ve İran tartışmasını siyasi baskıya çeviriyor; Türkiye TÜFE'si önceki %29,73"
+      },
+      {
+        "when": "Çar 4 Kas · 13:00",
+        "title": "Euro Bölgesi HICP (Ekim, öncü)",
+        "expect": "Önceki yıllık %3,8; ECB'nin sıkı kalma tezi için kritik"
+      },
+      {
+        "when": "Çar 4 Kas · 18:00",
+        "title": "ABD ISM hizmet PMI (ADP 16:15)",
+        "expect": "ISM hizmet önceki 54,9; ADP istihdam önceki 90 bin"
+      },
+      {
+        "when": "Per 5 Kas · 15:00",
+        "title": "BoE faiz kararı",
+        "expect": "Politika faizi %3,75; oy dağılımı izlenecek"
+      },
+      {
+        "when": "Cum 6 Kas · 16:30",
+        "title": "ABD tarım dışı istihdam (Ekim)",
+        "expect": "Önceki 29 bin; zayıf istihdam Fed'in artırım kanadını zorlar mı"
+      },
+      {
+        "when": "Sal 10 Kas · 16:30",
+        "title": "ABD TÜFE (Ekim)",
+        "expect": "Yıllık önceki %3,7, çekirdek %2,6; petrol etkisi Ekim verisinde görülecek"
+      }
+    ],
+    "earnings": [
+      {
+        "ticker": "AAPL",
+        "when": "2 Kas"
+      },
+      {
+        "ticker": "NVDA",
+        "when": "18 Kas"
+      },
+      {
+        "ticker": "AVGO",
+        "when": "10 Ara"
+      }
+    ]
+  },
+  "s7": {
+    "likely": "En olası senaryo: Amazon ve Intel'in mesai sonrası kaybı açılışta Nasdaq 100'ü aşağı çeker, ama savunmacı sektörlerin ve küçük şirketlerin desteği S&P 500'ü dar bir bantta tutar; gün içinde Daly ve Musalem'in dili ile Alphabet etrafındaki analist notları yönü belirler. Satışın üç şirkete mi yoksa temaya mı yazıldığı gün içinde netleşir.",
+    "alternative": "Alternatif: satış yalnızca harcamasını nakitle karşılayamayan üç şirketle sınırlı kalır, Apple'ın pazartesi sonucu öncesinde alıcılar çıkar ve vadelilerdeki kayıp açılışta daralır. Ters yönde, Asya'daki satış Avrupa ve ABD'ye geçerse çip zincirinin geneline yayılan bir risk azaltma başlar ve faizdeki düşüş sığınak talebi olduğu için hisseleri korumaz.",
+    "signal": "İzlenecek tek sinyal: ABD açılışında Amazon, Intel ve Alphabet dışındaki büyük teknoloji hisselerinin (Nvidia, Microsoft, Meta, Apple) yönü; onlar da düşüyorsa mesele tema, tutuyorlarsa şirkete özgü.",
+    "views": {
+      "topic": "Yapay zekâ harcaması: satış şirkete özgü mü, tema bozuluyor mu?",
+      "bull": [
+        {
+          "text": "Amazon'un sonucunu 'yapay zekâ güç merkezi' bakışıyla okuyor: bulut büyümesi hızlandı ve harcamanın gerekçesi var; Cramer de bilançoyu 'çok çok iyi' olarak niteliyor.",
+          "who": "Munster ve Jim Cramer (Benzinga başlığı)",
+          "url": "https://app.bigdata.com/documents/3DFC2186779A8290808D367A7780A41F?cnum=1"
+        },
+        {
+          "text": "Amazon CEO'sunun 'yaklaşık her 14 saniyede bir yapay zekâ hızlandırıcısı kuruyoruz ve müşteriler kurulum kadar hızlı kullanıyor' sözünü öne çıkarıyor; harcamanın fazla olup olmadığı tartışmasını talep karşısında yersiz buluyor.",
+          "who": "Shay Boloor, Futurum Equities (Benzinga aktarımıyla)",
+          "url": "https://app.bigdata.com/documents/3DFC2186779A8290808D367A7780A41F?cnum=1"
+        }
+      ],
+      "bear": [
+        {
+          "text": "Alphabet'te hedef fiyatları indirdiler; aktarıma göre gerekçeler yapay zekâ yatırımının finansman ihtiyacını büyütmesi ve yapay zekâ aramasının gelire dönüşme verimliliğinin geleneksel aramadan düşük kalması.",
+          "who": "Goldman Sachs ve JPMorgan (Commercial Times aktarımıyla)",
+          "url": "https://app.bigdata.com/documents/ADA237BB26A7EA2365EDA92730614C39?cnum=2"
+        },
+        {
+          "text": "Intel yönetimi sunucu işlemcisi talebine 'olağanüstü' dedi ama üretim verimi, malzeme kıtlığı ve İsrail fabrikasının kapanması sevkiyatı sınırlıyor; AMD ve Nvidia'nın sunucu işlemcisine girdiği bir dönemde müşteri kaybetmek yıllarca sürecek bir pay kaybına yol açabilir.",
+          "who": "Shay Boloor, Futurum Equities (Benzinga aktarımıyla)",
+          "url": "https://app.bigdata.com/documents/CA56B1EBEC01D0412EE32FB8E7611EEE?cnum=4"
+        }
+      ],
+      "split": "Boğalar talebe bakıyor (bulut büyümesi, birikmiş sipariş); ayılar bu talebi karşılamanın bilançoya maliyetine ve rehberlikteki kırılmaya bakıyor. İkisi de haklı olabilir: talep gerçek, ama kimin nakdiyle karşılanacağı belirsiz. Bunu önümüzdeki çeyreklerin harcama rehberlikleri ve Apple gibi nakit akışı güçlü şirketlerin sonuçları gösterecek."
+    }
+  },
+  "s8": {
+    "concept": "rehberlik",
+    "title": "Rehberlik: şirket geleceği söylediğinde hisse neden geçmişi unutur?",
+    "paragraphs": [
+      "Bir şirket bilanço açıkladığında iki ayrı bilgi verir: geçen çeyrekte ne oldu ve gelecek çeyrekte ne olmasını bekliyor. İkincisine rehberlik denir. Hisse fiyatı bugünün değil geleceğin kârını yansıttığı için çoğu zaman rehberlik, geçmiş çeyreğin sonucundan daha çok fiyatı oynatır.",
+      "Bu gece Intel bunun ders kitabı örneğiydi. Üçüncü çeyrek kârı beklentinin belirgin üzerinde, geliri beklentiyle aynıydı; yani geçmiş iyi. Ama şirket dördüncü çeyrek gelirini analistlerin beklediğinden çok daha düşük öngördü ve PC talebinin en az gelecek yılın ilk yarısına kadar yavaş kalacağını söyledi. Hisse yüzde 20'nin üzerinde düştü. Dün Samsung'da gördüğümüz mekanizmanın karşıtı: orada rekor kâr beklentiye göre yetersizdi, burada iyi kâr gelecek beklentisine göre yetersiz kaldı. İkisinde de fiyatlanan, rakamın kendisi değil beklentiyle farkı.",
+      "Rehberlikte iki şeye bak: aralığın ortası analist beklentisinin altında mı, ve yönetimin sözlü açıklaması (talep mi zayıf, arz mı kısıtlı) neyi söylüyor. Intel'de yönetim sorunu talep değil arz diye tanımladı; bu doğruysa rehberlik yukarı revize edilebilir. Ama piyasa bunu beklemez, rakamı fiyatlar."
+    ],
+    "rule": "Bilanço sonucunu okurken önce rehberliğe bak: gelecek çeyrek beklentinin altındaysa geçmiş çeyreğin iyi olması hisseyi korumaz. Sonra yönetimin sebebi talep mi arz mı olarak koyduğuna bak; sebep rehberliğin kalıcılığını belirler."
+  },
+  "news": [
+    {
+      "date": "29 Eki",
+      "region": "ABD",
+      "title": "Alphabet %12,6 düşerek tarihinin en sert günlüğünü yaşadı; yaklaşık 500 mlr $ piyasa değeri silindi",
+      "why": "Serbest nakit akışı −9,1 mlr $, arama geliri büyümesi yavaşladı; Nasdaq 100 %1,4 düştü, düşüş bellek ve optik hisselerine yayıldı."
+    },
+    {
+      "date": "29 Eki",
+      "region": "ABD",
+      "title": "Amazon bulutta %39 büyüdü ama 12 aylık serbest nakit akışı −42,4 mlr $; hisse mesai sonrası ≈%7 düştü",
+      "why": "Harcama beklentinin yaklaşık 20 mlr $ üzerinde kaldı; piyasa bulut talebini değil finansmanını fiyatlıyor."
+    },
+    {
+      "date": "29 Eki",
+      "region": "ABD",
+      "title": "Intel üçüncü çeyreği aştı ama dördüncü çeyrek geliri beklentinin çok altında öngörüldü; hisse mesai sonrası ≈%23 düştü",
+      "why": "Rehberlik geçmiş çeyreğin önüne geçti; yönetim PC yavaşlığının en az 2027 ilk yarısına kadar süreceğini söyledi."
+    },
+    {
+      "date": "29 Eki",
+      "region": "Faiz",
+      "title": "Çekirdek PCE beklentiyle aynı (%3,1), ABD büyümesi %3,4 ile beklentinin üzerinde; 10 yıllık faiz yine de Asya'da %4,91'e indi",
+      "why": "Faiz veri nedeniyle değil hisse satışından tahvile kaçışla düşüyor; Ekim, Aralık 2023'ten beri en sert aylık düşüş."
+    },
+    {
+      "date": "30 Eki",
+      "region": "Asya",
+      "title": "KOSPI yaklaşık %5, Nikkei yaklaşık %2,5 düştü; KOSPI Ekim'de %17'den fazla kayıpta",
+      "why": "ABD bulut şirketlerinin harcama programına duyulan şüphe çip siparişi alan Kore ve Tayvan'a yansıdı."
+    },
+    {
+      "date": "30 Eki",
+      "region": "Asya",
+      "title": "BoJ faizi %1,25'te sabit tuttu (8-1), temel enflasyonun hedefe ulaştığını söyledi ve borsa fonu satışını hızlandıracak",
+      "why": "Karar beklenendi ama dil şahin: Aralık artırımı gündemde; yen biraz güçlendi."
+    },
+    {
+      "date": "29 Eki",
+      "region": "Avrupa",
+      "title": "ECB faizi sabit tuttu (mevduat %2,50); Avrupa hisseleri yükseldi, euro 1,12'nin üzerine çıktı",
+      "why": "Avrupa yapay zekâ harcaması satışının dışında kaldı."
+    },
+    {
+      "date": "30 Eki",
+      "region": "Emtia",
+      "title": "Brent 115 $'ın üzerinde: Husiler Suudi rafinerilerine saldırdı, Hürmüz'de tankerler mayına çarptı",
+      "why": "Vance'in İran'a mektubu yanıtsız; Ekim'de üst üste dördüncü aylık artış, dünkü diplomasi rahatlaması silindi."
+    },
+    {
+      "date": "29 Eki",
+      "region": "Kripto",
+      "title": "Binance'te tarihin en büyük kripto hack'i: yaklaşık 6,3 mlr $ etkilendi, ≈3 mlr $ donduruldu; Bitcoin %4-5 düştü",
+      "why": "Merkezi borsaya duyulan güven sarsıldı; Tether ve Circle fonları dondurarak zararı sınırladı."
+    },
+    {
+      "date": "29 Eki",
+      "region": "Türkiye",
+      "title": "Borsa İstanbul Cumhuriyet Bayramı nedeniyle kapalıydı; son kapanış 28 Ekim",
+      "why": "Bu sabah iki günlük küresel satış tek seansta fiyatlanacak (açılış boşluğu)."
+    }
+  ],
+  "faizler": {
+    "kpis": [
+      {
+        "label": "ABD 2 yıllık",
+        "value": "%4,61",
+        "sub": "29 Eki · dünden −6 bp · 1 ayda −27 bp",
+        "tone": "down"
+      },
+      {
+        "label": "ABD 10 yıllık",
+        "value": "%4,91",
+        "sub": "Asya (Reuters) · dünkü kapanış %4,98 · Ekim'de ≈−37 bp",
+        "tone": "down"
+      },
+      {
+        "label": "10Y − 2Y farkı",
+        "value": "+37 bp",
+        "sub": "29 Eki kapanışı: dünle aynı; iki ucun birlikte inmesi eğriyi yerinde bıraktı",
+        "tone": "flat"
+      },
+      {
+        "label": "30 yıllık",
+        "value": "%5,32",
+        "sub": "29 Eki · dünden −5 bp · 20 yıllığın (%5,35) altında",
+        "tone": "down"
+      }
+    ],
+    "curve": [
+      {
+        "tenor": "1A",
+        "now": 4.06,
+        "m1": 4.02
+      },
+      {
+        "tenor": "2A",
+        "now": 4.17,
+        "m1": 4.16
+      },
+      {
+        "tenor": "3A",
+        "now": 4.18,
+        "m1": 4.2
+      },
+      {
+        "tenor": "6A",
+        "now": 4.28,
+        "m1": 4.33
+      },
+      {
+        "tenor": "1Y",
+        "now": 4.42,
+        "m1": 4.54
+      },
+      {
+        "tenor": "2Y",
+        "now": 4.61,
+        "m1": 4.88
+      },
+      {
+        "tenor": "3Y",
+        "now": 4.73,
+        "m1": 5.0
+      },
+      {
+        "tenor": "5Y",
+        "now": 4.78,
+        "m1": 5.09
+      },
+      {
+        "tenor": "7Y",
+        "now": 4.87,
+        "m1": 5.19
+      },
+      {
+        "tenor": "10Y",
+        "now": 4.98,
+        "m1": 5.29
+      },
+      {
+        "tenor": "20Y",
+        "now": 5.35,
+        "m1": 5.68
+      },
+      {
+        "tenor": "30Y",
+        "now": 5.32,
+        "m1": 5.64
+      }
+    ],
+    "curve_note": "Eğri değerleri FMP'nin 29 Ekim kapanışı; bu sabah Asya seansında 10 yıllık faiz yaklaşık 7 baz puan daha inerek %4,91'e geldi. Dünkü okumamız 'uzun uçtaki risk primi bir kısmı geri alındı' idi; bu sabah geri alma hızlandı, ama sebep değişti: artık Fed'in tonu değil, hisse satışından devlet tahvillerine kaçış. İki uç da birlikte indiği için [[egri|eğri]] eğimi yerinde kaldı (fark 37 bp). Aylık bazda tablo çarpıcı: bir ay önceye göre her vadede faiz belirgin düşük, en çok kısa-orta vadede. Bu, piyasanın artırım beklentisini değil büyüme kaygısını fiyatladığını gösteriyor.",
+    "fed": {
+      "rate": "%3,75 – 4,00",
+      "rate_note": "16 Eylül'de +25 bp (oybirliği); 28 Ekim'de sabit, 10-2 oyla (iki üye artırım istedi)",
+      "next_meeting": "Aralık",
+      "pricing": "Reuters'a göre Fed 28 Ekim'de faizi sabit tuttu ve bir sonraki artırımın ne zaman gerekebileceğine dair net bir tahmin vermedi. Karar sonrası piyasa Aralık için neredeyse tam bir artırım fiyatlıyordu; bugünkü verilerden sonra güncel olasılığı doğrulayamadım.",
+      "paragraph": "Dünkü okumamız 'çekirdek PCE Aralık artırımını kesinleştirir ya da zayıflatır' idi; veri ikisini de yapmadı: çekirdek PCE tam beklentide, büyüme beklentinin üzerinde geldi. Yani Fed'in elinde artırım için yeni gerekçe de, bekleme için yeni gerekçe de yok. Faizi aşağı çeken şey Fed değil, hisse satışı. Bu yüzden Fed konuşmacıları bugün önem kazanıyor: Daly ve Musalem'in akşamki dili, karar sonrası artırım zamanlaması tartışmasının hangi yöne gittiğini gösterecek. 6 Kasım istihdamı ve 10 Kasım TÜFE'si aynı soruya cevap verecek."
+    },
+    "speakers": [
+      {
+        "when": "30 Eki 09:30",
+        "who": "BoJ Başkanı Ueda (basın toplantısı)"
+      },
+      {
+        "when": "30 Eki 19:00",
+        "who": "Fed'den Daly"
+      },
+      {
+        "when": "30 Eki 19:10",
+        "who": "ECB'den Lane"
+      },
+      {
+        "when": "30 Eki 19:30",
+        "who": "Fed'den Musalem"
+      }
+    ],
+    "nq_note": "10 yıllık faizin %5'in belirgin altına inmesi normalde NQ'ya nefes verirdi, çünkü uzun vadeli kârların bugünkü değeri üzerindeki baskı azalır. Ama bu düşüş hisse satışından geldiği için destek değil bir semptom; faiz ancak enflasyon korkusu azaldığı için düşerse NQ'ya gerçek destek olur."
+  },
+  "kuresel": {
+    "groups": [
+      {
+        "name": "Hisse senetleri",
+        "unit": "pct",
+        "rows": [
+          {
+            "name": "S&P 500",
+            "d1": -0.3,
+            "w1": 1.27,
+            "m1": 0.9,
+            "ytd": 12.78
+          },
+          {
+            "name": "Nasdaq 100",
+            "d1": -1.38,
+            "w1": 1.54,
+            "m1": -3.31,
+            "ytd": 16.45
+          },
+          {
+            "name": "Dow Jones",
+            "d1": -0.25,
+            "w1": 0.24,
+            "m1": 2.82,
+            "ytd": 8.9
+          },
+          {
+            "name": "Russell 2000",
+            "d1": 1.01,
+            "w1": 3.0,
+            "m1": 2.23,
+            "ytd": 15.2
+          },
+          {
+            "name": "STOXX 600",
+            "d1": 0.77,
+            "w1": 2.1,
+            "m1": 2.24,
+            "ytd": 9.5
+          },
+          {
+            "name": "DAX",
+            "d1": 1.31,
+            "w1": 3.36,
+            "m1": 3.54,
+            "ytd": 6.07
+          },
+          {
+            "name": "Nikkei 225",
+            "d1": -2.46,
+            "w1": 0.6,
+            "m1": -5.52,
+            "ytd": 25.29
+          },
+          {
+            "name": "Hang Seng",
+            "d1": 1.52,
+            "w1": 0.93,
+            "m1": -5.3,
+            "ytd": -9.06
+          },
+          {
+            "name": "KOSPI",
+            "d1": -4.79,
+            "w1": 1.85,
+            "m1": -17.33,
+            "ytd": 34.15
+          },
+          {
+            "name": "Türkiye (TUR ETF, $)",
+            "d1": -0.06,
+            "w1": 0.1,
+            "m1": -9.02,
+            "ytd": -10.66
+          }
+        ]
+      },
+      {
+        "name": "ABD tahvil faizleri",
+        "unit": "bp",
+        "rows": [
+          {
+            "name": "2 yıllık",
+            "d1": -6,
+            "w1": -8,
+            "m1": -27,
+            "ytd": null
+          },
+          {
+            "name": "10 yıllık",
+            "d1": -7,
+            "w1": -2,
+            "m1": -31,
+            "ytd": null
+          },
+          {
+            "name": "30 yıllık",
+            "d1": -5,
+            "w1": -1,
+            "m1": -32,
+            "ytd": null
+          }
+        ]
+      },
+      {
+        "name": "Emtia",
+        "unit": "pct",
+        "rows": [
+          {
+            "name": "Brent",
+            "d1": 0.75,
+            "w1": -0.5,
+            "m1": 14.0,
+            "ytd": 83.46
+          },
+          {
+            "name": "Altın",
+            "d1": -0.73,
+            "w1": -0.14,
+            "m1": -4.41,
+            "ytd": -8.77
+          },
+          {
+            "name": "Gümüş",
+            "d1": -2.0,
+            "w1": -4.85,
+            "m1": -15.24,
+            "ytd": -29.48
+          },
+          {
+            "name": "Bakır",
+            "d1": -0.68,
+            "w1": 0.57,
+            "m1": -1.16,
+            "ytd": 13.92
+          },
+          {
+            "name": "Doğalgaz",
+            "d1": -1.86,
+            "w1": 9.73,
+            "m1": -4.26,
+            "ytd": -19.91
+          }
+        ]
+      },
+      {
+        "name": "Döviz ve kripto",
+        "unit": "pct",
+        "rows": [
+          {
+            "name": "USD/TRY",
+            "d1": 0.03,
+            "w1": 0.36,
+            "m1": 2.05,
+            "ytd": 16.13
+          },
+          {
+            "name": "EUR/USD",
+            "d1": 0.1,
+            "w1": -0.22,
+            "m1": -1.21,
+            "ytd": -4.79
+          },
+          {
+            "name": "USD/JPY",
+            "d1": -0.2,
+            "w1": 0.34,
+            "m1": -0.04,
+            "ytd": 0.33
+          },
+          {
+            "name": "Bitcoin",
+            "d1": -2.13,
+            "w1": -2.59,
+            "m1": -6.67,
+            "ytd": -12.12
+          }
+        ]
+      }
+    ],
+    "note": "Hisse endeksleri, emtia ve döviz FMP'nin 30 Ekim 07:00 TSİ anlık verisi; ABD ve Avrupa günlük sütunu 29 Eki kapanışı, Avrupa günlük değişimi Eastmoney'den (FMP'nin Avrupa endeks satırları sabah vadelisini içerdiği için), haftalık-aylık-yılbaşı sütunları FMP anlık. Asya (Nikkei, Hang Seng, KOSPI) Cuma seansı, henüz kapanmadı. ABD faizleri FMP'nin 29 Ekim kapanışı; Asya seansındaki yaklaşık 7 bp düşüş dahil değil. Brent günlük değişimi Reuters'ın Singapur sabah verisi (Aralık vadeli), haftalık değişim Borsa MCP serisinden, aylık değişim Reuters'ın Ekim özeti; FMP'nin Brent serisi sözleşme geçişi yüzünden kullanılmadı. Bitcoin günlük değişimi dünkü şerit değerine (79.682 $) göre hesaplandı; FMP'nin 24 saatlik değişimi hack öncesi taban nedeniyle yanıltıcı."
+  },
+  "turkiye": {
+    "kpis": [
+      {
+        "label": "BIST 100",
+        "value": "11.165",
+        "sub": "+%0,13 · 28 Eki kapanışı (29 Eki tatil)",
+        "tone": "flat"
+      },
+      {
+        "label": "BIST 30",
+        "value": "13.961",
+        "sub": "+%0,19 · 28 Eki kapanışı",
+        "tone": "flat"
+      },
+      {
+        "label": "USD/TRY",
+        "value": "49,96",
+        "sub": "Yılbaşından +%16,1 · 29 Eki",
+        "tone": "down"
+      },
+      {
+        "label": "EUR/TRY",
+        "value": "56,00",
+        "sub": "29 Eki",
+        "tone": "flat"
+      },
+      {
+        "label": "Gram altın",
+        "value": "6.446 TL",
+        "sub": "Borsa MCP · 29 Eki · dünden −%1,2",
+        "tone": "down"
+      },
+      {
+        "label": "TR 10Y tahvil",
+        "value": "%35,52",
+        "sub": "2Y %39,58 · 14 Eki son bilinen",
+        "tone": "flat"
+      },
+      {
+        "label": "Politika faizi",
+        "value": "%36,00",
+        "sub": "22 Eki: −100 bp · sonraki karar 10 Ara",
+        "tone": "up"
+      },
+      {
+        "label": "Cari denge",
+        "value": "+4,05 mlr $",
+        "sub": "Ağustos · beklenti +3,8",
+        "tone": "up"
+      },
+      {
+        "label": "TÜFE (yıllık)",
+        "value": "%29,73",
+        "sub": "Eylül · beklenti %30,30",
+        "tone": "up"
+      }
+    ],
+    "reading": {
+      "headline": "BIST bayram tatilinden sonra açılıyor: Alphabet, Amazon, Intel ve KOSPI satışı tek seansta fiyatlanacak",
+      "paragraphs": [
+        "Dün 'dünkü ayrışma bugün sınanacak' demiştik; sınav bir gün ertelendi, çünkü borsa Cumhuriyet Bayramı nedeniyle kapalıydı. Bu, haberin kaybolması değil birikmesi demek: iki işlem günü boyunca ABD'de tarihin en sert Alphabet düşüşü, Fed sonrası tahvil rallisi ve Kore'de sert satış yaşandı, BIST bunların hiçbirini fiyatlamadı. Açılışta bu paketin hangi kısmının Türkiye'ye yazılacağı belirsiz; dünkü okumamızla uyumlu olarak teknoloji endeksi küresel çip temasına en bağlı grup olduğu için ilk o sınanır. Yurt dışında TUR ETF'inin dün neredeyse yatay kalması, yabancı bakışında panik olmadığına işaret ediyor, ama ETF ile yerel borsa her zaman aynı hareket etmez.",
+        "Bankalar için iki ters rüzgâr var: ABD faizinin düşmesi gelişen piyasa varlıklarına nefes aldırır, petrolün yeniden yükselmesi ise Türkiye'nin cari dengesi ve enflasyonu için olumsuz. Tahvil faizlerini Borsa MCP'den bu sabah da alamadım (çağrı boş döndü), bu yüzden bankalardaki hareketi faiz verisiyle ölçemiyorum. Bu hikâyeyi bozacak ya da güçlendirecek tek şey bugün 10:00'daki açılış tepkisi; ardından 3 Kasım enflasyonu indirim patikasını belirleyecek."
+      ]
+    },
+    "bist": {
+      "title": "BIST100 · son 6 ay (haftalık kapanış, son noktalar günlük, son nokta 28 Eki kapanışı)",
+      "change_label": "6 ayda −20,7%",
+      "tone": "down",
+      "highlight": {
+        "from": "11 Eyl",
+        "label": "16 Eyl fon krizi"
+      },
+      "points": [
+        {
+          "d": "10 Nis",
+          "v": 14073.79
+        },
+        {
+          "d": "17 Nis",
+          "v": 14587.93
+        },
+        {
+          "d": "24 Nis",
+          "v": 14409.07
+        },
+        {
+          "d": "30 Nis",
+          "v": 14442.56
+        },
+        {
+          "d": "8 May",
+          "v": 15062.65
+        },
+        {
+          "d": "15 May",
+          "v": 14367.6
+        },
+        {
+          "d": "22 May",
+          "v": 13808.2
+        },
+        {
+          "d": "26 May",
+          "v": 13662.75
+        },
+        {
+          "d": "5 Haz",
+          "v": 13694.19
+        },
+        {
+          "d": "12 Haz",
+          "v": 13938.48
+        },
+        {
+          "d": "19 Haz",
+          "v": 14734.5
+        },
+        {
+          "d": "26 Haz",
+          "v": 14274.02
+        },
+        {
+          "d": "3 Tem",
+          "v": 14417.91
+        },
+        {
+          "d": "10 Tem",
+          "v": 14321.19
+        },
+        {
+          "d": "17 Tem",
+          "v": 13981.05
+        },
+        {
+          "d": "24 Tem",
+          "v": 13943.87
+        },
+        {
+          "d": "31 Tem",
+          "v": 13458.1
+        },
+        {
+          "d": "7 Ağu",
+          "v": 13779.39
+        },
+        {
+          "d": "14 Ağu",
+          "v": 14172.26
+        },
+        {
+          "d": "21 Ağu",
+          "v": 14514.82
+        },
+        {
+          "d": "28 Ağu",
+          "v": 14641.56
+        },
+        {
+          "d": "4 Eyl",
+          "v": 14012.42
+        },
+        {
+          "d": "11 Eyl",
+          "v": 14467.25
+        },
+        {
+          "d": "18 Eyl",
+          "v": 13284.42
+        },
+        {
+          "d": "25 Eyl",
+          "v": 12899.35
+        },
+        {
+          "d": "2 Eki",
+          "v": 12270.18
+        },
+        {
+          "d": "9 Eki",
+          "v": 12265.98
+        },
+        {
+          "d": "13 Eki",
+          "v": 12250.68
+        },
+        {
+          "d": "14 Eki",
+          "v": 12118.29
+        },
+        {
+          "d": "15 Eki",
+          "v": 12094.08
+        },
+        {
+          "d": "16 Eki",
+          "v": 11721.72
+        },
+        {
+          "d": "19 Eki",
+          "v": 11430.14
+        },
+        {
+          "d": "20 Eki",
+          "v": 11797.7
+        },
+        {
+          "d": "21 Eki",
+          "v": 11577.12
+        },
+        {
+          "d": "22 Eki",
+          "v": 11220.37
+        },
+        {
+          "d": "27 Eki",
+          "v": 11151.03
+        },
+        {
+          "d": "28 Eki",
+          "v": 11165.44
+        }
+      ]
+    },
+    "sectors": [
+      {
+        "name": "Teknoloji (XUTEK)",
+        "chg": 4.32
+      },
+      {
+        "name": "BIST 30",
+        "chg": 0.19
+      },
+      {
+        "name": "GYO (XGMYO)",
+        "chg": 0.09
+      },
+      {
+        "name": "Ulaştırma (XULAS)",
+        "chg": -0.2
+      },
+      {
+        "name": "Sınai (XUSIN)",
+        "chg": -0.41
+      },
+      {
+        "name": "Mali (XUMAL)",
+        "chg": -1.28
+      },
+      {
+        "name": "Holding (XHOLD)",
+        "chg": -1.47
+      },
+      {
+        "name": "Banka (XBANK)",
+        "chg": -1.6
+      }
+    ],
+    "sectors_note": "Sektör değerleri 28 Ekim kapanışı; 29 Ekim'de borsa kapalıydı, yani değerler iki işlem günüdür değişmedi. 28 Ekim'de teknoloji endeksi yükselirken banka, mali ve holding endeksleri düşmüştü. Bugünkü soru bu ayrışmanın tersine dönüp dönmeyeceği: küresel çip satışı teknolojiyi, gerileyen ABD faizi bankaları etkileyebilir. Bu yorumlar çıkarım; sektör düzeyinde nedeni açıklayan bir kaynak bulamadım.",
+    "cpi": {
+      "last": "%29,73",
+      "labels": [
+        "Eyl 25",
+        "Eki 25",
+        "Kas 25",
+        "Ara 25",
+        "Oca 26",
+        "Şub 26",
+        "Mar 26",
+        "Nis 26",
+        "May 26",
+        "Haz 26",
+        "Tem 26",
+        "Ağu 26",
+        "Eyl 26"
+      ],
+      "values": [
+        33.29,
+        32.87,
+        31.07,
+        30.89,
+        30.65,
+        31.53,
+        30.87,
+        32.37,
+        32.61,
+        32.11,
+        31.75,
+        31.51,
+        29.73
+      ],
+      "note": "Bir yılda 3,5 puan düştü. Nisan-Mayıs'taki enerji şoku düşüşü durdurdu, ama son dört ayda düşüş yeniden başladı. Aylık enflasyon Eylül'de %1,84 oldu."
+    },
+    "rates": {
+      "policy": 36,
+      "bonds": [
+        {
+          "tenor": "2Y",
+          "v": 39.58
+        },
+        {
+          "tenor": "5Y",
+          "v": 39.18
+        },
+        {
+          "tenor": "10Y",
+          "v": 35.52
+        }
+      ],
+      "cards": [
+        {
+          "label": "Politika faizi",
+          "value": "%36,00",
+          "sub": "22 Eki: −100 bp · 10 Aralık'ta sonraki karar",
+          "tone": "up"
+        },
+        {
+          "label": "Koridor",
+          "value": "%34,5 – 39",
+          "sub": "borçlanma %34,5 · borç verme %39 (her biri −100 bp)",
+          "tone": "flat"
+        }
+      ],
+      "note": "Eğri ters: kısa vade uzun vadeden yüksek. Tahvil değerleri Borsa MCP'den bu sabah da çekilemedi (çağrı boş döndü), 14 Ekim son bilinen değerler gösteriliyor; ABD faizindeki gerilemenin Türkiye tahvillerine yansımasını bu yüzden ölçemiyorum. Karar metni, enflasyon görünümü kalıcı biçimde bozulursa sıkılaştırma yapılabileceğini söylüyor."
+    },
+    "macro": [
+      {
+        "name": "TÜFE (yıllık)",
+        "period": "Eyl",
+        "actual": "%29,73",
+        "cons": "%30,30",
+        "prev": "%31,51",
+        "note": "Beklentiden iyi, düşüş sürüyor",
+        "tone": "good"
+      },
+      {
+        "name": "TÜFE (aylık)",
+        "period": "Eyl",
+        "actual": "%1,84",
+        "cons": "%2,30",
+        "prev": "%1,84",
+        "note": "Beklentinin altında",
+        "tone": "good"
+      },
+      {
+        "name": "ÜFE (yıllık)",
+        "period": "Eyl",
+        "actual": "%27,38",
+        "cons": "—",
+        "prev": "%27,95",
+        "note": "Maliyet baskısı geriliyor",
+        "tone": "good"
+      },
+      {
+        "name": "Politika faizi",
+        "period": "22 Eki",
+        "actual": "%36,00",
+        "cons": "%36,00",
+        "prev": "%37,00",
+        "note": "Beklendiği gibi 100 bp indirim; dokuz ayın ilk indirimi",
+        "tone": "flat"
+      },
+      {
+        "name": "GSYH (yıllık)",
+        "period": "2. çeyrek",
+        "actual": "%2,3",
+        "cons": "%2,9",
+        "prev": "%2,5",
+        "note": "Büyüme yavaşlıyor",
+        "tone": "bad"
+      },
+      {
+        "name": "Sanayi üretimi (yıllık)",
+        "period": "Ağu",
+        "actual": "−%1,9",
+        "cons": "—",
+        "prev": "−%0,3",
+        "note": "Dördüncü ay düşüş, imalat çekti",
+        "tone": "bad"
+      },
+      {
+        "name": "İşsizlik oranı",
+        "period": "Ağu",
+        "actual": "%7,8",
+        "cons": "—",
+        "prev": "%8,1",
+        "note": "İyileşme",
+        "tone": "good"
+      },
+      {
+        "name": "Cari denge",
+        "period": "Ağu",
+        "actual": "+4,05 mlr $",
+        "cons": "+3,80 mlr $",
+        "prev": "−0,09 mlr $",
+        "note": "Beklentiden iyi; altın ve enerji hariç fazla daha büyük, 12 aylık açık 42,1 mlr $",
+        "tone": "good"
+      },
+      {
+        "name": "Dış ticaret dengesi",
+        "period": "Ağu",
+        "actual": "−5,24 mlr $",
+        "cons": "−5,24 mlr $",
+        "prev": "−7,34 mlr $",
+        "note": "Açık daraldı",
+        "tone": "good"
+      },
+      {
+        "name": "Kapasite kullanımı",
+        "period": "Eyl",
+        "actual": "%74,2",
+        "cons": "—",
+        "prev": "%73,5",
+        "note": "Hafif artış",
+        "tone": "flat"
+      },
+      {
+        "name": "Tüketici güveni",
+        "period": "Eyl",
+        "actual": "91,9",
+        "cons": "—",
+        "prev": "90,8",
+        "note": "Hafif iyileşme",
+        "tone": "flat"
+      },
+      {
+        "name": "Sonraki PPK",
+        "period": "10 Ara",
+        "actual": "—",
+        "cons": "—",
+        "prev": "%36,00",
+        "note": "Sonraki karar 10 Aralık",
+        "tone": "flat"
+      }
+    ],
+    "upcoming": [
+      {
+        "when": "30 Eki 10:00",
+        "name": "İşsizlik ve dış ticaret dengesi (Eylül)"
+      },
+      {
+        "when": "3 Kas 10:00",
+        "name": "TÜFE (Ekim)"
+      },
+      {
+        "when": "10 Ara",
+        "name": "TCMB faiz kararı (PPK)"
+      }
+    ],
+    "lesson": {
+      "title": "Tatil sonrası açılış: piyasa kapalıyken biriken haber nasıl fiyatlanır?",
+      "paragraphs": [
+        "Borsa kapalıyken dünya durmaz. Dün BIST tatildeydi ama ABD'de Alphabet tarihinin en sert günlük düşüşünü yaşadı, tahvil faizi geriledi ve Asya sabahı sert satıldı. Açılışta bu haberlerin hepsi birden fiyata yansır; bu yüzden tatil sonrası ilk seans, normal bir günden daha geniş bir bantta açılır. Buna açılış boşluğu denir.",
+        "Boşluğun büyüklüğü iki şeye bağlı: kapalı kalınan sürede ne kadar haber biriktiği ve o haberin yerel piyasayı ne kadar ilgilendirdiği. Burada ikinci soru kritik: BIST teknoloji endeksi küresel çip temasına bağlı, bankalar ise yerel faiz ve kura duyarlı; aynı küresel haber iki gruba farklı etki edebilir. Bir de ters bir ipucu var: yurt dışında işlem gören Türkiye ETF'i borsa kapalıyken yabancının bakışını gösterir, ama yerel fiyatla birebir örtüşmez."
+      ],
+      "rule": "Tatil sonrası ilk seansta fiyatı değil boşluğu ve ardından gelen yönü izle: açılış sert olduktan sonra geri dönüyorsa haber fazla fiyatlanmıştır; boşluk kapanmadan sürüyorsa haber gerçekten yeni bilgi taşıyordur."
+    },
+    "source": "Borsa MCP (BIST 100, BIST 30, XBANK 30 Eki 07:00 itibarıyla son kapanış 28 Eki, diğer sektör endeksleri dünkü dosyadan; USD/TRY, EUR/TRY, gram altın 29 Eki; TR tahvil boş döndü, 14 Eki son bilinen), Bigdata.com (küresel çip hareketi, ABD kapanışı, TUR ETF)."
+  },
+  "kripto": {
+    "kpis": [
+      {
+        "code": "BTC",
+        "label": "Bitcoin",
+        "value": "77.982 $",
+        "sub": "1 günde −%2,1 · 1 ayda −%6,7",
+        "tone": "down"
+      },
+      {
+        "code": "ETH",
+        "label": "Ethereum",
+        "value": "2.230 $",
+        "sub": "1 günde −%3,1 · 1 ayda −%16,9",
+        "tone": "down"
+      },
+      {
+        "code": "TOTAL",
+        "label": "Toplam piyasa değeri",
+        "value": "≈2,72 tr $",
+        "sub": "28 Eki son bilinen · güncellenmedi",
+        "tone": "flat"
+      },
+      {
+        "code": "TOTAL2",
+        "label": "Bitcoin hariç",
+        "value": "≈1,09 tr $",
+        "sub": "28 Eki son bilinen · yaklaşık",
+        "tone": "flat"
+      },
+      {
+        "code": "BTC.D",
+        "label": "Bitcoin dominansı",
+        "value": "≈%60",
+        "sub": "28 Eki son bilinen · güncellenmedi",
+        "tone": "flat"
+      },
+      {
+        "code": "USDT.D",
+        "label": "Tether dominansı",
+        "value": "≈%6,5",
+        "sub": "son bilinen · güncellenmedi",
+        "tone": "flat"
+      }
+    ],
+    "fng": {
+      "now": 51,
+      "yesterday": 48,
+      "week": 63
+    },
+    "reading": {
+      "headline": "Binance hack'i kriptoyu vurdu: hisse düşüşü zaten zayıflatmıştı, ama bu kez sebep hisse değil merkezi borsanın güvenliği",
+      "paragraphs": [
+        "Dün 'bağ yükselişte zayıf, düşüşte güçlü' demiştik. Bu sabah kripto yine düştü ama farklı bir sebeple: dünyanın en büyük kripto borsası Binance'te tarihin en büyük hack'i yaşandı. Şirket, bir mühendisin bilgisayarının ele geçirilmesiyle yetkisiz çekim yapıldığını ve yaklaşık 6 milyar dolarlık kullanıcı fonunun etkilendiğini açıkladı; para yatırma ve çekmeyi durdurdu, kayıpları kendi kaynaklarıyla karşılayacağını söyledi. Bitcoin yüzde 4-5 civarında, Ethereum ve XRP daha sert geriledi; Binance'in kendi token'ı BNB en sert düşenlerden biriydi. Hisse vadelilerindeki zayıflık satışa eşlik etmiş olabilir, ama ana sebep bu haber.",
+        "Burada işleyen mekanizma [[karsi-taraf-riski|karşı taraf riski]]: kullanıcı parasını borsaya emanet ettiğinde, borsanın güvenliğine bağımlı hâle gelir. Hack, fiyatı değil güveni vurdu; bu yüzden BNB gibi borsaya bağlı varlıklar ve borsa hisseleri (Coinbase gibi) daha çok düştü, merkeziyetsiz borsa token'ı HYPE ise yükseldi. İlginç olan, çözümün yarısının merkezi taraftan gelmesi: Tether ve Circle, hırsızlığa karışan fonların yaklaşık yarısını saatler içinde dondurdu. Bu hırsızlığı sınırladı ama stabilcoinlerin tek bir şirketin emriyle durdurulabildiğini de gösterdi. Bitcoin ve Ethereum dondurulamaz, ama izlenebilir.",
+        "Önümüzdeki günün tek sorusu güvenin toparlanıp toparlanmayacağı: Binance'in para çekmeyi ne zaman açacağı ve kayıp tutarının doğrulanması belirleyecek. Bugün vadesi dolan yaklaşık 11 milyar dolarlık Bitcoin opsiyonu oynaklığı artırabilir. Duyarlılık göstergesi, toplam piyasa değeri ve dominans bugün güncellenemedi; dünkü değerler hack öncesine ait."
+      ]
+    },
+    "dominance": {
+      "total_label": "≈ 2,72 trilyon $",
+      "btc": 60.0,
+      "usdt": 6.5,
+      "total2_label": "≈ 1,09 trilyon $"
+    },
+    "dom_cards": [
+      {
+        "code": "BTC.D · ≈%60",
+        "text": "28 Ekim'de %60 civarındaydı; bugün güncellenmedi. Hack sonrası Bitcoin'in büyük coin'lere göre daha az düşmesi dominansı artırmış olabilir; teyit için sabah ölçümü beklenmeli."
+      },
+      {
+        "code": "USDT.D · ≈%6,5",
+        "text": "Son bilinen değer; bugün güncellenmedi. Stabilcoin payının hack sonrası artması riskten kaçışın işareti olurdu."
+      },
+      {
+        "code": "TOTAL · ≈2,72 tr $",
+        "text": "28 Ekim'de yaklaşık 2,72 trilyon dolardı; bugünkü ölçüm bulunamadı. Büyük coin'lerin yaklaşık yüzde 3-6'lık düşüşü toplam piyasa değerini de aşağı çekmiş olmalı."
+      },
+      {
+        "code": "TOTAL2 · ≈1,09 tr $",
+        "text": "Altcoin piyasası (hesaplanan, yaklaşık; 28 Eki). Bugün güncellenmedi."
+      }
+    ],
+    "etf": [
+      {
+        "label": "13 Ekim",
+        "v": 0.1756,
+        "text": "+176 mn $"
+      },
+      {
+        "label": "19 Ekim",
+        "v": 0.5266,
+        "text": "+527 mn $"
+      },
+      {
+        "label": "20 Ekim",
+        "v": 0.0232,
+        "text": "+23 mn $"
+      },
+      {
+        "label": "21 Ekim",
+        "v": 0.5284,
+        "text": "+528 mn $"
+      },
+      {
+        "label": "22 Ekim",
+        "v": -0.635,
+        "text": "−635 mn $"
+      },
+      {
+        "label": "23 Ekim",
+        "v": -0.1379,
+        "text": "−138 mn $"
+      },
+      {
+        "label": "27 Ekim",
+        "v": 0.176,
+        "text": "+176 mn $"
+      }
+    ],
+    "etf_note": "27 Ekim'de spot Bitcoin ETF'lerine yaklaşık 176 mn $ net giriş oldu; 28 ve 29 Ekim akışları araçlarda bulunamadı. Hack sonrası akışın yönü bugünün izlenecek verisi. Grafikte 14-16 Ekim, 26 Ekim ve sonrası günlük rakamları yok.",
+    "coins": [
+      {
+        "sym": "BTC",
+        "name": "Bitcoin",
+        "price": "77.982,20",
+        "d1": -2.13,
+        "w1": -2.59,
+        "m1": -6.67,
+        "m3": 24.12,
+        "ytd": -12.12,
+        "y1": -28.0
+      },
+      {
+        "sym": "ETH",
+        "name": "Ethereum",
+        "price": "2.230,36",
+        "d1": -3.14,
+        "w1": -4.14,
+        "m1": -16.9,
+        "m3": 19.87,
+        "ytd": -25.66,
+        "y1": -41.37
+      },
+      {
+        "sym": "BNB",
+        "name": "BNB",
+        "price": "717,63",
+        "d1": -3.71,
+        "w1": -2.76,
+        "m1": -6.68,
+        "m3": 22.33,
+        "ytd": -16.9,
+        "y1": -33.53
+      },
+      {
+        "sym": "SOL",
+        "name": "Solana",
+        "price": "96,89",
+        "d1": -2.54,
+        "w1": -4.29,
+        "m1": -17.93,
+        "m3": 33.11,
+        "ytd": -23.55,
+        "y1": -47.53
+      }
+    ],
+    "coins_note": "Fiyatlar FMP'nin 30 Ekim 07:00 TSİ anlık verisi; günlük değişim dünkü tablodaki fiyata göre hesaplandı (FMP'nin 24 saatlik değişim alanı hack öncesi tabanı kullandığı için yanıltıcı). Dört coin de ekside; BNB Binance haberiyle en sert düşen. Üç aylık bazda dördü de güçlü artıda, bir yıllık tabloda hepsi hâlâ eksi. Bazı haber kaynakları aynı saatte Bitcoin için yaklaşık 77 bin dolar yazıyor, FMP kullanıldı.",
+    "institutional": [
+      {
+        "v": "≈6,3 mlr $",
+        "title": "Binance'te etkilenen kullanıcı fonu",
+        "note": "Şirketin açıklaması; Arkham yaklaşık 6 milyar dolarlık varlığı 55 cüzdana izledi, yani tutar daha büyük olabilir"
+      },
+      {
+        "v": "≈2,5-3 mlr $",
+        "title": "Dondurulan fon",
+        "note": "Tether yaklaşık 1,5 milyar dolar, Circle yaklaşık 0,8 milyar dolar, Ripple yaklaşık 0,2 milyar dolar dondurdu"
+      },
+      {
+        "v": "+176 mn $",
+        "title": "Bitcoin ETF'lerine son bilinen net giriş (27 Ekim)",
+        "note": "Sonraki günlerin akışı bulunamadı; hack sonrası yön izlenecek"
+      },
+      {
+        "v": "≈11 mlr $",
+        "title": "Bugün vadesi dolan Bitcoin opsiyonu",
+        "note": "Tüm açık pozisyonun yaklaşık üçte biri; vade yakınında oynaklık artabilir"
+      }
+    ],
+    "drivers": [
+      {
+        "tag": "Baskı",
+        "tone": "bad",
+        "title": "Binance hack'i ve karşı taraf riski",
+        "note": "Yaklaşık 6 milyar dolar etkilendi, yatırma-çekme durdu; BNB ve borsaya bağlı varlıklar en sert düştü."
+      },
+      {
+        "tag": "Baskı",
+        "tone": "bad",
+        "title": "Hisse vadelileri ve çip satışı",
+        "note": "Nasdaq 100 vadelileri geride, Asya'da çip hisseleri sert düştü; kripto riskli varlık grubuyla birlikte hareket etti."
+      },
+      {
+        "tag": "Olumlu",
+        "tone": "good",
+        "title": "Zararın karşılanacağı mesajı",
+        "note": "Binance kullanıcı kayıplarını karşılayacağını ve fonların yaklaşık yarısının donduğunu söyledi; güven kaybı sınırlı kalırsa satış geri alınabilir."
+      },
+      {
+        "tag": "Olumlu",
+        "tone": "good",
+        "title": "Faizin geri çekilmesi",
+        "note": "ABD 10 yıllık faizi yüzde 4,91'e indi; faiz getirmeyen varlık için olumlu, ama bu sabahki satışı engellemedi."
+      },
+      {
+        "tag": "Belirsiz",
+        "tone": "flat",
+        "title": "Opsiyon vadesi ve ara seçimler",
+        "note": "Bugün yaklaşık 11 milyar dolarlık Bitcoin opsiyonu doluyor, 3 Kasım'da ABD ara seçimleri var; ikisi de oynaklığı artırabilir, yönü belirsiz."
+      }
+    ],
+    "lesson": {
+      "title": "Karşı taraf riski: paranı emanet ettiğin kurum seni batırabilir mi?",
+      "paragraphs": [
+        "Kripto borsasına para yatırdığında, aslında o parayı borsaya emanet etmiş olursun. Borsa hack'lenirse, iflas ederse ya da çekimleri durdurursa paran fiyat hareketinden bağımsız risk altına girer. Bu riske karşı taraf riski denir: işlemin öbür ucundaki kurumun yükümlülüğünü yerine getirememe ihtimali.",
+        "Bugün bunun canlı örneği yaşandı. Bitcoin'in fiyatı değişmedi; sorun, Bitcoin'i tutan kurumun güvenliğiydi. Kendi cüzdanında tutan kullanıcı bu hack'ten doğrudan etkilenmedi, ama cüzdanını yönetmek de kendi sorumluluğu. Her çözümün bir bedeli var: merkezi borsa kolaylık verir ama emanet riski taşır, kendi cüzdanın güvenlik sorumluluğunu sana yükler. Stabilcoinlerin dondurulabilmesi de aynı dengeyi gösteriyor: hırsızlığı sınırlar ama merkezi kontrol demektir."
+      ],
+      "rule": "Fiyat riski ile karşı taraf riskini ayır: borsada tutulan varlığın fiyatı da, borsanın ayakta kalması da ayrı risklerdir. Büyük miktarı tek bir kurumda bekletme."
+    },
+    "sectors_note": "Sektör verisi 29 Ekim sabahına ait (CoinGecko); bugünkü ölçüm henüz gelmedi. Dünkü okuma geçerli: para Bitcoin ve büyük zincirlerde toplanmıştı, küçük sektörler geride. Hack sonrası Binance'e bağlı borsa token'larının daha sert düşmesi, merkeziyetsiz türev token'larının (HYPE) yükselmesi bekleniyor; teyit için sabah ölçümü beklenmeli."
+  },
+  "makro": {
+    "surprises": [
+      {
+        "name": "BoJ faiz kararı",
+        "actual": "%1,25",
+        "cons": "%1,25",
+        "prev": "%1,25",
+        "verdict": "Beklentiyle uyumlu",
+        "tone": "flat",
+        "meta": "Japonya · 30 Eki",
+        "note": "Faiz sabit (8-1), ama temel enflasyonun hedefe ulaştığı kabul edildi ve enflasyon tahmini yükseltildi: 'sıkı bekleme', Aralık artırımı gündemde."
+      },
+      {
+        "name": "Japonya Tokyo TÜFE (taze gıda hariç, yıllık)",
+        "actual": "%2,6",
+        "cons": "%2,6",
+        "prev": "%2,7",
+        "verdict": "Beklentiyle uyumlu",
+        "tone": "flat",
+        "meta": "Japonya · Ekim · 29 Eki",
+        "note": "Enflasyon hedefin üzerinde ve yatay; BoJ'un artırım baskısını canlı tutuyor."
+      },
+      {
+        "name": "Japonya perakende satışlar (yıllık)",
+        "actual": "%2,3",
+        "cons": "%3,3",
+        "prev": "%2,9",
+        "verdict": "Beklentiden zayıf",
+        "tone": "bad",
+        "meta": "Japonya · Eylül · 29 Eki",
+        "note": "Tüketici zayıf; artırım baskısı ile zayıf harcama çatışıyor."
+      },
+      {
+        "name": "ABD GSYH (3. çeyrek, ön, yıllıklandırılmış)",
+        "actual": "%3,4",
+        "cons": "%3,2",
+        "prev": "%2,2",
+        "verdict": "Beklentiden iyi",
+        "tone": "good",
+        "meta": "ABD · 3. çeyrek · 29 Eki",
+        "note": "Ekonomi sıcak; artırım için engel yok ama indirim için de gerekçe yok."
+      },
+      {
+        "name": "ABD çekirdek PCE (yıllık)",
+        "actual": "%3,1",
+        "cons": "%3,1",
+        "prev": "%3,0",
+        "verdict": "Beklentiyle uyumlu",
+        "tone": "flat",
+        "meta": "ABD · Eylül · 29 Eki",
+        "note": "Fed'in tercih ettiği enflasyon göstergesi sürpriz yapmadı; artırım tartışması ne güçlendi ne zayıfladı."
+      },
+      {
+        "name": "ABD GSYH fiyat endeksi (3. çeyrek)",
+        "actual": "%2,2",
+        "cons": "%3,5",
+        "prev": "%6,1",
+        "verdict": "Beklentiden düşük",
+        "tone": "good",
+        "meta": "ABD · 3. çeyrek · 29 Eki",
+        "note": "Çeyreklik fiyat baskısı beklentiden hızlı soğudu, ama geriye dönük bir veri; Eylül aylık PCE'si yüksek kaldı."
+      },
+      {
+        "name": "ABD haftalık işsizlik başvuruları",
+        "actual": "194K",
+        "cons": "199K",
+        "prev": "194K",
+        "verdict": "Beklentiden iyi",
+        "tone": "good",
+        "meta": "ABD · 23 Eki haftası · 29 Eki",
+        "note": "İşten çıkarma düşük; ama işe alım da yavaş, sakin bir işgücü piyasası."
+      },
+      {
+        "name": "ECB faiz kararı (mevduat)",
+        "actual": "%2,50",
+        "cons": "%2,50",
+        "prev": "%2,50",
+        "verdict": "Beklentiyle uyumlu",
+        "tone": "flat",
+        "meta": "Euro Bölgesi · 29 Eki",
+        "note": "Sabit; enerji kaynaklı enflasyon ile zayıf büyüme arasında bekleme."
+      },
+      {
+        "name": "Euro Bölgesi ekonomik duyarlılık göstergesi",
+        "actual": "96,9",
+        "cons": "97,5",
+        "prev": "97,5",
+        "verdict": "Beklentiden zayıf",
+        "tone": "bad",
+        "meta": "Euro Bölgesi · Ekim · 29 Eki",
+        "note": "Duyarlılık gerilemeyi sürdürüyor; büyüme riski ECB'nin sıkı kalma gerekçesini zorluyor."
+      },
+      {
+        "name": "Fed faiz kararı",
+        "actual": "%3,75–4,00",
+        "cons": "%3,75–4,00",
+        "prev": "%3,75–4,00",
+        "verdict": "Beklentiyle uyumlu",
+        "tone": "flat",
+        "meta": "ABD · 28 Eki",
+        "note": "Faiz sabit ama oylama 10-2; iki üye artırım istedi, yani artırım kanadı güçlü."
+      },
+      {
+        "name": "ABD mal ticaret dengesi (ön)",
+        "actual": "−134,9 mlr $",
+        "cons": "−128,7 mlr $",
+        "prev": "−132,1 mlr $",
+        "verdict": "Beklentiden kötü",
+        "tone": "bad",
+        "meta": "ABD · Eylül · 28 Eki",
+        "note": "İthalat artışı petrol ve yurt içi talep kaynaklı olabilir; büyümeyi destekler ama dış açığı büyütür."
+      },
+      {
+        "name": "Almanya GfK tüketici güveni",
+        "actual": "−30,8",
+        "cons": "−31,0",
+        "prev": "−30,6",
+        "verdict": "Beklentiye yakın",
+        "tone": "flat",
+        "meta": "Almanya · Kasım · 28 Eki",
+        "note": "Güven çok düşük seviyede yatay; tüketici henüz toparlanmadı."
+      },
+      {
+        "name": "ABD dayanıklı mal siparişleri (aylık)",
+        "actual": "+%1,8",
+        "cons": "+%0,6",
+        "prev": "+%0,1",
+        "verdict": "Beklentiden iyi",
+        "tone": "good",
+        "meta": "ABD · Eylül · 27 Eki",
+        "note": "Güç ulaştırma (uçak) kalemlerinden geliyor; ulaştırma hariç hafif beklenti altı."
+      },
+      {
+        "name": "ABD yeni konut satışları",
+        "actual": "0,68 mn",
+        "cons": "0,66 mn",
+        "prev": "0,68 mn",
+        "verdict": "Beklentiden hafif iyi",
+        "tone": "flat",
+        "meta": "ABD · Eylül · 27 Eki",
+        "note": "Yüksek ipotek faizine rağmen satışlar yatay; ama bekleyen konut satışları geçen hafta sert düşmüştü."
+      },
+      {
+        "name": "Almanya Ifo iş iklimi",
+        "actual": "90,2",
+        "cons": "89,8",
+        "prev": "89,9",
+        "verdict": "Beklentiden iyi",
+        "tone": "good",
+        "meta": "Almanya · Ekim · 26 Eki",
+        "note": "Beklenti alt endeksi toparlandı, mevcut durum zayıfladı: umut var, bugün hâlâ zayıf."
+      },
+      {
+        "name": "ABD Michigan tüketici güveni (nihai)",
+        "actual": "48,0",
+        "cons": "46,3",
+        "prev": "46,3",
+        "verdict": "Beklentiden iyi",
+        "tone": "good",
+        "meta": "ABD · Ekim · 23 Eki",
+        "note": "Güven hâlâ çok düşük ama toparlanıyor; 1 yıllık enflasyon beklentisi %4,7'de yatay."
+      },
+      {
+        "name": "ABD imalat PMI (öncü)",
+        "actual": "56,0",
+        "cons": "55,6",
+        "prev": "55,9",
+        "verdict": "Beklentiden iyi",
+        "tone": "good",
+        "meta": "ABD · Ekim · 23 Eki",
+        "note": "İmalat sıcak kalıyor; faiz indirimi gerekçesini zayıflatıyor."
+      },
+      {
+        "name": "ABD hizmet PMI (öncü)",
+        "actual": "57,9",
+        "cons": "57,9",
+        "prev": "58,8",
+        "verdict": "Beklentiyle uyumlu",
+        "tone": "flat",
+        "meta": "ABD · Ekim · 23 Eki",
+        "note": "Hizmetler hafif yavaşladı ama hâlâ güçlü bölgede; faiz baskısını azaltmıyor."
+      },
+      {
+        "name": "Euro Bölgesi bileşik PMI (öncü)",
+        "actual": "51,9",
+        "cons": "52,7",
+        "prev": "53,1",
+        "verdict": "Beklentiden zayıf",
+        "tone": "bad",
+        "meta": "Euro Bölgesi · Ekim · 23 Eki",
+        "note": "Hizmetler zayıfladı; ECB'nin sıkı kalma gerekçesi ile büyüme riski çatışıyor."
+      },
+      {
+        "name": "İngiltere bileşik PMI (öncü)",
+        "actual": "53,1",
+        "cons": "51,8",
+        "prev": "52,0",
+        "verdict": "Beklentiden iyi",
+        "tone": "good",
+        "meta": "İngiltere · Ekim · 23 Eki",
+        "note": "PMI iyi, ama perakende satış ve tüketici güveni zayıf: anketler ile harcama ayrışıyor."
+      },
+      {
+        "name": "İngiltere perakende satışlar (aylık)",
+        "actual": "−%0,4",
+        "cons": "−%0,1",
+        "prev": "+%0,7",
+        "verdict": "Beklentiden zayıf",
+        "tone": "bad",
+        "meta": "İngiltere · Eylül · 23 Eki",
+        "note": "Sıcak hava giyim talebini azalttı; tüketici gelecek haftaki bütçe öncesi temkinli."
+      },
+      {
+        "name": "Almanya bileşik PMI (öncü)",
+        "actual": "52,8",
+        "cons": "53,3",
+        "prev": "53,8",
+        "verdict": "Beklentiden zayıf",
+        "tone": "bad",
+        "meta": "Almanya · Ekim · 23 Eki",
+        "note": "Büyüme sürüyor ama ivme yavaşladı; hizmetler zayıfladı."
+      },
+      {
+        "name": "Almanya imalat PMI (öncü)",
+        "actual": "54,2",
+        "cons": "54,0",
+        "prev": "53,9",
+        "verdict": "Beklentiden iyi",
+        "tone": "good",
+        "meta": "Almanya · Ekim · 23 Eki",
+        "note": "İmalat toparlanıyor; ama hizmet zayıflığıyla birlikte okunmalı."
+      },
+      {
+        "name": "Almanya hizmet PMI (öncü)",
+        "actual": "51,7",
+        "cons": "53,1",
+        "prev": "52,9",
+        "verdict": "Beklentiden zayıf",
+        "tone": "bad",
+        "meta": "Almanya · Ekim · 23 Eki",
+        "note": "Hizmet sektörü ivme kaybediyor; tüketici tarafındaki zayıflıkla uyumlu."
+      }
+    ],
+    "surprises_note": "Son bir haftanın tablosu: ABD büyümesi sıcak, enflasyon verileri sürpriz yapmıyor; Avrupa ve İngiltere'de tüketici ve hizmetler zayıf; üç büyük merkez bankası (Fed, ECB, BoJ) bu hafta sabit bıraktı ama üçü de şahin.",
+    "countries": {
+      "ABD": {
+        "charts": [
+          {
+            "type": "bar",
+            "title": "Tarım dışı istihdam",
+            "sub": "Aylık değişim, bin kişi",
+            "unit": "K",
+            "labels": [
+              "Eki 25",
+              "Kas 25",
+              "Ara 25",
+              "Oca 26",
+              "Şub 26",
+              "Mar 26",
+              "Nis 26",
+              "May 26",
+              "Haz 26",
+              "Tem 26",
+              "Ağu 26",
+              "Eyl 26"
+            ],
+            "values": [
+              -173,
+              64,
+              50,
+              130,
+              -92,
+              178,
+              115,
+              172,
+              57,
+              -23,
+              162,
+              29
+            ],
+            "last": "29K",
+            "trend": "Beklenti 90K · zayıf",
+            "tone": "bad",
+            "note": "Son 12 ayda 3 kez eksiye düştü; aylık ortalama ~55 bin. İşgücü piyasası belirgin şekilde yavaşladı.",
+            "prev": "162K (rev. 133K)",
+            "next": "Kasım başı"
+          },
+          {
+            "type": "line",
+            "title": "TÜFE (yıllık)",
+            "sub": "Manşet enflasyon",
+            "unit": "%",
+            "target": 2,
+            "target_label": "Fed hedefi %2",
+            "labels": [
+              "Eki 25",
+              "Kas 25",
+              "Ara 25",
+              "Oca 26",
+              "Şub 26",
+              "Mar 26",
+              "Nis 26",
+              "May 26",
+              "Haz 26",
+              "Tem 26",
+              "Ağu 26",
+              "Eyl 26"
+            ],
+            "values": [
+              null,
+              2.7,
+              2.7,
+              2.4,
+              2.4,
+              3.3,
+              3.8,
+              4.2,
+              3.5,
+              3.4,
+              3.4,
+              3.7
+            ],
+            "last": "%3,7",
+            "trend": "Beklentinin üstünde · kötü",
+            "tone": "bad",
+            "note": "Mart-Mayıs arası enerji şokuyla %4,2'ye fırlamış, sonra %3,4'e inmişti; eylülde yeniden %3,7'ye çıktı: benzin fiyatları yine ana itici. Ekim verisi petrolün seyrine bağlı.",
+            "prev": "%3,4",
+            "next": "Kasım ortası"
+          },
+          {
+            "type": "line",
+            "title": "Çekirdek TÜFE (yıllık)",
+            "sub": "Gıda ve enerji hariç",
+            "unit": "%",
+            "target": 2,
+            "target_label": "Fed hedefi %2",
+            "labels": [
+              "Eki 25",
+              "Kas 25",
+              "Ara 25",
+              "Oca 26",
+              "Şub 26",
+              "Mar 26",
+              "Nis 26",
+              "May 26",
+              "Haz 26",
+              "Tem 26",
+              "Ağu 26",
+              "Eyl 26"
+            ],
+            "values": [
+              null,
+              2.6,
+              2.6,
+              2.5,
+              2.5,
+              2.6,
+              2.8,
+              2.9,
+              2.6,
+              2.5,
+              2.4,
+              2.6
+            ],
+            "last": "%2,6",
+            "trend": "Beklentinin üstünde · kötü",
+            "tone": "bad",
+            "note": "Yılın en düşük seviyesinden (%2,4) yukarı döndü; aylık %0,3 ile enerji şokunun çekirdeğe yayılma işareti. Fed'in 'geçici' okumasını zorluyor.",
+            "prev": "%2,4",
+            "next": "Kasım ortası"
+          },
+          {
+            "type": "line",
+            "title": "Çekirdek PCE (yıllık)",
+            "sub": "Fed'in asıl hedef göstergesi",
+            "unit": "%",
+            "target": 2,
+            "target_label": "Fed hedefi %2",
+            "labels": [
+              "Eki 25",
+              "Kas 25",
+              "Ara 25",
+              "Oca 26",
+              "Şub 26",
+              "Mar 26",
+              "Nis 26",
+              "May 26",
+              "Haz 26",
+              "Tem 26",
+              "Ağu 26",
+              "Eyl 26"
+            ],
+            "values": [
+              2.7,
+              2.8,
+              3,
+              3.1,
+              3,
+              3.2,
+              3.3,
+              3.4,
+              3.3,
+              3.3,
+              3.0,
+              3.1
+            ],
+            "last": "%3,1",
+            "trend": "Beklentiyle aynı · nötr",
+            "tone": "flat",
+            "note": "Ağustos'taki %3,0'dan %3,1'e çıktı ama beklentiyle birebir. Manşet PCE %3,6'ya yükseldi; enflasyon hedefin hâlâ yaklaşık 1 puan üzerinde.",
+            "prev": "%3,0",
+            "next": "Kasım sonu"
+          },
+          {
+            "type": "line",
+            "title": "Saatlik kazanç (yıllık)",
+            "sub": "Ücret artışı",
+            "unit": "%",
+            "labels": [
+              "Eki 25",
+              "Kas 25",
+              "Ara 25",
+              "Oca 26",
+              "Şub 26",
+              "Mar 26",
+              "Nis 26",
+              "May 26",
+              "Haz 26",
+              "Tem 26",
+              "Ağu 26",
+              "Eyl 26"
+            ],
+            "values": [
+              3.7,
+              3.5,
+              3.8,
+              3.7,
+              3.8,
+              3.5,
+              3.6,
+              3.4,
+              3.5,
+              3.2,
+              3.1,
+              3
+            ],
+            "last": "%3,0",
+            "trend": "Beklenti %3,2 · yavaşlıyor",
+            "tone": "flat",
+            "note": "Ücret artışı bir yılın en düşük seviyesinde: enflasyon baskısı azalıyor ama tüketicinin harcama gücü de zayıflıyor.",
+            "prev": "%3,1",
+            "next": "Kasım başı"
+          },
+          {
+            "type": "line",
+            "title": "Çekirdek ÜFE (yıllık)",
+            "sub": "Üretici fiyatları",
+            "unit": "%",
+            "labels": [
+              "Eyl 25",
+              "Eki 25",
+              "Kas 25",
+              "Ara 25",
+              "Oca 26",
+              "Şub 26",
+              "Mar 26",
+              "Nis 26",
+              "May 26",
+              "Haz 26",
+              "Tem 26",
+              "Ağu 26"
+            ],
+            "values": [
+              2.6,
+              2.9,
+              3,
+              3.3,
+              3.6,
+              3.9,
+              3.8,
+              5.2,
+              4.9,
+              4.7,
+              4.2,
+              4.6
+            ],
+            "last": "%4,6",
+            "trend": "Yeniden yükselişte",
+            "tone": "bad",
+            "note": "Üretici fiyatları tüketici fiyatlarından hızlı artıyor; bu maliyet baskısı ileride TÜFE'ye yansıyabilir.",
+            "prev": "%4,2",
+            "next": "15 Eki 15:30",
+            "next_cons": 4.4
+          }
+        ],
+        "rows": [
+          {
+            "group": "Faiz"
+          },
+          {
+            "name": "Fed politika faizi",
+            "period": "28 Eki",
+            "actual": "%3,75–4,00",
+            "cons": "%3,75–4,00",
+            "prev": "%3,75–4,00",
+            "surprise": "Sabit (10-2 oy)",
+            "tone": "flat",
+            "next": "Aralık"
+          },
+          {
+            "group": "Enflasyon"
+          },
+          {
+            "name": "TÜFE (yıllık)",
+            "period": "Eyl",
+            "actual": "%3,7",
+            "cons": "%3,6",
+            "prev": "%3,4",
+            "surprise": "▲ Kötü",
+            "tone": "bad",
+            "next": "Kasım ortası"
+          },
+          {
+            "name": "Çekirdek TÜFE (yıllık)",
+            "period": "Eyl",
+            "actual": "%2,6",
+            "cons": "%2,5",
+            "prev": "%2,4",
+            "surprise": "▲ Kötü",
+            "tone": "bad",
+            "next": "Kasım ortası"
+          },
+          {
+            "name": "Çekirdek TÜFE (aylık)",
+            "period": "Eyl",
+            "actual": "%0,3",
+            "cons": "%0,2",
+            "prev": "%0,3",
+            "surprise": "▲ Kötü",
+            "tone": "bad",
+            "next": "Kasım ortası"
+          },
+          {
+            "name": "Çekirdek PCE (yıllık)",
+            "period": "Eyl",
+            "actual": "%3,1",
+            "cons": "%3,1",
+            "prev": "%3,0",
+            "surprise": "= Beklentiyle uyumlu",
+            "tone": "flat",
+            "next": "Kasım sonu"
+          },
+          {
+            "group": "İstihdam"
+          },
+          {
+            "name": "Tarım dışı istihdam",
+            "period": "Eyl",
+            "actual": "29K",
+            "cons": "90K",
+            "prev": "162K",
+            "surprise": "▼ Kötü",
+            "tone": "bad",
+            "next": "Kasım başı"
+          },
+          {
+            "name": "Ortalama saatlik kazanç (yıllık)",
+            "period": "Eyl",
+            "actual": "%3,0",
+            "cons": "%3,2",
+            "prev": "%3,1",
+            "surprise": "▼ Zayıf",
+            "tone": "bad",
+            "next": "Kasım başı"
+          },
+          {
+            "name": "Haftalık işsizlik başvuruları",
+            "period": "23 Eki haftası",
+            "actual": "194K",
+            "cons": "199K",
+            "prev": "194K",
+            "surprise": "▼ İyi",
+            "tone": "good",
+            "next": "5 Kas 15:30"
+          },
+          {
+            "group": "Büyüme"
+          },
+          {
+            "name": "GSYH (3. çeyrek, ön, yıllıklandırılmış)",
+            "period": "3. çeyrek",
+            "actual": "%3,4",
+            "cons": "%3,2",
+            "prev": "%2,2",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "Kasım sonu (revize)"
+          },
+          {
+            "name": "Kişisel harcamalar (aylık)",
+            "period": "Eyl",
+            "actual": "%0,5",
+            "cons": "%0,6",
+            "prev": "%0,9",
+            "surprise": "▼ Hafif",
+            "tone": "flat",
+            "next": "Kasım sonu"
+          },
+          {
+            "group": "Öncü göstergeler"
+          },
+          {
+            "name": "ISM imalat PMI",
+            "period": "Eyl",
+            "actual": "54,5",
+            "cons": "55,0",
+            "prev": "54,6",
+            "surprise": "▼ Hafif",
+            "tone": "flat",
+            "next": "3 Kas"
+          },
+          {
+            "name": "ISM imalat ödenen fiyatlar",
+            "period": "Eyl",
+            "actual": "77,9",
+            "cons": "72,3",
+            "prev": "71,1",
+            "surprise": "▲ Kötü",
+            "tone": "bad",
+            "next": "3 Kas"
+          },
+          {
+            "name": "ISM hizmet PMI",
+            "period": "Eyl",
+            "actual": "54,9",
+            "cons": "55,0",
+            "prev": "55,4",
+            "surprise": "▼ Hafif",
+            "tone": "flat",
+            "next": "5 Kas"
+          },
+          {
+            "name": "S&P Global imalat PMI (öncü)",
+            "period": "Eki",
+            "actual": "56,0",
+            "cons": "55,6",
+            "prev": "55,9",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "4 Kas"
+          },
+          {
+            "name": "S&P Global hizmet PMI (öncü)",
+            "period": "Eki",
+            "actual": "57,9",
+            "cons": "57,9",
+            "prev": "58,8",
+            "surprise": "= Beklentiyle uyumlu",
+            "tone": "flat",
+            "next": "4 Kas"
+          },
+          {
+            "name": "Dayanıklı mal siparişleri (aylık)",
+            "period": "Eyl",
+            "actual": "+%1,8",
+            "cons": "+%0,6",
+            "prev": "+%0,1",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "Kasım sonu"
+          },
+          {
+            "name": "Michigan tüketici güveni",
+            "period": "Eki nihai",
+            "actual": "48,0",
+            "cons": "46,3",
+            "prev": "46,3",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "6 Kas 18:00"
+          },
+          {
+            "name": "Michigan 1 yıllık enflasyon beklentisi",
+            "period": "Eki nihai",
+            "actual": "%4,7",
+            "cons": "%4,7",
+            "prev": "%4,7",
+            "surprise": "= Beklentiyle uyumlu",
+            "tone": "flat",
+            "next": "6 Kas 18:00"
+          }
+        ],
+        "note": "\"—\" henüz açıklanmamış ya da konsensüs yok demek."
+      },
+      "Euro Bölgesi": {
+        "charts": [],
+        "rows": [
+          {
+            "name": "Euro Bölgesi bileşik PMI (öncü)",
+            "period": "Eki",
+            "actual": "51,9",
+            "cons": "52,7",
+            "prev": "53,1",
+            "surprise": "▼ Kötü",
+            "tone": "bad",
+            "next": "4 Kas"
+          },
+          {
+            "group": "Enflasyon"
+          },
+          {
+            "name": "Manşet HICP (yıllık)",
+            "period": "Eyl",
+            "actual": "%3,8",
+            "cons": "%3,6",
+            "prev": "%3,2",
+            "surprise": "▲ Kötü",
+            "tone": "bad",
+            "next": "16 Eki 12:00 (kesin)"
+          },
+          {
+            "name": "Çekirdek HICP (yıllık)",
+            "period": "Eyl",
+            "actual": "%2,5",
+            "cons": "%2,5",
+            "prev": "%2,4",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "16 Eki 12:00 (kesin)"
+          },
+          {
+            "name": "Almanya HICP (yıllık)",
+            "period": "Eyl",
+            "actual": "%3,3",
+            "cons": "%3,3",
+            "prev": "%3,3",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "Kasım başı"
+          },
+          {
+            "name": "Üretici fiyatları (yıllık)",
+            "period": "Ağu",
+            "actual": "%8,2",
+            "cons": "—",
+            "prev": "%5,8",
+            "surprise": "▲ Kötü",
+            "tone": "bad",
+            "next": "Kasım başı"
+          },
+          {
+            "group": "Tüketim"
+          },
+          {
+            "name": "Tüketici güveni",
+            "period": "Eki (nihai)",
+            "actual": "−17,9",
+            "cons": "−17,9",
+            "prev": "−17,9",
+            "surprise": "= Beklentiyle uyumlu",
+            "tone": "flat",
+            "next": "Kasım sonu"
+          },
+          {
+            "name": "Perakende satışlar (yıllık)",
+            "period": "Ağu",
+            "actual": "%0,8",
+            "cons": "%1,0",
+            "prev": "%0,6",
+            "surprise": "▼ Zayıf",
+            "tone": "bad",
+            "next": "Kasım başı"
+          },
+          {
+            "name": "Perakende satışlar (aylık)",
+            "period": "Ağu",
+            "actual": "%0,1",
+            "cons": "%0,2",
+            "prev": "−%0,6",
+            "surprise": "▼ Hafif",
+            "tone": "bad",
+            "next": "Kasım başı"
+          },
+          {
+            "group": "Büyüme"
+          },
+          {
+            "name": "Ekonomik duyarlılık göstergesi",
+            "period": "Eki",
+            "actual": "96,9",
+            "cons": "97,5",
+            "prev": "97,5",
+            "surprise": "▼ Kötü",
+            "tone": "bad",
+            "next": "Kasım sonu"
+          },
+          {
+            "name": "GSYH (3. çeyrek, ön, çeyreklik)",
+            "period": "3. çeyrek",
+            "actual": "—",
+            "cons": "+%0,2",
+            "prev": "+%0,6",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "30 Eki 13:00"
+          },
+          {
+            "name": "Almanya bileşik PMI (öncü)",
+            "period": "Eki",
+            "actual": "52,8",
+            "cons": "53,3",
+            "prev": "53,8",
+            "surprise": "▼ Kötü",
+            "tone": "bad",
+            "next": "4 Kas"
+          },
+          {
+            "name": "Almanya sanayi siparişleri (aylık)",
+            "period": "Ağu",
+            "actual": "−%10,6",
+            "cons": "−%1,0",
+            "prev": "+%2,5",
+            "surprise": "▼ Kötü",
+            "tone": "bad",
+            "next": "Kasım başı"
+          },
+          {
+            "name": "Almanya sanayi üretimi (aylık)",
+            "period": "Ağu",
+            "actual": "+%2,0",
+            "cons": "%0,5",
+            "prev": "−%1,1",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "Kasım başı"
+          },
+          {
+            "name": "Almanya dış ticaret dengesi (€ mlr)",
+            "period": "Ağu",
+            "actual": "19,5",
+            "cons": "19,0",
+            "prev": "21,6",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "Kasım başı"
+          },
+          {
+            "name": "Euro Bölgesi sanayi üretimi (aylık)",
+            "period": "Ağu",
+            "actual": "—",
+            "cons": "—",
+            "prev": "−%0,1",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "15 Eki 12:00"
+          }
+        ],
+        "note": "\"—\" henüz açıklanmamış ya da konsensüs yok demek. 12 aylık grafikler sonraki çalışmalarda eklenecek."
+      },
+      "Türkiye": {
+        "charts": [
+          {
+            "type": "line",
+            "title": "TÜFE (yıllık)",
+            "sub": "TÜİK manşet enflasyon",
+            "unit": "%",
+            "labels": [
+              "Eyl 25",
+              "Eki 25",
+              "Kas 25",
+              "Ara 25",
+              "Oca 26",
+              "Şub 26",
+              "Mar 26",
+              "Nis 26",
+              "May 26",
+              "Haz 26",
+              "Tem 26",
+              "Ağu 26",
+              "Eyl 26"
+            ],
+            "values": [
+              33.29,
+              32.87,
+              31.07,
+              30.89,
+              30.65,
+              31.53,
+              30.87,
+              32.37,
+              32.61,
+              32.11,
+              31.75,
+              31.51,
+              29.73
+            ],
+            "last": "%29,73",
+            "trend": "Beklenti %30,30 · iyi",
+            "tone": "good",
+            "note": "Bir yılda 3,5 puan düştü; Nisan-Mayıs'taki enerji şoku sonrası düşüş yeniden başladı.",
+            "prev": "%31,51",
+            "next": "3 Kas 10:00"
+          }
+        ],
+        "rows": [
+          {
+            "group": "Faiz"
+          },
+          {
+            "name": "TCMB politika faizi",
+            "period": "22 Eki",
+            "actual": "%36,00",
+            "cons": "%36,00",
+            "prev": "%37,00",
+            "surprise": "−100 bp",
+            "tone": "flat",
+            "next": "10 Ara"
+          },
+          {
+            "group": "Enflasyon"
+          },
+          {
+            "name": "TÜFE (yıllık)",
+            "period": "Eyl",
+            "actual": "%29,73",
+            "cons": "%30,30",
+            "prev": "%31,51",
+            "surprise": "▼ İyi",
+            "tone": "good",
+            "next": "3 Kas 10:00"
+          },
+          {
+            "name": "ÜFE (yıllık)",
+            "period": "Eyl",
+            "actual": "%27,38",
+            "cons": "—",
+            "prev": "%27,95",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "3 Kas 10:00"
+          },
+          {
+            "group": "Büyüme"
+          },
+          {
+            "name": "GSYH (yıllık)",
+            "period": "2. çeyrek",
+            "actual": "%2,3",
+            "cons": "%2,9",
+            "prev": "%2,5",
+            "surprise": "▼ Zayıf",
+            "tone": "bad",
+            "next": "Aralık başı"
+          },
+          {
+            "name": "Sanayi üretimi (yıllık)",
+            "period": "Ağu",
+            "actual": "−%1,9",
+            "cons": "—",
+            "prev": "−%0,3",
+            "surprise": "▼ Kötü",
+            "tone": "bad",
+            "next": "Kasım"
+          },
+          {
+            "group": "İstihdam"
+          },
+          {
+            "name": "İşsizlik oranı",
+            "period": "Ağu",
+            "actual": "%7,8",
+            "cons": "—",
+            "prev": "%8,1",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "30 Eki 10:00"
+          },
+          {
+            "group": "Dış denge"
+          },
+          {
+            "name": "Cari denge",
+            "period": "Ağu",
+            "actual": "+4,05 mlr $",
+            "cons": "+3,80 mlr $",
+            "prev": "−0,09 mlr $",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "Kasım ortası"
+          },
+          {
+            "name": "Cari denge (12 aylık)",
+            "period": "Ağu",
+            "actual": "−42,1 mlr $",
+            "cons": "—",
+            "prev": "−41,5 mlr $",
+            "surprise": "▲ Kötü",
+            "tone": "bad",
+            "next": "Kasım ortası"
+          },
+          {
+            "name": "Dış ticaret dengesi",
+            "period": "Ağu",
+            "actual": "−5,24 mlr $",
+            "cons": "−5,24 mlr $",
+            "prev": "−7,34 mlr $",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "30 Eki 10:00"
+          }
+        ],
+        "note": "Kaynak: TCMB/TÜİK (Borsa MCP) ve Bigdata.com takvimi."
+      },
+      "Japonya": {
+        "charts": [],
+        "rows": [
+          {
+            "group": "Faiz"
+          },
+          {
+            "name": "BoJ politika faizi",
+            "period": "30 Eki",
+            "actual": "%1,25",
+            "cons": "%1,25",
+            "prev": "%1,25",
+            "surprise": "Sabit (8-1 oy)",
+            "tone": "flat",
+            "next": "Aralık"
+          },
+          {
+            "group": "Enflasyon"
+          },
+          {
+            "name": "Ulusal TÜFE (taze gıda hariç, yıllık)",
+            "period": "Eyl",
+            "actual": "%2,1",
+            "cons": "%2,1",
+            "prev": "%1,8",
+            "surprise": "● Uyumlu",
+            "tone": "flat",
+            "next": "Kasım sonu"
+          },
+          {
+            "name": "Tokyo TÜFE (taze gıda hariç, yıllık)",
+            "period": "Eki",
+            "actual": "%2,6",
+            "cons": "%2,6",
+            "prev": "%2,7",
+            "surprise": "● Uyumlu",
+            "tone": "flat",
+            "next": "Kasım sonu"
+          },
+          {
+            "group": "İstihdam"
+          },
+          {
+            "name": "Nakit kazançlar (yıllık)",
+            "period": "Ağu",
+            "actual": "%3,8",
+            "cons": "%3,7",
+            "prev": "%4,7",
+            "surprise": "▲ Hafif",
+            "tone": "flat",
+            "next": "Kasım başı"
+          },
+          {
+            "name": "İşsizlik oranı",
+            "period": "Eyl",
+            "actual": "%2,4",
+            "cons": "%2,5",
+            "prev": "%2,5",
+            "surprise": "▼ İyi",
+            "tone": "good",
+            "next": "Kasım sonu"
+          },
+          {
+            "group": "Dış denge"
+          },
+          {
+            "name": "Cari denge (¥ milyar)",
+            "period": "Ağu",
+            "actual": "4.062",
+            "cons": "3.194,6",
+            "prev": "2.988",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "Kasım başı"
+          },
+          {
+            "group": "Tüketim"
+          },
+          {
+            "name": "Perakende satışlar (yıllık)",
+            "period": "Eyl",
+            "actual": "%2,3",
+            "cons": "%3,3",
+            "prev": "%2,9",
+            "surprise": "▼ Zayıf",
+            "tone": "bad",
+            "next": "Kasım sonu"
+          }
+        ],
+        "note": "\"—\" henüz açıklanmamış ya da konsensüs yok demek. 12 aylık grafikler sonraki çalışmalarda eklenecek."
+      },
+      "Çin": {
+        "charts": [],
+        "rows": [
+          {
+            "group": "Enflasyon"
+          },
+          {
+            "name": "TÜFE (yıllık)",
+            "period": "Eyl",
+            "actual": "%0,9",
+            "cons": "%1,0",
+            "prev": "%0,8",
+            "surprise": "▼ Hafif",
+            "tone": "flat",
+            "next": "Kasım ortası"
+          },
+          {
+            "name": "ÜFE (yıllık)",
+            "period": "Eyl",
+            "actual": "%5,0",
+            "cons": "%4,5",
+            "prev": "%3,8",
+            "surprise": "▲ Yüksek",
+            "tone": "bad",
+            "next": "Kasım ortası"
+          },
+          {
+            "group": "Dış ticaret"
+          },
+          {
+            "name": "İhracat (yıllık, $)",
+            "period": "Eyl",
+            "actual": "%36,3",
+            "cons": "%25,5",
+            "prev": "%25,0",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "Kasım ortası"
+          },
+          {
+            "name": "İthalat (yıllık, $)",
+            "period": "Eyl",
+            "actual": "%31,0",
+            "cons": "%24,5",
+            "prev": "%28,2",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "Kasım ortası"
+          },
+          {
+            "name": "Dış ticaret dengesi ($ milyar)",
+            "period": "Eyl",
+            "actual": "133,5",
+            "cons": "118,1",
+            "prev": "119,1",
+            "surprise": "▲ İyi",
+            "tone": "good",
+            "next": "Kasım ortası"
+          },
+          {
+            "group": "Büyüme"
+          },
+          {
+            "name": "GSYH (yıllık)",
+            "period": "3. çeyrek",
+            "actual": "—",
+            "cons": "—",
+            "prev": "%4,3",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "19 Eki 05:00"
+          },
+          {
+            "name": "Sanayi üretimi (yıllık)",
+            "period": "Eyl",
+            "actual": "—",
+            "cons": "—",
+            "prev": "%5,2",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "19 Eki 05:00"
+          },
+          {
+            "name": "Perakende satışlar (yıllık)",
+            "period": "Eyl",
+            "actual": "—",
+            "cons": "—",
+            "prev": "%0,4",
+            "surprise": "—",
+            "tone": "flat",
+            "next": "19 Eki 05:00"
+          }
+        ],
+        "note": "\"—\" henüz açıklanmamış ya da konsensüs yok demek. 12 aylık grafikler sonraki çalışmalarda eklenecek."
+      }
+    },
+    "upcoming": [
+      {
+        "when": "30 Eki 13:00",
+        "country": "Euro Bölgesi",
+        "name": "GSYH (3. çeyrek, öncü, çeyreklik)",
+        "impact": "high",
+        "cons": "+%0,2",
+        "prev": "+%0,6",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Büyüme beklenenden dayanıklı kalır; euro ve Avrupa hisseleri desteklenir, ECB'nin sıkı kalma gerekçesi güçlenir."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Durgunluk korkusu artar; euro ve ihracatçı hisseler geriler, ECB'nin sıkılaştırma beklentisi zayıflar."
+          }
+        ]
+      },
+      {
+        "when": "30 Eki 15:30",
+        "country": "ABD",
+        "name": "İstihdam maliyet endeksi (3. çeyrek)",
+        "impact": "mid",
+        "cons": "+%0,8",
+        "prev": "+%0,9"
+      },
+      {
+        "when": "30 Eki 16:00",
+        "country": "Almanya",
+        "name": "TÜFE / HICP (Ekim, yıllık)",
+        "impact": "high",
+        "cons": "%3,1 (HICP)",
+        "prev": "%3,3",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Enerji kaynaklı enflasyon sürer; ECB'nin sıkı kalma gerekçesi güçlenir, Avrupa tahvil faizleri yükselir."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Enflasyon baskısı gevşer; ECB'nin sıkılaştırma ihtimali azalır, euro hafifler, Avrupa hisseleri destek bulur."
+          }
+        ]
+      },
+      {
+        "when": "30 Eki 16:45",
+        "country": "ABD",
+        "name": "Chicago PMI (Ekim)",
+        "impact": "mid",
+        "cons": "56,1",
+        "prev": "58,8"
+      },
+      {
+        "when": "31 Eki 04:30",
+        "country": "Çin",
+        "name": "Resmî imalat PMI (Ekim)",
+        "impact": "high",
+        "cons": "50,0",
+        "prev": "50,1",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Yapay zekâ satışının reel ekonomiye yansımadığı okunur; Asya hisseleri ve emtia desteklenir, riskli varlıklar nefes alır."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Çin talebi zayıflıyor demektir; bakır ve petrol baskı görür, Asya çip hisselerindeki satış derinleşebilir."
+          }
+        ]
+      },
+      {
+        "when": "2 Kas 18:00",
+        "country": "ABD",
+        "name": "ISM imalat PMI (Ekim)",
+        "impact": "high",
+        "cons": "—",
+        "prev": "54,5",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Ekonomi sıcak kalır; faiz ve dolar yükselir, uzun vadeli teknoloji değerlemeleri yeniden baskı görür."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Büyüme korkusu pekişir; faiz geriler, savunmacı hisseler desteklenir, döngüsel hisseler ve çip zayıf kalır."
+          }
+        ]
+      },
+      {
+        "when": "3 Kas 10:00",
+        "country": "Türkiye",
+        "name": "TÜFE (Ekim, yıllık)",
+        "impact": "mid",
+        "cons": "—",
+        "prev": "%29,73"
+      },
+      {
+        "when": "4 Kas 13:00",
+        "country": "Euro Bölgesi",
+        "name": "HICP (Ekim, öncü yıllık)",
+        "impact": "high",
+        "cons": "—",
+        "prev": "%3,8",
+        "scen": [
+          {
+            "if": "Öncekinin üstünde",
+            "then": "ECB'nin sıkı kalma gerekçesi güçlenir; euro ve Avrupa tahvil faizleri yükselir, hisseler ve borçlu ülkeler baskı görür."
+          },
+          {
+            "if": "Öncekinin altında",
+            "then": "Enerji kaynaklı enflasyon yavaşlar; ECB üzerindeki baskı azalır, euro hafifler, hisseler destek bulur."
+          }
+        ]
+      },
+      {
+        "when": "4 Kas 18:00",
+        "country": "ABD",
+        "name": "ISM hizmet PMI (Ekim)",
+        "impact": "high",
+        "cons": "—",
+        "prev": "54,9",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Hizmet enflasyonu baskısı sürer; Aralık artırımı beklentisi güçlenir, faiz yukarı döner."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Tüketici talebi yavaşlar; faiz düşer, Fed için artırım gerekçesi zayıflar."
+          }
+        ]
+      },
+      {
+        "when": "5 Kas 15:00",
+        "country": "İngiltere",
+        "name": "BoE faiz kararı",
+        "impact": "high",
+        "cons": "—",
+        "prev": "%3,75",
+        "scen": [
+          {
+            "if": "Daha büyük artırım ya da şahin dil",
+            "then": "Sterlin ve kısa gilt faizleri yükselir; borsa ve gayrimenkul baskı görür."
+          },
+          {
+            "if": "Artırım yok ya da daha küçük",
+            "then": "Sterlin geriler, gilt faizleri düşer; ikinci tur enflasyon endişesi azalır ama enflasyon riski açık kalır."
+          }
+        ]
+      },
+      {
+        "when": "6 Kas 16:30",
+        "country": "ABD",
+        "name": "Tarım dışı istihdam (Ekim)",
+        "impact": "high",
+        "cons": "—",
+        "prev": "29K",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "İş piyasası sağlam kalır; Aralık artırımı beklentisi güçlenir, faiz ve dolar yükselir."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Büyüme korkusu veriyle desteklenir; faiz düşer, Fed'in artırım gerekçesi zayıflar, savunmacı hisseler öne çıkar."
+          }
+        ]
+      },
+      {
+        "when": "10 Kas 16:30",
+        "country": "ABD",
+        "name": "TÜFE (Ekim, yıllık)",
+        "impact": "high",
+        "cons": "—",
+        "prev": "%3,7",
+        "scen": [
+          {
+            "if": "Beklentinin üstünde",
+            "then": "Petrol etkisi enflasyona yansır; Fed'in Aralık artırımı kesinleşir, faiz ve dolar yükselir, teknoloji baskı altında kalır."
+          },
+          {
+            "if": "Beklentinin altında",
+            "then": "Enflasyon baskısı gevşer; Fed'in artırım kanadı zayıflar, faiz geriler, teknoloji destek bulur."
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "headline": "Veriler sıcak ama sürpriz yapmayan bir ABD ekonomisi söylüyor; piyasayı oynatan veri değil bilanço, faiz düşüşü ise korkudan geliyor",
+      "chain": [
+        "ABD büyümesi beklentiyi aştı",
+        "Çekirdek PCE beklentide kaldı",
+        "Veri faizi yukarı itmedi",
+        "Hisse satışı tahvile para çevirdi",
+        "Faiz korkuyla geriledi"
+      ],
+      "paragraphs": [
+        "ABD'nin üçüncü çeyrek büyümesi beklentinin üzerinde geldi ve haftalık işsizlik başvuruları düşük kaldı: işten çıkarma yok, ama işe alım da yavaş. Harcama ve gelir artışı beklentinin hafif altında; yani tüketici yavaşlıyor ama çökmüyor. Ekonomiyi yapay zekâ yatırımı ve imalat taşıyor. Bu, bilançolardaki harcama sorusunun neden bu kadar önemli olduğunu da açıklıyor: büyümenin motoru olan harcama sorgulanırsa tablo değişir.",
+        "Çekirdek PCE aylık ve yıllık olarak beklentiyle birebir geldi, manşet PCE de beklentide; bu yüzden Fed'in artırım kanadına yeni gerekçe de, indirim kanadına yeni destek de gelmedi. Çeyreklik fiyat endeksleri beklentinin altındaydı ama bunlar geriye dönük. Fed bir gün önce faizi sabit tuttu ve artırımın zamanlamasına dair net bir şey söylemedi; ECB ile BoJ da aynı hafta sabit bıraktı. Üç büyük merkez bankası bekleme modunda, ama üçünün de dili sıkı.",
+        "Avrupa'da ekonomik duyarlılık beklentinin altında kaldı ve tüketici güveni yatay; bugünkü GSYH ilk tahmini büyümenin neredeyse durduğunu gösterebilir. Japonya'da Tokyo enflasyonu hedefin üzerinde ve BoJ temel enflasyonun hedefe ulaştığını kabul etti, ama perakende satışlar beklentinin altında: artırım baskısı var, tüketici zayıf. Türkiye'de bugün işsizlik ve dış ticaret, 3 Kasım'da enflasyon var.",
+        "Bu tabloyu değiştirecek veriler: bugün Euro Bölgesi büyümesi ve Almanya enflasyonu, pazartesi ISM imalat (ödenen fiyatlar yüksekti), 6 Kasım istihdam ve 10 Kasım TÜFE. Faiz düşüşü korku kaynaklı olduğu için, bu verilerden biri sıcak gelirse rahatlama hızla silinir."
+      ],
+      "effects": [
+        {
+          "asset": "Fed",
+          "dir": "flat",
+          "why": "Veri artırım ya da bekleme için yeni gerekçe vermedi; iki karşı oy ve 'enflasyon yüksek' mesajı duruyor.",
+          "hinge": "6 Kasım istihdam, 10 Kasım TÜFE ve akşamki Fed konuşmacıları."
+        },
+        {
+          "asset": "ABD 10Y faiz",
+          "dir": "down",
+          "why": "Hisse satışı ve güvenli liman talebi faizi yüzde 5'in altına, Asya'da %4,91'e çekti; veri bunu tersine çevirmedi."
+        },
+        {
+          "asset": "Dolar",
+          "dir": "down",
+          "why": "ABD faizi düşerken ECB ve BoJ sıkı kaldığı için euro ve yen güçlendi; doların zayıflaması faiz farkının daralmasından."
+        },
+        {
+          "asset": "NQ / ABD hisseleri",
+          "dir": "down",
+          "why": "Alphabet, Amazon ve Intel'in bilançoları Nasdaq 100'ü aşağı çekti; vadelileri zayıf.",
+          "hinge": "ABD açılışında diğer büyük teknoloji hisselerinin tutunup tutunmadığı."
+        },
+        {
+          "asset": "Altın",
+          "dir": "down",
+          "why": "Faiz düştüğü hâlde altın ve gümüş geriledi; faiz getirmeyen varlık için beklenen destek gelmedi."
+        },
+        {
+          "asset": "Türkiye",
+          "dir": "flat",
+          "why": "Gerileyen ABD faizi destek, çip satışı ve yüksek petrol baskı; BIST iki günlük haberi açılışta fiyatlayacak.",
+          "hinge": "BIST açılış tepkisi ve 3 Kasım TÜFE'si."
+        }
+      ]
+    },
+    "regime": {
+      "note": "Büyüme ve enflasyonun yönü son 3 ayın verilerine göre; bugün hiçbir ülkenin yönü değişmedi. ABD'de üçüncü çeyrek büyümesi beklentinin üzerinde geldi, ama istihdam yavaş olduğu için yönü yukarı çevirmedik; Euro Bölgesi'nde duyarlılık gerilemeyi sürdürüyor. Japonya ve Çin için yeterli veri yok.",
+      "items": [
+        {
+          "country": "ABD",
+          "growth": "down",
+          "inflation": "up",
+          "note": "Büyüme ilk tahminde beklentiyi aştı ama istihdam ve güven zayıf; enflasyon hedefin üzerinde ve PCE yüksek seyrediyor."
+        },
+        {
+          "country": "Euro Bölgesi",
+          "growth": "down",
+          "inflation": "up",
+          "note": "Duyarlılık ve PMI beklentinin altında, tüketici güveni zayıf, enflasyon hedefin üzerinde: dört bölgenin en zoru."
+        },
+        {
+          "country": "Türkiye",
+          "growth": "down",
+          "inflation": "down",
+          "note": "Sanayi dört aydır küçülüyor, enflasyon beklentiden hızlı düşüyor; TCMB indirimi başlattı."
+        }
+      ]
+    }
+  },
+  "sources": "Bigdata.com (ABD, Avrupa, Asya endeksleri, sektörler, emtia, döviz, kripto ve ABD faizleri, FMP, 30 Ekim 07:00 TSİ anlık ve 29 Ekim kapanışı; takvim, haberler, Amazon, Intel, Alphabet bilançoları, Binance hack'i, BoJ kararı, petrol haberleri, Reuters/Benzinga/CNBC/Alliance News aktarımları). ABD 10Y %4,91: Reuters'ın Tokyo seansı verisi (−7 bp, Ekim'de ≈−37 bp); kapanış %4,98 FMP. Brent: Reuters Singapur sabah verisi (Aralık vadeli); haftalık değişim Borsa MCP serisinden. Avrupa günlük hisse değişimi Eastmoney. Borsa MCP (BIST 100, BIST 30, XBANK son kapanış 28 Ekim, 29 Ekim tatil; USD/TRY, EUR/TRY, gram altın 29 Eki; TR tahvil bu sabah da boş döndü, 14 Eki son bilinen). Kripto: FMP; korku-hırs endeksi, BTC dominansı ve toplam piyasa değeri bugün güncellenemedi (28 Eki son bilinen); ETF akışı SoSoValue (27 Ekim); Binance hack tutarları CNBC, Washington Post, Chainalysis (Benzinga aktarımıyla). Kripto sektör verisi CoinGecko (29 Ekim).",
+  "nq": {
+    "bias": "engel",
+    "paragraphs": [
+      "NQ için makro tablo dünkünden belirgin biçimde kötüleşti. Faiz düşüyor, normalde bu NQ lehine olurdu; ama bu düşüş hisse satışından geliyor ve bilanço tarafı tersine esiyor: endeksin üç büyük ağırlığı (Alphabet, Amazon, ve dolaylı olarak Intel ve çip zinciri) son 24 saatte harcama ve rehberlik sorusunda takıldı. Nasdaq 100 vadelileri gece yaklaşık yüzde 1,5 geride, yani açılışta zayıf başlangıç riski yüksek. Makro (faiz, büyüme verisi) NQ'yu engellemiyor; engelleyen, temanın kendisi sorgulanıyor olması.",
+      "Denge iki yerde kırılabilir. Yukarı kırılma için ABD açılışında Nvidia, Microsoft, Meta ve Apple'ın tutunması, Amazon ve Intel'in kaybının açılışta daralması ve faizin düşüşünü sürdürmesi gerekir. Aşağı kırılma için Asya'daki satışın (KOSPI) Avrupa ve ABD'ye geçmesi, petrolün yeniden yukarı atması ve Fed konuşmacılarının akşam artırım tonu vermesi yeter. Sinyal yön değil, satışın tek tek hisselere mi yoksa temaya mı ait olduğunu gösteren yayılma."
+    ],
+    "tailwinds": [
+      {
+        "title": "10 yıllık faiz %5'in altında",
+        "note": "Uzun vadeli teknoloji kârlarının bugünkü değeri üzerindeki baskı azaldı; ama düşüşün sebebi risk iştahı olduğu için desteğin kalitesi düşük."
+      },
+      {
+        "title": "Çekirdek PCE beklentide, büyüme güçlü",
+        "note": "Veri tarafında Fed'in artırım kanadına yeni yakıt gelmedi; ekonomi sıcak ama enflasyon sürpriz yapmadı."
+      },
+      {
+        "title": "Meta ve Apple yükseldi",
+        "note": "Nakit akışı güçlü büyük şirketler ödüllendiriliyor; satış 'bütün büyük teknoloji' değil, harcamasını finanse edemeyenler."
+      }
+    ],
+    "headwinds": [
+      {
+        "title": "Alphabet tarihinin en sert günlüğünü yaşadı",
+        "note": "Endeksin büyük ağırlıklarından biri; düşüş bellek, optik ve bulut altyapısına yayıldı."
+      },
+      {
+        "title": "Amazon ve Intel mesai sonrası sert düştü",
+        "note": "Nasdaq 100'de yüksek ağırlıklı iki hisse; vadeliler yaklaşık yüzde 1,5 geride, açılışta zayıf başlangıç riski."
+      },
+      {
+        "title": "Asya'da çip satışı derinleşti",
+        "note": "KOSPI yaklaşık yüzde 5, Nikkei yaklaşık yüzde 2,5 düştü; çip zincirinin küresel talep beklentisi bozuluyor."
+      },
+      {
+        "title": "Petrol yeniden yükseliyor",
+        "note": "Husi saldırıları ve Hürmüz haberi Brent'i yükseltiyor; enflasyon beklentisini besleyip faizdeki rahatlamayı kırılgan tutuyor."
+      }
+    ],
+    "vol_times": [
+      {
+        "time": "09:30",
+        "title": "BoJ Başkanı Ueda basın toplantısı",
+        "note": "Aralık artırımı sinyali yeni bir yen güçlenmesi ve taşıma işlemi bozulması getirebilir",
+        "impact": "mid"
+      },
+      {
+        "time": "13:00",
+        "title": "Euro Bölgesi ve Almanya GSYH",
+        "note": "Zayıf büyüme euro ve Avrupa hisselerini, dolaylı olarak risk iştahını etkiler",
+        "impact": "mid"
+      },
+      {
+        "time": "15:30",
+        "title": "ABD istihdam maliyet endeksi",
+        "note": "Beklenti +%0,8; ücret baskısı faiz ve NQ için ikincil veri",
+        "impact": "mid"
+      },
+      {
+        "time": "16:30",
+        "title": "ABD açılışı",
+        "note": "Amazon ve Intel kaybının, Alphabet düşüşünün Nasdaq 100'e yansıması; Exxon, Chevron, AbbVie bilançoları açılış öncesi",
+        "impact": "session"
+      },
+      {
+        "time": "19:00",
+        "title": "Fed'den Daly ve Musalem",
+        "note": "Karar sonrası artırım zamanlaması dili; faiz ve NQ için akşam oynaklığı",
+        "impact": "mid"
+      },
+      {
+        "time": "Pzt 2 Kas 18:00",
+        "title": "ISM imalat ve Apple bilançosu",
+        "note": "Ödenen fiyatlar yüksek kalırsa faiz baskısı sürer; Apple mesai sonrası, nakit akışı güçlü büyük şirket testi",
+        "impact": "high"
+      },
+      {
+        "time": "Sal 3 Kas",
+        "title": "ABD ara seçimleri",
+        "note": "Petrol ve İran tartışması siyasi baskıya dönebilir; seçim sonrası operasyon haberi risk primini oynatabilir",
+        "impact": "mid"
+      }
+    ],
+    "watch": "ABD açılışında Amazon, Intel ve Alphabet dışındaki büyük teknoloji hisselerinin (Nvidia, Microsoft, Meta, Apple) yönü: onlar da düşüyorsa mesele tema, tutuyorlarsa şirkete özgü.",
+    "earnings": [
+      {
+        "ticker": "AAPL",
+        "name": "Apple",
+        "date": "2026-11-02",
+        "time": "after"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "Nvidia",
+        "date": "2026-11-18",
+        "time": "after"
+      },
+      {
+        "ticker": "AVGO",
+        "name": "Broadcom",
+        "date": "2026-12-10",
+        "time": "after"
+      },
+      {
+        "ticker": "META",
+        "name": "Meta",
+        "date": "2027-01-27",
+        "time": "after"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "Tesla",
+        "date": "2027-01-27",
+        "time": "after"
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft",
+        "date": "2027-01-27",
+        "time": "after"
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet",
+        "date": "2027-02-02",
+        "time": "after"
+      },
+      {
+        "ticker": "AMZN",
+        "name": "Amazon",
+        "date": "2027-02-04",
+        "time": "after"
+      }
+    ]
+  },
+  "sunum": {
+    "kapak": {
+      "hook": "Alphabet'ten sonra Amazon ve Intel de neden düştü?",
+      "cues": [
+        "Harcama nakitle karşılanmıyor",
+        "Intel: rehberlik kırıldı",
+        "Kore ve kripto de sert düştü"
+      ],
+      "takeaway": "Satış harcamaya değil, harcamanın finansmanına yayılıyor."
+    },
+    "rakamlar": {
+      "hook": "Önce tabloya bir bakalım.",
+      "cues": [
+        "Nasdaq sert, S&P yatay",
+        "Faiz yüzde 5'in altında",
+        "Petrol yukarı, altın aşağı"
+      ],
+      "pitfall": "Rakamları tek tek okuma; Nasdaq ile S&P'nin ayrışmasını göster."
+    },
+    "dun": {
+      "hook": "Dün ne demiştik, ne çıktı?",
+      "cues": [
+        "Alphabet düşüşü yayıldı",
+        "PCE etkisiz çıktı",
+        "Petrol rahatlaması çürüdü"
+      ],
+      "takeaway": "Dünkü üç okumanın ikisi çürüdü, biri doğrulandı."
+    },
+    "abd": {
+      "hook": "Neden iyi bilançolar da cezalandırılıyor?",
+      "cues": [
+        "Amazon: bulut güçlü, nakit eksi",
+        "Intel: geçmiş iyi, rehberlik kötü",
+        "Para savunmacılara kaydı"
+      ],
+      "analogy": "Maaşı artan biri düşün: borçla yaşıyorsa cebindeki para azalır; piyasa maaşa değil cebe bakıyor.",
+      "pitfall": "Bunu 'yapay zekâ bitti' diye anlatma; satış finansman ve rehberlik kaygısı.",
+      "takeaway": "Hisse geçmişi değil, gelecek çeyreğin nakdini fiyatlıyor."
+    },
+    "avrupa": {
+      "hook": "Kore neden bir günde bu kadar düştü?",
+      "cues": [
+        "Kore bulut harcamasına bağlı",
+        "BoJ sabit ama şahin",
+        "Avrupa satışın dışında kaldı"
+      ],
+      "analogy": "Kore tedarikçi: müşterisi kemer sıkarsa siparişi ilk o hisseder.",
+      "pitfall": "Avrupa direncinin sebebi kesin değil, olası açıklama olarak anlat.",
+      "takeaway": "Çip ihracatçıları ABD bulutlarının cüzdanına bağlı."
+    },
+    "para": {
+      "hook": "Faiz düşüyor ama bu iyi haber mi?",
+      "cues": [
+        "Hisse satışı tahvile kaçtı",
+        "PCE sürpriz yapmadı",
+        "Petrol hâlâ yukarı"
+      ],
+      "pitfall": "Faiz düşüşü enflasyon rahatlaması değil, korku kaynaklı.",
+      "takeaway": "Faiz iyi nedenle değil kötü nedenle düşüyor."
+    },
+    "etki": {
+      "hook": "Para nereye kayıyor?",
+      "cues": [
+        "Sağlık ve gayrimenkul yükseldi",
+        "Küçük şirketler ayrıştı",
+        "Kripto: karşı taraf riski"
+      ],
+      "pitfall": "Rotasyonun kalıcılığı belirsiz; faiz yükselirse geri döner.",
+      "takeaway": "Para ABD'den çıkmıyor, teknolojiden çıkıp sektör değiştiriyor."
+    },
+    "nq": {
+      "hook": "NQ için bugün rüzgâr hangi yönde?",
+      "cues": [
+        "Faiz destek ama korkuyla",
+        "Alphabet, Amazon, Intel ağır",
+        "Açılışta yayılma sınanır"
+      ],
+      "pitfall": "Sinyal değil makro okuma; seviye ve hedef verme.",
+      "takeaway": "Mesele üç hisse mi, tema mı: ilk saat belli eder."
+    },
+    "takvim": {
+      "hook": "Bugün hangi saatler önemli?",
+      "cues": [
+        "09:30 Ueda basın toplantısı",
+        "13:00 Avrupa büyümesi",
+        "16:30 ABD açılışı"
+      ],
+      "takeaway": "Günün asıl testi 16:30'daki ABD açılışı."
+    },
+    "turkiye": {
+      "hook": "BIST iki günlük haberi nasıl fiyatlayacak?",
+      "cues": [
+        "Bayram nedeniyle kapalıydı",
+        "Açılış boşluğu bekleniyor",
+        "Teknoloji çipe duyarlı"
+      ],
+      "pitfall": "Bunlar çıkarım; tahvil verisiyle sınanamadı.",
+      "takeaway": "Tatil sonrası haber birikir, açılışta toplu fiyatlanır."
+    },
+    "kripto": {
+      "hook": "Hack fiyatı mı güveni mi vurdu?",
+      "cues": [
+        "Binance'te büyük hack",
+        "Tether ve Circle dondurdu",
+        "BNB sert düştü"
+      ],
+      "analogy": "Parayı bankaya yatırdın, banka soyuldu: paran bankanın güvenliğine bağlı.",
+      "pitfall": "Kayıp tutarı henüz resmî olarak teyit edilmedi.",
+      "takeaway": "Fiyat riski ile karşı taraf riski ayrı risklerdir."
+    },
+    "okuma": {
+      "hook": "Benim okumam ne?",
+      "cues": [
+        "Nasdaq zayıf, S&P dar bantta",
+        "Savunmacılar tutar",
+        "Sinyal: diğer büyükler"
+      ],
+      "takeaway": "Nvidia, Microsoft, Meta, Apple tutunuyor mu: cevap bu."
+    },
+    "gorusler": {
+      "hook": "Talep mi, finansman mı belirleyici?",
+      "cues": [
+        "Boğa: bulut talebi gerçek",
+        "Ayı: rehberlik ve nakit",
+        "Ayrım: kim kendi nakdini kullanıyor"
+      ],
+      "takeaway": "İkisi de haklı olabilir; ayrım finansmanda."
+    },
+    "ders": {
+      "hook": "Rehberlik neden geçmişten önemli?",
+      "cues": [
+        "Hisse geleceği fiyatlar",
+        "Intel: iyi kâr, kötü rehberlik",
+        "Sebep talep mi arz mı"
+      ],
+      "analogy": "Restoranın geçen ayki cirosu iyi ama gelecek ay rezervasyon azsa, değer gelecek aya göre biçilir.",
+      "takeaway": "Gelecek çeyrek beklentinin altındaysa iyi geçmiş hisseyi korumaz."
+    },
+    "kapanis": {
+      "hook": "Bugün tek bakacağımız şey ne?",
+      "cues": [
+        "Diğer büyük teknoloji tutunuyor mu",
+        "Faiz düşüşünü koruyor mu",
+        "BIST açılış tepkisi"
+      ],
+      "takeaway": "Üç hisse mi, bir tema mı: açılışta cevap gelir."
+    }
+  }
+}

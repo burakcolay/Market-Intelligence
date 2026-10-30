@@ -481,6 +481,67 @@
         "fiyatlanmis-beklenti",
         "cekirdek-enflasyon"
       ]
+    },
+    "rehberlik": {
+      "name": "Rehberlik (guidance)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-10-30",
+      "def": "Şirketin bilanço açıklarken gelecek çeyrek ya da yıl için verdiği gelir, kâr ve harcama öngörüsüdür. Hisse fiyatı geleceğin kârını yansıttığı için çoğu zaman rehberlik, geçen çeyreğin sonucundan daha çok fiyatı oynatır.",
+      "analogy": "Restoranın geçen ayki cirosu iyi ama gelecek ay rezervasyonlar azsa, değeri gelecek aya göre biçilir: iyi geçmiş kötü geleceği kurtarmaz.",
+      "chain": [
+        "Şirket bilanço açıklar",
+        "Geçen çeyrek beklentiyi aşar",
+        "Gelecek çeyrek öngörüsü beklentinin altında kalır",
+        "Analistler tahminlerini düşürür",
+        "Hisse geleceğe göre fiyatlanır"
+      ],
+      "quote": "Intel üçüncü çeyrekte beklentiyi aştı ama dördüncü çeyrek gelirini analistlerin beklediğinden çok daha düşük öngördü; hisse mesai sonrası yüzde 20'nin üzerinde düştü.",
+      "rule": "Bilanço okurken önce rehberliğe bak: gelecek çeyrek beklentinin altındaysa geçmişin iyi olması hisseyi korumaz. Sonra yönetimin sebebi talep mi arz mı olarak koyduğuna bak.",
+      "related": [
+        "fiyatlanmis-beklenti",
+        "kar-kalitesi",
+        "serbest-nakit-akisi"
+      ]
+    },
+    "acilis-boslugu": {
+      "name": "Açılış boşluğu (gap)",
+      "cat": "Türkiye",
+      "learned": "2026-10-30",
+      "def": "Piyasa kapalıyken biriken haberin, açılışta fiyata tek hamlede yansımasıdır. Önceki kapanış ile yeni açılış arasındaki fiyat farkı olarak görünür; tatil ve hafta sonu sonrası daha belirgindir.",
+      "analogy": "Bir hafta tatile gidip dönünce posta kutusunda biriken bütün mektupları aynı gün okumak: haberler tek tek değil toplu etki yapar.",
+      "chain": [
+        "Yerel piyasa tatilde kapanır",
+        "Dünya piyasalarında haber akar",
+        "Haberler birikir",
+        "Açılışta toplu fiyatlanır",
+        "Fiyat önceki kapanıştan uzak açılır"
+      ],
+      "quote": "BIST dün Cumhuriyet Bayramı nedeniyle kapalıydı; bu sırada ABD'de Alphabet tarihinin en sert günlük düşüşünü yaşadı ve Kore sert düştü. Hepsi bu sabah 10:00'da tek seansta fiyatlanacak.",
+      "rule": "Tatil sonrası ilk seansta fiyatı değil boşluğu ve ardından gelen yönü izle: boşluk kapanıyorsa haber fazla fiyatlanmıştır, kapanmadan sürüyorsa yeni bilgi taşıyordur.",
+      "related": [
+        "fiyatlanmis-beklenti",
+        "sektor-rotasyonu"
+      ]
+    },
+    "karsi-taraf-riski": {
+      "name": "Karşı taraf riski",
+      "cat": "Kripto",
+      "learned": "2026-10-30",
+      "def": "Bir işlemin ya da emanetin öbür ucundaki kurumun yükümlülüğünü yerine getirememe ihtimalidir. Kripto borsasında tutulan varlığın fiyatından bağımsız olarak, borsanın hack'lenmesi, iflası ya da çekimleri durdurması yatırımcıyı etkiler.",
+      "analogy": "Parayı bankaya yatırdın ve banka soyuldu: paranın değeri değişmedi ama bankanın güvenliğine bağımlısın.",
+      "chain": [
+        "Yatırımcı varlığı borsada tutar",
+        "Borsa hack'lenir",
+        "Yatırma ve çekme durur",
+        "Güven sarsılır",
+        "Borsaya bağlı varlıklar düşer"
+      ],
+      "quote": "Binance'te tarihin en büyük kripto hack'i yaşandı: yaklaşık 6 milyar dolarlık kullanıcı fonu etkilendi, BNB sert düştü, merkeziyetsiz borsa token'ı HYPE yükseldi.",
+      "rule": "Fiyat riski ile karşı taraf riskini ayır: varlığın değeri ile onu tutan kurumun ayakta kalması ayrı risklerdir. Büyük miktarı tek kurumda bekletme.",
+      "related": [
+        "risk",
+        "dominans"
+      ]
     }
   }
 }

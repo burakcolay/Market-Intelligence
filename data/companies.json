@@ -1,429 +1,439 @@
 {
- "updated": "2026-10-22",
- "companies": {
-  "TSLA": {
-   "name": "Tesla",
-   "about": "Elektrikli otomobil üreticisi; enerji depolama ve güneş sistemleri de satıyor. Değerlemesinin büyük kısmı bugünkü araç satışından çok sürücüsüz taksi (Robotaxi), FSD yazılımı ve insansı robot Optimus gibi gelecek projelerine dayanıyor.",
-   "nq_note": "Çok oynak bir hisse; bilanço gecesi sert hareket ederse NQ'yu da peşinden sürükler. Ayrıca 'yapay zekâ hikâyesine piyasa ne kadar para ödüyor' sorusunun turnusolü.",
-   "segments": {
-    "period": "2026 3. çeyrek",
-    "items": [
-     {
-      "name": "Otomotiv",
-      "share": 73.3
-     },
-     {
-      "name": "Hizmet ve diğer",
-      "share": 16.4
-     },
-     {
-      "name": "Enerji",
-      "share": 10.3
-     }
-    ]
-   },
-   "last": {
-    "period": "2026 3. çeyrek",
-    "date": "2026-10-21",
-    "eps": {
-     "act": 0.48,
-     "est": 0.45
+  "updated": "2026-10-30",
+  "companies": {
+    "TSLA": {
+      "name": "Tesla",
+      "about": "Elektrikli otomobil üreticisi; enerji depolama ve güneş sistemleri de satıyor. Değerlemesinin büyük kısmı bugünkü araç satışından çok sürücüsüz taksi (Robotaxi), FSD yazılımı ve insansı robot Optimus gibi gelecek projelerine dayanıyor.",
+      "nq_note": "Çok oynak bir hisse; bilanço gecesi sert hareket ederse NQ'yu da peşinden sürükler. Ayrıca 'yapay zekâ hikâyesine piyasa ne kadar para ödüyor' sorusunun turnusolü.",
+      "segments": {
+        "period": "2026 3. çeyrek",
+        "items": [
+          {
+            "name": "Otomotiv",
+            "share": 73.3
+          },
+          {
+            "name": "Hizmet ve diğer",
+            "share": 16.4
+          },
+          {
+            "name": "Enerji",
+            "share": 10.3
+          }
+        ]
+      },
+      "last": {
+        "period": "2026 3. çeyrek",
+        "date": "2026-10-21",
+        "eps": {
+          "act": 0.48,
+          "est": 0.45
+        },
+        "rev": {
+          "act": 28.05,
+          "est": 27.94
+        },
+        "note": "Gelir ve düzeltilmiş kâr beklentiyi hafif aştı ama GAAP net kâr %43 düştü; robot ve yapay zekâ yatırımı kârı eritti. Yıllık yatırım rehberliği 25 milyar $'dan 20 milyar $'a indi. Hisse mesai sonrası yaklaşık %3 düştü; SpaceX ile birleşme için özel komiteler kuruldu."
+      },
+      "next": {
+        "period": "2026 4. çeyrek",
+        "date": "2027-01-27",
+        "time": "after"
+      },
+      "analysts": {
+        "buy": 35,
+        "hold": 32,
+        "sell": 15,
+        "target": 441.36
+      },
+      "sources": [
+        {
+          "name": "Finwire · Tesla 3. çeyrek",
+          "url": "https://app.bigdata.com/documents/AF41EC79C0205D0F1AB24DF5B0151B68?cnum=2&cnum=1"
+        },
+        {
+          "name": "Eastmoney · Tesla 3. çeyrek",
+          "url": "https://app.bigdata.com/documents/239B348EA792F40E4D21D4807DF85F99?cnum=2&cnum=1"
+        }
+      ]
     },
-    "rev": {
-     "act": 28.05,
-     "est": 27.94
+    "META": {
+      "name": "Meta",
+      "about": "Facebook, Instagram, WhatsApp ve Threads'in sahibi. Gelirinin neredeyse tamamı reklamdan geliyor; sanal gerçeklik birimi Reality Labs ise zarar ediyor. Yapay zekâya en çok yatırım yapan şirketlerden biri.",
+      "nq_note": "Reklam geliri ekonominin sağlığını gösterir; yapay zekâ harcamasının boyutu ise tüm teknoloji sektörünün yatırım iştahı hakkında sinyal verir.",
+      "segments": {
+        "period": "2026 3. çeyrek",
+        "items": [
+          {
+            "name": "Uygulamalar (reklam)",
+            "share": 99.3
+          },
+          {
+            "name": "Reality Labs",
+            "share": 0.7
+          }
+        ]
+      },
+      "last": {
+        "period": "2026 3. çeyrek",
+        "date": "2026-10-21",
+        "eps": {
+          "act": 7.4,
+          "est": 5.74
+        },
+        "rev": {
+          "act": 64.6,
+          "est": 63.37
+        },
+        "note": "Gelir ve rehberlik beklentiyi aştı, harcama aralığı daraltıldı ve hisse mesai sonrası yaklaşık %2-3 yükseldi. EPS'te 9,9 milyar $'lık bir hukuki uzlaşma gideri var: gider hariç 7,40 $, giderle 3,83 $; kaynaklar tahmini farklı tabanlarda veriyor. Serbest nakit akışı eksiye düştü ve şirket oy hakkı olmayan yeni hisse sınıfı duyurdu."
+      },
+      "next": {
+        "period": "2026 4. çeyrek",
+        "date": "2027-01-27",
+        "time": "after"
+      },
+      "analysts": {
+        "buy": 52,
+        "hold": 11,
+        "sell": 2,
+        "target": 781.0
+      },
+      "sources": [
+        {
+          "name": "Quartr · Meta 3. çeyrek görüşmesi",
+          "url": "https://app.bigdata.com/documents/AD6027617962E3E6AD3ECFD93A00E8D8"
+        },
+        {
+          "name": "Benzinga · bilanço ve yeni hisse sınıfı",
+          "url": "https://app.bigdata.com/documents/31585013A57F11D4EA8A453CBDB8C1DB?cnum=3"
+        }
+      ]
     },
-    "note": "Gelir ve düzeltilmiş kâr beklentiyi hafif aştı ama GAAP net kâr %43 düştü; robot ve yapay zekâ yatırımı kârı eritti. Yıllık yatırım rehberliği 25 milyar $'dan 20 milyar $'a indi. Hisse mesai sonrası yaklaşık %3 düştü; SpaceX ile birleşme için özel komiteler kuruldu."
-   },
-   "next": {
-    "period": "2026 4. çeyrek",
-    "date": "2027-01-27",
-    "time": "after"
-   },
-   "analysts": {
-    "buy": 35,
-    "hold": 32,
-    "sell": 15,
-    "target": 441.36
-   },
-   "sources": [
-    {
-     "name": "Finwire · Tesla 3. çeyrek",
-     "url": "https://app.bigdata.com/documents/AF41EC79C0205D0F1AB24DF5B0151B68?cnum=2&cnum=1"
+    "MSFT": {
+      "name": "Microsoft",
+      "about": "Windows ve Office'in yanında asıl büyüme motoru Azure bulut hizmeti. OpenAI ortaklığıyla yapay zekâ altyapısının en büyük sağlayıcılarından biri.",
+      "nq_note": "NQ'nun en ağır hisselerinden biri. Azure büyümesi 'yapay zekâ yatırımları gelire dönüşüyor mu' sorusunun en net cevabı.",
+      "segments": {
+        "period": "Mali 2026 4. çeyrek",
+        "items": [
+          {
+            "name": "Sunucu ve bulut (Azure)",
+            "share": 41.2
+          },
+          {
+            "name": "Microsoft 365 ticari",
+            "share": 31.0
+          },
+          {
+            "name": "LinkedIn",
+            "share": 5.8
+          },
+          {
+            "name": "Windows",
+            "share": 4.5
+          },
+          {
+            "name": "Diğer (oyun, arama, Dynamics)",
+            "share": 17.5
+          }
+        ]
+      },
+      "last": {
+        "period": "Mali 2027 1. çeyrek",
+        "date": "2026-10-28",
+        "eps": {
+          "act": 4.89,
+          "est": 4.72
+        },
+        "rev": {
+          "act": 92.28,
+          "est": 90.62
+        },
+        "note": "Gelir ve kâr beklentiyi aştı, Azure %48 büyüdü. Harcama beklentinin altında kaldı ve serbest nakit akışı yıllık %27 düşmesine rağmen pozitif (18,6 milyar $). Mesai sonrası hisse yükseldi: harcamayı nakitle karşılayan şirket ödüllendirildi."
+      },
+      "next": {
+        "period": "Mali 2027 2. çeyrek",
+        "date": "2027-01-27",
+        "time": "after"
+      },
+      "analysts": {
+        "buy": 67,
+        "hold": 15,
+        "sell": 0,
+        "target": 571.76
+      }
     },
-    {
-     "name": "Eastmoney · Tesla 3. çeyrek",
-     "url": "https://app.bigdata.com/documents/239B348EA792F40E4D21D4807DF85F99?cnum=2&cnum=1"
+    "GOOGL": {
+      "name": "Alphabet",
+      "about": "Google'ın ana şirketi. Gelirin yarıdan fazlası arama reklamlarından geliyor; Google Cloud ve YouTube hızla büyüyen diğer ayaklar.",
+      "nq_note": "Arama reklamları yapay zekâ rekabetine karşı ne kadar dayanıklı, bulut ne kadar hızlı büyüyor: iki soru da NQ'nun yönüne etki eder.",
+      "segments": {
+        "period": "2026 2. çeyrek",
+        "items": [
+          {
+            "name": "Arama ve diğer",
+            "share": 52.8
+          },
+          {
+            "name": "Google Cloud",
+            "share": 20.7
+          },
+          {
+            "name": "Abonelik ve cihaz",
+            "share": 10.8
+          },
+          {
+            "name": "YouTube reklam",
+            "share": 9.2
+          },
+          {
+            "name": "Ağ reklamları",
+            "share": 6.1
+          },
+          {
+            "name": "Diğer",
+            "share": 0.4
+          }
+        ]
+      },
+      "last": {
+        "period": "2026 3. çeyrek",
+        "date": "2026-10-28",
+        "eps": {
+          "act": 2.12,
+          "est": 3.02
+        },
+        "rev": {
+          "act": 127.58,
+          "est": 127.96
+        },
+        "note": "Gelir beklentinin hafif altında, kâr beklentinin belirgin altında; farkın bir kısmı SpaceX yatırımındaki defter zararından. Bulut gelirinin iki katından fazla artmasına rağmen serbest nakit akışı −9,07 milyar $ oldu (beklenti +2,7 milyar $). Hisse ertesi gün %12,6 düşerek tarihinin en sert günlüğünü yaşadı."
+      },
+      "next": {
+        "period": "2026 4. çeyrek",
+        "date": "2027-02-02",
+        "time": "after"
+      },
+      "analysts": {
+        "buy": 72,
+        "hold": 10,
+        "sell": 1,
+        "target": 431.83
+      }
+    },
+    "AAPL": {
+      "name": "Apple",
+      "about": "iPhone, Mac, iPad ve giyilebilir cihazlar üretiyor. Gelirin yarısı iPhone'dan; App Store, iCloud ve Apple Music gibi hizmetler ise en kârlı ve en istikrarlı ayak.",
+      "nq_note": "NQ'nun en büyük hisselerinden biri; iPhone talebi küresel tüketicinin, Çin satışları ise ABD-Çin ilişkisinin göstergesi.",
+      "segments": {
+        "period": "Mali 2026 3. çeyrek",
+        "items": [
+          {
+            "name": "iPhone",
+            "share": 49.6
+          },
+          {
+            "name": "Hizmetler",
+            "share": 28.1
+          },
+          {
+            "name": "Mac",
+            "share": 9.5
+          },
+          {
+            "name": "Giyilebilir ve ev",
+            "share": 7.2
+          },
+          {
+            "name": "iPad",
+            "share": 5.7
+          }
+        ]
+      },
+      "last": {
+        "period": "Mali 2026 3. çeyrek",
+        "date": "2026-07-30",
+        "eps": {
+          "act": 2.02,
+          "est": 1.89
+        },
+        "rev": {
+          "act": 109.42,
+          "est": 109.04
+        },
+        "note": "Kâr beklentiyi %7 aştı, gelir neredeyse tam beklenti kadar: sürpriz yok ama sağlam."
+      },
+      "next": {
+        "period": "Mali 2026 4. çeyrek",
+        "date": "2026-11-02",
+        "time": "after",
+        "eps_est": 2.0,
+        "rev_est": null,
+        "known": [
+          "Şirket dördüncü çeyrek gelir büyümesini yıllık %9-11, iPhone büyümesini orta onlu rakamlar olarak öngörmüştü.",
+          "Brüt marj rehberliği %47-48; bunun yaklaşık 1 puanı gümrük vergisi iadelerinden geliyor.",
+          "Yönetim iPhone, Mac ve iPad'de tedarik kısıtının dördüncü çeyrekte belirgin artacağını ve bellek maliyetinin yükseleceğini söylemişti."
+        ],
+        "watch": [
+          "Gelir büyümesi %9-11 aralığının neresinde kapandı; kısıt satışı ne kadar sınırladı?",
+          "Brüt marj: bellek maliyeti ve iade desteğinin azalması marjı ne kadar bastırdı?",
+          "Yeni çeyrek rehberliği: harcamayı nakitle karşılayan büyük şirket, Alphabet ve Amazon sonrası ödüllendirilir mi?"
+        ],
+        "sources": [
+          {
+            "name": "Zacks (Apple şirket raporu, 23 Ekim)",
+            "url": "https://app.bigdata.com/documents/C8A00336606D8F2AA1077C7ED4DE3FC1"
+          }
+        ]
+      },
+      "analysts": {
+        "buy": 71,
+        "hold": 32,
+        "sell": 9,
+        "target": 341.68
+      }
+    },
+    "AMZN": {
+      "name": "Amazon",
+      "about": "Dünyanın en büyük e-ticaret şirketi; ama kârın büyük kısmı bulut hizmeti AWS'den ve hızla büyüyen reklam işinden geliyor.",
+      "nq_note": "AWS büyümesi yapay zekâ altyapı talebini, e-ticaret ise ABD tüketicisinin gücünü gösterir.",
+      "segments": {
+        "period": "2026 2. çeyrek",
+        "items": [
+          {
+            "name": "Online mağaza",
+            "share": 35.1
+          },
+          {
+            "name": "Üçüncü taraf satıcı hizmetleri",
+            "share": 23.3
+          },
+          {
+            "name": "AWS (bulut)",
+            "share": 21.1
+          },
+          {
+            "name": "Reklam",
+            "share": 9.9
+          },
+          {
+            "name": "Abonelik",
+            "share": 6.8
+          },
+          {
+            "name": "Diğer",
+            "share": 3.8
+          }
+        ]
+      },
+      "last": {
+        "period": "2026 3. çeyrek",
+        "date": "2026-10-29",
+        "eps": {
+          "act": 1.89,
+          "est": 1.97
+        },
+        "rev": {
+          "act": 201.94,
+          "est": 202.22
+        },
+        "note": "Gelir ve kâr beklentinin hafif altında kaldı (Prime Day kayması yaklaşık 4 puan etkiledi). AWS %39 büyüdü, yaklaşık beş yılın en hızlısı; ama üç aylık harcama beklentinin yaklaşık 20 milyar $ üzerinde kaldı ve 12 aylık serbest nakit akışı −42,4 milyar $ oldu. Hisse mesai sonrası yaklaşık %7 düştü. Geçen yılın EPS'i Anthropic yatırım kazancıyla şişkindi; kıyaslama tabanı yüksek."
+      },
+      "next": {
+        "period": "2026 4. çeyrek",
+        "date": "2027-02-04",
+        "time": "after"
+      },
+      "analysts": {
+        "buy": 85,
+        "hold": 8,
+        "sell": 1,
+        "target": 328.71
+      }
+    },
+    "NVDA": {
+      "name": "Nvidia",
+      "about": "Yapay zekâ çiplerinin (GPU) lideri. Gelirin %90'dan fazlası veri merkezlerine satılan yapay zekâ çiplerinden geliyor.",
+      "nq_note": "Yapay zekâ rallisinin kalbi. Nvidia'nın bilançosu tüm yarı iletken ve büyük teknoloji hisselerini, dolayısıyla NQ'yu en çok oynatan tek olaydır.",
+      "segments": {
+        "period": "Mali 2027 2. çeyrek",
+        "items": [
+          {
+            "name": "Veri merkezi",
+            "share": 92.5
+          },
+          {
+            "name": "Uç bilişim",
+            "share": 7.5
+          }
+        ]
+      },
+      "last": {
+        "period": "Mali 2027 2. çeyrek",
+        "date": "2026-08-26",
+        "eps": {
+          "act": 2.22,
+          "est": 2.09
+        },
+        "rev": {
+          "act": 96.22,
+          "est": 92.27
+        },
+        "note": "Gelir %4, kâr %6 beklentiyi aştı; veri merkezi talebi hâlâ çok güçlü."
+      },
+      "next": {
+        "period": "Mali 2027 3. çeyrek",
+        "date": "2026-11-18",
+        "time": "after"
+      },
+      "analysts": {
+        "buy": 60,
+        "hold": 16,
+        "sell": 3,
+        "target": 339.17
+      }
+    },
+    "AVGO": {
+      "name": "Broadcom",
+      "about": "Ağ ve özel yapay zekâ çipleri (Google, Meta gibi şirketler için tasarlanan) üretiyor; VMware ile büyük bir yazılım işi de var.",
+      "nq_note": "Nvidia'dan sonra yapay zekâ çip talebinin ikinci büyük göstergesi; özel çip siparişleri büyük teknolojinin yatırım planlarını yansıtır.",
+      "segments": {
+        "period": "Mali 2026 3. çeyrek",
+        "items": [
+          {
+            "name": "Yarı iletken",
+            "share": 70.4
+          },
+          {
+            "name": "Altyapı yazılımı",
+            "share": 29.6
+          }
+        ]
+      },
+      "last": {
+        "period": "Mali 2026 3. çeyrek",
+        "date": "2026-09-02",
+        "eps": {
+          "act": 3.32,
+          "est": 3.22
+        },
+        "rev": {
+          "act": 29.59,
+          "est": 29.24
+        },
+        "note": "Kâr ve gelir beklentiyi hafif aştı; yarı iletken geliri bir yılda iki katından fazla büyüdü."
+      },
+      "next": {
+        "period": "Mali 2026 4. çeyrek",
+        "date": "2026-12-10",
+        "time": "after"
+      },
+      "analysts": {
+        "buy": 54,
+        "hold": 6,
+        "sell": 0,
+        "target": 509.61
+      }
     }
-   ]
-  },
-  "META": {
-   "name": "Meta",
-   "about": "Facebook, Instagram, WhatsApp ve Threads'in sahibi. Gelirinin neredeyse tamamı reklamdan geliyor; sanal gerçeklik birimi Reality Labs ise zarar ediyor. Yapay zekâya en çok yatırım yapan şirketlerden biri.",
-   "nq_note": "Reklam geliri ekonominin sağlığını gösterir; yapay zekâ harcamasının boyutu ise tüm teknoloji sektörünün yatırım iştahı hakkında sinyal verir.",
-   "segments": {
-    "period": "2026 3. çeyrek",
-    "items": [
-     {
-      "name": "Uygulamalar (reklam)",
-      "share": 99.3
-     },
-     {
-      "name": "Reality Labs",
-      "share": 0.7
-     }
-    ]
-   },
-   "last": {
-    "period": "2026 3. çeyrek",
-    "date": "2026-10-21",
-    "eps": {
-     "act": 7.4,
-     "est": 5.74
-    },
-    "rev": {
-     "act": 64.6,
-     "est": 63.37
-    },
-    "note": "Gelir ve rehberlik beklentiyi aştı, harcama aralığı daraltıldı ve hisse mesai sonrası yaklaşık %2-3 yükseldi. EPS'te 9,9 milyar $'lık bir hukuki uzlaşma gideri var: gider hariç 7,40 $, giderle 3,83 $; kaynaklar tahmini farklı tabanlarda veriyor. Serbest nakit akışı eksiye düştü ve şirket oy hakkı olmayan yeni hisse sınıfı duyurdu."
-   },
-   "next": {
-    "period": "2026 4. çeyrek",
-    "date": "2027-01-27",
-    "time": "after"
-   },
-   "analysts": {
-    "buy": 52,
-    "hold": 11,
-    "sell": 2,
-    "target": 781.0
-   },
-   "sources": [
-    {
-     "name": "Quartr · Meta 3. çeyrek görüşmesi",
-     "url": "https://app.bigdata.com/documents/AD6027617962E3E6AD3ECFD93A00E8D8"
-    },
-    {
-     "name": "Benzinga · bilanço ve yeni hisse sınıfı",
-     "url": "https://app.bigdata.com/documents/31585013A57F11D4EA8A453CBDB8C1DB?cnum=3"
-    }
-   ]
-  },
-  "MSFT": {
-   "name": "Microsoft",
-   "about": "Windows ve Office'in yanında asıl büyüme motoru Azure bulut hizmeti. OpenAI ortaklığıyla yapay zekâ altyapısının en büyük sağlayıcılarından biri.",
-   "nq_note": "NQ'nun en ağır hisselerinden biri. Azure büyümesi 'yapay zekâ yatırımları gelire dönüşüyor mu' sorusunun en net cevabı.",
-   "segments": {
-    "period": "Mali 2026 4. çeyrek",
-    "items": [
-     {
-      "name": "Sunucu ve bulut (Azure)",
-      "share": 41.2
-     },
-     {
-      "name": "Microsoft 365 ticari",
-      "share": 31.0
-     },
-     {
-      "name": "LinkedIn",
-      "share": 5.8
-     },
-     {
-      "name": "Windows",
-      "share": 4.5
-     },
-     {
-      "name": "Diğer (oyun, arama, Dynamics)",
-      "share": 17.5
-     }
-    ]
-   },
-   "last": {
-    "period": "Mali 2026 4. çeyrek",
-    "date": "2026-07-29",
-    "eps": {
-     "act": 4.74,
-     "est": 4.24
-    },
-    "rev": {
-     "act": 90.01,
-     "est": 87.62
-    },
-    "note": "Hem kâr (+%12) hem gelir beklentiyi rahat aştı; bulut büyümesi güçlü."
-   },
-   "next": {
-    "period": "Mali 2027 1. çeyrek",
-    "date": "2026-10-28",
-    "time": "after"
-   },
-   "analysts": {
-    "buy": 67,
-    "hold": 15,
-    "sell": 0,
-    "target": 571.76
-   }
-  },
-  "GOOGL": {
-   "name": "Alphabet",
-   "about": "Google'ın ana şirketi. Gelirin yarıdan fazlası arama reklamlarından geliyor; Google Cloud ve YouTube hızla büyüyen diğer ayaklar.",
-   "nq_note": "Arama reklamları yapay zekâ rekabetine karşı ne kadar dayanıklı, bulut ne kadar hızlı büyüyor: iki soru da NQ'nun yönüne etki eder.",
-   "segments": {
-    "period": "2026 2. çeyrek",
-    "items": [
-     {
-      "name": "Arama ve diğer",
-      "share": 52.8
-     },
-     {
-      "name": "Google Cloud",
-      "share": 20.7
-     },
-     {
-      "name": "Abonelik ve cihaz",
-      "share": 10.8
-     },
-     {
-      "name": "YouTube reklam",
-      "share": 9.2
-     },
-     {
-      "name": "Ağ reklamları",
-      "share": 6.1
-     },
-     {
-      "name": "Diğer",
-      "share": 0.4
-     }
-    ]
-   },
-   "last": {
-    "period": "2026 2. çeyrek",
-    "date": "2026-07-22",
-    "eps": {
-     "act": 9.11,
-     "est": 2.87
-    },
-    "rev": {
-     "act": 119.8,
-     "est": 116.53
-    },
-    "note": "Gelir %3 aştı. Kârdaki dev fark olağan dışı; bu tür farklar genelde yatırım değerlemesi gibi tek seferlik kalemlerden gelir, bu yüzden gelir sürprizine bakmak daha sağlıklı."
-   },
-   "next": {
-    "period": "2026 3. çeyrek",
-    "date": "2026-10-28",
-    "time": "after"
-   },
-   "analysts": {
-    "buy": 72,
-    "hold": 10,
-    "sell": 1,
-    "target": 431.83
-   }
-  },
-  "AAPL": {
-   "name": "Apple",
-   "about": "iPhone, Mac, iPad ve giyilebilir cihazlar üretiyor. Gelirin yarısı iPhone'dan; App Store, iCloud ve Apple Music gibi hizmetler ise en kârlı ve en istikrarlı ayak.",
-   "nq_note": "NQ'nun en büyük hisselerinden biri; iPhone talebi küresel tüketicinin, Çin satışları ise ABD-Çin ilişkisinin göstergesi.",
-   "segments": {
-    "period": "Mali 2026 3. çeyrek",
-    "items": [
-     {
-      "name": "iPhone",
-      "share": 49.6
-     },
-     {
-      "name": "Hizmetler",
-      "share": 28.1
-     },
-     {
-      "name": "Mac",
-      "share": 9.5
-     },
-     {
-      "name": "Giyilebilir ve ev",
-      "share": 7.2
-     },
-     {
-      "name": "iPad",
-      "share": 5.7
-     }
-    ]
-   },
-   "last": {
-    "period": "Mali 2026 3. çeyrek",
-    "date": "2026-07-30",
-    "eps": {
-     "act": 2.02,
-     "est": 1.89
-    },
-    "rev": {
-     "act": 109.42,
-     "est": 109.04
-    },
-    "note": "Kâr beklentiyi %7 aştı, gelir neredeyse tam beklenti kadar: sürpriz yok ama sağlam."
-   },
-   "next": {
-    "period": "Mali 2026 4. çeyrek",
-    "date": "2026-11-02",
-    "time": "after"
-   },
-   "analysts": {
-    "buy": 71,
-    "hold": 32,
-    "sell": 9,
-    "target": 341.68
-   }
-  },
-  "AMZN": {
-   "name": "Amazon",
-   "about": "Dünyanın en büyük e-ticaret şirketi; ama kârın büyük kısmı bulut hizmeti AWS'den ve hızla büyüyen reklam işinden geliyor.",
-   "nq_note": "AWS büyümesi yapay zekâ altyapı talebini, e-ticaret ise ABD tüketicisinin gücünü gösterir.",
-   "segments": {
-    "period": "2026 2. çeyrek",
-    "items": [
-     {
-      "name": "Online mağaza",
-      "share": 35.1
-     },
-     {
-      "name": "Üçüncü taraf satıcı hizmetleri",
-      "share": 23.3
-     },
-     {
-      "name": "AWS (bulut)",
-      "share": 21.1
-     },
-     {
-      "name": "Reklam",
-      "share": 9.9
-     },
-     {
-      "name": "Abonelik",
-      "share": 6.8
-     },
-     {
-      "name": "Diğer",
-      "share": 3.8
-     }
-    ]
-   },
-   "last": {
-    "period": "2026 2. çeyrek",
-    "date": "2026-07-30",
-    "eps": {
-     "act": 5.75,
-     "est": 1.82
-    },
-    "rev": {
-     "act": 200.61,
-     "est": 197.03
-    },
-    "note": "Gelir %2 aştı. Kârdaki çok büyük fark olağan dışı; genelde tek seferlik yatırım kazançlarından gelir, gelir ve AWS büyümesi daha önemli."
-   },
-   "next": {
-    "period": "2026 3. çeyrek",
-    "date": "2026-10-29",
-    "time": "after",
-    "eps_est": 1.96,
-    "rev_est": 202.21,
-    "sources": [
-     {
-      "name": "Benzinga (Amazon bilanço beklentisi, 19 Ekim)",
-      "url": "https://app.bigdata.com/documents/1335007A20A66D451B4F324D71EE016A?cnum=1&cnum=3"
-     }
-    ]
-   },
-   "analysts": {
-    "buy": 85,
-    "hold": 8,
-    "sell": 1,
-    "target": 328.71
-   }
-  },
-  "NVDA": {
-   "name": "Nvidia",
-   "about": "Yapay zekâ çiplerinin (GPU) lideri. Gelirin %90'dan fazlası veri merkezlerine satılan yapay zekâ çiplerinden geliyor.",
-   "nq_note": "Yapay zekâ rallisinin kalbi. Nvidia'nın bilançosu tüm yarı iletken ve büyük teknoloji hisselerini, dolayısıyla NQ'yu en çok oynatan tek olaydır.",
-   "segments": {
-    "period": "Mali 2027 2. çeyrek",
-    "items": [
-     {
-      "name": "Veri merkezi",
-      "share": 92.5
-     },
-     {
-      "name": "Uç bilişim",
-      "share": 7.5
-     }
-    ]
-   },
-   "last": {
-    "period": "Mali 2027 2. çeyrek",
-    "date": "2026-08-26",
-    "eps": {
-     "act": 2.22,
-     "est": 2.09
-    },
-    "rev": {
-     "act": 96.22,
-     "est": 92.27
-    },
-    "note": "Gelir %4, kâr %6 beklentiyi aştı; veri merkezi talebi hâlâ çok güçlü."
-   },
-   "next": {
-    "period": "Mali 2027 3. çeyrek",
-    "date": "2026-11-18",
-    "time": "after"
-   },
-   "analysts": {
-    "buy": 60,
-    "hold": 16,
-    "sell": 3,
-    "target": 339.17
-   }
-  },
-  "AVGO": {
-   "name": "Broadcom",
-   "about": "Ağ ve özel yapay zekâ çipleri (Google, Meta gibi şirketler için tasarlanan) üretiyor; VMware ile büyük bir yazılım işi de var.",
-   "nq_note": "Nvidia'dan sonra yapay zekâ çip talebinin ikinci büyük göstergesi; özel çip siparişleri büyük teknolojinin yatırım planlarını yansıtır.",
-   "segments": {
-    "period": "Mali 2026 3. çeyrek",
-    "items": [
-     {
-      "name": "Yarı iletken",
-      "share": 70.4
-     },
-     {
-      "name": "Altyapı yazılımı",
-      "share": 29.6
-     }
-    ]
-   },
-   "last": {
-    "period": "Mali 2026 3. çeyrek",
-    "date": "2026-09-02",
-    "eps": {
-     "act": 3.32,
-     "est": 3.22
-    },
-    "rev": {
-     "act": 29.59,
-     "est": 29.24
-    },
-    "note": "Kâr ve gelir beklentiyi hafif aştı; yarı iletken geliri bir yılda iki katından fazla büyüdü."
-   },
-   "next": {
-    "period": "Mali 2026 4. çeyrek",
-    "date": "2026-12-10",
-    "time": "after"
-   },
-   "analysts": {
-    "buy": 54,
-    "hold": 6,
-    "sell": 0,
-    "target": 509.61
-   }
   }
- }
 }
