@@ -11,7 +11,7 @@ _Otomatik üretildi: 2026-10-30 kapanış verisiyle. Kaynak kod: [`analytics/`](
 - Kümeleme modeline göre piyasa 1 işlem günüdür 'Düzeltme' rejiminde. Geçmişte bu rejimdeki günlerin ardından gelen 20 işlem gününde Nasdaq 100 ortalama yüzde 2,5 değişti ve dönemlerin yüzde 61 kadarında yükseldi. Bu bir tahmin değil, benzer dönemlerin geçmiş davranışı.
 - Bir sonraki işlem günü için beklenen Nasdaq 100 aralığı (en yüksek ile en düşük arası) yaklaşık %1,50, yani 427 puan civarı; geçmiş isabete göre 10 günün 8'inde 219 ile 603 puan arasında kalır. Model, görmediği son dönemde basit kurallardan (dünün aralığı, son ayın ortalaması) yaklaşık yüzde 4 daha isabetli.
 - Takvim etkileri 2000 yılından bu yana 20 ayrı iddiayla test edildi: düzeltmesiz bakılınca 2 tanesi anlamlı görünüyor, çoklu test düzeltmesinden sonra 0 tanesi kalıyor. Yaygın takvim efsanelerinin hiçbiri bu veride doğrulanmıyor; çoğu, şans eseri anlamlı görünen sonuçlardan ibaret.
-- Son iki haftada getirisi ya da hacmi kendi normalinin çok dışına çıkan varlıklar: ALNY, AMZN, BKR, CSX, CTAS, EXC. Bu günlerin arkasında genellikle bilanço, haber ya da endeks değişikliği olur.
+- Son iki haftada getirisi ya da hacmi kendi normalinin çok dışına çıkan varlıklar: ALNY, AMD, AMZN, BKR, CSX, CTAS. Bu günlerin arkasında genellikle bilanço, haber ya da endeks değişikliği olur.
 
 ## Sektörler
 ![Sektörler](sektorler.png)
@@ -30,7 +30,7 @@ _Otomatik üretildi: 2026-10-30 kapanış verisiyle. Kaynak kod: [`analytics/`](
 | İletişim | −3,4 | −7,0 | −12,3 | CMCSA | GOOGL |
 | Havacılık ve uzay | −2,9 | −7,3 | −10,5 | HON | RKLB |
 | Teknoloji | −3,3 | −8,2 | 1,2 | INTU | CRWV |
-| Yarı iletken | 0,4 | −16,1 | −5,7 | NXPI | INTC |
+| Yarı iletken | −0,3 | −16,7 | −6,4 | NXPI | INTC |
 
 ## Haftanın en çok yükselen ve düşen hisseleri
 | Kod | Şirket | 1 hafta % | 1 ay % |
@@ -79,11 +79,11 @@ Getirisi ya da hacmi, önceki 63 günün ortalamasından en az 3 standart sapma 
 
 | Kod | Endekse katkı (puan) | Getiri % | Ağırlık % |
 |---|---|---|---|
-| AAPL | 1,50 | 13,7 | 10,9 |
+| AAPL | 1,49 | 13,7 | 10,9 |
 | TSLA | 0,76 | 24,1 | 3,1 |
 | SPCX | 0,68 | 17,6 | 3,8 |
-| MSFT | 0,65 | 7,2 | 8,9 |
-| PLTR | 0,35 | 46,5 | 0,8 |
+| MSFT | 0,64 | 7,2 | 8,9 |
+| PLTR | 0,35 | 46,5 | 0,7 |
 
 ## Piyasa rejimi (kümeleme)
 ![Rejimler](rejim.png)
@@ -129,8 +129,8 @@ Sınama: 2025-05-12 – 2026-10-29, ileriye doğru yürüyen pencere (aylık yen
 Olumlu ve olumsuz grup farkı: −0,26 puan (Welch t-testi p=0,861). Tepki ile sonraki getiri arasındaki sıra korelasyonu: 0,016 (p=0,631).
 
 ## Veri kalitesi
-- Otomatik kontroller: 3/8 geçti.
-- Fiyat kaynakları uyuşuyor: 1 sorun (AMD)
+- Otomatik kontroller: 4/8 geçti.
+- Fiyat kaynakları uyuşuyor: geçti
 - Fiyatlar güncel: geçti
 - Günlük %50 üstü hareket yok: geçti
 - Finansallar güncel: geçti
