@@ -542,6 +542,26 @@
         "risk",
         "dominans"
       ]
+    },
+    "yogunlasma": {
+      "name": "Endeks yoğunlaşması",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-02",
+      "def": "Bir endeksin değerinin az sayıda dev şirkete bağlı olması. Piyasa değeriyle ağırlıklandırılan endekslerde en büyük birkaç hisse hareketin çoğunu belirler; bu yüzden endeks ile ortalama hisse aynı yönde gitmeyebilir.",
+      "analogy": "Sınıf ortalaması yüksek ama bir öğrenci sıfır alınca ortalama düşer; oysa geri kalan sınıf iyi gidiyor olabilir.",
+      "chain": [
+        "Birkaç dev şirket endeksi taşır",
+        "Biri kötü haber alır",
+        "Endeks sert düşer",
+        "Ortalama hisse yükselir ya da yatay kalır",
+        "Başlık ile gerçek ayrışır"
+      ],
+      "quote": "Ekim'de S&P 500 geriledi ama her hisseye eşit ağırlık veren versiyonu yaklaşık %5 yükseldi; cuma günü Nasdaq 100 sert düşerken savunmacı sektörler yükseldi.",
+      "rule": "Endeksin başlığını eşit ağırlıklı karşılığı ve sektör dağılımıyla birlikte oku: ayrışma varsa düşüş geniş piyasada değil birkaç dev şirkettedir.",
+      "related": [
+        "piyasa-genisligi",
+        "sektor-rotasyonu"
+      ]
     }
   }
 }
