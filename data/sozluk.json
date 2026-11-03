@@ -562,6 +562,27 @@
         "piyasa-genisligi",
         "sektor-rotasyonu"
       ]
+    },
+    "duzeltme": {
+      "name": "Düzeltme (correction)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-03",
+      "def": "Bir endeksin son zirvesinden yüzde 10 veya daha fazla düşmesi. Yüzde 20 ve üstü düşüşe ayı piyasası denir. Eşikler resmî değil, piyasanın ortak dili.",
+      "analogy": "Ateşi olmayan öksürükle ateşli öksürük gibi: aynı belirti, ama sebep ciddiyeti belirler.",
+      "chain": [
+        "Endeks zirveden yüzde 10 düşer",
+        "Düzeltme ilan edilir",
+        "Sebep finansal mı, gerçek ekonomi mi sorulur",
+        "Finansalsa genelde toparlar",
+        "Gerçek ekonomiyse ayı piyasasına dönebilir"
+      ],
+      "quote": "Nasdaq 100, yıl içindeki üçüncü düzeltmesine girdi; piyasanın geneli ise yükseldi.",
+      "rule": "Düşüşte yüzdeye değil sebebe bak: pozisyon ve değerleme düzeltme, kâr ya da kredi bozulması ayı piyasası ihtimali demektir.",
+      "related": [
+        "yogunlasma",
+        "vix",
+        "sektor-rotasyonu"
+      ]
     }
   }
 }

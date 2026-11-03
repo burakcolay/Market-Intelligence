@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-03",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -80,7 +80,17 @@
     "HONA": "Honeywell'in havacılık ve uzay bölümü; uçak motoru bileşenleri, aviyonik sistemler, yardımcı güç üniteleri ve havacılık yedek parçası üretiyor. Geliri havayolu ve savunma müşterilerinin yeni uçak ve bakım harcamasından geliyor.",
     "WDAY": "Büyük şirketlere bulut tabanlı insan kaynakları, maaş bordrosu ve finans yönetimi yazılımı satıyor. Geliri çok yıllı abonelik sözleşmelerinden geliyor; yapay zekâ özellikleri yeni büyüme alanı.",
     "CCEP": "Coca-Cola markalı içecekleri Avrupa ve Asya-Pasifik'te şişeleyip dağıtan şirket. Geliri içecek satışından geliyor; markanın sahibi değil, lisansla üretim ve dağıtım yapan bir şişeleyici.",
-    "XEL": "ABD'nin orta ve batı eyaletlerinde milyonlarca müşteriye elektrik ve doğalgaz sağlayan regüle kamu hizmeti şirketi. Geliri düzenleyici kurumun onayladığı tarifelerden geliyor, bu yüzden istikrarlı ve faize duyarlı bir kâr yapısı var."
+    "XEL": "ABD'nin orta ve batı eyaletlerinde milyonlarca müşteriye elektrik ve doğalgaz sağlayan regüle kamu hizmeti şirketi. Geliri düzenleyici kurumun onayladığı tarifelerden geliyor, bu yüzden istikrarlı ve faize duyarlı bir kâr yapısı var.",
+    "IDXX": "Evcil hayvan veterinerleri için tanı cihazları, test kitleri ve yazılım satıyor. Gelirin büyük kısmı, kliniklerin tekrar tekrar aldığı sarf malzemeleri ve laboratuvar testlerinden geliyor.",
+    "KDP": "Kahve (Keurig kapsül makineleri) ve gazlı içecek markalarını bir arada işleten içecek şirketi. Gelir hem market satışından hem kahve kapsüllerinin tekrarlayan satışından gelir.",
+    "PYPL": "Çevrimiçi ödeme, cüzdan ve ticari işlem altyapısı işletiyor. Gelirin ana kaynağı, alışveriş sitelerinden ve kullanıcı ödemelerinden alınan işlem komisyonları.",
+    "EXC": "ABD'nin kuzeydoğusunda ve ortasında elektrik ve gaz dağıtımı yapan düzenlemeye tabi bir kamu hizmeti şirketi. Geliri düzenleyicinin onayladığı tarifelerden, yani öngörülebilir kaynaklardan geliyor.",
+    "ROP": "Yazılım ve teknoloji odaklı niş işletmeleri satın alıp işleten bir holding yapısı. Gelirin büyük kısmı, hukuk, sağlık ve lojistik gibi alanlardaki abonelik ve yazılım ürünlerinden geliyor.",
+    "MCHP": "Mikrodenetleyici ve analog çip üreticisi; otomotiv, sanayi ve tüketici cihazlarına satış yapıyor. Gelir sanayi ve araba üretim döngüsüne duyarlı.",
+    "FER": "Otoyol, havalimanı ve altyapı işletmeciliği yapan İspanya merkezli bir şirket. Gelirin önemli kısmı ücretli yollardan ve havalimanı ortaklıklarından geliyor.",
+    "PAYX": "Küçük ve orta ölçekli şirketlere bordro, insan kaynakları ve yan hak yönetimi hizmeti sunuyor. Gelir abonelik ücretlerinden ve müşteri bakiyelerinin getirisinden oluşuyor.",
+    "TER": "Çip ve elektronik üreticilerinin kullandığı otomatik test ekipmanı satıyor. Yapay zekâ çipi üretimi arttıkça test talebi de artıyor, bu yüzden gelir yarı iletken yatırım döngüsüne bağlı.",
+    "ALAB": "Veri merkezlerinde yapay zekâ sunucularının çipleri arasında hızlı veri taşıyan bağlantı yarı iletkenleri tasarlıyor. Gelir birkaç büyük bulut ve sunucu müşterisine yoğunlaşmış durumda."
   },
   "notes": {
     "0000858877-26-000156": "Cisco yönetim kuruluna bağımsız yeni bir üye atadı: Cognite CEO'su Girish Rishi 9 Ekim itibarıyla kurulda. Rutin bir yönetim kurulu değişikliği, hisse için doğrudan finansal etkisi yok.",
@@ -161,6 +171,11 @@
       }
     ],
     "INTC": [
+      {
+        "date": "2026-11-02",
+        "title": "Intel pazartesi yaklaşık %8,8 daha düştü; hisse haziran zirvesinden yarıdan fazla geriledi",
+        "why": "Dördüncü çeyrek rehberliğinin olumsuz karşılanması çip satışını canlı tutuyor."
+      },
       {
         "date": "2026-10-29",
         "title": "Intel üçüncü çeyreği aştı ama dördüncü çeyrek gelir öngörüsü beklentinin çok altında; hisse mesai sonrası yaklaşık %23 düştü",
@@ -282,6 +297,11 @@
     ],
     "AAPL": [
       {
+        "date": "2026-11-02",
+        "title": "Apple dördüncü çeyrekte geliri 114,5 milyar dolar, hisse başına kârı 2,05 dolar açıkladı; ikisi de beklentinin hafif üstünde, hisse kapanış sonrası yatay",
+        "why": "Beklenti aşması 'nakdi güçlü büyük şirket' hikâyesini korudu; yeni çeyrek rehberliği asıl belirleyici."
+      },
+      {
         "date": "2026-10-22",
         "title": "Apple yüzde 1,2 yükseldi; Magnificent 7 içinde yükselen tek şirket",
         "why": "Yapay zekâ altyapı harcamasından uzak duran model, satış gününde göreli sığınak oldu."
@@ -360,6 +380,13 @@
         "date": "2026-10-22",
         "title": "AMD yaklaşık yüzde 8 düştü",
         "why": "Çip satışının en sert kayıplarından biri; şirkete özgü neden bulamadım."
+      }
+    ],
+    "MRVL": [
+      {
+        "date": "2026-11-02",
+        "title": "Marvell, Lumentum'u 115 milyar dolarlık hisse takasıyla satın alıyor; Marvell yaklaşık %13, Lumentum yaklaşık %18 düştü",
+        "why": "Yatırımcı yapay zekâ altyapısı büyümesinin hisse ihracıyla finanse edilmesine ceza kesti; anlaşma sektörün finansman sorusunu öne çıkardı."
       }
     ]
   }

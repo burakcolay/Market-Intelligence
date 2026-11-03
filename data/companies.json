@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-03",
   "companies": {
     "TSLA": {
       "name": "Tesla",
@@ -251,38 +251,34 @@
         ]
       },
       "last": {
-        "period": "Mali 2026 3. çeyrek",
-        "date": "2026-07-30",
-        "eps": {
-          "act": 2.02,
-          "est": 1.89
-        },
-        "rev": {
-          "act": 109.42,
-          "est": 109.04
-        },
-        "note": "Kâr beklentiyi %7 aştı, gelir neredeyse tam beklenti kadar: sürpriz yok ama sağlam."
-      },
-      "next": {
         "period": "Mali 2026 4. çeyrek",
         "date": "2026-11-02",
+        "eps": {
+          "act": 2.05,
+          "est": 1.99
+        },
+        "rev": {
+          "act": 114.48,
+          "est": 113.4
+        },
+        "note": "Kâr beklentiyi %3, gelir %1 aştı; hisse kapanış sonrası yatay kaldı. Yeni çeyrek rehberliğinin ayrıntısını doğrulayamadım."
+      },
+      "next": {
+        "period": "Mali 2027 1. çeyrek",
+        "date": "2027-01-28",
         "time": "after",
-        "eps_est": 2.0,
-        "rev_est": null,
-        "known": [
-          "Şirket dördüncü çeyrek gelir büyümesini yıllık %9-11, iPhone büyümesini orta onlu rakamlar olarak öngörmüştü.",
-          "Brüt marj rehberliği %47-48; bunun yaklaşık 1 puanı gümrük vergisi iadelerinden geliyor.",
-          "Yönetim iPhone, Mac ve iPad'de tedarik kısıtının dördüncü çeyrekte belirgin artacağını ve bellek maliyetinin yükseleceğini söylemişti."
-        ],
+        "eps_est": 2.21,
+        "rev_est": 123.54,
+        "known": [],
         "watch": [
-          "Gelir büyümesi %9-11 aralığının neresinde kapandı; kısıt satışı ne kadar sınırladı?",
-          "Brüt marj: bellek maliyeti ve iade desteğinin azalması marjı ne kadar bastırdı?",
-          "Yeni çeyrek rehberliği: harcamayı nakitle karşılayan büyük şirket, Alphabet ve Amazon sonrası ödüllendirilir mi?"
+          "Yeni çeyrek rehberliği: gelir büyümesi ve brüt marj beklentinin neresinde?",
+          "Bellek maliyeti ve tedarik kısıtı marjı ne kadar bastırıyor?",
+          "iPhone ve hizmetler gelirinin payı nasıl değişiyor?"
         ],
         "sources": [
           {
-            "name": "Zacks (Apple şirket raporu, 23 Ekim)",
-            "url": "https://app.bigdata.com/documents/C8A00336606D8F2AA1077C7ED4DE3FC1"
+            "name": "Bigdata.com şirket özeti (analist tahminleri)",
+            "url": "https://bigdata.com"
           }
         ]
       },
