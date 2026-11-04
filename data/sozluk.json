@@ -583,6 +583,27 @@
         "vix",
         "sektor-rotasyonu"
       ]
+    },
+    "bolunmus-hukumet": {
+      "name": "Bölünmüş hükümet (gridlock)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-04",
+      "def": "Başkan ile Kongre'nin en az bir kanadının farklı partilerden olması. Büyük yasa çıkması zorlaşır; buna tıkanma (gridlock) denir.",
+      "analogy": "İki kişinin aynı arabayı farklı yönlere sürmeye çalışması gibi: araba çoğu zaman olduğu yerde kalır, ani sapma da olmaz.",
+      "chain": [
+        "Seçimde güçler ayrılır",
+        "Büyük yasa çıkması zorlaşır",
+        "Vergi ve düzenleme belirsizliği azalır",
+        "Hükümet harcaması sınırlanır",
+        "Tahvil faizi düşer, düzenlemeye duyarlı hisseler baskı görür"
+      ],
+      "quote": "Demokratlar öne geçince faiz ve dolar geriledi; veri merkezi düzenlemesi korkusu yapay zekâ hisselerini düşürdü.",
+      "rule": "Seçimi 'kim kazandı' diye değil 'hangi yasa çıkabilir, hangisi çıkamaz' diye oku.",
+      "related": [
+        "fiyatlanmis-beklenti",
+        "faiz",
+        "vix"
+      ]
     }
   }
 }

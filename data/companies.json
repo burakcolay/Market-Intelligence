@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "companies": {
     "TSLA": {
       "name": "Tesla",
@@ -261,7 +261,7 @@
           "act": 114.48,
           "est": 113.4
         },
-        "note": "Kâr beklentiyi %3, gelir %1 aştı; hisse kapanış sonrası yatay kaldı. Yeni çeyrek rehberliğinin ayrıntısını doğrulayamadım."
+        "note": "Kâr beklentiyi %3, gelir %1 aştı (kâr, tek seferlik vergi iadesi hariç). Asıl mesaj rehberlikte: Aralık çeyreği geliri %7-10 büyüyecek (beklenti üstü) ama brüt marj %45-46'ya inecek, çünkü bellek maliyeti rekor seviyede. Hisse bilanço ertesi ≈%2,3 düştü."
       },
       "next": {
         "period": "Mali 2027 1. çeyrek",
