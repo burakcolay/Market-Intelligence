@@ -604,6 +604,28 @@
         "faiz",
         "vix"
       ]
+    },
+    "risk-primi": {
+      "name": "Risk primi",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-05",
+      "def": "Bir varlığın fiyatına, belirsizlik ya da tehlike yüzünden eklenen ekstra bedel. Tehlike azalınca prim silinir ve fiyat düşer, tehlike artınca geri gelir.",
+      "analogy": "Fiyata eklenmiş bir sigorta bedeli gibi: tehlike azalınca sigorta ucuzlar.",
+      "chain": [
+        "Savaş ihtimali arttı",
+        "Arz kesilme korkusu yükseldi",
+        "Petrole risk primi eklendi",
+        "Savaş ihtimali azaldı",
+        "Prim silindi, fiyat düştü"
+      ],
+      "quote": "Demokratlar Kongre'yi alınca Brent tek günde yaklaşık yüzde 9 düştü; bir analist 'büyük bir risk primi silindi' dedi.",
+      "rule": "Sert bir fiyat hareketinde önce arz ya da talebin mi değiştiğine, yoksa yalnızca korkunun bedelinin mi eklendiğine ya da silindiğine bak.",
+      "related": [
+        "fiyatlanmis-beklenti",
+        "vix",
+        "sektor-rotasyonu",
+        "bolunmus-hukumet"
+      ]
     }
   }
 }
