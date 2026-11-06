@@ -1,0 +1,130 @@
+{
+  "id": "2026-W45",
+  "range": "Hafta 45 · 2 – 6 Kasım 2026",
+  "headline": "Seçim sonrası haftanın iki yüzü: çarşamba rotasyon, perşembe çöküş; Nasdaq 100 düzeltmeye girdi, petrol haftalık en sert düşüşünü yaşadı",
+  "lede": "Hafta ISM imalatının beklentiyi aşması ve Türkiye enflasyonunun hızlanmasıyla başladı; salı seçim, Demokratların Kongre'nin iki kanadını almasıyla sonuçlandı. Çarşamba piyasa sonucu 'daha az savaş, daha az harcama' diye okudu: Brent çöktü, Dow rekor yaptı, BIST tek günde %4 yükseldi. Perşembe ise asıl soru öne çıktı: veri merkezi inşaatı yavaşlar mı? Yarı iletken endeksi %12 düştü, Nasdaq 100 düzeltmeye girdi ve Asya cuma sabahı devre kesiciyle açıldı. Tahvil faizi sığınma talebiyle düştü, Fed'in Aralık'ta artırım ihtimali geriledi.",
+  "source": "Haftalık değişimler FMP'nin 5 günlük verisi (6 Kasım sabahı itibarıyla, Asya cuma seansı dahil); BIST 100 Borsa MCP, 30 Ekim – 5 Kasım kapanışı; Brent Ocak vadeli sözleşme.",
+  "kpis": [
+    {
+      "name": "S&P 500",
+      "chg": -2.99
+    },
+    {
+      "name": "Nasdaq 100",
+      "chg": -6.18
+    },
+    {
+      "name": "Nikkei 225",
+      "chg": -9.27
+    },
+    {
+      "name": "Euro Stoxx 50",
+      "chg": 0.8
+    },
+    {
+      "name": "BIST 100",
+      "chg": 5.33
+    },
+    {
+      "name": "Brent",
+      "chg": -11.82
+    },
+    {
+      "name": "Altın",
+      "chg": 3.96
+    },
+    {
+      "name": "Bitcoin",
+      "chg": -3.18
+    }
+  ],
+  "days": [
+    {
+      "day": "Pzt",
+      "date": "2 Kas",
+      "title": "ISM imalat beklentiyi aştı, Bitcoin ETF'lerinden çıkış sürdü",
+      "text": "ABD imalat PMI'ı beklentinin üstünde geldi ve ödenen fiyatlar biraz gevşedi. Bitcoin spot ETF'lerinden yaklaşık 400 milyon dolar çıktı. Gözler salı akşamki seçimde ve Apple bilançosundaydı."
+    },
+    {
+      "day": "Sal",
+      "date": "3 Kas",
+      "title": "Seçim günü: petrol düştü, Türkiye enflasyonu hızlandı",
+      "text": "Brent üç gündür düşüyordu; ABD–İran müzakerelerinde netlik yoktu. Ekim TÜFE yıllık %29,77 ile beklentiyi hafif aştı, aylık hız ise belirgin yükseldi. BIST bankalar öncülüğünde baskı gördü. Akşam seçim sonuçları Demokratlar lehine netleşmeye başladı."
+    },
+    {
+      "day": "Çar",
+      "date": "4 Kas",
+      "title": "Demokratlar Kongre'yi aldı: Brent %9 düştü, Dow rekor yaptı",
+      "text": "Piyasa sonucu 'daha az savaş ve daha az harcama' diye okudu: petrolden savaş primi silindi, faiz indi, sağlık, tüketici ve finans yükseldi, çipler satıldı. BIST 100 tek günde %4 sıçradı ve 100 hissenin 98'i yükseldi. ADP beklentiyi aştı, ISM hizmet beklentinin altında kaldı."
+    },
+    {
+      "day": "Per",
+      "date": "5 Kas",
+      "title": "Yapay zekâ ticareti çöktü: Nasdaq 100 düzeltmeye girdi",
+      "text": "Yarı iletken endeksi %12 düştü, S&P 500 %4,4 ve Nasdaq Bileşik %5,5 geriledi; üç endeks de Nisan 2025'ten beri en sert günlerini yaşadı. Tetikleyici veri merkezi inşaatının yavaşlayacağı korkusu ve zayıf Qualcomm bilançosuydu; kaldıraçlı pozisyonların kapanması satışı büyüttü. İngiltere Merkez Bankası faizi %4'e çıkardı. Faiz sığınma talebiyle düştü. BIST %1,3 düştü; teknoloji %5,8 geriledi, bankalar yükseldi."
+    },
+    {
+      "day": "Cum",
+      "date": "6 Kas",
+      "title": "Asya devre kesiciyle açıldı; gözler istihdamda",
+      "text": "KOSPI açılışta %8'in üzerinde düşüp devre kesiciyi çalıştırdı, Nikkei %6 geriledi. Tayvan kısa satışa kısıtlama düşünüyor. ABD vadelileri düşük, Avrupa vadelileri yaklaşık %1 aşağıda. Öğleden sonra ABD tarım dışı istihdamı ve akşam BoJ Başkanı Ueda'nın konuşması bekleniyor."
+    }
+  ],
+  "winners": [
+    {
+      "name": "Güney Afrika (EZA ETF)",
+      "v": "+8,29%"
+    },
+    {
+      "name": "Katar (QAT ETF)",
+      "v": "+8,04%"
+    },
+    {
+      "name": "Hindistan (Nifty 50)",
+      "v": "+6,38%"
+    }
+  ],
+  "losers": [
+    {
+      "name": "Tayvan (EWT ETF)",
+      "v": "−15,06%"
+    },
+    {
+      "name": "Güney Kore (EWY ETF)",
+      "v": "−13,89%"
+    },
+    {
+      "name": "ABD enerji sektörü (XLE)",
+      "v": "−11,98%"
+    }
+  ],
+  "learned": [
+    "yogunlasma",
+    "duzeltme",
+    "bolunmus-hukumet",
+    "risk-primi",
+    "kaldirac-cozulmesi"
+  ],
+  "next": [
+    {
+      "when": "9 Kas 04:30",
+      "title": "Çin TÜFE (Ekim)",
+      "why": "Çin'de talebin zayıflığı sürüyor mu; Asya satışının üstüne ek baskı ya da rahatlama."
+    },
+    {
+      "when": "10 Kas 16:30",
+      "title": "ABD TÜFE (Ekim)",
+      "why": "Çekirdek enflasyon Fed'in Aralık artırımını belirler; hisse satışı sonrası faizin yönü de burada netleşir."
+    },
+    {
+      "when": "12 Kas",
+      "title": "TCMB Enflasyon Raporu ve İngiltere GSYH",
+      "why": "Türkiye'de tahmin yolu Aralık indirimini belirler; İngiltere'de faiz artırımının büyümeyi nasıl etkilediği."
+    },
+    {
+      "when": "17 Kas",
+      "title": "ABD perakende satışlar ve Nvidia bilançosu",
+      "why": "Nvidia, düzenleme korkusunun taleple ilgisi olup olmadığının ilk büyük sınavı."
+    }
+  ]
+}

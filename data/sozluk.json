@@ -626,6 +626,28 @@
         "sektor-rotasyonu",
         "bolunmus-hukumet"
       ]
+    },
+    "kaldirac-cozulmesi": {
+      "name": "Kaldıraç çözülmesi",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-06",
+      "def": "Borçla (kaldıraçla) taşınan pozisyonların fiyat düşünce aynı anda kapatılmak zorunda kalması. Zorunlu satış fiyatı daha da düşürür, bu yeni zorunlu satış doğurur.",
+      "analogy": "Kredi kartıyla alınmış hisse gibi: fiyat düşünce borç hemen sorulur, ödemek için eldeki her şey satılır.",
+      "chain": [
+        "Fiyat düştü",
+        "Teminat yetersiz kaldı",
+        "Aracı kurum pozisyonu kapattı",
+        "Zorunlu satış fiyatı düşürdü",
+        "Yeni teminat çağrıları geldi"
+      ],
+      "quote": "Bir strateji uzmanı perşembe günkü satış için 'pozisyonlama, ayarlamayı çok daha şiddetli yapıyor' dedi; kripto piyasasında yaklaşık 1,2 milyar dolarlık kaldıraçlı pozisyon kapandı.",
+      "rule": "Haberin büyüklüğüyle fiyat hareketinin büyüklüğü uyuşmuyorsa, önce kimin zorla sattığına bak: çoğu zaman fark kaldıraçtan gelir.",
+      "related": [
+        "devre-kesici",
+        "vix",
+        "duzeltme",
+        "risk-primi"
+      ]
     }
   }
 }
