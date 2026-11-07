@@ -11,40 +11,40 @@ _Otomatik üretildi: 2026-11-06 kapanış verisiyle. Kaynak kod: [`analytics/`](
 - Kümeleme modeline göre piyasa 1 işlem günüdür 'Düzeltme' rejiminde. Geçmişte bu rejimdeki günlerin ardından gelen 20 işlem gününde Nasdaq 100 ortalama yüzde 3,0 değişti ve dönemlerin yüzde 64 kadarında yükseldi. Bu bir tahmin değil, benzer dönemlerin geçmiş davranışı.
 - Bir sonraki işlem günü için beklenen Nasdaq 100 aralığı (en yüksek ile en düşük arası) yaklaşık %2,27, yani 614 puan civarı; geçmiş isabete göre 10 günün 8'inde 313 ile 882 puan arasında kalır. Model, görmediği son dönemde basit kurallardan (dünün aralığı, son ayın ortalaması) yaklaşık yüzde 3 daha isabetli.
 - Takvim etkileri 2000 yılından bu yana 20 ayrı iddiayla test edildi: düzeltmesiz bakılınca 1 tanesi anlamlı görünüyor, çoklu test düzeltmesinden sonra 0 tanesi kalıyor. Yaygın takvim efsanelerinin hiçbiri bu veride doğrulanmıyor; çoğu, şans eseri anlamlı görünen sonuçlardan ibaret.
-- Son iki haftada getirisi ya da hacmi kendi normalinin çok dışına çıkan varlıklar: AAPL, ADI, ALAB, ALNY, AMAT, AMD. Bu günlerin arkasında genellikle bilanço, haber ya da endeks değişikliği olur.
+- Son iki haftada getirisi ya da hacmi kendi normalinin çok dışına çıkan varlıklar: AAPL, ABNB, ADI, ALAB, ALNY, AMAT. Bu günlerin arkasında genellikle bilanço, haber ya da endeks değişikliği olur.
 
 ## Sektörler
 ![Sektörler](sektorler.png)
 
 | Sektör | 1 hafta % | 1 ay % | 3 ay % | Öncü | Geride kalan |
 |---|---|---|---|---|---|
-| Sağlık | 2,9 | 11,5 | 36,3 | IDXX | ALNY |
+| Sağlık | 3,3 | 11,9 | 38,3 | IDXX | ALNY |
+| Seyahat ve eğlence | 9,4 | 10,7 | −0,6 | ABNB | BKNG |
 | Gıda ve içecek | 1,2 | 10,6 | 9,5 | KDP | MNST |
-| Seyahat ve eğlence | 5,4 | 6,7 | −4,2 | MAR | BKNG |
-| Perakende | 2,6 | 5,8 | −1,2 | CPRT | MELI |
-| Sanayi | −4,7 | 5,6 | −5,6 | ROP | AXON |
-| Tüketici hizmetleri | 2,0 | 0,5 | −7,1 | PYPL | DASH |
-| Enerji ve kamu hizmeti | −5,6 | −0,2 | −1,9 | EXC | CEG |
+| Perakende | 2,5 | 5,6 | −1,3 | CPRT | MELI |
+| Sanayi | −4,8 | 5,4 | −5,7 | ROP | AXON |
+| Tüketici hizmetleri | 2,1 | 0,7 | −6,9 | PYPL | DASH |
+| Enerji ve kamu hizmeti | −4,9 | 0,5 | −1,2 | EXC | CEG |
 | Ulaştırma | −5,0 | −2,7 | −12,0 | CSX | ODFL |
-| İletişim | 4,0 | −5,6 | −10,2 | CMCSA | GOOGL |
+| İletişim | 4,1 | −5,5 | −10,0 | CMCSA | GOOGL |
 | Otomotiv | −5,2 | −5,7 | −6,9 | TSLA | PCAR |
-| Havacılık ve uzay | −6,6 | −13,0 | −17,7 | HON | RKLB |
-| Teknoloji | −8,1 | −14,8 | −11,2 | APP | LITE |
-| Yarı iletken | −14,9 | −27,3 | −23,4 | NXPI | MRVL |
+| Havacılık ve uzay | −0,8 | −8,2 | −13,1 | HON | RKLB |
+| Teknoloji | −6,7 | −13,7 | −10,1 | APP | LITE |
+| Yarı iletken | −14,4 | −26,9 | −23,1 | NXPI | MRVL |
 
 ## Haftanın en çok yükselen ve düşen hisseleri
 | Kod | Şirket | 1 hafta % | 1 ay % |
 |---|---|---|---|
-| APP | AppLovin | 55,8 | 27,1 |
+| APP | AppLovin | 71,2 | 39,7 |
 | IDXX | IDEXX Laboratories | 22,6 | 31,7 |
+| ABNB | Airbnb | 15,6 | 16,4 |
+| MRNA | Moderna | 14,6 | 29,0 |
 | TTWO | Take Two Interactive Software | 13,0 | 2,6 |
-| GEHC | GE HealthCare Technologies | 9,4 | 30,5 |
-| MRNA | Moderna | 8,9 | 22,6 |
-| LITE | Lumentum | −39,4 | −51,4 |
-| ALAB | Astera Labs | −30,6 | −48,3 |
-| SNDK | Sandisk | −29,9 | −49,9 |
+| LITE | Lumentum | −35,9 | −48,6 |
 | STX | Seagate Technology | −28,5 | −40,5 |
 | MRVL | Marvell Technology | −28,1 | −48,6 |
+| WDC | Western Digital | −28,0 | −32,9 |
+| SNDK | Sandisk | −27,4 | −48,1 |
 
 ## Varlıklar arası ilişki
 ![Korelasyon](korelasyon.png)
@@ -79,11 +79,11 @@ Getirisi ya da hacmi, önceki 63 günün ortalamasından en az 3 standart sapma 
 
 | Kod | Endekse katkı (puan) | Getiri % | Ağırlık % |
 |---|---|---|---|
-| AAPL | 1,18 | 11,1 | 10,6 |
-| MSFT | 0,45 | 5,0 | 8,9 |
+| AAPL | 1,19 | 11,1 | 10,7 |
+| MSFT | 0,45 | 5,0 | 9,0 |
 | TSLA | 0,26 | 8,3 | 3,1 |
 | WMT | 0,25 | 11,7 | 2,1 |
-| MRNA | 0,18 | 303,7 | 0,1 |
+| MRNA | 0,19 | 325,0 | 0,1 |
 
 ## Piyasa rejimi (kümeleme)
 ![Rejimler](rejim.png)
@@ -122,15 +122,15 @@ Sınama: 2025-05-19 – 2026-11-05, ileriye doğru yürüyen pencere (aylık yen
 
 | İlk tepki grubu | Olay | Sonraki 2 ay ort. anormal getiri % | t | p |
 |---|---|---|---|---|
-| olumsuz | 287 | 0,61 | 0,55 | 0,585 |
+| olumsuz | 287 | 0,61 | 0,55 | 0,584 |
 | nötr | 287 | −1,58 | −2,25 | 0,025 |
 | olumlu | 287 | 0,18 | 0,19 | 0,849 |
 
-Olumlu ve olumsuz grup farkı: −0,43 puan (Welch t-testi p=0,772). Tepki ile sonraki getiri arasındaki sıra korelasyonu: 0,011 (p=0,747).
+Olumlu ve olumsuz grup farkı: −0,43 puan (Welch t-testi p=0,771). Tepki ile sonraki getiri arasındaki sıra korelasyonu: 0,011 (p=0,748).
 
 ## Veri kalitesi
-- Otomatik kontroller: 3/8 geçti.
-- Fiyat kaynakları uyuşuyor: 18 sorun (SPCX, PLTR, SHOP, ARM, APP, SNDK)
+- Otomatik kontroller: 4/8 geçti.
+- Fiyat kaynakları uyuşuyor: geçti
 - Fiyatlar güncel: geçti
 - Günlük %50 üstü hareket yok: geçti
 - Finansallar güncel: geçti
