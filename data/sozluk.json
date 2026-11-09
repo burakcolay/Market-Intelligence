@@ -648,6 +648,28 @@
         "duzeltme",
         "risk-primi"
       ]
+    },
+    "olu-kedi": {
+      "name": "Ölü kedi sıçraması",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-09",
+      "def": "Sert düşen bir varlığın kısa süre toparlanması; düşüşün bittiğini göstermez, düşüş trendinin içinde bir nefes alma olabilir.",
+      "analogy": "Yeterince yüksekten düşen ölü bir kedi bile yerden zıplar; zıplaması yaşadığı anlamına gelmez.",
+      "chain": [
+        "Sert düşüş yaşandı",
+        "Aşırı satılmış hisseler ucuz göründü",
+        "Alıcı çıktı, fiyat sıçradı",
+        "Düşüşün sebebi çözülmedi",
+        "Sıçrama sönebilir"
+      ],
+      "quote": "Çip endeksi perşembe %12'den fazla düştükten sonra cuma günü %4,2 yükseldi; Schwab'dan Liz Ann Sonders bireysel yatırımcının bu kez düşüşte almadığını söyledi.",
+      "rule": "Sert düşüşten sonraki ilk güçlü günü 'dip' ilan etme; düşüşün sebebi ortadan kalktı mı, ona bak.",
+      "related": [
+        "duzeltme",
+        "kaldirac-cozulmesi",
+        "vix",
+        "risk-primi"
+      ]
     }
   }
 }
