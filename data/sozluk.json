@@ -670,6 +670,27 @@
         "vix",
         "risk-primi"
       ]
+    },
+    "baz-etkisi": {
+      "name": "Baz etkisi",
+      "cat": "Makro veriler",
+      "learned": "2026-11-10",
+      "def": "Yıllık oran hesaplanırken kıyas yapılan geçen yılın aynı dönem düzeyine 'baz' denir; baz yüksek ya da düşük olduğu için yıllık oran, bu ayki gerçek fiyat hareketinden bağımsız olarak değişebilir.",
+      "analogy": "Dünkü boyunla bugünkü boyunu kıyaslıyorsun; dün ölçülmediyse ya da yanlış ölçüldüyse büyüme oranı da anlamsız çıkar.",
+      "chain": [
+        "Geçen yılın aynı ayı baz olur",
+        "Baz düşükse yıllık oran yüksek görünür",
+        "Baz yüksekse yıllık oran düşük görünür",
+        "Baz yoksa yıllık oran hesaplanamaz",
+        "Aylık hıza bakmak gerekir"
+      ],
+      "quote": "ABD'de ekim TÜFE'si 2025 hükümet kapanışı yüzünden yıllık oran olmadan açıklanıyor; beklenti yalnızca aylık manşet %0,3 ve çekirdek %0,2.",
+      "rule": "Yıllık enflasyonu yorumlarken aylık hızı ve geçen yılın aynı ayını (bazı) birlikte oku; yalnızca yıllık rakam seni yanıltabilir.",
+      "related": [
+        "run-rate",
+        "cekirdek-enflasyon",
+        "pce"
+      ]
     }
   }
 }

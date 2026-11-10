@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-10",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -155,6 +155,11 @@
     ],
     "NVDA": [
       {
+        "date": "2026-11-09",
+        "title": "Nvidia ≈%4,3 düştü; yönetim kurulu CEO Jensen Huang hakkında soruşturma başlattı",
+        "why": "Piyasa değeri yaklaşık 230 milyar dolar azaldı, ama yarı iletken endeksi yükseldi; belirsizlik CEO'nun geleceği ve Washington'daki etkisinde."
+      },
+      {
         "date": "2026-11-05",
         "title": "Nvidia ≈%9 düştü ve 2026'da eksiye döndü",
         "why": "Yarı iletken endeksindeki %12'lik satışın merkezi; veri merkezi inşaatı yavaşlama korkusu en çok yapay zekâ çipi satıcısını vuruyor."
@@ -178,11 +183,6 @@
         "date": "2026-10-14",
         "title": "Danaher bilimsel araçlarına Nvidia yapay zekâsını entegre etmek için iş birliği duyurdu",
         "why": "Yapay zekâ çipleri bilim ve ilaç keşfi gibi yeni sektörlere yayılıyor; finansal detay paylaşılmadı."
-      },
-      {
-        "date": "2026-10-12",
-        "title": "Nvidia, yapay zekâ girişimi Reflection AI'ı satın almayı ya da yatırımını artırmayı görüşüyor (FT)",
-        "why": "Nvidia yapay zekâ ekosistemine yatırımla müşteri talebini destekliyor; hisse çip satışıyla %1,3 düştü."
       }
     ],
     "INTC": [
@@ -391,6 +391,11 @@
       }
     ],
     "AMD": [
+      {
+        "date": "2026-11-09",
+        "title": "AMD ≈%13 sıçradı",
+        "why": "Oppenheimer'ın not yükseltmesi ve çip hisselerindeki geniş toparlanma; Nvidia'dan çıkan paranın rakiplere kaydığı da düşünülebilir, ama bu doğrulanmadı."
+      },
       {
         "date": "2026-11-05",
         "title": "AMD ≈%17 düştü",
