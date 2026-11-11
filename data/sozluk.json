@@ -691,6 +691,28 @@
         "cekirdek-enflasyon",
         "pce"
       ]
+    },
+    "super-cekirdek": {
+      "name": "Süper çekirdek enflasyon",
+      "cat": "Makro veriler",
+      "learned": "2026-11-11",
+      "def": "Çekirdek enflasyondan (gıda ve enerji hariç) bir de barınmanın çıkarılmasıyla elde edilen ölçü; geriye çoğu ücretle fiyatlanan hizmetler (sağlık, ulaşım hizmetleri, sigorta, restoran) kalır. Fiyat baskısının ekonominin içinden, işgücü ve talepten gelip gelmediğini gösterir.",
+      "analogy": "Ateşin dışarıdaki sıcaktan mı, yoksa vücudun içindeki bir enfeksiyondan mı geldiğini ayırmak gibi: içeriden geliyorsa pencereyi açmak yetmez, ilaç gerekir.",
+      "chain": [
+        "Güçlü istihdam",
+        "Ücretler artar",
+        "Hizmet fiyatları yükselir",
+        "Süper çekirdek hızlanır",
+        "Merkez bankası daha uzun sıkı kalır"
+      ],
+      "quote": "ABD'de ekim TÜFE'sinde manşet ve çekirdek beklentiyi biraz aşarken süper çekirdeğin üç aylık yıllıklandırılmış hızı belirgin yükseldi; Fed'de yarım puan artırım konuşulmaya başlandı.",
+      "rule": "Enflasyon verisinde önce manşete, sonra çekirdeğe, en son süper çekirdeğe bak; süper çekirdek hızlanıyorsa sorun ithal değil yerli, ve merkez bankası daha uzun süre sıkı kalır.",
+      "related": [
+        "cekirdek-enflasyon",
+        "run-rate",
+        "pce",
+        "baz-etkisi"
+      ]
     }
   }
 }

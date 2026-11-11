@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -118,10 +118,19 @@
     "0001018724-26-000038": "Amazon üçüncü çeyrek sonuçlarını açıkladı: bulut (AWS) geliri yüzde 39 büyüdü, yaklaşık beş yılın en hızlısı; ama harcama beklentiyi aştı, 12 aylık serbest nakit akışı eksiye döndü ve gelir ile kâr beklentinin hafif altında kaldı. Hisse mesai sonrası düştü.",
     "0000050863-26-000188": "Intel üçüncü çeyrek sonuçlarını açıkladı: gelir ve kâr beklentiyi aştı, ama dördüncü çeyrek gelir öngörüsü beklentinin belirgin altında kaldı; yönetim PC talebinin en az gelecek yılın ilk yarısına kadar yavaş kalacağını söyledi. Hisse mesai sonrası sert düştü.",
     "0001652044-26-000080": "Alphabet üçüncü çeyrek sonuçlarını açıkladı: gelir beklentinin hafif altında, bulut geliri iki katından fazla arttı ama serbest nakit akışı eksiye döndü. Hisse ertesi gün tarihinin en sert günlük düşüşünü yaşadı.",
-    "0001193125-26-436122": "Microsoft mali yılın ilk çeyreğinde gelir ve kârı beklentinin üzerinde açıkladı: Azure yüzde 48 büyüdü, harcama beklentinin altında kaldı ve serbest nakit akışı düşmesine rağmen pozitif. Harcamayı nakitle karşılayan şirketin olumlu karşılandığı bir bilanço."
+    "0001193125-26-436122": "Microsoft mali yılın ilk çeyreğinde gelir ve kârı beklentinin üzerinde açıkladı: Azure yüzde 48 büyüdü, harcama beklentinin altında kaldı ve serbest nakit akışı düşmesine rağmen pozitif. Harcamayı nakitle karşılayan şirketin olumlu karşılandığı bir bilanço.",
+    "0000909832-26-000134": "Costco yönetim kurulu hisse başına 30 dolarlık (toplam ≈13,3 mlr $) özel temettü ilan etti ve 4 mlr $'lık geri alım programını 2030'a kadar yeniledi; ayrıca bir yönetim kurulu üyesi Rhode Island valisi seçildiği için ayrıldı. Özel temettü, şirketin bilançosunda yatırım ihtiyacının üstünde nakit biriktiğini gösteriyor.",
+    "0001769628-26-000461": "CoreWeave üçüncü çeyrek sonuçlarını açıkladı ve yıl gelir tahminini 13,0–13,3 mlr $'a yükseltti; 2028 ilk yarıda düzeltilmiş net kâra geçmeyi hedefliyor. Borçla büyüme korkusunu müşteri ön ödemeleri ve sınırlı yeni sermaye ihtiyacıyla yanıtladı; yapay zekâ altyapısı hisselerinin tamamı bu açıklamayla yükseldi.",
+    "0001628280-26-072175": "Take-Two çeyrek sonuçlarında rezervasyonlar rehberliğin hafif altında kaldı ama yıl gelir tahminini yükseltti; GTA VI ön siparişlerinin beklentinin çok üzerinde olduğunu söyledi. Hisse için asıl belirleyici 19 Kasım'daki GTA VI çıkışı.",
+    "0001868275-26-000116": "Constellation Energy çeyrekte beklentinin belirgin üstünde kâr açıkladı ve yıl kâr tahminini yükseltti; Google ve Amazon ile uzun vadeli nükleer enerji anlaşmaları, kazancın 2030'lara uzanan görünürlüğünü artırıyor. Yapay zekâ veri merkezlerinin elektrik talebinin doğrudan kazananlarından biri."
   },
   "news": {
     "MU": [
+      {
+        "date": "2026-11-11",
+        "title": "Micron açılış öncesi ≈%7 yükseldi",
+        "why": "CoreWeave'in sermaye harcamasını artırması ve TSMC'nin güçlü ekim geliri, yapay zekâ sunucularındaki bellek talebinin sürdüğünü gösterdi."
+      },
       {
         "date": "2026-11-05",
         "title": "Micron ≈%17 düştü, S&P 500'ün en sert düşenlerinden",
@@ -146,14 +155,19 @@
         "date": "2026-10-14",
         "title": "Elon Musk, Micron'un bellek fiyatlarında ölçülü davranmasını övdü; hisse son zirvesinin yaklaşık dörtte biri altında",
         "why": "Bellek hisselerindeki satışta rekabet (CXMT) ve fiyat gücü tartışması sürüyor; Musk'ın sözü yatırım tavsiyesi değil, müşteri tarafından bir görüş."
-      },
-      {
-        "date": "2026-10-13",
-        "title": "Micron %3,6 düşerek dördüncü gün üst üste geriledi; JPMorgan bellek arzının talebin altında kalacağını modelliyor",
-        "why": "Çinli CXMT haberi satışı tetikledi, ama Micron'un uzun vadeli müşteri sözleşmeleri ve bellek arz açığı tahmini temel talebin sürdüğünü gösteriyor."
       }
     ],
     "NVDA": [
+      {
+        "date": "2026-11-11",
+        "title": "Nvidia açılış öncesi ≈%5 toparlandı; iki günde ≈430 mlr $ kaybetmişti",
+        "why": "CoreWeave'in güçlü tahmini yapay zekâ talebi korkusunu hafifletti; CEO soruşturması ise yönetim kurulunun hukuk firması tutmasıyla sürüyor, bilanço 17 Kasım."
+      },
+      {
+        "date": "2026-11-10",
+        "title": "Nvidia %5,5 düştü; yönetim kurulu soruşturma için Wachtell Lipton'u tuttu",
+        "why": "Soruşturmanın kısa sürede kapanmayacağı anlaşıldı; endeksteki ağırlığı nedeniyle Nasdaq 100'ü en çok aşağı çeken hisse oldu."
+      },
       {
         "date": "2026-11-09",
         "title": "Nvidia ≈%4,3 düştü; yönetim kurulu CEO Jensen Huang hakkında soruşturma başlattı",
@@ -173,16 +187,6 @@
         "date": "2026-10-15",
         "title": "Nvidia İsveç'te Ericsson, AstraZeneca, Saab ve SEB'in kurduğu yapay zekâ süper bilgisayarına ve ülkenin yapay zekâ fabrikasına ortak oldu",
         "why": "Avrupa'da kamu ve kurumsal yapay zekâ altyapısının büyüdüğünü gösteriyor; finansal detay paylaşılmadı ama hesaplama kapasitesine talebin sürdüğünü işaret eder."
-      },
-      {
-        "date": "2026-10-14",
-        "title": "Nvidia, İngiltere'de yapay zekâ ajanlarının güvenliği araştırmalarına beş yılda 250 milyon dolarlık hesaplama kapasitesi ayıracak",
-        "why": "Şirket ekosistemini ve kamu ilişkilerini güçlendiriyor; doğrudan gelir etkisi yok, ama hesaplama kapasitesine talebin sürdüğünü gösteriyor."
-      },
-      {
-        "date": "2026-10-14",
-        "title": "Danaher bilimsel araçlarına Nvidia yapay zekâsını entegre etmek için iş birliği duyurdu",
-        "why": "Yapay zekâ çipleri bilim ve ilaç keşfi gibi yeni sektörlere yayılıyor; finansal detay paylaşılmadı."
       }
     ],
     "INTC": [
@@ -392,6 +396,11 @@
     ],
     "AMD": [
       {
+        "date": "2026-11-11",
+        "title": "AMD açılış öncesi ≈%6 yükseldi",
+        "why": "CoreWeave sonrası çip hisselerinde geniş alım; Nvidia'daki yönetim belirsizliği rakiplere ilgiyi artırıyor olabilir."
+      },
+      {
         "date": "2026-11-09",
         "title": "AMD ≈%13 sıçradı",
         "why": "Oppenheimer'ın not yükseltmesi ve çip hisselerindeki geniş toparlanma; Nvidia'dan çıkan paranın rakiplere kaydığı da düşünülebilir, ama bu doğrulanmadı."
@@ -417,6 +426,13 @@
         "date": "2026-11-02",
         "title": "Marvell, Lumentum'u 115 milyar dolarlık hisse takasıyla satın alıyor; Marvell yaklaşık %13, Lumentum yaklaşık %18 düştü",
         "why": "Yatırımcı yapay zekâ altyapısı büyümesinin hisse ihracıyla finanse edilmesine ceza kesti; anlaşma sektörün finansman sorusunu öne çıkardı."
+      }
+    ],
+    "COST": [
+      {
+        "date": "2026-11-10",
+        "title": "Costco hisse başına 30 dolar özel temettü ilan etti",
+        "why": "Toplam ≈13,3 mlr $; biriken nakdin hissedara dönmesi ve yenilenen geri alım programı."
       }
     ]
   }

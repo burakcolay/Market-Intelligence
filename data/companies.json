@@ -379,8 +379,31 @@
       },
       "next": {
         "period": "Mali 2027 3. çeyrek",
-        "date": "2026-11-18",
-        "time": "after"
+        "date": "2026-11-17",
+        "time": "after",
+        "eps_est": 2.47,
+        "rev_est": 108.84,
+        "known": [
+          "Şirketin kendi gelir rehberliği ≈108 mlr $ (±%2) ve Çin'e veri merkezi satışı içermiyor; brüt marj rehberliği ≈%74, bellek maliyeti yüzünden önceki çeyreklerin altında.",
+          "Yönetim kurulu CEO Jensen Huang hakkında soruşturma başlattı ve Wachtell Lipton'u tuttu; hisse iki günde ≈430 mlr $ değer kaybetti.",
+          "TSMC'nin ekim geliri yıllık ≈%60 arttı, CoreWeave yıl gelir ve sermaye harcaması tahminini yükseltti: müşteri tarafı talep güçlü.",
+          "RBC 4. çeyrek gelir rehberliğinin ≈124,5 mlr $ konsensüsün %2–4 üzerinde gelmesini bekliyor."
+        ],
+        "watch": [
+          "4. çeyrek gelir rehberliği konsensüse göre nerede",
+          "Brüt marj: bellek maliyeti baskısı ne kadar",
+          "Yönetimin CEO soruşturması ve veri merkezi düzenlemesi hakkında söyledikleri"
+        ],
+        "sources": [
+          {
+            "name": "MT Newswires (RBC, FactSet tahminleri)",
+            "url": "https://app.bigdata.com/documents/CC4D44F20755C42F2F58550F2E4E5119?cnum=2"
+          },
+          {
+            "name": "Motley Fool (Nasdaq) · rehberlik",
+            "url": "https://app.bigdata.com/documents/1E3B2715CECE325A04E2BB090C34C5AC?cnum=2"
+          }
+        ]
       },
       "analysts": {
         "buy": 60,
