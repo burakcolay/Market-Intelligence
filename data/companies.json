@@ -385,14 +385,14 @@
         "rev_est": 108.84,
         "known": [
           "Şirketin kendi gelir rehberliği ≈108 mlr $ (±%2) ve Çin'e veri merkezi satışı içermiyor; brüt marj rehberliği ≈%74, bellek maliyeti yüzünden önceki çeyreklerin altında.",
-          "Yönetim kurulu CEO Jensen Huang hakkında soruşturma başlattı ve Wachtell Lipton'u tuttu; hisse iki günde ≈430 mlr $ değer kaybetti.",
+          "WSJ: yönetim kurulu CEO Jensen Huang'ı görevden almaya hazırlanıyor (11 Kasım akşamı toplandı, karar açıklanmadı); hisse kapanış sonrası ≈%8–9 düştü. Kongre Çin Komitesi Huang'dan 18 Kasım'da brifing istedi.",
           "TSMC'nin ekim geliri yıllık ≈%60 arttı, CoreWeave yıl gelir ve sermaye harcaması tahminini yükseltti: müşteri tarafı talep güçlü.",
           "RBC 4. çeyrek gelir rehberliğinin ≈124,5 mlr $ konsensüsün %2–4 üzerinde gelmesini bekliyor."
         ],
         "watch": [
           "4. çeyrek gelir rehberliği konsensüse göre nerede",
           "Brüt marj: bellek maliyeti baskısı ne kadar",
-          "Yönetimin CEO soruşturması ve veri merkezi düzenlemesi hakkında söyledikleri"
+          "Yeni ya da geçici liderliğin müşteri ilişkileri ve Çin ihracatı hakkında söyledikleri"
         ],
         "sources": [
           {
@@ -402,6 +402,10 @@
           {
             "name": "Motley Fool (Nasdaq) · rehberlik",
             "url": "https://app.bigdata.com/documents/1E3B2715CECE325A04E2BB090C34C5AC?cnum=2"
+          },
+          {
+            "name": "CNBC · yönetim kurulu toplantısı",
+            "url": "https://app.bigdata.com/documents/5035C6D096282C519190ADFCB88840DF?cnum=1"
           }
         ]
       },

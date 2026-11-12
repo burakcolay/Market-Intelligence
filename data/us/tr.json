@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -160,6 +160,11 @@
     "NVDA": [
       {
         "date": "2026-11-11",
+        "title": "WSJ: Nvidia yönetim kurulu CEO Jensen Huang'ı görevden almaya hazırlanıyor; hisse kapanış sonrası ≈%8–9 düştü",
+        "why": "İkinci bir ilişki iddiasıyla kurul toplandı, resmi karar açıklanmadı; halef planı belirsiz olduğu için şirketin liderlik primi yeniden fiyatlanıyor."
+      },
+      {
+        "date": "2026-11-11",
         "title": "Nvidia açılış öncesi ≈%5 toparlandı; iki günde ≈430 mlr $ kaybetmişti",
         "why": "CoreWeave'in güçlü tahmini yapay zekâ talebi korkusunu hafifletti; CEO soruşturması ise yönetim kurulunun hukuk firması tutmasıyla sürüyor, bilanço 17 Kasım."
       },
@@ -182,11 +187,6 @@
         "date": "2026-10-22",
         "title": "Nvidia yüzde 4,4 düştü; yarı iletken endeksi yaklaşık yüzde 6,7 geriledi",
         "why": "Hisse S&P 500'ü en çok aşağı çeken hisseydi; harcama finansmanı kaygısı çip siparişlerine yansıyor."
-      },
-      {
-        "date": "2026-10-15",
-        "title": "Nvidia İsveç'te Ericsson, AstraZeneca, Saab ve SEB'in kurduğu yapay zekâ süper bilgisayarına ve ülkenin yapay zekâ fabrikasına ortak oldu",
-        "why": "Avrupa'da kamu ve kurumsal yapay zekâ altyapısının büyüdüğünü gösteriyor; finansal detay paylaşılmadı ama hesaplama kapasitesine talebin sürdüğünü işaret eder."
       }
     ],
     "INTC": [
@@ -222,6 +222,11 @@
       }
     ],
     "AVGO": [
+      {
+        "date": "2026-11-11",
+        "title": "Broadcom kapanış sonrası ≈%3 yükseldi",
+        "why": "Nvidia'daki belirsizlik büyük bulut şirketlerinin özel tasarım çiplere yönelimini hızlandırabilir beklentisi; Broadcom bu çiplerin ana tasarımcısı."
+      },
       {
         "date": "2026-10-22",
         "title": "Broadcom yüzde 4,3 düştü",
@@ -395,6 +400,11 @@
       }
     ],
     "AMD": [
+      {
+        "date": "2026-11-11",
+        "title": "AMD kapanış sonrası ≈%4 yükseldi",
+        "why": "Nvidia'daki liderlik krizi yatırımcıyı rakip çip tasarımcılarına yöneltti; talep aynı, pay sorusu yeniden açıldı."
+      },
       {
         "date": "2026-11-11",
         "title": "AMD açılış öncesi ≈%6 yükseldi",

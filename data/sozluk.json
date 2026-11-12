@@ -713,6 +713,26 @@
         "pce",
         "baz-etkisi"
       ]
+    },
+    "kilit-yonetici-riski": {
+      "name": "Kilit yönetici riski",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-12",
+      "def": "Bir şirketin değerinin önemli bir kısmının tek bir kişiye (çoğunlukla kurucu CEO'ya) bağlı olması ve o kişinin ayrılmasının değeri doğrudan düşürmesi. Kişinin vizyonu, müşteri ve hükümet ilişkileri ve çalışan bağlılığı fiyata gömülüdür; kişi gidince piyasa bu primi yeniden hesaplar.",
+      "analogy": "Takımın yıldızı sakatlanınca bahis oranları değişir: takım yine sahaya çıkar ama kazanma ihtimaline duyulan güven azalır.",
+      "chain": [
+        "Lider belirsizleşir",
+        "İlişkiler ve strateji soru işareti olur",
+        "Gelecek kâr tahmini belirsizleşir",
+        "Risk primi artar, çarpan düşer"
+      ],
+      "quote": "Nvidia yönetim kurulunun CEO Jensen Huang'ı görevden almaya hazırlandığı haberiyle hisse kapanış sonrası ≈%8–9 düştü; AMD ve Broadcom ise yükseldi.",
+      "rule": "Bir şirketin lideriyle ilgili haber geldiğinde önce değerin ne kadarının ürüne, ne kadarının kişiye bağlı olduğunu sor; sonra halef planına bak, plan yoksa belirsizlik primi uzun sürer.",
+      "related": [
+        "risk-primi",
+        "yogunlasma",
+        "sektor-rotasyonu"
+      ]
     }
   }
 }
