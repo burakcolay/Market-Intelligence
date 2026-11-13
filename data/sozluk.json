@@ -733,6 +733,26 @@
         "yogunlasma",
         "sektor-rotasyonu"
       ]
+    },
+    "ayi-duzlesmesi": {
+      "name": "Ayı düzleşmesi",
+      "cat": "Faizler",
+      "learned": "2026-11-13",
+      "def": "Faizler genel olarak yükselirken kısa vadeli faizin uzun vadeliden daha hızlı yükselmesi ve getiri eğrisinin bu yüzden düzleşmesi. Sebebi neredeyse her zaman merkez bankasının yakın vadede daha sıkı olacağı beklentisidir.",
+      "analogy": "Yakın virajda sert fren beklentisi: sürücü önündeki birkaç yüz metreye odaklanır, uzaktaki yol için tahmini pek değişmez.",
+      "chain": [
+        "Enflasyon ya da petrol yükselir",
+        "Fed artırım beklentisi sertleşir",
+        "Kısa vadeli faiz sıçrar",
+        "Eğri düzleşir, dolar güçlenir"
+      ],
+      "quote": "12 Kasım'da tahvil piyasası tatilden dönünce 2 yıllık faiz ≈14 bp, 10 yıllık 12 bp yükseldi; petrol ve Fed'in yarım puan ihtimali kısa ucu daha çok itti.",
+      "rule": "Faizler yükselirken önce hangi vadenin önde olduğuna bak: kısa vade öndeyse mesele Fed'dir ve sıradaki veri belirleyicidir; uzun vade öndeyse mesele güven ve arzdır, teknoloji için baskı daha kalıcı olur.",
+      "related": [
+        "egri",
+        "vadeprimi",
+        "sahin"
+      ]
     }
   }
 }

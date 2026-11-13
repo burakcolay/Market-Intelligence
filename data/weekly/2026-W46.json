@@ -1,0 +1,135 @@
+{
+  "id": "2026-W46",
+  "range": "Hafta 46 · 9 – 13 Kasım 2026",
+  "headline": "Nvidia kurucusunu kaybetti ama Nasdaq 100 haftayı güçlü kazançla kapatıyor; sıcak enflasyon ve İran'la anlaşmanın rafa kalkması on yıllık faizi yeniden %5'in üstüne taşıdı",
+  "lede": "Hafta, geçen haftaki çöküşün ardından çiplerin toparlanmasıyla başladı. Salı çekirdek enflasyon üçüncü kez beklentiyi aştı ve Fed'in Aralık artırımı kesinleşti. Çarşamba CoreWeave ve Anthropic halka arzına gelen talep yapay zekâ ticaretini yeniden ateşledi; aynı akşam Nvidia'da CEO krizi patladı, perşembe Jensen Huang istifa etti. Piyasa liderlik şokunu sindirdi, para Nvidia'dan rakip çipçilere kaydı. Ama haftanın sonunda baskının kaynağı şirketlerden faize geçti: Trump İran anlaşmasını rafa kaldırdı, petrol yükseldi, iki yıllık faiz bir ayın zirvesine çıktı, altın ve Bitcoin sert düştü.",
+  "source": "Haftalık değişimler FMP'nin 5 günlük verisi (13 Kasım ≈07:00 TSİ itibarıyla, Asya cuma seansı dahil; Bigdata.com); BIST 100 Borsa MCP, 6 – 12 Kasım kapanışı; Brent Ocak vadeli, altın vadeli kontrat. Cuma ABD seansı ve üretici fiyatları dahil değil.",
+  "kpis": [
+    {
+      "name": "S&P 500",
+      "chg": 2.92
+    },
+    {
+      "name": "Nasdaq 100",
+      "chg": 4.81
+    },
+    {
+      "name": "Nikkei 225",
+      "chg": 6.84
+    },
+    {
+      "name": "Euro Stoxx 50",
+      "chg": 3.98
+    },
+    {
+      "name": "BIST 100",
+      "chg": 2.86
+    },
+    {
+      "name": "Brent",
+      "chg": -2.87
+    },
+    {
+      "name": "Altın",
+      "chg": -3.73
+    },
+    {
+      "name": "Bitcoin",
+      "chg": -8.12
+    }
+  ],
+  "days": [
+    {
+      "day": "Pzt",
+      "date": "9 Kas",
+      "title": "Çipler toparlandı, petrol düştü; Nvidia'da soruşturma açıldı",
+      "text": "Trump'ın İran'a yeni saldırının pek olası olmadığını söylemesiyle petrol geriledi ve geçen haftaki çip satışı tersine döndü. Hafta sonu Huang'ın bir ilişkisi ortaya çıkmış, Nvidia bağımsız soruşturma başlatmıştı; hisse ayrıştı. Çin'de enflasyon zayıf, üretici fiyatları sıcak geldi."
+    },
+    {
+      "day": "Sal",
+      "date": "10 Kas",
+      "title": "Çekirdek enflasyon üçüncü kez sıcak; Fed artırımı kesinleşti",
+      "text": "ABD TÜFE aylık %0,4, çekirdek %0,3 ile beklentiyi aştı. Waller'ın 'çekirdek %0,3 ise yarım puan düşünülmeli' eşiği tuttu; iki yıllık faiz sert yükseldi, on yıllık %5'e dayandı. Aralık'ta artırım tamamen fiyatlandı, yarım puan ihtimali sıfırdan ≈%15'e çıktı."
+    },
+    {
+      "day": "Çar",
+      "date": "11 Kas",
+      "title": "Yapay zekâ coşkusu geri geldi, akşam Nvidia krizi patladı",
+      "text": "CoreWeave'in güçlü tahmini, OpenAI'nin gelir haberi ve Anthropic halka arzına talep Nasdaq 100'ü tek günde %2,3 yükseltti; çip endeksi %5,7 arttı. Tahvil piyasası tatildeydi. Kapanıştan sonra WSJ, Nvidia yönetim kurulunun Huang'ı görevden almaya hazırlandığını yazdı; hisse gece ≈%9 düştü. Türkiye'de BDDK başkanı istifa etti."
+    },
+    {
+      "day": "Per",
+      "date": "12 Kas",
+      "title": "Huang istifa etti, piyasa sindirdi; İran açıklaması faizi yükseltti",
+      "text": "Nvidia gün içi %14'e kadar düştü, %4,3 kayıpla kapandı; AMD ve Arista yükseldi, endeks küçük kayıpla kapandı. Akşam Cisco ve Applied Materials beklentiyi aştı. Trump İran'la anlaşmaya gerek olmadığını söyleyince Brent %3,3 yükseldi, tatilden dönen tahvil piyasasında 10 yıllık %5,10'a çıktı, altın %2,8 düştü. TCMB yıl sonu tahminini %29,5'e yükseltti; BIST %1,2 yükseldi."
+    },
+    {
+      "day": "Cum",
+      "date": "13 Kas",
+      "title": "Bitcoin 70 bin doların altında, Asya çiplerde toparlanıyor",
+      "text": "Bitcoin ağustostan beri ilk kez 70 bin doların altına indi; 24 saatte ≈1,3 mlr $'lık kaldıraçlı pozisyon tasfiye edildi. Tayvan ve Kore çip ağırlıklı endekslerde yükseldi, yen 160'ı aştı. Günün verisi ABD üretici fiyatları."
+    }
+  ],
+  "winners": [
+    {
+      "name": "Tayvan (TAIEX)",
+      "v": "+10,75%"
+    },
+    {
+      "name": "Japonya (Nikkei 225)",
+      "v": "+6,84%"
+    },
+    {
+      "name": "Güney Kore (EWY ETF)",
+      "v": "+6,11%"
+    }
+  ],
+  "losers": [
+    {
+      "name": "Bitcoin",
+      "v": "−8,12%"
+    },
+    {
+      "name": "Çin (MCHI ETF)",
+      "v": "−4,12%"
+    },
+    {
+      "name": "Altın",
+      "v": "−3,73%"
+    }
+  ],
+  "learned": [
+    "olu-kedi",
+    "baz-etkisi",
+    "super-cekirdek",
+    "kilit-yonetici-riski",
+    "ayi-duzlesmesi"
+  ],
+  "next": [
+    {
+      "when": "17 Kas 16:30",
+      "title": "ABD perakende satışlar (Ekim)",
+      "why": "Tüketici yavaşlıyor mu; Fed'in yarım puan tartışmasını büyütür ya da söndürür."
+    },
+    {
+      "when": "18 Kas 01:00",
+      "title": "Nvidia bilançosu",
+      "why": "İlk Huang'sız bilanço; 4. çeyrek rehberliği ve geçici CEO'nun mesajı NQ'nun yönünü belirler."
+    },
+    {
+      "when": "18 Kas 22:00",
+      "title": "FOMC tutanakları",
+      "why": "Artırım kanadının ne kadar geniş olduğu; yarım puan ihtimalinin ana senaryoya yaklaşıp yaklaşmadığı."
+    },
+    {
+      "when": "19 Kas",
+      "title": "Anthropic Nasdaq'ta işlem görmeye başlıyor",
+      "why": "Yapay zekâ iştahının Nvidia krizinden sonraki büyük testi."
+    },
+    {
+      "when": "25 Kas 16:30",
+      "title": "ABD çekirdek PCE (Ekim)",
+      "why": "Fed'in kendi ölçüsü; Aralık kararından önceki son büyük enflasyon verisi."
+    }
+  ]
+}

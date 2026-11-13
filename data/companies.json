@@ -385,14 +385,14 @@
         "rev_est": 108.84,
         "known": [
           "Şirketin kendi gelir rehberliği ≈108 mlr $ (±%2) ve Çin'e veri merkezi satışı içermiyor; brüt marj rehberliği ≈%74, bellek maliyeti yüzünden önceki çeyreklerin altında.",
-          "WSJ: yönetim kurulu CEO Jensen Huang'ı görevden almaya hazırlanıyor (11 Kasım akşamı toplandı, karar açıklanmadı); hisse kapanış sonrası ≈%8–9 düştü. Kongre Çin Komitesi Huang'dan 18 Kasım'da brifing istedi.",
+          "Jensen Huang 12 Kasım'da istifa etti; CFO Colette Kress geçici CEO, Harvey Jones ilk yönetim kurulu başkanı. Hisse gün içi −%14'e kadar düştü, −%4,34 kapandı. Huang'ın Şükran Günü öncesi Kongre'de ifade vermesi bekleniyor; Truist ve StoneX not indirdi.",
           "TSMC'nin ekim geliri yıllık ≈%60 arttı, CoreWeave yıl gelir ve sermaye harcaması tahminini yükseltti: müşteri tarafı talep güçlü.",
           "RBC 4. çeyrek gelir rehberliğinin ≈124,5 mlr $ konsensüsün %2–4 üzerinde gelmesini bekliyor."
         ],
         "watch": [
           "4. çeyrek gelir rehberliği konsensüse göre nerede",
           "Brüt marj: bellek maliyeti baskısı ne kadar",
-          "Yeni ya da geçici liderliğin müşteri ilişkileri ve Çin ihracatı hakkında söyledikleri"
+          "Geçici CEO Kress'in müşteri ilişkileri, Çin ihracatı ve kalıcı CEO süreci hakkında söyledikleri"
         ],
         "sources": [
           {
@@ -406,6 +406,10 @@
           {
             "name": "CNBC · yönetim kurulu toplantısı",
             "url": "https://app.bigdata.com/documents/5035C6D096282C519190ADFCB88840DF?cnum=1"
+          },
+          {
+            "name": "Nvidia açıklaması (PubT)",
+            "url": "https://app.bigdata.com/documents/0A16B297B2A193BEDC2673718344A305?cnum=1"
           }
         ]
       },
