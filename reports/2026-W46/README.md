@@ -29,7 +29,7 @@ _Otomatik üretildi: 2026-11-13 kapanış verisiyle. Kaynak kod: [`analytics/`](
 | Ulaştırma | 5,9 | −0,3 | −7,2 | CSX | ODFL |
 | İletişim | 3,5 | −1,7 | −5,0 | CMCSA | GOOGL |
 | Tüketici hizmetleri | −2,2 | −3,7 | −10,6 | PYPL | DASH |
-| Teknoloji | 3,0 | −10,0 | −9,3 | APP | NBIS |
+| Teknoloji | 2,9 | −10,1 | −9,4 | APP | NBIS |
 | Yarı iletken | 10,1 | −12,9 | −19,3 | NXPI | INTC |
 
 ## Haftanın en çok yükselen ve düşen hisseleri
@@ -129,8 +129,8 @@ Sınama: 2025-05-27 – 2026-11-12, ileriye doğru yürüyen pencere (aylık yen
 Olumlu ve olumsuz grup farkı: −0,45 puan (Welch t-testi p=0,760). Tepki ile sonraki getiri arasındaki sıra korelasyonu: 0,010 (p=0,776).
 
 ## Veri kalitesi
-- Otomatik kontroller: 3/8 geçti.
-- Fiyat kaynakları uyuşuyor: 1 sorun (PLTR)
+- Otomatik kontroller: 4/8 geçti.
+- Fiyat kaynakları uyuşuyor: geçti
 - Fiyatlar güncel: geçti
 - Günlük %50 üstü hareket yok: geçti
 - Finansallar güncel: geçti
