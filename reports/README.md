@@ -2,6 +2,7 @@
 
 Her cumartesi GitHub Actions tarafından otomatik üretilir.
 
+- [2026-W46](2026-W46/README.md)
 - [2026-W45](2026-W45/README.md)
 - [2026-W44](2026-W44/README.md)
 - [2026-W43](2026-W43/README.md)
