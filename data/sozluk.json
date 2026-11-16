@@ -753,6 +753,26 @@
         "vadeprimi",
         "sahin"
       ]
+    },
+    "zimni-oynaklik": {
+      "name": "Zımni oynaklık",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-16",
+      "def": "Opsiyon fiyatlarının içinden geriye doğru hesaplanan, piyasanın bir varlıkta önümüzdeki dönemde beklediği oynaklık. Bilanço gibi olaylardan önce 'beklenen hareket' olarak okunur; yön değil sadece büyüklük söyler.",
+      "analogy": "Hava durumu fırtına uyarısı verir ama rüzgârın hangi yönden eseceğini söylemez; zımni oynaklık da hareketin büyüklüğünü söyler, yönünü değil.",
+      "chain": [
+        "Belirsiz bir olay yaklaşır",
+        "Korunma talebi opsiyonları pahalandırır",
+        "Zımni oynaklık yükselir",
+        "Olay geçince oynaklık çöker"
+      ],
+      "quote": "16 Kasım'da opsiyonlar Nvidia'nın 17 Kasım bilançosu için ≈±%7–8 hareket fiyatlıyordu; şirketin piyasa değeri üzerinden yüz milyarlarca dolarlık bir salınım.",
+      "rule": "Bilanço sonrası hareketi opsiyonların fiyatladığı hareketle kıyasla: beklenenden küçük hareket 'sürpriz yok', beklenenden büyük hareket 'hikâye değişti' demektir.",
+      "related": [
+        "vix",
+        "fiyatlanmis-beklenti",
+        "rehberlik"
+      ]
     }
   }
 }

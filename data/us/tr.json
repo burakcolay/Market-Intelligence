@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-16",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -122,7 +122,10 @@
     "0000909832-26-000134": "Costco yönetim kurulu hisse başına 30 dolarlık (toplam ≈13,3 mlr $) özel temettü ilan etti ve 4 mlr $'lık geri alım programını 2030'a kadar yeniledi; ayrıca bir yönetim kurulu üyesi Rhode Island valisi seçildiği için ayrıldı. Özel temettü, şirketin bilançosunda yatırım ihtiyacının üstünde nakit biriktiğini gösteriyor.",
     "0001769628-26-000461": "CoreWeave üçüncü çeyrek sonuçlarını açıkladı ve yıl gelir tahminini 13,0–13,3 mlr $'a yükseltti; 2028 ilk yarıda düzeltilmiş net kâra geçmeyi hedefliyor. Borçla büyüme korkusunu müşteri ön ödemeleri ve sınırlı yeni sermaye ihtiyacıyla yanıtladı; yapay zekâ altyapısı hisselerinin tamamı bu açıklamayla yükseldi.",
     "0001628280-26-072175": "Take-Two çeyrek sonuçlarında rezervasyonlar rehberliğin hafif altında kaldı ama yıl gelir tahminini yükseltti; GTA VI ön siparişlerinin beklentinin çok üzerinde olduğunu söyledi. Hisse için asıl belirleyici 19 Kasım'daki GTA VI çıkışı.",
-    "0001868275-26-000116": "Constellation Energy çeyrekte beklentinin belirgin üstünde kâr açıkladı ve yıl kâr tahminini yükseltti; Google ve Amazon ile uzun vadeli nükleer enerji anlaşmaları, kazancın 2030'lara uzanan görünürlüğünü artırıyor. Yapay zekâ veri merkezlerinin elektrik talebinin doğrudan kazananlarından biri."
+    "0001868275-26-000116": "Constellation Energy çeyrekte beklentinin belirgin üstünde kâr açıkladı ve yıl kâr tahminini yükseltti; Google ve Amazon ile uzun vadeli nükleer enerji anlaşmaları, kazancın 2030'lara uzanan görünürlüğünü artırıyor. Yapay zekâ veri merkezlerinin elektrik talebinin doğrudan kazananlarından biri.",
+    "0001682852-26-000205": "Moderna'nın hukuk direktörü Shannon Klinger 31 Mart 2027'de emekliye ayrılıyor; şirket halef arıyor. Operasyonu doğrudan etkileyen bir değişiklik değil, ama hukuk direktörünün süren davalar ve patent anlaşmazlıkları sürecinin ortasında ayrılması geçiş döneminde takip edilmeli.",
+    "0001104659-26-127163": "Qualcomm 2028'den 2036'ya uzanan beş ayrı vadede tahvil ihraç etti. Borçlanma şirketin finansman ihtiyacını gösteriyor; faizler %5 civarındayken uzun vadeli borç kilitlemek, sermaye harcaması ya da hisse geri alımı için kaynak sağlıyor.",
+    "0001104659-26-127223": "Booking Holdings dört vadede toplam 3,55 milyar euroluk tahvil sattı (2029-2038, %3,95–5,00 kupon). Euro cinsinden borçlanma, Avrupa'daki gelirleriyle kur riskini dengeliyor ve ABD'ye göre daha düşük faizle finansman sağlıyor."
   },
   "news": {
     "MU": [
@@ -159,6 +162,16 @@
     ],
     "NVDA": [
       {
+        "date": "2026-11-16",
+        "title": "Asya'da Vera Rubin gecikme söylentisi: Tayvan tedarikçileri limit kayıpla kapandı",
+        "why": "Yeni nesil sistemlerin seri üretimi 2027 ilk yarısına kayarsa gelir takvimi de kayar; Nvidia yorum yapmadı, salı bilançosunda en çok sorulacak konu bu olabilir."
+      },
+      {
+        "date": "2026-11-15",
+        "title": "FT: Huang CEO'luğa dönmeyi tartışıyor; Bessent 'dışarıdan CEO' istedi",
+        "why": "Liderlik belirsizliği kapanmadı; Kress'in bilanço çağrısındaki mesajı ve kurulun halef planı hissenin risk primini belirleyecek."
+      },
+      {
         "date": "2026-11-11",
         "title": "WSJ: Nvidia yönetim kurulu CEO Jensen Huang'ı görevden almaya hazırlanıyor; hisse kapanış sonrası ≈%8–9 düştü",
         "why": "İkinci bir ilişki iddiasıyla kurul toplandı, resmi karar açıklanmadı; halef planı belirsiz olduğu için şirketin liderlik primi yeniden fiyatlanıyor."
@@ -177,16 +190,6 @@
         "date": "2026-11-09",
         "title": "Nvidia ≈%4,3 düştü; yönetim kurulu CEO Jensen Huang hakkında soruşturma başlattı",
         "why": "Piyasa değeri yaklaşık 230 milyar dolar azaldı, ama yarı iletken endeksi yükseldi; belirsizlik CEO'nun geleceği ve Washington'daki etkisinde."
-      },
-      {
-        "date": "2026-11-05",
-        "title": "Nvidia ≈%9 düştü ve 2026'da eksiye döndü",
-        "why": "Yarı iletken endeksindeki %12'lik satışın merkezi; veri merkezi inşaatı yavaşlama korkusu en çok yapay zekâ çipi satıcısını vuruyor."
-      },
-      {
-        "date": "2026-10-22",
-        "title": "Nvidia yüzde 4,4 düştü; yarı iletken endeksi yaklaşık yüzde 6,7 geriledi",
-        "why": "Hisse S&P 500'ü en çok aşağı çeken hisseydi; harcama finansmanı kaygısı çip siparişlerine yansıyor."
       }
     ],
     "INTC": [
@@ -222,6 +225,11 @@
       }
     ],
     "AVGO": [
+      {
+        "date": "2026-11-13",
+        "title": "Broadcom ≈%5 geriledi; çip endeksi günü −%3,4 kapattı",
+        "why": "Özel yapay zekâ çiplerinde Nvidia'dan pay alma beklentisiyle yükselmişti; sektör geneline yayılan düzenleme ve teslimat riski bu primi azalttı."
+      },
       {
         "date": "2026-11-11",
         "title": "Broadcom kapanış sonrası ≈%3 yükseldi",
@@ -298,6 +306,11 @@
       }
     ],
     "MSFT": [
+      {
+        "date": "2026-11-13",
+        "title": "Microsoft'un e-posta ve ofis hizmetlerinde küresel kesinti; hisse açılış öncesi ≈%2,4 düştü",
+        "why": "Kurumsal bulut gelirinin dayandığı güvenilirlik sorgulanır; kesintinin süresi ve olası tazminatlar takip edilmeli."
+      },
       {
         "date": "2026-10-29",
         "title": "Microsoft, Alphabet ve Amazon'dan ayrıştı: harcaması beklentinin altında, serbest nakit akışı pozitif",
@@ -400,6 +413,11 @@
       }
     ],
     "AMD": [
+      {
+        "date": "2026-11-13",
+        "title": "AMD gün içi ≈%10 düştü; Nvidia krizinden doğan haftalık kazancın bir kısmını geri verdi",
+        "why": "'Nvidia'nın kaybı rakibin kazancı' tezi, Çin'e dolaylı satış soruşturmalarının bütün sektöre düzenleme riski taşımasıyla zayıfladı."
+      },
       {
         "date": "2026-11-11",
         "title": "AMD kapanış sonrası ≈%4 yükseldi",
