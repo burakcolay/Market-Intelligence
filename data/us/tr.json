@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -130,6 +130,11 @@
   "news": {
     "MU": [
       {
+        "date": "2026-11-16",
+        "title": "Micron yeni ihracat kuralıyla ≈%5 düştü",
+        "why": "Yüksek bant genişlikli bellek talebi Asya'daki yapay zekâ veri merkezlerine bağlı; kural bu siparişlerin takvimini sorgulatıyor."
+      },
+      {
         "date": "2026-11-11",
         "title": "Micron açılış öncesi ≈%7 yükseldi",
         "why": "CoreWeave'in sermaye harcamasını artırması ve TSMC'nin güçlü ekim geliri, yapay zekâ sunucularındaki bellek talebinin sürdüğünü gösterdi."
@@ -153,14 +158,14 @@
         "date": "2026-10-15",
         "title": "Tayvan Cumhurbaşkanı Micron ve sendikayı olası grev öncesi 'samimi müzakereye' çağırdı",
         "why": "Tayvan Micron'un en büyük üretim merkezi (yaklaşık 15 bin çalışan); grev bellek arzını etkileyebilir, ama anlaşmazlık prim sistemi üzerine ve kapsamı belirsiz."
-      },
-      {
-        "date": "2026-10-14",
-        "title": "Elon Musk, Micron'un bellek fiyatlarında ölçülü davranmasını övdü; hisse son zirvesinin yaklaşık dörtte biri altında",
-        "why": "Bellek hisselerindeki satışta rekabet (CXMT) ve fiyat gücü tartışması sürüyor; Musk'ın sözü yatırım tavsiyesi değil, müşteri tarafından bir görüş."
       }
     ],
     "NVDA": [
+      {
+        "date": "2026-11-16",
+        "title": "ABD, Çin'in üçüncü ülke veri merkezlerinden Nvidia çiplerini kiralamasını lisansa bağladı",
+        "why": "Skandala ilk politika cevabı; Güneydoğu Asya üzerinden gelen talebin bir kısmı tahminlerden silinebilir, bilanço gecesi rehberlik bu kuralın gölgesinde okunacak."
+      },
       {
         "date": "2026-11-16",
         "title": "Asya'da Vera Rubin gecikme söylentisi: Tayvan tedarikçileri limit kayıpla kapandı",
@@ -185,11 +190,6 @@
         "date": "2026-11-10",
         "title": "Nvidia %5,5 düştü; yönetim kurulu soruşturma için Wachtell Lipton'u tuttu",
         "why": "Soruşturmanın kısa sürede kapanmayacağı anlaşıldı; endeksteki ağırlığı nedeniyle Nasdaq 100'ü en çok aşağı çeken hisse oldu."
-      },
-      {
-        "date": "2026-11-09",
-        "title": "Nvidia ≈%4,3 düştü; yönetim kurulu CEO Jensen Huang hakkında soruşturma başlattı",
-        "why": "Piyasa değeri yaklaşık 230 milyar dolar azaldı, ama yarı iletken endeksi yükseldi; belirsizlik CEO'nun geleceği ve Washington'daki etkisinde."
       }
     ],
     "INTC": [
@@ -368,6 +368,11 @@
     ],
     "AMZN": [
       {
+        "date": "2026-11-16",
+        "title": "Amazon'un uydu interneti uydularını taşıyan ULA roketi başarısız oldu",
+        "why": "Leo uydu ağının kurulum takvimi gecikebilir; hisse pazartesi geriledi."
+      },
+      {
         "date": "2026-10-29",
         "title": "Amazon bilançosu: bulut yüzde 39 büyüdü ama 12 aylık serbest nakit akışı −42,4 milyar $; hisse mesai sonrası yaklaşık %7 düştü",
         "why": "Bulut talebi güçlü, ama harcamanın beklentinin yaklaşık 20 milyar $ üzerinde kalması ve eksi nakit akışı piyasayı rahatsız etti."
@@ -414,6 +419,11 @@
     ],
     "AMD": [
       {
+        "date": "2026-11-16",
+        "title": "AMD ihracat kuralı sonrası ≈%4 geriledi",
+        "why": "Şirket Çin'e lisanslı yapay zekâ çipi satıyordu; düzenlemenin rakiplere yayılması satışları kısabilir ve uyum maliyetini artırabilir."
+      },
+      {
         "date": "2026-11-13",
         "title": "AMD gün içi ≈%10 düştü; Nvidia krizinden doğan haftalık kazancın bir kısmını geri verdi",
         "why": "'Nvidia'nın kaybı rakibin kazancı' tezi, Çin'e dolaylı satış soruşturmalarının bütün sektöre düzenleme riski taşımasıyla zayıfladı."
@@ -437,11 +447,6 @@
         "date": "2026-11-05",
         "title": "AMD ≈%17 düştü",
         "why": "Çip hisseleri düzenleme korkusu ve kaldıraç çözülmesiyle birlikte satıldı; şirketin güçlü talep açıklamasını gölgede bıraktı."
-      },
-      {
-        "date": "2026-10-22",
-        "title": "AMD yaklaşık yüzde 8 düştü",
-        "why": "Çip satışının en sert kayıplarından biri; şirkete özgü neden bulamadım."
       }
     ],
     "MRVL": [

@@ -773,6 +773,26 @@
         "fiyatlanmis-beklenti",
         "rehberlik"
       ]
+    },
+    "carpan-daralmasi": {
+      "name": "Çarpan daralması",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-17",
+      "def": "Şirketin kârı yerinde dururken piyasanın o kâra ödemeye razı olduğu katın (fiyat/kazanç gibi değerleme çarpanlarının) küçülmesi. Fiyat = kâr × çarpan olduğu için, kâr artsa bile çarpan daralırsa hisse düşer.",
+      "analogy": "Aynı dairenin kirası artsa bile faizler yükselir ve alıcılar temkinlileşirse dairenin satış fiyatı düşebilir; kira kârdır, alıcının kaç yıllık kira ödemeye razı olduğu çarpandır.",
+      "chain": [
+        "Faiz ya da belirsizlik artar",
+        "Yatırımcı kâr tahminine daha az güvenir",
+        "Aynı kâra daha az kat ödenir",
+        "Kâr artsa bile fiyat düşer"
+      ],
+      "quote": "17 Kasım: Nvidia ileriye dönük kârın ≈14 katından işlem görüyor, beş yıllık ortalaması ≈36 kat; ihracat kuralı ve liderlik belirsizliği çarpanı sıkıştırıyor.",
+      "rule": "Bir hisse düşerken önce sor: kâr tahmini mi düştü, çarpan mı? Kâr yerindeyse ve çarpan daralıyorsa sorun belirsizlik ya da faizdir; çözümü bir rakam değil, belirsizliği kapatan bir haberdir.",
+      "related": [
+        "reel",
+        "risk-primi",
+        "fiyatlanmis-beklenti"
+      ]
     }
   }
 }
