@@ -793,6 +793,26 @@
         "risk-primi",
         "fiyatlanmis-beklenti"
       ]
+    },
+    "fisilti-beklentisi": {
+      "name": "Fısıltı beklentisi",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-18",
+      "def": "Analistlerin resmi tahmin ortalamasının ötesinde, yatırımcıların kendi aralarında beklediği ve fiyata çoktan yansıyan gerçek çıta. Şirket her çeyrek beklentiyi aşmayı alışkanlık haline getirmişse, piyasanın asıl beklediği resmi rakam değil, bu alışılmış farktır.",
+      "analogy": "Her sınavdan doksan alan öğrencinin doksan beş alması sürpriz sayılmaz; sınıf onun için 'geçer not'u çoktan doksan olarak koymuştur.",
+      "chain": [
+        "Şirket sürekli beklentiyi aşar",
+        "Piyasa aşmayı fiyata katar",
+        "Gerçek çıta resmi beklentinin üstüne çıkar",
+        "Beklentiyi aşan rakam bile fiyatı taşımaz"
+      ],
+      "quote": "18 Kasım: Nvidia gelirde ≈109 mlr $ beklentiye karşı 115,8 mlr $ açıkladı, büyüme hedefini yükseltti; hisse kapanış sonrası sadece +%1–3 oynadı. Piyasanın asıl sorusu yönetimdi.",
+      "rule": "Bilançoda resmi beklentiyle değil, şirketin alışkanlık haline getirdiği farkla ve piyasanın o an sorduğu asıl soruyla kıyasla. Rakam o soruyu cevaplamıyorsa, iyi rakam fiyatı taşımaz.",
+      "related": [
+        "fiyatlanmis-beklenti",
+        "rehberlik",
+        "carpan-daralmasi"
+      ]
     }
   }
 }
