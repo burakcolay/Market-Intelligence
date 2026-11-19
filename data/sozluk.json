@@ -813,6 +813,27 @@
         "rehberlik",
         "carpan-daralmasi"
       ]
+    },
+    "hisse-arzi-baskisi": {
+      "name": "Hisse arzı baskısı",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-19",
+      "def": "Büyük bir halka arzın ya da ikincil arzın, yatırımcıların yeni hisseye yer açmak için başka hisseleri satmasıyla piyasadan likidite çekmesi. Satış genellikle yeni hisseye en çok benzeyen şirketlerde yoğunlaşır, arzdan doğrudan kazanacak şirketler ise yükselebilir.",
+      "analogy": "Mahalleye büyük bir market açılınca alışveriş bütçesi değişmez; para önce yakındaki benzer dükkânlardan çekilir, markete mal satan toptancı ise kazanır.",
+      "chain": [
+        "Rekor arz duyurulur",
+        "Fonlar yer açmak için satar",
+        "Benzer hisseler düşer",
+        "Arzın ortakları yükselir",
+        "Arz bitince baskı kalkar"
+      ],
+      "quote": "19 Kasım: Anthropic ≈81 mlr $'lık rekor arzını aralığın üstünde 83 $'dan fiyatladı; hafta boyunca yazılım hisseleri satılırken Amazon yükseldi.",
+      "rule": "Rekor arz haftasında düşüşün yerine bak: benzer hisseler düşüp arzdan kazananlar yükseliyorsa para yer değiştiriyor. Arz bittikten sonra satılanlar toparlanmıyorsa sorun arzda değil temadadır.",
+      "related": [
+        "sektor-rotasyonu",
+        "yogunlasma",
+        "fiyatlanmis-beklenti"
+      ]
     }
   }
 }
