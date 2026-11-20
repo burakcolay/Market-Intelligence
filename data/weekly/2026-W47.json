@@ -1,0 +1,140 @@
+{
+  "id": "2026-W47",
+  "range": "Hafta 47 · 16 – 20 Kasım 2026",
+  "headline": "Nvidia'nın iyi rakamı da Anthropic'in rekor arzı da satıldı: S&P 500 Nisan 2025'ten beri en kötü haftasına, Tayvan 1990'dan beri en kötüsüne gidiyor; altın bile çöktü",
+  "lede": "Hafta yapay zekâ ticaretinin üç büyük sınavıyla başladı: Washington'un Çin kuralı, Nvidia'nın Huang'sız ilk bilançosu ve Anthropic'in rekor halka arzı. Üçünden de piyasa aynı cevabı verdi: iyi haber satıldı. Nvidia beklentiyi aştı ve hedefini yükseltti, hisse bir buçuk yılın dibine indi. Anthropic arz fiyatının belirgin üstünde kapattı, aynı gün endeksler gün içi dönüşle yüzde iki düştü. Arka planda Fed tutanakları Aralık artırımını kesinleştirdi, dolar 19 ayın zirvesine çıktı, imalat verisi ilk çatlağı verdi ve hafta sonunda hisse kayıplarını kapatmak için altın, gümüş ve Bitcoin de satıldı.",
+  "source": "Haftalık değişimler Borsa MCP (yfinance): ABD ve Avrupa 13 – 19 Kasım kapanışı; Asya 20 Kasım sabahı (≈07:00 TSİ, seans sürüyor); BIST 100 13 – 19 Kasım kapanışı; Brent ve altın vadeli kontratların 20 Kasım sabahı değeri. Cuma ABD ve BIST seansı dahil değil. Bigdata.com kredi tükendiği için bu hafta kullanılamadı.",
+  "kpis": [
+    {
+      "name": "S&P 500",
+      "chg": -5.1
+    },
+    {
+      "name": "Nasdaq 100",
+      "chg": -5.11
+    },
+    {
+      "name": "Nikkei 225",
+      "chg": -6.9
+    },
+    {
+      "name": "STOXX 600",
+      "chg": -3.87
+    },
+    {
+      "name": "BIST 100",
+      "chg": -3.74
+    },
+    {
+      "name": "Brent",
+      "chg": -5.94
+    },
+    {
+      "name": "Altın",
+      "chg": -8.53
+    },
+    {
+      "name": "Bitcoin",
+      "chg": -9.32
+    }
+  ],
+  "days": [
+    {
+      "day": "Pzt",
+      "date": "16 Kas",
+      "title": "Washington Çin'in kiralık işlem gücü kapısını kapattı, çipler çöktü",
+      "text": "Ticaret Bakanlığı Çin merkezli şirketlerin üçüncü ülkelerden işlem gücü kiralamasını ve Güneydoğu Asya'ya gelişmiş çip sevkiyatını lisansa bağladı. Düzenleme riski konuşmadan kurala dönüştü: çip endeksi ≈%5, Nasdaq 100 %2,7 düştü, VIX sert yükseldi. Brent arz fazlası beklentisiyle geriledi; BIST yatay kapattı."
+    },
+    {
+      "day": "Sal",
+      "date": "17 Kas",
+      "title": "Yazılım satıldı, akşam Nvidia beklentiyi aştı",
+      "text": "Anthropic arzı öncesi yazılım hisseleri sert satıldı, S&P 500 dördüncü gün düştü. Perakende harcamanın çekirdeği güçlü geldi. Kapanıştan sonra Nvidia beklentiyi aştı, rehberliğini ve gelecek yıl büyüme hedefini yükseltti; ama kalıcı CEO sorusu cevapsız kaldı. BIST teknoloji öncülüğünde %1,5 düştü."
+    },
+    {
+      "day": "Çar",
+      "date": "18 Kas",
+      "title": "Nvidia iyi rakamı sattırdı, Fed Aralık'ı kesinleştirdi",
+      "text": "Nvidia beklentiyi aştı ve büyüme hedefini yükseltti, ama hisse artıda açıp bir buçuk yılın dibinde kapattı. Sağlık sigortacıları düzenleme şokuyla çöktü, Dow sert düştü. Akşam FOMC tutanakları Aralık artırımını kesinleştirdi, dolar 19 ayın zirvesine çıktı, altın bir yılın dibine indi. Anthropic arzını aralığın üstünde, 83 $'dan fiyatladı. BIST'te bankalar ve holdingler önde düştü."
+    },
+    {
+      "day": "Per",
+      "date": "19 Kas",
+      "title": "Anthropic güçlü açtı, piyasa gün içinde döndü",
+      "text": "Anthropic 111,50 $'dan açıp 97,17 $'dan kapattı (+%17). Sabah artıda olan Nasdaq 100 günü %2,2 kayıpla dipte kapattı; S&P 500 altıncı gün düştü. AMD açığa satış raporuyla sert düştü, yeni çip lisans kuralları yürürlüğe girdi. Philadelphia Fed imalatı altı ayın dibine indi, fiyat kalemi yükseldi. Gece altın %5 düştü. BIST'te bankalar beş gün sonra ilk kez yükseldi."
+    },
+    {
+      "day": "Cum",
+      "date": "20 Kas",
+      "title": "Asya çöküyor, altın on dört ayın dibinde",
+      "text": "Tayvan ≈%6, Kore ve Japonya ≈%4–5 düştü; Tayvan haftayı 1990'dan beri en kötü haftayla kapatmaya gidiyor. ABD vadelileri yatay. Günün olayları ABD'de aylık opsiyon vadesi ve Michigan güveni, Türkiye'de tüketici güveni."
+    }
+  ],
+  "winners": [
+    {
+      "name": "Anthropic (arz fiyatına göre)",
+      "v": "+17,1%"
+    },
+    {
+      "name": "Doğalgaz",
+      "v": "+0,87%"
+    },
+    {
+      "name": "Dolar endeksi",
+      "v": "+0,40%"
+    }
+  ],
+  "losers": [
+    {
+      "name": "Tayvan (TAIEX)",
+      "v": "−17,08%"
+    },
+    {
+      "name": "Gümüş",
+      "v": "−14,66%"
+    },
+    {
+      "name": "Bitcoin",
+      "v": "−9,32%"
+    }
+  ],
+  "learned": [
+    "zimni-oynaklik",
+    "carpan-daralmasi",
+    "fisilti-beklentisi",
+    "hisse-arzi-baskisi",
+    "teminat-cagrisi"
+  ],
+  "next": [
+    {
+      "when": "23 Kas 17:45",
+      "title": "ABD ve Euro Bölgesi öncü PMI'lar (Kasım)",
+      "why": "İmalattaki yavaşlama hizmetlere yayılıyor mu; stagflasyon kaygısının ikinci testi."
+    },
+    {
+      "when": "25 Kas 16:30",
+      "title": "ABD çekirdek PCE (Ekim) ve GSYH 2. tahmin",
+      "why": "Fed'in Aralık'taki adımının büyüklüğü; NQ için faizin yeniden destek olup olamayacağı."
+    },
+    {
+      "when": "26 Kas",
+      "title": "ABD Şükran Günü",
+      "why": "Piyasalar kapalı, cuma yarım gün; düşük hacim hareketleri büyütebilir."
+    },
+    {
+      "when": "30 Kas",
+      "title": "MSCI değişiklikleri, Çin PMI, Almanya TÜFE",
+      "why": "Strategy'nin MSCI'dan çıkışı yürürlüğe giriyor; Çin talebi emtia için belirleyici."
+    },
+    {
+      "when": "3 Ara 10:00",
+      "title": "Türkiye Kasım TÜFE",
+      "why": "10 Aralık TCMB kararı öncesi son büyük veri."
+    },
+    {
+      "when": "4 Ara 16:30",
+      "title": "ABD tarım dışı istihdam (Kasım)",
+      "why": "Yavaşlama istihdama geçti mi; Fed'in 9 Aralık kararından önceki son büyük veri."
+    }
+  ]
+}

@@ -834,6 +834,27 @@
         "yogunlasma",
         "fiyatlanmis-beklenti"
       ]
+    },
+    "teminat-cagrisi": {
+      "name": "Teminat çağrısı (margin call)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-20",
+      "def": "Kaldıraçla işlem yapan yatırımcının hesabındaki değer, aracı kurumun istediği teminatın altına inince kurumun para yatırılmasını ya da pozisyonun küçültülmesini istemesi. Nakdi olmayan yatırımcı genellikle zarardaki hisseyi değil, kârdaki ve en kolay satılan varlığı satar; bu yüzden büyük çöküşlerde altın gibi sığınaklar da düşebilir.",
+      "analogy": "Kredi kartı limitin dolunca banka 'borcunu kapat' der; nakdin yoksa evdeki en değersiz eşyayı değil, en kolay satılanı satarsın.",
+      "chain": [
+        "Fiyatlar sert düşer",
+        "Kaldıraçlı hesap teminatın altına iner",
+        "Kurum teminat ister",
+        "Kârdaki likit varlık satılır",
+        "Sığınaklar da düşer"
+      ],
+      "quote": "20 Kasım: Wall Street'in gün içi dönüşle %2 düştüğü gece altın ≈%5 düşüp 14 ayın dibine indi; gümüş ve Bitcoin de satıldı, dolar ise yataydı.",
+      "rule": "Hisselerle birlikte altın ve Bitcoin de düşüyorsa piyasa nakit arıyor demektir: düşüş haberden değil zorunlu satıştan gelir. Altın hisselerden önce toparlanmaya başlarsa zorunlu satış bitiyor olabilir.",
+      "related": [
+        "kaldirac-cozulmesi",
+        "risk",
+        "vix"
+      ]
     }
   }
 }
