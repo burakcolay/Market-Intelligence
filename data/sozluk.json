@@ -855,6 +855,28 @@
         "risk",
         "vix"
       ]
+    },
+    "kapitulasyon": {
+      "name": "Kapitülasyon (pes ediş)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-23",
+      "def": "Uzun süre direnen yatırımcıların sonunda dayanamayıp fiyatı ne olursa olsun satması. Olağanüstü hacim, korku endeksinde sıçrama ve iyi-kötü ayrımı yapılmadan her şeyin satılmasıyla gelir; satıcı stoğu boşaldığı için çoğu zaman dibe yakın görülür, ama dip ancak sonraki günlerde yeni dip yapılmamasıyla teyit edilir.",
+      "analogy": "Yangından kaçan kalabalık kapıdan çıkınca koridor birden boşalır; ama yangın sönmediyse içeri dönen olmaz.",
+      "chain": [
+        "Uzun düşüş direnç yaratır",
+        "Sert bir haber gelir",
+        "Herkes aynı anda satar",
+        "Hacim ve VIX patlar",
+        "Satıcı stoğu boşalır"
+      ],
+      "quote": "20 Kasım: SEC'in Nvidia'nın muhasebesini incelediği haberiyle Nvidia −%14, çip endeksi −%10,7, Nasdaq 100 −%5,6 düştü; VIX gün içinde 40'ı gördü. Pazartesi sabahı vadeliler ≈+%2–3 toparlanıyordu.",
+      "rule": "Rekor hacim, VIX sıçraması ve ayrımsız satış kapitülasyonun işaretidir, ama dibi kanıtlamaz. Dip, sonraki günlerde kötü habere rağmen yeni dip yapılmamasıyla teyit edilir.",
+      "related": [
+        "olu-kedi",
+        "vix",
+        "duzeltme",
+        "teminat-cagrisi"
+      ]
     }
   }
 }

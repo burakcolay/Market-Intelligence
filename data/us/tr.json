@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-23",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -162,6 +162,11 @@
     ],
     "NVDA": [
       {
+        "date": "2026-11-20",
+        "title": "Reuters: SEC, Nvidia'nın muhasebesini inceliyor; hisse DeepSeek'ten beri en kötü gününü yaşadı",
+        "why": "İncelemenin 2025'teki bölgesel gelir raporlaması değişikliğinin ardından geldiği aktarılıyor; kapsamı netleşene kadar yapay zekâ talebinin en çok izlenen göstergesine güven sorgulanacak."
+      },
+      {
         "date": "2026-11-16",
         "title": "ABD, Çin'in üçüncü ülke veri merkezlerinden Nvidia çiplerini kiralamasını lisansa bağladı",
         "why": "Skandala ilk politika cevabı; Güneydoğu Asya üzerinden gelen talebin bir kısmı tahminlerden silinebilir, bilanço gecesi rehberlik bu kuralın gölgesinde okunacak."
@@ -185,11 +190,6 @@
         "date": "2026-11-11",
         "title": "Nvidia açılış öncesi ≈%5 toparlandı; iki günde ≈430 mlr $ kaybetmişti",
         "why": "CoreWeave'in güçlü tahmini yapay zekâ talebi korkusunu hafifletti; CEO soruşturması ise yönetim kurulunun hukuk firması tutmasıyla sürüyor, bilanço 17 Kasım."
-      },
-      {
-        "date": "2026-11-10",
-        "title": "Nvidia %5,5 düştü; yönetim kurulu soruşturma için Wachtell Lipton'u tuttu",
-        "why": "Soruşturmanın kısa sürede kapanmayacağı anlaşıldı; endeksteki ağırlığı nedeniyle Nasdaq 100'ü en çok aşağı çeken hisse oldu."
       }
     ],
     "INTC": [
