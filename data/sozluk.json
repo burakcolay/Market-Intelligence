@@ -877,6 +877,28 @@
         "duzeltme",
         "teminat-cagrisi"
       ]
+    },
+    "aciga-satis-sikismasi": {
+      "name": "Açığa satış sıkışması (short squeeze)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-25",
+      "def": "Düşüşe oynamak için ödünç alınıp satılmış hisselerin, beklenmedik iyi bir haberle birlikte aynı anda geri alınmak zorunda kalınması. Zararı sınırsız büyüyebilen açığa satıcılar pozisyonlarını kapatmaya koşunca fiyat haberin hak ettiğinden fazla yükselir; bu zorunlu alım bir kez olduğu için ertesi günlerde yükselişin bir kısmı çoğu zaman geri verilir.",
+      "analogy": "Yağmur başlayınca herkes aynı anda şemsiye almaya koşar; fiyat bir günlüğüne uçar, ertesi gün şemsiyeci yine eski fiyatına satar.",
+      "chain": [
+        "Düşüşe oynayanlar kalabalıklaşır",
+        "İyi haber gelir",
+        "Herkes aynı anda geri alır",
+        "Fiyat aşırı yükselir",
+        "Zorunlu alım bitince geri çekilir"
+      ],
+      "quote": "23 Kasım: Huang'ın Nvidia'ya CEO olarak dönmesiyle NVDA +%31,5 ile 2003'ten beri en iyi gününü yaşadı, Micron +%19; ertesi gün NVDA −%5,9, Micron −%11, AMD −%8,9.",
+      "rule": "Düşüşe oynayanların kalabalık olduğu piyasada iyi haber fiyatı hak ettiğinden fazla yükseltir. Sıkışmayı gerçek alımdan ayırmak için ertesi günlere bak: zorunlu alım bir kez olur, gerçek talep tekrar gelir.",
+      "related": [
+        "olu-kedi",
+        "kapitulasyon",
+        "kaldirac-cozulmesi",
+        "vix"
+      ]
     }
   }
 }

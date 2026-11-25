@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-25",
   "about": {
     "NVDA": "Yapay zekâ veri merkezlerinin çipini yapıyor. Gelirin büyük kısmı bulut şirketlerine ve büyük teknoloji firmalarına sattığı grafik işlemcileri ve bunları birbirine bağlayan ağ ürünlerinden geliyor; oyun kartları artık küçük bir parça.",
     "AAPL": "iPhone başta olmak üzere Mac, iPad, saat ve kulaklık satıyor. Gelirin yarıdan fazlası iPhone'dan, en hızlı büyüyen ve en kârlı kısım ise App Store, iCloud ve ödeme gibi hizmetlerden geliyor.",
@@ -130,6 +130,11 @@
   "news": {
     "MU": [
       {
+        "date": "2026-11-24",
+        "title": "Micron pazartesi ≈%19 yükseldikten sonra salı ≈%11 düştü",
+        "why": "Bellek tarafındaki hareket şirkete özgü bir haberden değil, yapay zekâ sepetindeki pozisyon salınımından geliyor."
+      },
+      {
         "date": "2026-11-16",
         "title": "Micron yeni ihracat kuralıyla ≈%5 düştü",
         "why": "Yüksek bant genişlikli bellek talebi Asya'daki yapay zekâ veri merkezlerine bağlı; kural bu siparişlerin takvimini sorgulatıyor."
@@ -153,14 +158,19 @@
         "date": "2026-10-19",
         "title": "Micron çip toparlanmasıyla yaklaşık %3 yükseldi",
         "why": "Sekiz seanslık düşüşten sonra bellek hisselerinde dip alımı geldi; bellek talebindeki bozulma değil, pozisyon boşaltma tartışılıyor."
-      },
-      {
-        "date": "2026-10-15",
-        "title": "Tayvan Cumhurbaşkanı Micron ve sendikayı olası grev öncesi 'samimi müzakereye' çağırdı",
-        "why": "Tayvan Micron'un en büyük üretim merkezi (yaklaşık 15 bin çalışan); grev bellek arzını etkileyebilir, ama anlaşmazlık prim sistemi üzerine ve kapsamı belirsiz."
       }
     ],
     "NVDA": [
+      {
+        "date": "2026-11-24",
+        "title": "Nvidia, Huang'ın dönüşüne iki partiden gelen eleştiriyle ertesi gün ≈%6 geriledi",
+        "why": "Pazartesi sıçramasının önemli kısmı açığa satış kapatmasıydı; kurulun iç soruşturması sürüyor, liderlik sorusu tamamen kapanmadı."
+      },
+      {
+        "date": "2026-11-23",
+        "title": "Nvidia kurulu Jensen Huang'ı oybirliğiyle CEO olarak geri getirdi; hisse 2003'ten beri en iyi gününü yaşadı",
+        "why": "İki haftalık liderlik belirsizliği kapandı; kurul ABD hükümetinden ulusal güvenlik riski olmadığına dair görüş aldığını açıkladı."
+      },
       {
         "date": "2026-11-20",
         "title": "Reuters: SEC, Nvidia'nın muhasebesini inceliyor; hisse DeepSeek'ten beri en kötü gününü yaşadı",
@@ -180,16 +190,6 @@
         "date": "2026-11-15",
         "title": "FT: Huang CEO'luğa dönmeyi tartışıyor; Bessent 'dışarıdan CEO' istedi",
         "why": "Liderlik belirsizliği kapanmadı; Kress'in bilanço çağrısındaki mesajı ve kurulun halef planı hissenin risk primini belirleyecek."
-      },
-      {
-        "date": "2026-11-11",
-        "title": "WSJ: Nvidia yönetim kurulu CEO Jensen Huang'ı görevden almaya hazırlanıyor; hisse kapanış sonrası ≈%8–9 düştü",
-        "why": "İkinci bir ilişki iddiasıyla kurul toplandı, resmi karar açıklanmadı; halef planı belirsiz olduğu için şirketin liderlik primi yeniden fiyatlanıyor."
-      },
-      {
-        "date": "2026-11-11",
-        "title": "Nvidia açılış öncesi ≈%5 toparlandı; iki günde ≈430 mlr $ kaybetmişti",
-        "why": "CoreWeave'in güçlü tahmini yapay zekâ talebi korkusunu hafifletti; CEO soruşturması ise yönetim kurulunun hukuk firması tutmasıyla sürüyor, bilanço 17 Kasım."
       }
     ],
     "INTC": [
