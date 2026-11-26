@@ -899,6 +899,27 @@
         "kaldirac-cozulmesi",
         "vix"
       ]
+    },
+    "ayi-piyasasi": {
+      "name": "Ayı piyasası (bear market)",
+      "cat": "Piyasa psikolojisi",
+      "learned": "2026-11-26",
+      "def": "Bir endeksin son zirvesinden kapanış bazında yüzde yirmi ya da daha fazla düşmesi. Yüzde on ile yirmi arası düşüş düzeltme sayılır. Eşiğin ekonomik bir anlamı yoktur ama manşetleri, yatırım komitelerini ve bazı sistematik fonların pozisyonlarını etkilediği için psikolojik önemi büyüktür. Resesyonla gelen ayı piyasaları uzun, resesyonsuz gelenler (faiz ya da değerleme şoku) görece kısa sürer.",
+      "analogy": "Termometrede kırk derece: çizgi keyfi, ama herkes ona göre davranır.",
+      "chain": [
+        "Endeks zirveden yüzde yirmi düşer",
+        "Manşetler değişir",
+        "Fonlar riski yeniden tartar",
+        "Eşikteki fiyat davranışı yönü gösterir"
+      ],
+      "quote": "25 Kasım: Nasdaq 100 gün içinde ≈%4,7 düşüp ekim rekorunun %20 altını gördü, ama günü −%0,64 ile kapattı; resmî sayım kapanışla yapıldığı için teknik olarak düzeltme bölgesinde kaldı.",
+      "rule": "Ayı piyasası eşiği ekonomik değil psikolojik bir çizgidir; önemli olan dokunmak değil, orada nasıl kapandığıdır. Eşikte güçlü dönüş alıcıyı, eşiğin altında art arda kapanış alıcının çekildiğini gösterir.",
+      "related": [
+        "duzeltme",
+        "kapitulasyon",
+        "olu-kedi",
+        "vix"
+      ]
     }
   }
 }
