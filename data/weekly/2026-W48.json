@@ -1,0 +1,135 @@
+{
+  "id": "2026-W48",
+  "range": "Hafta 48 · 23 – 27 Kasım 2026",
+  "headline": "Huang döndü, vergiler ve sıcak enflasyon geldi, Nasdaq 100 ayı piyasası eşiğine dokunup döndü: hafta kayıpsız değil ama dipten yukarıda kapanıyor; BIST ise toparlanmayı göremedi",
+  "lede": "Hafta, bir önceki haftanın çöküşünün ardından bir sınavlar dizisiydi. Pazartesi Nvidia kurulu Huang'ı CEO'luğa geri getirdi ve Nasdaq 100 bir buçuk yılın en iyi gününü yaşadı; salı çipler yeniden satıldı. Çarşamba on dört ekonomiye gümrük vergisi önerisi ve iki yılın zirvesindeki çekirdek enflasyon aynı sabah geldi, endeks gün içinde ekim rekorunun yüzde yirmi altına indi ama kapanışa kadar döndü. Perşembe vergilerin mevcutların üstüne binmeyeceği anlaşılınca dünya toparlandı. Sonuç: ABD ve Asya geçen cumanın dibinden belirgin yukarıda, Avrupa ılımlı artıda; BIST ise bankalardaki yabancı satışıyla haftayı ekside bitiriyor.",
+  "source": "Haftalık değişimler Borsa MCP (yfinance): ABD 20 – 25 Kasım kapanışı (perşembe tatil, cuma yarım gün dahil değil); STOXX 600 ve BIST 100 20 – 26 Kasım kapanışı; Nikkei 20 Kasım kapanışından 27 Kasım sabahına (≈07:00 TSİ); Brent, altın ve Bitcoin 23 Kasım sabahından 27 Kasım sabahına. 20 Kasım cuma seansı W47 özetine girmemişti, bu haftanın başlangıç noktasıdır. Bigdata.com kredi tükendiği için bu hafta kullanılamadı.",
+  "kpis": [
+    {
+      "name": "S&P 500",
+      "chg": 3.94
+    },
+    {
+      "name": "Nasdaq 100",
+      "chg": 4.07
+    },
+    {
+      "name": "Nikkei 225",
+      "chg": 3.66
+    },
+    {
+      "name": "STOXX 600",
+      "chg": 1.81
+    },
+    {
+      "name": "BIST 100",
+      "chg": -3.49
+    },
+    {
+      "name": "Brent",
+      "chg": 2.75
+    },
+    {
+      "name": "Altın",
+      "chg": 1.51
+    },
+    {
+      "name": "Bitcoin",
+      "chg": 0.19
+    }
+  ],
+  "days": [
+    {
+      "day": "Pzt",
+      "date": "23 Kas",
+      "title": "Huang geri döndü, Nasdaq 100 bir buçuk yılın en iyi gününü yaşadı",
+      "text": "Nvidia kurulu iki hafta önce istifa eden Huang'ı oybirliğiyle göreve iade etti; hisse 2003'ten beri en iyi gününü yaşadı. Yükselişin bir kısmı açığa satış pozisyonlarının kapatılmasıydı. Nasdaq 100 ve S&P 500 Nisan 2025'ten beri en iyi günlerini gördü, yedi günlük düşüş serisi bitti. BIST coşkuya katılmadı."
+    },
+    {
+      "day": "Sal",
+      "date": "24 Kas",
+      "title": "Çipler geri düştü, para sağlık ve Dow'a kaydı",
+      "text": "Huang'ın dönüşüne iki partiden eleştiri geldi; Nvidia, Micron ve AMD pazartesi kazancının büyük kısmını geri verdi, Anthropic arz fiyatının altına indi. Dow ise artıda kapattı; sağlık ve temel tüketim yükseldi. NY Fed'den Williams sert konuştu, Aralık artırımı tamamen fiyatlandı. Altın yeniden düştü, BIST 11 binin altına indi."
+    },
+    {
+      "day": "Çar",
+      "date": "25 Kas",
+      "title": "Vergi önerisi ve sıcak PCE: ayı piyasası eşiğine dokunup dönüş",
+      "text": "ABD on dört ekonomiye gümrük vergisi önerdi, çekirdek PCE iki yılın zirvesine çıktı, büyüme sert yukarı revize edildi. Nasdaq 100 gün içinde ekim rekorunun yüzde yirmi altını gördü, uzun vadeli faiz düşünce kaybın çoğunu sildi; Dow artıda kapattı. Çipler geride kaldı. Avrupa ve BIST dönüşü göremeden gün dibinde kapattı, altın on dört ayın dibini gördü."
+    },
+    {
+      "day": "Per",
+      "date": "26 Kas",
+      "title": "Vergiler üst üste binmeyecek: dünya toparlandı, BIST'te bankalar yerinde saydı",
+      "text": "ABD Şükran Günü'nde kapalıydı; yeni oranların temmuz vergilerine eklenmeyeceği ve aylar sonra uygulanacağı anlaşılınca Nasdaq 100 vadelisi belirgin yükseldi. Avrupa bankalar ve Alman ihracatçılar öncülüğünde çarşamba kaybını sildi. Kore Merkez Bankası faizi artırıp büyüme tahminini yükseltti. BIST artıda kapattı ama bankalar yatay kaldı, endeks gün dibine yakın bitti."
+    },
+    {
+      "day": "Cum",
+      "date": "27 Kas",
+      "title": "Yarım gün: tatil rallisinin teyidi",
+      "text": "Kore ve Japonya alımda, Tayvan çip ihracat kısıtlarıyla geride. ABD borsası 17:30'da açılıp 21:00'de kapanıyor; nakit endeks perşembe vadeli kazancını açılış boşluğuyla fiyatlayacak. Soru, çiplerin yükselişe katılıp katılmadığı."
+    }
+  ],
+  "winners": [
+    {
+      "name": "Tayvan (TAIEX, 20 Kas kapanışından)",
+      "v": "+%9,09"
+    },
+    {
+      "name": "Nasdaq 100",
+      "v": "+%4,07"
+    },
+    {
+      "name": "Nikkei 225",
+      "v": "+%3,66"
+    }
+  ],
+  "losers": [
+    {
+      "name": "BIST 100",
+      "v": "−%3,49"
+    },
+    {
+      "name": "Türkiye ETF (TUR, $)",
+      "v": "−%1,69"
+    }
+  ],
+  "learned": [
+    "kapitulasyon",
+    "aciga-satis-sikismasi",
+    "ayi-piyasasi",
+    "adil-deger"
+  ],
+  "next": [
+    {
+      "when": "29 Kas",
+      "title": "OPEC+ toplantısı",
+      "why": "Petrol üç ayın dibinden döndü; arz politikasında büyük değişiklik beklenmiyor ama sürpriz enflasyon beklentisini oynatır."
+    },
+    {
+      "when": "30 Kas 04:30",
+      "title": "Çin imalat PMI (Kasım)",
+      "why": "Vergi önerisinden sonraki ilk büyük Çin verisi; emtia ve Asya için yön."
+    },
+    {
+      "when": "30 Kas",
+      "title": "MSCI değişiklikleri, Almanya TÜFE",
+      "why": "Strategy'nin MSCI'dan çıkışı yürürlüğe giriyor; ECB'nin yönü için ilk Kasım enflasyon verisi."
+    },
+    {
+      "when": "3 Ara 10:00",
+      "title": "Türkiye Kasım TÜFE",
+      "why": "10 Aralık TCMB kararı öncesi son büyük veri; bankalar için kilit."
+    },
+    {
+      "when": "4 Ara 16:30",
+      "title": "ABD tarım dışı istihdam (Kasım)",
+      "why": "Fed'in 9 Aralık'taki artırımının son artırım olup olmayacağı; uzun faiz ve NQ için haftanın belirleyicisi."
+    },
+    {
+      "when": "9 Ara",
+      "title": "FOMC kararı ve Broadcom bilançosu",
+      "why": "Artırım ve yapay zekâ talebi aynı gün; çiplerdeki şüphenin ilk büyük testi."
+    }
+  ]
+}

@@ -920,6 +920,26 @@
         "olu-kedi",
         "vix"
       ]
+    },
+    "adil-deger": {
+      "name": "Adil değer (fair value)",
+      "cat": "Faizler",
+      "learned": "2026-11-27",
+      "def": "Bir endeks vadeli kontratının, nakit endekse göre olması gereken fiyatı. Vadeliyi alan kişi hisseleri bugün almak için para bağlamaz ve o parayı vadeye kadar faizde tutabilir, ama hisse sahibinin aldığı temettüyü alamaz. Bu yüzden adil değer, nakit endeksin üstüne vadeye kalan süre boyunca kazanılacak faizin eklenip kaçırılan temettünün çıkarılmasıyla bulunur. Faiz yüksekken fark büyür, vade yaklaştıkça küçülür, vade gününde sıfırlanır. Fark adil değerden çok saparsa arbitrajcılar devreye girip kapatır.",
+      "analogy": "Peşin ile vadeli araba fiyatı: vadelide fazladan ödediğin, paranı bugün bağlamamanın bedelidir.",
+      "chain": [
+        "Faiz yüksek",
+        "Vadeli nakdin üstünde işlem görür",
+        "Vade yaklaştıkça fark erir",
+        "Nakit kapalıyken vadeli açılışı önceden yazar"
+      ],
+      "quote": "26 Kasım: ABD nakit borsası Şükran Günü nedeniyle kapalıyken Nasdaq 100 vadelisi %2,3 yükseldi; çarşamba kapanışında vadeli, nakit endeksin elli puan kadar üstündeydi, yani yaklaşık adil değer kadar.",
+      "rule": "Vadeli ile nakit endeks arasındaki fark faiz eksi temettüdür, iyimserlik değil. Nakit kapalıyken vadelide oluşan hareket ertesi açılışı önceden yazar; ama asıl bilgi açılıştan sonra o fiyatın tutunup tutunmadığıdır.",
+      "related": [
+        "acilis-boslugu",
+        "faiz",
+        "vadeprimi"
+      ]
     }
   }
 }
